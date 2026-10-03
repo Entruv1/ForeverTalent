@@ -1,0 +1,50 @@
+0001	A defensive combat stance. Decreases damage taken by 10% and damage caused by 10%. Increases threat generated.
+0002	A powerful prayer heals party members within 30 yards for 1,041 to 1,099.
+0003	A slow casting spell that heals a single target for 924 to 1,038.
+0004	A strong attack that increases melee damage by 11.
+0005	A targeted party member is protected from all physical attacks for 10 sec, but during that time they cannot attack or use physical abilities. Players may only have one Blessing on them per Paladin at any one time. Once protected, the target cannot be made invulnerable by Divine Shield, Divine Protection or Blessing of Protection again for 1 min.
+0006	Allows the caster to levitate, floating a few feet above the ground. While levitating, you will fall at a reduced speed and travel over water-like surfaces. Any damage will cancel the effect. Lasts 2 min.
+0007	An aggressive stance. Critical hit chance is increased by 3% and all damage taken is increased by 10%.
+0008	Attempts to disengage from the target, reducing threat. Character exits combat mode.
+0009	Attempts to disengage from the target, reducing threat. More effective than Disengage (Rank 1). Character exits combat mode.
+0010	Baseline now. In Classic this was a Discipline talent.
+0011	Baseline now. In Classic this was an Arcane talent.
+0012	Blasts a single enemy for 12 to 16 damage and lowers the attack power of all enemies in melee range by 50. Effect lasts 4 sec.
+0013	Blasts a single enemy for 19 to 25 damage and lowers the melee attack power of all enemies in melee range by 75. Effect lasts 4 sec.
+0014	Blasts nearby enemies increasing the time between their attacks by 10% for 10 sec and doing 10 damage to them. Will affect up to 4 targets.
+0015	Blasts nearby enemies with thunder increasing the time between their attacks by 10% for 14 sec and doing 23 damage to them. Will affect up to 4 targets.
+0016	Brings a dead player back to life with 15% of their health and mana. Cannot be used when in combat.
+0017	Calls down a pillar of fire, burning all enemies within the area for 100 to 126 Fire damage and an additional 88 Fire damage over 8 sec.
+0018	Causes 10 damage, incapacitating the opponent for 4 sec, and turns off your attack. Target must be facing you. Any damage caused will revive the target. Awards 1 combo point.
+0019	Claw the enemy, causing 115 additional damage. Awards 1 combo point.
+0020	Conjures 18 sweet rolls, providing the mage and his allies with something to eat. Conjured items disappear if logged out for more than 15 minutes.
+0021	Consumes a Rejuvenation or Regrowth effect on a friendly target to instantly heal them an amount equal to 12 sec. of Rejuvenation or 18 sec. of Regrowth.
+0022	Continuously fires a volley of ammo at the target area, causing 50 Arcane damage to enemy targets within 8 yards every second for 6 sec.
+0023	Converts 30 health into 30 mana.
+0024	Converts up to 10 rage per second into health for 10 sec. Each point of rage is converted into 10 health.
+0025	Counterattack the enemy for 115 damage. Can only be performed after you dodge.
+0026	Creates a Firestone which can be equipped in the off hand. When equipped, enchants the main hand weapon with fire, granting each attack a chance to deal 40 to 60 additional Fire damage. In addition, equipping the Firestone increases the damage done by fire spells by 14. Conjured items disappear if logged out for more than 15 minutes.
+0027	Creates a Greater Firestone which can be equipped in the off hand. When equipped, enchants the main hand weapon with fire, granting each attack a chance to deal 60 to 90 additional Fire damage. In addition, equipping the Greater Firestone increases the damage done by fire spells by 17. Conjured items disappear if logged out for more than 15 minutes.
+0028	Creates a Greater Healthstone that can be used to instantly restore 800 health. Conjured items disappear if logged out for more than 15 minutes.
+0029	Creates a Greater Spellstone for the caster. When equipped and used, the Greater Spellstone removes all magic effects from the caster and will absorb 650 magic damage for 1 min. In addition, equipping the Greater Spellstone improves your chance to get a critical strike with spells by 1%. Conjured items disappear if logged out for more than 15 minutes.
+0030	Creates a Lesser Firestone which can be equipped in the off hand. When equipped, enchants the main hand weapon with fire, granting each attack a chance to deal 25 to 35 additional Fire damage. In addition, equipping the Lesser Firestone increases the damage done by fire spells by 10. Conjured items disappear if logged out for more than 15 minutes.
+0031	Creates a Lesser Healthstone that can be used to instantly restore 250 health. Conjured items disappear if logged out for more than 15 minutes.
+0032	Creates a Major Firestone which can be equipped in the off hand. When equipped, enchants the main hand weapon with fire, granting each attack a chance to deal 80 to 120 additional Fire damage. In addition, equipping the Major Firestone increases the damage done by fire spells by 21. Conjured items disappear if logged out for more than 15 minutes.
+0033	Creates a Major Healthstone that can be used to instantly restore 1,200 health. Conjured items disappear if logged out for more than 15 minutes.
+0034	Creates a Major Spellstone for the caster. When equipped and used, the Major Spellstone removes all magic effects from the caster and will absorb 900 magic damage for 1 min. In addition, equipping the Major Spellstone improves your chance to get a critical strike with spells by 1%. Conjured items disappear if logged out for more than 15 minutes.
+0035	Creates a Minor Healthstone that can be used to instantly restore 100 health. Conjured items disappear if logged out for more than 15 minutes.
+0036	Creates a Spellstone for the caster. When equipped and used, the Spellstone removes all magic effects from the caster and will absorb 400 magic damage for 1 min. In addition, equipping the Spellstone improves your chance to get a critical strike with spells by 1%. Conjured items disappear if logged out for more than 15 minutes.
+0037	Curses the target for 5 min, reducing Fire and Frost resistances by 45 and increasing Fire and Frost damage taken by 6%. Only one Curse per Warlock can be active on any one target.
+0038	Curses the target with agony, causing 1,044 Shadow damage over 24 sec. This damage is dealt slowly at first, and builds up as the Curse reaches its full duration. Only one Curse per Warlock can be active on any one target.
+0039	Curses the target with agony, causing 180 Shadow damage over 24 sec. This damage is dealt slowly at first, and builds up as the Curse reaches its full duration. Only one Curse per Warlock can be active on any one target.
+0040	Curses the target with impending doom, causing 3,200 Shadow damage after 1 min. If the target dies from this damage, there is a chance that a Doomguard will be summoned. Cannot be cast on players.
+0041	Curses the target with recklessness, increasing melee attack power by 20 but reducing armor by 140 for 2 min. Cursed enemies will not flee and will ignore Fear and Horror effects. Only one Curse per Warlock can be active on any one target.
+0042	Damage caused by the target is reduced by 10 for 2 min. Only one Curse per Warlock can be active on any one target.
+0043	Deals 14 to 16 damage to a target.
+0044	Drains the soul of the target, causing 155 Shadow damage over 15 sec. If the target dies while being drained, and yields experience or honor, the caster gains a Soul Shard. Soul Shards are required for other spells.
+0045	Feign death which may trick enemies into ignoring you. Lasts up to 6 min.
+0046	Finishing move that causes damage over time, increased by your Attack Power. Lasts longer per combo point: 1 point : 128 damage over 8 secs 2 points: 185 damage over 10 secs 3 points: 252 damage over 12 secs 4 points: 329 damage over 14 secs 5 points: 416 damage over 16 secs
+0047	Finishing move that causes damage over time. Damage increases per combo point and by your Attack Power: 1 point : 138 damage over 12 sec. 2 points: 222 damage over 12 sec. 3 points: 306 damage over 12 sec. 4 points: 390 damage over 12 sec. 5 points: 474 damage over 12 sec.
+0048	Finishing move that causes damage per combo point, increased by Attack Power: 1 point : 224-332 damage 2 points: 394-502 damage 3 points: 564-672 damage 4 points: 734-842 damage 5 points: 904-1012 damage
+0049	Finishing move that causes damage, disorients the opponent, and turns off your attack. Any damage caused will revive the target. Causes more damage and lasts longer per combo point: 1 point : 7-11 damage and 2 seconds 2 points: 13-19 damage and 3 seconds 3 points: 19-24 damage and 4 seconds 4 points: 25-30 damage and 5 seconds 5 points: 31-37 damage and 6 seconds
+0050	Finishing move that exposes the target for 30 sec, reducing armor per combo point: 1 point : 145 armor 2 points: 290 armor 3 points: 435 armor 4 points: 580 armor 5 points: 725 armor

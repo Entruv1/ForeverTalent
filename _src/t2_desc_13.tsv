@@ -1,0 +1,50 @@
+0001	The hunter and all party and raid members within 30 yards take on the aspect of the wild, increasing Nature resistance by 45. Only one Aspect can be active at a time.
+0002	The hunter and group members within 30 yards take on the aspects of a pack of cheetahs, increasing movement speed by 30%. If a pack member takes damage, they will be dazed for 4 sec. Only one Aspect can be active at a time.
+0003	The hunter takes on the aspects of a beast, becoming untrackable and increasing Melee Attack Power by 110. Only one Aspect can be active at a time.
+0004	The next 1 melee attack that strikes the caster will afflict the attacker with Entangling Roots (Rank 1). Castable while shapeshifted. Lasts 45 sec.
+0005	The next melee attack against the caster will cause 12 Shadow damage and reduce the attacker's melee attack power by 57 for 2 min.
+0006	The next melee attack on the caster will cause 40 Shadow damage and reduce the attacker's melee attack power by the attacker by 155 for 2 min.
+0007	The one spellbook tab we were missing. Read from a clip of Esfand's stream a reader sent in (clipped by Zevzve): Bloodrage, Shield Wall, Taunt, Sunder Armor and the rest. Overpower corrected to rank 2 while we were in there.
+0008	The paladin sacrifices himself to remove the targeted party member from harms way. Enemies will stop attacking the protected party member, who will be immune to all harmful attacks but cannot take any action for 3 min.
+0009	The priest becomes surrounded with anti-magic energy. Any successful spell cast against the priest will burn 105 of the attacker's Mana, causing 1 Shadow damage for each point of Mana burned. Lasts 15 sec.
+0010	The same Shaman build in the share row
+0011	The second VOD sweep found one tooltip we had estimated: Improved Holy Strike 2/2 reduces the Holy Strike cooldown by 2 sec, read straight off Xaryu's day-2 stream. Reverence 3/3 and Voice of Truth on the same frame matched what the site already said. Everything else the sweep flagged turned out to be the reader misreading footage, not the site.
+0012	The spellbook was the last part of the site still read off BlizzCon demo footage, and those characters stopped at level 38. Now it comes from the beta's own files: every trainer spell to level 60, every rank, the level you learn it at, and what changed from Classic. Untick Show all ranks to see only the top rank, like the box in the game's book.<br><br><b>How it is checked.</b> Every spell, rank and level comes straight from the game's own files. To test the files I read a real trainer in the beta. <a href="https://www.reddit.com/user/paraizord" target="_blank" rel="noopener">u/paraizord</a> pointed out that a city trainer lists everything to 60, even for a level 1, so one visit shows a whole class. The Stormwind mage trainer sells 158 spells. The files had 157 of them, every level right, and the one they lacked is in the book now. The visit also showed which ranks the trainer doesn't sell, like Fireball rank 12 and the portals, and those say so in their tooltip. All the other classes get double verified the same way this weekend, and each book shows how far along that is.
+0013	The tank seal. Every hit adds Holy damage, and with a shield up you get an absorb worth half of it. Rank 4 by level 38.
+0014	The targeted undead enemy will be compelled to flee for up to 10 sec. Damage caused may interrupt the effect. Only one target can be turned at a time.
+0015	The warrior enters a berserker rage, becoming immune to Fear and Incapacitate effects and generating extra rage when taking damage. Lasts 10 sec.
+0016	The warrior shouts, causing the targeted enemy to cower in fear. Up to 5 total nearby enemies will flee in fear. Lasts 8 sec.
+0017	The warrior shouts, increasing the melee attack power of all party members within 20 yards by 115. Lasts 3 min.
+0018	The warrior will gain 100% increased critical strike chance and will be immune to Fear effects for the next 15 sec, but all damage taken is increased by 20%.
+0019	The wolf howls, increasing the melee attack power of all party members within 15 yards by 114. Lasts 1 min.
+0020	The wolf howls, increasing the melee attack power of all party members within 15 yards by 50 to 62. Lasts 1 min.
+0021	Thick Hide at rank 2
+0022	Thorns sprout from the friendly target causing 11 Nature damage to attackers when hit. Lasts 10 min.
+0023	To be added in a future update.
+0024	Total Health increased by 5% and chance to hit increased by 1%.
+0025	Totemic Projection on the Shaman abilities card
+0026	Trainable now instead of a Marksmanship talent, and quicker: 2 sec cast, 6 sec cooldown, shared with Multi-Shot (Classic was a 3 sec cast). Rank 3 by 38. A reader caught the cast time on Xaryu's stream.
+0027	Transfers 11 health from the target to the caster every 3 sec. Lasts 30 sec.
+0028	Transform into a wisp upon death, increasing movement speed by 75%.
+0029	Transforms the Druid into Moonkin Form. While in this form the armor contribution from items is increased by 360% and all party members within 30 yards have their spell critical chance increased by 3%. [Reduces all threat from Arcane and Nature spells by 0% while in this form]The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
+0030	Transforms the Druid into Moonkin Form. While in this form, the armor contribution from items is increased by 360%, Omen of Clarity gains 100% increased chance to trigger, and all party members within 45 yards have their critical strike chance increased by 3%, exclusive with Leader of the Pack. The Moonkin cannot cast healing spells while shapeshifted.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
+0031	Transforms the druid into a travel form, increasing movement speed by 40%. Also protects the caster from Polymorph effects. Only useable outdoors.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
+0032	Transforms the enemy into a pig, forcing it to wander around for up to 50 sec. While wandering, the pig cannot attack or cast spells but will regenerate very quickly. Any damage will transform the target back into its normal form. Only one target can be polymorphed at a time. Only works on Beasts, Humanoids and Critters.
+0033	Transforms the enemy into a sheep, forcing it to wander around for up to 20 sec. While wandering, the sheep cannot attack or cast spells but will regenerate very quickly. Any damage will transform the target back into its normal form. Only one target can be polymorphed at a time. Only works on Beasts, Humanoids and Critters.
+0034	Transforms the enemy into a turtle, forcing it to wander around for up to 50 sec. While wandering, the turtle cannot attack or cast spells but will regenerate very quickly. Any damage will transform the target back into its normal form. Only one target can be polymorphed at a time. Only works on Beasts, Humanoids and Critters.
+0035	Troll Priest
+0036	Trueshot Aura with Compare to Classic on
+0037	Turns the Shaman into a Ghost Wolf, increasing speed by 40%. Only useable outdoors.
+0038	Undead Priest
+0039	Underwater breath lasts 300% longer than normal.
+0040	Unleash the energy of a Seal spell upon an enemy. Does not consume the Seal. Refer to individual Seals for Judgement effect.
+0041	Viciously bites enemy appendages for 11 to 13 damage and reduces the effectiveness of any healing by 50% for 10 sec.
+0042	Weakens the target enemy, reducing melee attack power by 106 and reducing the effectiveness of any healing by 20%. Lasts 2 min
+0043	Weakens the target enemy, reducing melee attack power by 43 and reducing the effectiveness of any healing by 20%. Lasts 2 min.
+0044	Weaponmaster at top rank
+0045	Web on Discord noticed the spellbook said Instant while the Enhancement tree still had two points to put into Improved Ghost Wolf. The Instant came from Guzu's Shaman, which had that talent at 2/2. It cuts 1 sec per rank, so the untalented spell is a 2 sec cast, down from 3 in Classic, and the book now says so. No untalented Shaman has hovered it on footage yet, so the note on the tooltip says where the number comes from.
+0046	When activated, increases your physical damage by 20% and makes you immune to Fear effects, but lowers your armor and all resistances by 20%. Lasts 30 sec.
+0047	When activated, sacrifices your summoned Demon to enhance the opposing aspect of your power, granting you an effect that lasts 2 hrs. The effect is canceled if any Demon is summoned.\n\nImp: Increases your Shadow damage by 15%.\n\nVoidwalker: Restores 2% of your total Mana every 4 sec.\n\nSuccubus/Incubus: Increases your Fire damage by 15%.\n\nFelhunter: Restores 3% of your total Health every 4 sec.
+0048	When activated, sacrifices your summoned demon to grant you an effect that lasts 30 min. The effect is canceled if any Demon is summoned.Imp: Increases your Fire damage by 15%.Voidwalker: Restores 3% of total Health every 4 sec.Succubus/Incubus: Increases your Shadow damage by 15%.Felhunter: Restores 2% of total Mana every 4 sec.
+0049	When activated, this ability temporarily grants you 30% of your maximum hit points for 20 seconds. After the effect expires, the hit points are lost.
+0050	When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%. This effect lasts until you have caused 3 critical strikes with Fire spells.

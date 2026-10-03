@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WoW Forever Talent Calculator | Talents Forever</title>
+<meta name="description" content="Free WoW Forever talent calculator for all nine classes, with every talent and rank from the WoW Forever beta client. Plan a build, share it by link, check racials and compare every talent to Classic.">
+<meta property="og:title" content="WoW Forever talent calculator, all nine classes">
+<meta property="og:description" content="Plan a WoW Forever build for any of the nine classes, with every talent and rank straight from the beta client. Share it with a link, check the racials, and see what changed from Classic.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://talentsforever.com/">
+<link rel="canonical" href="https://talentsforever.com/">
+<meta property="og:image" content="https://talentsforever.com/assets/og.png?v=606d5957">
+<link rel="icon" href="/favicon.ico?v=565af7c7" sizes="48x48">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/icon-96.png?v=6fc1b80e">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png?v=22105b7e">
+<link rel="icon" type="image/png" sizes="512x512" href="/assets/icon-512.png?v=d2f4e401">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=ce0d30a6">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#121212">
+<meta name="apple-mobile-web-app-title" content="Talents Forever">
+<meta property="og:image:alt" content="Talents Forever, the WoW Forever talent calculator">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Talents Forever">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<!-- Google Analytics 4 -->
+
+
+
+<meta name="twitter:image" content="https://talentsforever.com/assets/og.png?v=606d5957">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Cinzel:wght@600;700&display=swap">
+
+<link rel="stylesheet" href="/lab/lab.css?v=8d2fd60a"><link rel="stylesheet" href="/lab/lab-home.css?v=7df4e179"></head>
+<body>
+<div class="app">
+  <div class="dragbar" id="dragbar"><span class="dmove" id="dmove" title="Grab anywhere on this bar to move the page. Sideways or down, wherever your cam isn't.">&#10021; drag to move</span><span class="dmid">Stream layout <small>&middot; position remembered on this browser &middot; <a href="#" id="dreset">reset</a></small></span><span class="dsize" id="dsize" title="Drag to make the page wider or narrower">&#8596; drag to resize</span></div>
+  <header class="masthead">
+    <span class="mbookw" aria-hidden="true"><img class="mbook" src="/lab/assets/book-108.webp" srcset="/lab/assets/book-108.webp 2x, /lab/assets/book-162.webp 3x" alt="" width="54" height="54"></span>
+    <div class="mtext"><div class="brand">Talents Forever</div><h1 class="tag"><b>WoW Forever talent calculator</b>, talents from the beta client</h1></div>
+    <span class="pinw" id="pinw" hidden></span>
+    <a class="gift addon" id="addonBtn" href="/ideas" title="The in-game addon is out. Get it on CurseForge, free."><span class="pico"><img src="/assets/icons/trade_engineering.jpg?i=2" alt="" width="28" height="28"></span><span class="gt">Get the in-game addon</span></a>
+    <button class="whatsnew" id="whatsNew" type="button" aria-controls="logDrawer" aria-expanded="false">What's new<i class="dot" aria-hidden="true"></i></button>
+  </header>
+  <!-- one line, once per device, never a popup: shown until dismissed or until What's new has been opened -->
+  <div class="dback" id="logBack" hidden></div>
+  <aside class="drawer" id="logDrawer" hidden aria-label="What's new">
+    <div class="dhead"><b>What's new</b><button class="x" id="logClose" type="button" aria-label="Close">&times;</button></div>
+    <button class="dhandle" id="logWide" type="button" aria-pressed="false" title="Wider"><i>&lsaquo;</i><span>Expand</span></button>
+    <div class="dswitch" id="dswitch"></div>
+    <div class="dbody"><section class="topic game" id="topicGame"></section>
+    <section class="topic site" id="topicSite"></section>
+    <ol class="dlist" id="logList" hidden></ol>
+    <ol class="dlist" id="buildLog" hidden></ol>
+    <section class="dmail" id="dmail" hidden aria-label="Get What's new by email"></section></div>
+    <p class="dfoot">The in-game addon is out: <a href="/ideas">get it, and say what would help</a>. Spotted something off? <a id="logFeed" href="https://www.reddit.com/message/compose/?to=baldwinbuilds&amp;subject=Talents%20Forever" target="_blank" rel="noopener">Message me on Reddit</a>.</p>
+  </aside>
+
+  <div class="topbar">
+    <nav class="classes" id="classes" aria-label="Class"></nav>
+    <div class="controls">
+      <label><span class="lvl-word">Level</span> <select id="level" aria-label="Level"></select></label>
+      <button class="btn" id="reset">Reset</button>
+      <button class="btn" id="copy">Copy link</button>
+      <select id="loadBuild" aria-label="Load a saved build"><option value="">My builds</option></select>
+      <span class="spacer"></span>
+      <button class="btn" id="streamMode" aria-pressed="false" title="Streaming? Move and resize the page so your cam never covers a talent. Turns off on every visit; your position is remembered on this browser."><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M3 7h10a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2zm12 3.5 6-3v9l-6-3v-3z" fill="currentColor"/></svg> Stream layout</button>
+      <button class="btn" id="cmp" aria-pressed="false" title="Highlight what changed from the original Classic trees">Compare to Classic</button>
+      <button class="btn" id="prBtn" aria-pressed="false" title="Show on every talent how many complete builds made here take it. Green is 60% or more, grey under 15%. The icons pick which builds are counted: all of the class, or the builds that lead in one tree.">Pick rates</button>
+      <span class="prset" id="prset" role="group" aria-label="Which builds are counted"></span>
+    </div>
+  </div>
+
+  <div class="banner" id="classBanner">
+    <span class="emblem" aria-hidden="true"><img id="mastIcon" src="/assets/icons/class_warrior.jpg?i=2" alt=""></span>
+    <div class="btext"><h2 id="bannerName"></h2><div class="bsum" id="bannerSum"></div></div>
+    <div class="bsite" aria-hidden="true"><span class="bs1">talentsforever.com</span><span class="bs2">WoW Forever talent calculator</span></div>
+    <div class="bbars" id="bannerBars"></div>
+  </div>
+
+  <div class="status"><strong>Talents</strong><button class="btn sreset" id="reset2" type="button" title="Clear every point in this build and start over">&#8635; Reset build</button><div class="r"><b id="split">0/0/0</b><span class="left">Points left: <b id="ptsLeft">51</b></span><span class="lvl">Level needed: <b id="lvlneed">10</b></span></div></div>
+  <div class="legend"><span><i style="background:#4ade80"></i>New in Forever</span><span><i style="background:#fbbf24"></i>Changed (text, ranks or position)</span><span><i style="background:#60a5fa"></i>Moved, same effect</span><span>Dimmed = unchanged from Classic</span><span>Classic text appears in each tooltip; removed Classic talents are listed under each tree.</span></div>
+  <div class="stale" id="stale" hidden></div>
+  <div class="trees" id="trees"></div>
+  <details class="legacy fold slim" id="levelOrder" hidden><summary><span class="lfan" aria-hidden="true"><img src="/assets/icons/inv_misc_map_01.jpg?i=2" alt=""></span><span class="ltitle"><strong>Leveling order</strong><span>Your points, level by level.</span></span><span class="lpill"><span class="show">Show</span><span class="hide">Hide</span></span></summary><ol class="lvlist" id="levelList"></ol><p class="lnote" id="orderNote"></p></details>
+
+  <section class="yours" id="yours" aria-label="Save and share this build">
+    <div class="yrow"><span class="ylab">My builds</span><button class="btn primary" id="saveBuild">Save this build</button><span class="bname" id="bname" hidden><input id="bnameIn" maxlength="40" aria-label="Build name" placeholder="Name this build"><button class="btn primary" id="bnameOk" type="button">Save</button><button class="btn" id="bnameNo" type="button">Cancel</button></span><div class="blist" id="buildList"></div><span class="bhint" id="buildHint">Kept on this device. Come back any time and pick it up here.</span><span class="bkup"><button class="btn" id="copyBuilds" type="button" hidden>Back up</button><button class="btn" id="addBuilds" type="button">Restore</button></span><div class="pastebox" id="pasteBox" hidden><textarea id="pasteIn" rows="4" aria-label="Paste build links, one per line" placeholder="Paste your backup here, or any build links, one per line. A name before a link is kept: Deep Prot https://talentsforever.com/warrior/60/..."></textarea><span class="ybtns"><button class="btn primary" id="pasteOk" type="button">Add builds</button><button class="btn" id="pasteNo" type="button">Cancel</button></span></div></div>
+    <div class="yrow"><span class="ylab">Share</span><input id="shareLink" readonly aria-label="Shareable link"><span class="ybtns"><button class="btn" id="copy2">Copy link</button><button class="btn" id="shareNative" hidden>Send to a friend</button></span></div>
+    <div class="yrow tc"><span class="ylab">Theorycraft</span><span class="ybtns"><button class="btn primary" id="copyAI" title="Copies this build with every talent's full text, for pasting into an AI"><img class="tcico" src="/assets/icons/spell_nature_crystalball.jpg?i=2" alt="">Copy build for AI</button><a class="btn" id="classData" href="/export/warrior.json" title="This class as plain JSON: every talent at every rank, spellbook, tooltips, racials">Raw data</a></span><span class="bhint">This copies the build with every talent's full text, so you can paste it into an AI and ask it something.</span></div>
+  </section>
+
+  <section class="racials" id="racials">
+    <div class="rh"><strong>Racials</strong><label><input type="checkbox" id="allRaces"> Show races that can't be <span id="raceCls">this class</span></label><span class="cnt" id="raceCnt"></span><button type="button" class="btn raceall" id="raceAll" hidden>Open all</button></div>
+    <div id="classRacials" hidden></div>
+    <div class="factions" id="factions"></div>
+  </section>
+
+  <details class="legacy" id="legacy">
+    <summary>
+      <span class="lfan" aria-hidden="true"><img src="/assets/icons/inv_misc_map_01.jpg?i=2" alt=""><img src="/assets/icons/inv_misc_coin_01.jpg?i=2" alt=""><img src="/assets/icons/trade_engineering.jpg?i=2" alt=""></span>
+      <span class="ltitle"><strong>Legacy perks</strong><span id="legacySub">27 account-wide perks, 16 points.</span></span>
+      <span class="lpill"><span class="show">Show</span><span class="hide">Hide</span></span>
+    </summary>
+    <p class="lnote" id="legacyNote"></p>
+    <div class="ltrees" id="legacyTrees"></div>
+    <p class="crs">Source: the Forever beta client, build 1.60.1.70170. Positions, prerequisites, point gates and every rank's text are the client's; the rules will be checked in game.</p>
+  </details>
+  <footer class="foot2">
+    <section class="legacy fold static how" id="foldHow">
+      <div class="fhead">
+        <span class="ltitle"><strong>How it works</strong></span>
+        <span class="states" aria-hidden="true">
+          <span class="lg"><span class="talent avail"><img alt=""><span class="rk">0/5</span></span><small>open</small></span>
+          <span class="lg"><span class="talent partial"><img alt=""><span class="rk">3/5</span></span><small>learning</small></span>
+          <span class="lg"><span class="talent maxed"><img alt=""><span class="rk">5/5</span></span><small>maxed</small></span>
+          <span class="lg"><span class="talent locked"><img alt=""><span class="rk">0/3</span></span><small>locked</small></span>
+        </span>
+      </div>
+      <ul>
+        <li class="desk"><b>Add a point</b> left-click. <b>Remove</b> right-click or <kbd>Shift</kbd>+click.</li>
+        <li class="mob"><b>Tap</b> to read a talent, <b>tap again</b> to add a point, <b>hold</b> to remove one.</li>
+        <li><b>Rows</b> open every 5 points in a tree. An <b>arrow</b> means the talent above has to be maxed first.</li>
+        <li><b>Level</b> sets your points: one per level from 10, so 51 at 60. <b>Level needed</b> tells you when the build is complete.</li>
+        <li><b>Copy link</b> shares the exact build. <b>Save this build</b> keeps it on this device under My builds.</li>
+        <li><b>Compare to Classic</b> colours what is new, changed or moved since the original trees.</li>
+      </ul>
+      <div class="cvs" id="classVs">
+        <ol class="steps">
+          <li><span class="talent maxed" aria-hidden="true"><img src="/assets/icons/ability_hunter_eagleeye.jpg?i=2" alt=""><span class="rk">1/2</span></span><div><b>From the beta client</b><span id="cvsRead"></span></div></li>
+          <li><span class="talent maxed" aria-hidden="true"><img src="/assets/icons/inv_scroll_03.jpg?i=2" alt=""><span class="rk">2/2</span></span><div><b>Readers catch the rest</b><span>Corrections come in on Reddit and Discord, get checked against the beta client, and are credited in</span><button class="wnpill" id="wnlink" type="button" aria-controls="logDrawer">What's new<i aria-hidden="true"></i></button></div></li>
+        </ol>
+      </div>
+    </section>
+    <section class="about" id="foldAbout">
+      <p><b>Talents, every rank, the racials and the Legacy perks come from the WoW Forever beta client</b>, build 1.60.1.70170, with the 1 to 2 Oct server hotfixes on the Warrior trees and three Warrior spells (Whirlwind, Bloodthirst and Berserker Rage): those are not in the client's files, so they were read from the beta's hotfix cache by other readers and checked against Blizzard's notes. The spellbooks come from the same files, every trainer spell to level 60. Icons and art are Blizzard's.</p>
+      <p><b>The beta runs until 21 October</b>, and the game launches 4 November. The site follows every beta build, and What's new lists what changed.</p>
+      <p class="fine">Calculators: <a href="/warrior">Warrior</a> · <a href="/paladin">Paladin</a> · <a href="/hunter">Hunter</a> · <a href="/rogue">Rogue</a> · <a href="/priest">Priest</a> · <a href="/shaman">Shaman</a> · <a href="/mage">Mage</a> · <a href="/warlock">Warlock</a> · <a href="/druid">Druid</a>.</p>
+      <p class="fine">On this site: <a href="/racials">racials</a> · <a href="/abilities">new abilities</a> · <a href="/legacy">Legacy perks</a> · <a href="/talents">every talent in words</a> · <a href="/ideas">ideas and the addon</a> · <a href="/">calculator</a>.</p>
+      <p class="fine"><b>From the archive:</b> <a href="/wrapped">Pre-beta Wrapped</a>, the site's first week in numbers, before the beta opened.</p>
+      <p class="fine"><b>Raw data:</b> <a href="/data.json">talentsforever.com/data.json</a> has all of it as JSON. Use it however you like, <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a>, just credit the site with a link.</p>
+      <p class="fine"><b>Made by Chris Baldwin.</b> If you enjoyed this, give me a follow on <a href="https://x.com/baldwinbuilds" target="_blank" rel="noopener" onclick="track('x_clicked')">X, @baldwinbuilds</a>.</p>
+      <p class="fine press"><a href="https://www.pcgamer.com/games/world-of-warcraft/talent-calculators-have-already-been-assembled-for-world-of-warcraft-forever-and-theres-some-real-interesting-stuff-in-here/" target="_blank" rel="noopener" onclick="track('press_clicked')"><img src="/assets/pcgamer.png" alt="" width="20" height="20">Featured in PC Gamer</a>: "a tremendous bit of work."</p>
+      <p class="fine">Fan-made. Not affiliated with Blizzard Entertainment. <a href="/about">About</a> &middot; <a href="/contact">Contact</a> &middot; <a href="/terms">Terms</a> &middot; <a href="/privacy">Privacy</a>.</p>
+    </section>
+    <section class="legacy feedcard" id="feedCard">
+      <div class="feedrow">
+        <img class="fico" src="/assets/icons/inv_misc_note_02.jpg?i=2" alt="" onerror="this.remove()">
+        <div class="ftext"><strong>Spotted something off?</strong><span>A wrong rank, a missing spell, or something you wish the site did. Reddit is the fastest way to reach me and I read all of it.</span></div>
+        <a class="lpill" id="feedLink" href="https://www.reddit.com/message/compose/?to=baldwinbuilds&amp;subject=Talents%20Forever" target="_blank" rel="noopener">Message on Reddit</a>
+      </div>
+    </section>
+    <section class="legacy tipcard" id="tipCard" hidden>
+      <div class="tiprow">
+        <img class="goblin" src="/assets/goblin.png" alt="" aria-hidden="true">
+        <span class="bubble"><strong>Time is money, friend.</strong><span>Free, built by one person. A coffee keeps the servers up and the Claude Code addiction fed.</span></span>
+        <a class="lpill kofi" id="tipLink" href="" target="_blank" rel="noopener"><svg viewBox="0 0 24 20" width="22" height="18" aria-hidden="true"><path d="M2.5 3.5h13.5v7a5.5 5.5 0 0 1-5.5 5.5H8a5.5 5.5 0 0 1-5.5-5.5v-7z" fill="#fff" stroke="#1a1400" stroke-width="1.6" stroke-linejoin="round"/><path d="M16 6h1.8a3 3 0 0 1 0 6H16" fill="none" stroke="#1a1400" stroke-width="1.6" stroke-linecap="round"/><path d="M9.3 12.6 6.7 10a1.55 1.55 0 0 1 2.2-2.2l.4.4.4-.4a1.55 1.55 0 0 1 2.2 2.2l-2.6 2.6z" fill="#ff5e5b"/></svg>Contribute</a>
+      </div>
+    </section>
+    <div class="fbrand"><img src="/lab/assets/book-108.webp" alt="" width="40" height="40"><span class="fwm">Talents Forever</span><span class="fsub">WoW Forever talent calculator · open since BlizzCon 2026</span></div>
+  </footer>
+</div>
+<div class="tip" id="tip" hidden></div>
+<div class="sheet" id="sheet" hidden><button class="x" id="sheetClose" aria-label="Close">×</button><div class="tip-body" id="sheetBody"></div><div class="acts"><button class="rem" id="sheetRem">− Unlearn</button><button class="add" id="sheetAdd">+ Learn</button></div></div>
+<div class="ghost" id="ghost" hidden></div>
+<div class="toast" id="toast"></div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

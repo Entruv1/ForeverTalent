@@ -1,0 +1,50 @@
+0001	Increases the attack power of party members within 45 yards by 50. Lasts 30 min.
+0002	Increases the damage done by your Starfire, Moonfire and Wrath spells by.
+0003	Increases the damage you deal with physical attacks in all forms by 2%.
+0004	Increases the duration of your Chill effects by 1 sec and reduces the target's speed by an additional 4%.
+0005	Increases the effect of your next Curse of Weakness or Curse of Agony by 50%, or your next Curse of Exhaustion by 20%. Lasts 30 sec.
+0006	Increases the friendly target's armor by 142 and all attributes by 5 for 1 hour.
+0007	Increases the friendly target's armor by 34 for 1 hour.
+0008	Increases the radius of your Distract ability by 5 yds, and further reduces the Stealth detection of distracted enemies as though they were an additional 2 levels lower.
+0009	Increases the rogue's movement speed by 50% for 15 sec. Does not break stealth.
+0010	Increases the stealth detection of all party members within 30 yds of the Felhunter as if they were 6 levels higher.
+0011	Increases the target's Intellect by 15 for 1 hour.
+0012	Increases the target's Mana regeneration by 400% and allows 100% of the target's Mana regeneration to continue while casting. Lasts 20 sec.
+0013	Increases your Intellect by 4%. In addition, while in Bear or Dire Bear Form your Stamina is increased by 4% and while in Cat Form your Strength is increased by 4%.
+0014	Increases your ability to detect nearby targets with Stealth as if your level were increased by 1. Ineffective in Battlegrounds.
+0015	Increases your attack speed by 20%. In addition, attacks strike an additional nearby opponent. Lasts 15 sec.
+0016	Increases your chance to block attacks with your shield by 6% after being the victim of a critical strike. Lasts 10 sec or 5 blocks.
+0017	Increases your critical strike chance with all spells and abilities by 1% while you have an axe or a two-handed axe equipped.
+0018	Increases your critical strike chance with all spells and attacks by 1% while you have a mace or two-handed mace equipped.
+0019	Increases your critical strike chance with all spells and attacks by 2% while you have a sword or two-handed sword equipped.
+0020	Increases your movement speed by 15% while outdoors in Cat Form and increases your chance to dodge while in Cat Form by 2%.
+0021	Increases your pet's chance to Dodge by 50% and decreases the time between your pet's attacks by 30%. Lasts 12 sec.
+0022	Increases your ranged weapon critical strike damage bonus by 6%.
+0023	Increases your skill by 1 in your lowest tradeskill among your Primary and Secondary tradeskills. If you have already reached 300 skill in your two current Primary Tradeskills and all three Secondary Tradeskills, you will gain 2 to 4 of a random Elemental Essence.
+0024	Increases your spellcasting, melee, and ranged Haste by 1%.
+0025	Increases your target's armor by 8% for 15 sec after getting a critical effect from
+0026	Inflict searing pain on the enemy target, causing 107 to 125 Fire damage. Causes a high amount of threat.
+0027	Inflicts 10 Nature damage over 10 sec. Effect can stack up to 5 times on a single target.
+0028	Infuses the target with power, increasing their spell damage and healing by 20%. Lasts 15 sec.
+0029	Infuses the target's party and raid with brilliance, increasing their Intellect by 31 for 1 hour.
+0030	Instant, 1 hour cooldown. Cultivate a nearby herb, growing a duplicate you can harvest without requiring Herbalism skill. Each herb may only be cultivated once.
+0031	Instant, 10 min cooldown. Cannibalize 1,600 of your own Health over 15 sec to gain 1,600 Mana.
+0032	Instant, 10 min cooldown. Instantly heals the caster for 1,285 to 1,513.
+0033	Instant, 10 min cooldown. Rank 2 at 38: cannibalize 720 of your own health over 15 sec to gain 720 mana. Rank 1: 532 health for 440 mana.
+0034	Instant, 10 sec cooldown. Activate to slip into the shadows, reducing the chance for enemies to detect your presence. Lasts until cancelled or upon moving. Using this ability in combat discourages enemies from attacking you, but increases the cooldown to 2 min.
+0035	Instant, 10 sec cooldown. Slip into the shadows until you move; Night Elf Rogues and Druids stealth as if 1 level higher. Usable in combat: enemies are discouraged from attacking you, but the cooldown becomes 2 min.
+0036	Instant, 2 min cooldown. Escape any movement impairing effect and gain immunity to them for 3 sec.
+0037	Instant, 2 min cooldown. Glide downward through the air for 10 sec while controlling your direction of travel.
+0038	Instant, 2 min cooldown. Increases Attack Power and Spell Power by 10% for 15 sec.
+0039	Instant, 2 min cooldown. Instantly escape the effects of any movement impairing effect and gain immunity to those effects for 3 sec.
+0040	Instant, 2 min cooldown. Instantly removes all Charm, Fear and Sleep effects.
+0041	Instant, 2 min cooldown. Your next 3 damaging abilities cost less (50% less Mana, 40% less Rage, 20% less Energy; 15% less Mana for healers, who also heal 10% more) and deal 10% more damage.
+0042	Instant, 2 min cooldown. Your next 3 damaging or healing abilities cost 50% less Mana and do 10% more damage or healing. Read from the demo; a Warlock's tooltip only lists the damage half.
+0043	Instant, 3 min cooldown. Dramatically increases stealth detection for 20 sec.
+0044	Instant, 3 min cooldown. Increases your critical strike chance with all spells and attacks by 10% for 15 sec.
+0045	Instant, 3 min cooldown. Increases your spellcasting and attack speed by 10% for 10 sec.
+0046	Instant, 3 min cooldown. Instantly removes all Stun effects.
+0047	Instant, 3 min cooldown. Instantly removes and grants immunity to all Bleed, Poison, and Disease effects, and reduces all Physical damage taken by 10% for 8 sec.
+0048	Instant, 3 min cooldown. Instantly removes and grants immunity to all Curses and Banes, and reduces all Magical damage taken by 15% for 8 sec.
+0049	Instant, 3 min cooldown. Removes and grants immunity to all Curses and Banes, and reduces all Magical damage taken by 15% for 8 sec.
+0050	Instant. Allows the dwarf to sense nearby treasure, making it appear on the minimap.  Lasts until canceled.

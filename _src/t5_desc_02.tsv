@@ -1,0 +1,149 @@
+0	Additional Rage generated from landing Critical Strikes increased to 100% increased Rage (was 75%).
+1	Aggressive Mode
+2	Aggressive Mode has been brought back and can be found under the pet tab in your spell book.
+3	Aggressive Mode is back and can be found under the pet tab in your spell book.
+4	Air totems
+5	All Mage scrolls from comprehension have had an additional balance pass and can no longer be cast while moving.
+6	All Shapeshift Forms are now IMMUNE to Disarm effects.
+7	Anticipation moved to Row 2 (Was Row 1).
+8	Arcane Missiles no longer checks line of sight on each missile, just once at the beginning of the channel. So targets moving out of line of sight during the channel will not prevent the missiles.
+9	Bastion and Focused Rage
+10	Bear Form and Dire Bear Form now generate 75% increased Rage when landing a Critical Strike.
+11	Because of the above bug, our tests needed some correcting, so we did another pass on Fury Warrior.
+12	Berserker Rage is now available at level 30 (Was 32)
+13	Blizzard wrote these up for build 70170 and shipped them as server hotfixes on 1 to 2 Oct, so they are in the game and not in its files. The trees on this site carry them, read from the beta's hotfix cache by three independent readers and checked against these notes. The Dual Wield Specialization known bug above is about hit the talent no longer grants.
+14	Blizzard wrote these up for build 70170, but its game files don't have them yet. The calculator shows the trees as the game files have them.
+15	Blizzard wrote this up for build 70009. It reached the game with the server hotfixes of 1 to 2 Oct over build 70170, not in any build's files; the trees on this site carry it.
+16	Blizzard wrote this up for build 70009. No build since has it in its game files.
+17	Blood Craze no longer activates off of Bloodthirst casts.
+18	Bloodthirst's Attack Power ratio has been increased to 45% (Was 35%).
+19	Bloodthrill only activates off of Main Hand melee attacks. This includes Cleave and Heroic Strike.
+20	Booming Voice is now a 10/20/30/40/50% increase area of effect to your Shouts and a 5/10/15/20/25% reduction to their Rage costs.
+21	Cannibalize cannot be used if the caster is immune to Physical damage.
+22	Comprehension scrolls
+23	Contingency Plan (Gnome)
+24	Corrected an issue and now Contingency Plan can land critical hits.
+25	Corrected an issue and now Lacerating Strikes can land critical hits.
+26	Corrected an issue and now Rejuvenation can land critical hits.
+27	Corrected an issue and now Renew can land critical hits.
+28	Corrected an issue and now Riptide can land critical hits.
+29	Corrected an issue and now Tranquility can land critical hits.
+30	Corrected an issue and now Wild Growth can land critical hits.
+31	Creatures can once again only be skinned a single time before disappearing.
+32	Cultivation now has a player-level requirement for every Herb. The level required is equal to the Herb's level required to pick it divided by 5. Herbs that require a higher than 300 Herbalism skill to pick can be Cultivated at player level 60.
+33	Cure Poison (High Order Skyborne)
+34	Dark Sacrifice (Undead)
+35	Dark Sacrifice no longer breaks Crowd Control that breaks on damage.
+36	Death Wish is now required to reach the Flurry talent.
+37	Debuffs and threat
+38	Devouring Plague can now correctly critically strike.
+39	Drain Soul is now correctly interrupted if the Warlock begins casting another spell.
+40	Dual Wield Specialization no longer grants hit to your off-hand attacks.
+41	Dungeon quest XP
+42	Dungeon quests now reward 50% less extra experience beyond normal quest values.
+43	Echo of Justice
+44	Enemies can Parry and Block from behind if the player is close to them. Until this is fixed, it can be avoided by not being too close to targets.
+45	Enrage is no longer required to reach the Flurry talent.
+46	Eureka does not affect every Damaging Spell or Healing Spell for some classes. This is fixed in a later build.
+47	Excavation Site: Wetlands
+48	Faerie Fire no longer resets your swing timer when used.
+49	Feral Charge (Cat)
+50	Fixed a bug causing Swipe to not scale with Attack Power. It will now correctly gain 3% of the Druid's attack power.
+51	Fixed a bug that was causing Dual Wield Specialization to grant its increase to Hit Chance to both weapons.
+52	Fixed a bug where Feral Charge (Cat) could be cast on allies.
+53	Fixed a bug with Echo of Justice, causing it to have a higher than intended chance to activate.
+54	Fixed an issue where Consecration could pull targets vertically above or below the caster.
+55	Fixed an issue where Consecration would fail to apply its increased damage effect to some targets.
+56	Fixed an issue where Consecration's Z axis wasn't functioning consistently.
+57	Fixed an issue where Expose Armor missing would cause you to lose all of your combo points.
+58	Fixed an issue where Pet Happiness was not decreasing once your pet was at max loyalty.
+59	Fixed an issue where Shadow Word: Death was always benefitting from the Early Demise talent regardless of the target's health %.
+60	Fixed an issue where Totemic Recall was not restoring Mana.
+61	Fixed an issue with Unbridled Rage having a lower proc chance than intended.
+62	Flametongue Totem is no longer able to be stacked by repeatedly casting Flametongue Totem.
+63	Flametongue Totem no longer has a duration and is instantly replaced when placing another totem.
+64	Flametongue Totem no longer stacks with Flametongue Weapon.
+65	Flametongue Totem no longer stacks with Windfury Totem.
+66	Furious Howl Attack Power bonus reduced 40%.
+67	Hellfire can now critically strike.
+68	High Order Skyborne can now do the quest "Power Over Poison" to learn the Cure Poison spell.
+69	Honor cap
+70	Honor costs
+71	Honor costs for PvP gear and upgrade tokens have been adjusted, with most item costs increasing by approximately 50% to better align with gear acquisition targets.
+72	If the caster cannot be found or is too far away, Thorns reverts to its base values.
+73	If you have not recently changed your talents, the cost is now 1 silver to re-spec. This is temporary for the Beta only. After your first talent reset, the subsequent cost will be much higher, but it will drop to 1 silver after 1 hour has passed.
+74	Ignite no longer double dips on % damage increase modifiers.
+75	Improved Berserker Rage moved to Row 5 of Fury (Was Row 6).
+76	Improved Bloodrage moved to Row 1 (Was Row 2).
+77	Improved Disarm moved to Row 3 (Was Row 4).
+78	Improved Revenge moved to Row 2 (Was Row 3).
+79	Improved Scorch's Fire Vulnerability will not roll a second time to see if it resists.
+80	Improved Shield Bash moved to Row 4 (Was Row 5).
+81	Iron Will moved to the Row 1 of Protection (Was Row 2 of Fury).
+82	Level cap
+83	Low-rank spells
+84	Mages who learn Research can be prevented from accessing it.
+85	Multiple debuffs like Faerie Fire and Demoralizing Shout don't cause threat.
+86	New Dungeon - Excavation Site: Wetlands (26-31).
+87	New Talent Furious Precision in Row 3 of Fury. Furious Precision increases your chance to hit with off-hand attacks by 4/7/10%.
+88	New Talent Gore Drinker in Row 6 of Fury, requires the Enrage talent. Your Enrage, Berserker Rage, Bloodrage, Death Wish, and Bloodthirst abilities cause your next 3 melee attacks to restore 0.5/1% of your maximum Health.
+89	New Talent Lingering Rage in Row 2 of Fury. Lingering Rage increases the time before your Rage begins to decay when leaving combat by 2/4/6/8/10 seconds.
+90	On the character sheet, when mousing over Spell Damage and Spell Healing, it is now explained that spells cast using spell ranks vastly below your current level receive less benefit from your Spell Damage and Spell Healing and have a reduced chance to activate your Class abilities and Talents. (examples: Frostbite and Omen of Clarity)
+91	Our goal here is to give Fury more access to utility and meaningful choices early in the tree for leveling, and free up points later for more choices instead of being stuck placing points into Enrage to get Flurry.
+92	Our goal is to give non-shield users a clear path to the middle of the tree, where Protection could serve as a PvP tech secondary specialization, with more access to Improved Bloodrage, Iron Will, Improved Disarm, Last Stand, and Improved Shield Bash.
+93	Parry and Block from behind
+94	Pet Happiness
+95	Pet ability ranks
+96	Players can now level up to a maximum of level 30.
+97	Players now generate 75% increased Rage when landing a critical strike with a basic attack.
+98	Players now have access to Razorfen Downs (25+) and Uldaman (30+) …
+99	Power Word: Shield can now always overwrite an existing Power Word: Shield on a target that does not have Weakened Soul.
+100	Queueing Heroic Strike will no longer increase off-hand hit chance.
+101	Rage from crits
+102	Raging Blows no longer causes your Whirlwind to strike with your offhand. Whirlwind will now always strike with both weapons without requiring a talent point.
+103	Raging Blows now reduces the Rage cost of your Cleave and Whirlwind abilities by 3.
+104	Razorfen Downs and Uldaman
+105	Rend and Sunder Armor
+106	Rend and Sunder Armor will now instantly tap enemies to the Warrior.
+107	Research
+108	Respec cost
+109	Retribution Aura uses the target's spell power instead of the Paladin's.
+110	Retribution Aura will now dynamically update its values based on the caster's spell power.
+111	Sap now correctly flags the Rogue for PvP when used on a target that is PvP flagged.
+112	Shadow Weaving can no longer fail to apply.
+113	Shapeshift forms
+114	Shenthul in Orgrimmar
+115	Shenthul in Orgrimmar will now train Windshaper Skyborne.
+116	Skinning
+117	Sonic Blast ability now properly available to Bat pets.
+118	Soul Harvesting has been renamed to Soul Harvest. It now correctly grants its 50/100% increase to Mana regeneration.
+119	Starshards (Night Elf)
+120	Starshards now correctly gains resistance to spell pushback from the Twilight Focus talent.
+121	Sunder Armor: Corrected the threat values on all ranks, including a small increase to threat generated from Attack Power.
+122	Swapped the positions of the Bastion (Row 5) and Focused Rage (Row 6) talents.
+123	Talenting out of Lone Wolf will no longer cause the Hunter to have -4% damage while their pet is active.
+124	Tame Beast no longer works on Beasts that are higher than the Hunter's level.
+125	The Boundless Rage talent has been removed.
+126	The Honor cap has been increased from 15,000 to 25,000 to better accommodate the above new costs.
+127	The Improved Cleave talent has been removed.
+128	The tooltip will not update correctly until a future update.
+129	There were some tameable beasts with ranks of pet abilities that were too high level for that creature. They have all been fixed. This could result in a bug where your pet "forgot" the pet ability which should not happen after this fix.
+130	This is a gameplay adjustment to match how it felt in original WoW. If a Druid gets disarmed before entering a form, their form will not remove the Disarm effect, and they will also deal reduced damage for the duration of the disarm effect, so disarming a Druid before they shift will result in them dealing reduced damage.
+131	This means that Shadow Word: Pain activates it on cast, but not on periodic damage. Distract won't activate it, you can't pull Rogues and Druids out of Stealth with Distract and it activating, and you won't activate it off of Pickpocketing. Spells like Polymorph already didn't get broken by Touch of the Grave, but Polymorph will no longer be able to activate it.
+132	Thorns will now dynamically update its values based on the caster's spell power.
+133	Toughness has been removed.
+134	Tranquil Air Totem, Windfury Totem, and Grace of Air Totem no longer stack together even if used by different Shamans in the same group.
+135	Unbridled Wrath no longer grants twice as much Rage to two-handed weapons.
+136	Using a Rank 1 Frostbolt at level 60 will result in a 0% chance to get a Frostbite activation. So you now are making a decision between getting a slow off quickly, or using a spell that can potentially get a Frostbite activation, instead of getting both.
+137	Voidwalker Sacrifice
+138	Voidwalker Sacrifice now correctly scales with 10% of the Warlock's spell healing.
+139	Wands
+140	Wands: Wands no longer gain any additional damage from the user's spell damage.
+141	Warriors' Dual Wield Specialization is granting both your Main hand and Off-hand 2/4/6/8/10% hit chance. It should only be granted to your Off-hand.
+142	We appreciate the feedback on leveling speed as we continue ongoing discussions about the Beta. As part of those discussions, we've decided to reduce the amount of XP granted from dungeon quests with this release. Certain quest rewards have also been recalibrated.
+143	We wanted to give players Focused Rage sooner to smooth out progression, as opposed to more damage from Bastion. This should smooth out some of the feeling while leveling as Protection before obtaining Shield Slam.
+144	Winter's Chill's application does not roll to see if it is resisted, since the original spell needed to hit.
+145	Wizard Oil
+146	Wizard Oil: Minor Wizard Oil has been reverted to Classic Era value of 8 spell power, Lesser Wizard Oil to 16, and Wizard Oil to 24. Brilliant Wizard Oil remains unchanged.
+147	WoW Forever Beta Development Notes, September 24
+148	WoW Forever Beta Development Notes, updated October 1

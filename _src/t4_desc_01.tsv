@@ -1,0 +1,25 @@
+0001	15 Rage Melee Range; 1.5 sec cast 15 sec cooldown
+0002	15 Rage Melee Range; 1.5 sec cast 18 sec cooldown
+0003	15 Rage | Melee Range | Instant | 20 sec cooldown | Requires Two-Handed Axes, Two-Handed Maces, Polearms, Two-Handed Swords, Staves
+0004	150 Mana | Instant | 10 sec cooldown | Requires Shields
+0005	5 Mana Melee Range; Instant 10 sec cooldown
+0006	An instant strike that causes 29% weapon damage plus an additional 4 to 6 as Holy damage.
+0007	Applies Light's Vigil to the target for 30 sec. Your next Holy Shock cast on them triggers no cooldown and causes enemy targets to suffer 175 to 189 Holy damage and refund 75% of Light's Vigil's Mana cost, or allied targets to heal their party for 325 to 343. The Paladin may only have one Light's Vigil active per party.
+0008	Increases the critical strike chance of your Holy Shock and Holy Strike spells by 12%, and all other spells by 4%.
+0009	Increases the critical strike chance of your Holy Shock and Holy Strike spells by 15%, and all other spells by 5%.
+0010	Increases the critical strike chance of your Holy Shock and Holy Strike spells by 3%, and all other spells by 1%.
+0011	Increases the critical strike chance of your Holy Shock and Holy Strike spells by 6%, and all other spells by 2%.
+0012	Increases the critical strike chance of your Holy Shock and Holy Strike spells by 9%, and all other spells by 3%.
+0013	Increases the damage of your Holy Strike ability by 20% and causes it to refresh all Judgement effects on the target.
+0014	Increases the damage you deal with two-handed melee weapons by 4%.
+0015	Increases your Physical and Holy damage dealt by 1% for 30 sec after landing a non-periodic critical strike. Stacks up to 3 times.
+0016	Increases your Physical and Holy damage dealt by 2% for 30 sec after landing a non-periodic critical strike. Stacks up to 3 times.
+0017	Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a non-periodic critical strike. Stacks up to 3 times.
+0018	Reduces the Mana cost of your Seal spells by 20%, and when you replace your Seal of Command, Seal of Righteousness, Seal of Fury, or Seal of Justice with a different Seal, gain an Echo of that Seal. Your next melee attack applies the replaced Seal's effects, consuming the Echo.
+0019	Reduces the global cooldown and cast time of your Slam ability by 0.25 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 1.5 sec.
+0020	Reduces the global cooldown and cast time of your Slam ability by 0.50 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 3 sec.
+0021	Your Main Hand melee attacks against enemies afflicted by your Rend have a 12% chance to allow the use of your Overpower ability on the target. Lasts 6 sec.
+0022	Your Main Hand melee attacks against enemies afflicted by your Rend have a 16% chance to allow the use of your Overpower ability on the target. Lasts 6 sec.
+0023	Your Main Hand melee attacks against enemies afflicted by your Rend have a 20% chance to allow the use of your Overpower ability on the target. Lasts 6 sec.
+0024	Your Main Hand melee attacks against enemies afflicted by your Rend have a 4% chance to allow the use of your Overpower ability on the target. Lasts 6 sec.
+0025	Your Main Hand melee attacks against enemies afflicted by your Rend have a 8% chance to allow the use of your Overpower ability on the target. Lasts 6 sec.

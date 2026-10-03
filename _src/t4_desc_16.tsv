@@ -1,0 +1,25 @@
+0001	1.60.1.70009
+0002	250 Mana, Instant. The caster is surrounded by shadows. When a spell, melee or ranged attack hits the caster, the attacker will be struck for 96 Shadow damage. Attackers can only be damaged once every few seconds. This damage causes no threat. 3 charges. Lasts 10 min.
+0003	As in the game's files, build 1.60.1.70009: rank 4 reads 131 damage, below rank 3's 180.
+0004	Baseline Ret strike on a 10 sec cooldown: weapon damage plus Holy. Rank 5 by 38. Several talents build on it.
+0005	Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy for 108 Nature damage over 12 sec. Stacks up to 5 times on a single target. 105 charges.
+0006	Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy for 136 Nature damage over 12 sec. Stacks up to 5 times on a single target. 105 charges.
+0007	Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy for 92 Nature damage over 12 sec. Stacks up to 5 times on a single target. 180 charges.
+0008	Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy, reducing all healing effects used on them by 105 for 15 sec.
+0009	Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy, reducing all healing effects used on them by 128 for 15 sec. Stacks up to 5 times on a single target. 135 charges.
+0010	Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy, reducing all healing effects used on them by 135 for 15 sec.
+0011	Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy, reducing all healing effects used on them by 165 for 15 sec. Stacks up to 5 times on a single target. 160 charges.
+0012	Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy, reducing all healing effects used on them by 55 for 15 sec.
+0013	Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy, reducing all healing effects used on them by 67 for 15 sec. Stacks up to 5 times on a single target. 90 charges.
+0014	Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy, reducing all healing effects used on them by 75 for 15 sec.
+0015	Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy, reducing all healing effects used on them by 92 for 15 sec. Stacks up to 5 times on a single target. 115 charges.
+0016	Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy, slowing their movement speed by 50% for 12 sec.
+0017	Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy, slowing their movement speed by 70% for 12 sec.
+0018	Poisons
+0019	Rank 3 by 38 (Classic reached that at 46) and it has an 18 sec cooldown now.
+0020	Sep 13 to 26, 2026, updated daily
+0021	Still a 3 sec cast, but Improved Ghost Wolf now takes 1 sec off at rank 1 and the whole 3 sec at rank 2, and lets it work indoors, so at 2/2 it is instant, as Guzu's tooltip showed.
+0022	The beta's own tooltip reads 1,800 charges here. That is the 30 minute duration in seconds, a slip in the game's text; the recipe's data says 130.
+0023	ing Powder
+0024	recipes: each one makes the poison you put on a weapon
+0025	since the Sep 24 patch (build 70009), updated daily

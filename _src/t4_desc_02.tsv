@@ -1,0 +1,25 @@
+0001	5 Mana Melee Range; Instant 12 sec cooldown
+0002	60 Energy | Melee Range | Instant | Requires Daggers
+0003	A powerful kick that deals 100% melee weapon damage and increases movement speed by 30% for 3 sec.
+0004	As in the game's files, build 1.60.1.70009: the Imp gives Shadow damage and the Succubus Fire, the other way round from Classic.
+0005	Bite the target for 100% normal damage plus 26.
+0006	Casts a bolt of lightning at the target for 44 to 52 Nature damage.
+0007	Causes 15 to 17 Nature damage to the target.
+0008	Causes your Primal Bite ability to strike up to 3 targets, removes its cooldown, and increases the critical strike chance of your Combo Point-generating abilities by 100%. Clears and grants immunity to Fear effects for the duration. Lasts 15 sec.
+0009	Converts 30 Health into 30 Mana for you. Spirit increases the amount converted.
+0010	Creates a Greater Firestone which can be used to enchant your weapon with Fire, increasing your spell critical strike chance by 2% and the damage done by your Fire spells by up to 17.\n\nConjured items disappear if logged out for more than 15 minutes.
+0011	Increases your Agility by 10%.
+0012	Increases your Agility by 4%.
+0013	Increases your Agility by 8%.
+0014	Increases your attack speed by 30% for 25 sec.
+0015	Reduces the cooldown of your Fire Blast spell by 1 sec. Killing a non-trivial target increases the critical strike chance of your next Fire Blast cast within 30 sec by 25%.
+0016	Reduces the cooldown of your Fire Blast spell by 2 sec. Killing a non-trivial target increases the critical strike chance of your next Fire Blast cast within 30 sec by 50%.
+0017	Reduces the cost of your Maul, Primal Bite, Swipe, Claw, and Rake abilities by 1 Rage or Energy.
+0018	Reduces the cost of your Maul, Primal Bite, Swipe, Claw, and Rake abilities by 2 Rage or Energy.
+0019	Reduces the cost of your Maul, Primal Bite, Swipe, Claw, and Rake abilities by 3 Rage or Energy.
+0020	Reduces the cost of your Maul, Primal Bite, Swipe, Claw, and Rake abilities by 4 Rage or Energy.
+0021	Reduces the cost of your Maul, Primal Bite, Swipe, Claw, and Rake abilities by 5 Rage or Energy.
+0022	Reduces the mana cost of your Devouring Plague by 50%.\n\nTargets that die while Devouring Plague is active spreads it, jumping to a nearby enemy within 10 yards for the remaining duration.
+0023	Summons a Windfury Totem with 5 health at the feet of the caster. The totem enhances the melee attacks of all party members within 30 yards. Each main hand hit has a 20% chance of granting the attacker 1 extra attack with 95 extra melee attack power. Lasts 5 min.
+0024	You hurl molten lava at the target, dealing 150 to 192 Fire damage. If your Flame Shock is on the target, Lava Burst deals 20% increased damage.
+0025	Your non-periodic critical strikes with Fireball, Frostfire Bolt, Fire Blast, and Scorch grant Hot Streak for 20 sec. Hot Streak reduces the cast time of Pyroblast by 25%, stacking up to 3 times.

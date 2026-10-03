@@ -1,0 +1,10 @@
+﻿Absorbs 210 physical damage, draining mana instead. Drains 2 mana per damage absorbed. Lasts 1 min.	吸收210点物理伤害，改为消耗法力值。每吸收1点伤害消耗2点法力值。持续1分钟。
+Absorbs 300 physical damage, draining mana instead. Drains 2 mana per damage absorbed. Lasts 1 min.	吸收300点物理伤害，改为消耗法力值。每吸收1点伤害消耗2点法力值。持续1分钟。
+Absorbs 390 physical damage, draining mana instead. Drains 2 mana per damage absorbed. Lasts 1 min.	吸收390点物理伤害，改为消耗法力值。每吸收1点伤害消耗2点法力值。持续1分钟。
+Absorbs 480 physical damage, draining mana instead. Drains 2 mana per damage absorbed. Lasts 1 min.	吸收480点物理伤害，改为消耗法力值。每吸收1点伤害消耗2点法力值。持续1分钟。
+Absorbs 570 physical damage, draining mana instead. Drains 2 mana per damage absorbed. Lasts 1 min.	吸收570点物理伤害，改为消耗法力值。每吸收1点伤害消耗2点法力值。持续1分钟。
+Drains 315 to 335 mana from a target. For each mana drained in this way, the target takes 0.5 Shadow damage.	从目标身上吸取315到335点法力值。以此方式每吸取1点法力值，目标受到0.5点暗影伤害。
+Drains 450 to 476 mana from a target. For each mana drained in this way, the target takes 0.5 Shadow damage.	从目标身上吸取450到476点法力值。以此方式每吸取1点法力值，目标受到0.5点暗影伤害。
+Drains 585 to 619 mana from a target. For each mana drained in this way, the target takes 0.5 Shadow damage.	从目标身上吸取585到619点法力值。以此方式每吸取1点法力值，目标受到0.5点暗影伤害。
+Drains 746 to 788 mana from a target. For each mana drained in this way, the target takes 0.5 Shadow damage.	从目标身上吸取746到788点法力值。以此方式每吸取1点法力值，目标受到0.5点暗影伤害。
+Incapacitates the target for up to 45 sec. Only works on Humanoids that are not in combat. Any damage taken will break the effect. Only 1 target may be sapped at a time. Does not break Stealth.	使目标瘫痪最多45秒。只对脱离战斗的人形生物有效。受到的任何伤害都会中断该效果。同一时间只能闷棍 1 个目标。不会解除潜行。

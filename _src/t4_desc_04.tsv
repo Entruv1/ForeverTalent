@@ -1,0 +1,25 @@
+0001	<a href="https://www.reddit.com/user/Kiral_" target="_blank" rel="noopener">u/Kiral_</a> asked to see the poison recipes and what each one makes. The Rogue book has a Poisons tab now: every recipe, the level you learn it, the reagents, the poison it makes and what that poison does on your weapon. By level shows them too.<br><br><b>What changed since Classic.</b> Going by the beta files, poisons hit for about a third less and carry half again as many charges. Instant Poison's first rank did 19 to 25 damage with 40 charges in Classic. Now it is 13 to 17 with 60. Wound Poison went the other way: it cuts more healing, and it stacks up to five times. Crippling Poison and Blinding Powder are the same.<br><br>One oddity: the beta's own tooltip for Instant Poison IV says 1,800 charges. That is the 30 minute duration in seconds, printed in the wrong place. The recipe's data says 130, so the book shows 130 and says why.
+0002	<a href="https://www.reddit.com/user/Zerza" target="_blank" rel="noopener">u/Zerza</a> noticed Mutilate says Requires Daggers at the trainer and not on the site. The beta files leave weapon requirements out of a tooltip; the in-game readings have them. Three talents carried one: Mutilate, Holy Shield and Spearing Strike. All three say so now, on the talent and in the spellbook.
+0003	<a href="https://www.reddit.com/user/justrelaxok" target="_blank" rel="noopener">u/justrelaxok</a> turned on the stream layout, dragged the page narrower, and the arrows between talents stayed where they were. They were only redrawn when the browser window changed size. Now they move with the trees whichever way you resize the page.
+0004	Cost line changed, ranks 1 to 5.
+0005	Cost line changed, ranks 1 to 8.
+0006	Every class, every rank to level 60, straight from the game's own files. Pick a class to open its book.
+0007	Full spellbooks are in
+0008	Moved from Elemental Combat row 3 to Elemental row 6.
+0009	Moved from Elemental Combat row 6 to Elemental row 3.
+0010	Mutilate needs daggers, Holy Shield a shield, Spearing Strike a two-hander
+0011	No longer needs Call of Thunder.
+0012	Now needs Call of Thunder maxed first.
+0013	Now needs Elemental Alacrity maxed first.
+0014	Ranks 1 to 3 text changed.
+0015	Ranks 1 to 6 text changed.
+0016	Ranks 1 to 8 text changed.
+0017	Ranks 2 to 8 text changed.
+0018	Ranks 3 and 4 text changed.
+0019	Replaces Mangle in Feral Combat: Bite the target for 100% normal damage plus 26.
+0020	Replaces Primal Fury in Feral Combat: Gives you a 50% chance to gain an additional 5 Rage any time you get a critical strike while in Bear Form or Dire Bear Form. In addition, your non-periodic critical strikes from Cat Form abilities that generate Combo Points have a 50% chance to add an additional Combo Point.
+0021	Rogue: poisons are in the spellbook
+0022	Spellbooks
+0023	Spells · new
+0024	Stream layout: the arrows follow a resize
+0025	Your class abilities no longer require reagents purchaseable from vendors.

@@ -1,0 +1,50 @@
+0001	Creates a Spellstone which can be used to enchant your weapon with Shadow, increasing your spell haste by 1% and the damage done by your Shadow spells by up to 14.\n\nConjured items disappear if logged out for more than 15 minutes.
+0002	Creates a holy Lightwell near the priest. Members of your raid or party can click the Lightwell to restore 1,165 health over 10 sec. Being attacked cancels the effect. Lightwell lasts for 3 min or 5 charges.
+0003	Creates a holy Lightwell near the priest. Members of your raid or party can click the Lightwell to restore 800 health over 10 sec. Being attacked cancels the effect. Lightwell lasts for 3 min or 5 charges.
+0004	Creates a portal, teleporting group members that use it to Darnassus.
+0005	Creates a portal, teleporting group members that use it to Ironforge.
+0006	Creates a portal, teleporting group members that use it to Orgrimmar.
+0007	Creates a portal, teleporting group members that use it to Stormwind.
+0008	Creates a portal, teleporting group members that use it to Thunder Bluff.
+0009	Creates a portal, teleporting group members that use it to Undercity.
+0010	Creates a violent storm in the target area causing 132 Nature damage to enemies every 1 sec, and increasing the time between attacks by 20%. Lasts 10 sec. Druid must channel to maintain the spell.
+0011	Creates a violent storm in the target area causing 69 Nature damage to enemies every 1 sec, and increasing the time between attacks of enemies by 20%. Lasts 10 sec. Druid must channel to maintain the spell.
+0012	Curse of Agony, renamed. Bane of Doom the same. Banes and Curses are now separate, so you can run one of each.
+0013	Curses the target for 5 min, reducing Magic resistances by 30 and increases Magic damage taken by 4%. Only one Curse per Warlock can be active on any one target.
+0014	Damage dealt versus Beasts increased by 5%.
+0015	Damage dealt versus Elementals increased by 5%.
+0016	Deals 12 to 14 Fire damage to a target.
+0017	Dismiss your pet. Dismissing your pet will reduce its happiness by 50.
+0018	Dispels 1 Curse or Bane from a friendly target.
+0019	Dispels magic on the target, removing 1 harmful spell from a friend or 1 beneficial spell from an enemy.
+0020	Distract the target, causing threat.
+0021	Distract the target, causing threat. More effective than Distracting Shot (Rank 1).
+0022	Dodge chance increased by 1% and movement speed increased by 2%. Night Elf Rogues and Druids are harder to detect in Stealth as if they were 1 level higher.
+0023	Drains 198 to 210 mana from a target. For each mana drained in this way, the target takes 0.5 Shadow damage.
+0024	Drains the soul of the target, causing 170 Shadow damage over 15 sec. Non-trivial targets damaged by Drain Soul have a chance to grant you a Soul Shard. Non-trivial targets killed by Drain Soul will always grant you a Soul shard. Soul Shards are required for other spells.
+0025	Duration of Stun effects on you reduced by 20%.
+0026	Dwarf Priest
+0027	Each rank starts your talent points one level earlier. At 5/5: You gain talent points every level starting at level 5 instead of starting at level 10, but you still may not have more than 51 total talent points. (Rank 1 starts them at level 9. Read at 5/5 on Soda's BlizzCon stream.)
+0028	Earned from challenges, spent across the account. 16 points at launch. Some perks need points in their tree first, a few need the perk before them. The ? slots are placeholders.
+0029	Enslave Demon, renamed. Rank 1 by 38.
+0030	Entangles an enemy in a corrosive web, immobilizing them and dealing 12 Nature damage over 4 sec.
+0031	Entangling Roots in the Druid spellbook
+0032	Every Priest gets it. 3 min cooldown.
+0033	Every class page has a Popular builds fold under the trees now: the spec split, the five complete builds people shared, saved and opened most (one click loads any of them), the talents almost everyone takes and almost nobody takes, and a switch that paints each talent's pick rate onto the tree. It comes from the site's own visit counts for 12 to 17 Sep, 16,176 different builds, aggregated with no identities involved. Recounted since with the days that were missed, see the newer entry.
+0034	Every spell read off footage says Same as Classic, New in Forever, or Changed from Classic with the exact words highlighted, plus the old cost or cooldown line when that moved. 108 spells changed, 71 match, 50 are new. Spells still on Classic text keep saying so until they get read in beta. A Discord reader asked for this one.
+0035	Execute-style Shadow spell. Named by the Early Demise talent.
+0036	Exposes all hidden and invisible enemies within 10 yards of the targeted area, and staves off magical darkness for 30 sec.
+0037	Fade out, discouraging enemies from attacking you for 10 sec. More effective than Fade (rank 1).
+0038	Fills the Paladin with divine fury for 30 sec, causing melee attacks to deal an additional 14 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to 50% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy causes 66 to 72 Holy damage to an enemy and taunts the target to attack you for 4 sec.
+0039	Fills the Paladin with divine light for 30 sec, giving each melee attack a chance to heal the Paladin for 39. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for 40 sec, granting melee attacks made against the judged enemy a chance of healing the attacker for 25. Your melee strikes will refresh the spell's duration. Only one Judgement per Paladin can be active at any one time.
+0040	Fills the Paladin with divine wisdom for 30 sec, giving each melee attack a chance to restore 50 of the Paladin's mana. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for 40 sec, granting attacks and spells used against the judged enemy a chance to restore 33 mana to the attacker. Your melee strikes will refresh the spell's duration. Only one Judgement per Paladin can be active at any one time.
+0041	Fills the Paladin with holy spirit for 30 sec, granting each melee attack an additional 11 to 40 Holy damage. Slower weapons cause more Holy damage per swing. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will cause 96 to 104 Holy damage to an enemy.
+0042	Fills the Paladin with holy spirit for 30 sec, granting each melee attack an additional 2 to 8 Holy damage. Slower weapons cause more Holy damage per swing. Only one Seal can be active on the Paladin at any one time.
+0043	Fills the Paladin with the spirit of a crusader for 30 sec, granting 107 melee attack power. The Paladin also attacks 40% faster, but deals less damage with each attack. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for 40 sec, increasing Holy damage taken by up to 58. Your melee strikes will refresh the spell's duration. Only one Judgement per Paladin can be active at any one time.
+0044	Fills the Paladin with the spirit of justice for 30 sec, giving each melee attack a chance to stun for 2 sec. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for 10 sec, preventing them from fleeing. Your melee strikes will refresh the spell's duration. Only one Judgement per Paladin can be active at any one time.
+0045	Finishing move that causes damage over time, increased by your Attack Power. Lasts longer per combo point:\n 1 point : 105 damage over 8 secs\n 2 points: 151 damage over 10 secs\n 3 points: 207 damage over 12 secs\n 4 points: 270 damage over 14 secs\n 5 points: 342 damage over 16 secs
+0046	Finishing move that causes damage over time. Damage increases per combo point and by your Attack Power:\n 1 point : 124 damage over 12 sec.\n 2 points: 200 damage over 12 sec.\n 3 points: 277 damage over 12 sec.\n 4 points: 353 damage over 12 sec.\n 5 points: 429 damage over 12 sec.
+0047	Finishing move that causes damage per combo point and converts each extra point of energy into 1 additional damage. Damage is increased by your Attack Power.\n 1 point : 50-66 damage\n 2 points: 86-102 damage\n 3 points: 122-138 damage\n 4 points: 158-174 damage\n 5 points: 194-210 damage
+0048	Finishing move that causes damage per combo point, increased by Attack Power:\n 1 point : 14-22 damage\n 2 points: 25-33 damage\n 3 points: 36-44 damage\n 4 points: 47-55 damage\n 5 points: 58-66 damage
+0049	Finishing move that causes damage per combo point, increased by Attack Power:\n 1 point : 224-332 damage\n 2 points: 394-502 damage\n 3 points: 564-672 damage\n 4 points: 734-842 damage\n 5 points: 904-1,012 damage
+0050	Finishing move that exposes the target for 30 sec, reducing armor per combo point:\n 1 point : 180 armor\n 2 points: 360 armor\n 3 points: 540 armor\n 4 points: 720 armor\n 5 points: 900 armor

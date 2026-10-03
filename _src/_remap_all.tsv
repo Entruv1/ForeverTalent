@@ -1,0 +1,197 @@
+S	12	same	'To be added in future patch content'	将于后续补丁中加入
+T	13	same	`Requires ${t.gate} points in ${tree.name}`	需要在${tree.name}中投入 ${t.gate} 点
+T	14	same	`Requires ${need} points in ${tree.name} Talents`	需要在${tree.name}天赋中投入 ${need} 点
+T	15	same	`Requires ${tree.talents[p].max} point${tree.talents[p].max>1?'s':''} in ${t.req}`	需要先点满 ${t.req}（${tree.talents[p].max} 点）
+T	17	same	`All ${pool(cls)} ${cls === 'Legacy' ? 'Legacy ' : ''}points spent. Take one back from another ${cls === 'Legacy' ? 'perk' : 'talent'} to move it.`	已用尽${cls === 'Legacy' ? '传承' : ''}点数 ${pool(cls)} 点。要从其他${cls === 'Legacy' ? '专长' : '天赋'}上取回一点才能移动它。
+T	54	same	`Talented ${tr}/5 in your Legacy perks: talent points start at level ${10 - tr}. `	传承专长「天赋异禀」已点 ${tr}/5：天赋点从等级 ${10 - tr} 起算。 
+S	55	same	'In the order the points were placed. Take a point back and add it again to move it later in the order.'	按投入点数的顺序排列。取回一点再重新加上，就能把它移到顺序中的更后面。
+S	56	same	'This build came without an order, so it is listed tree by tree, row by row. Place points yourself and the order follows your clicks.'	该方案没有携带加点顺序，因此按天赋树逐行列出。你自己点击加点，顺序就会跟随你的点击生成。
+T	65	same	`27 account-wide perks. ${lTotal()} / ${L.points} spent.`	27 个账号通用专长。已投入 ${lTotal()} / ${L.points} 点。
+T	66	same	`27 account-wide perks, ${L.points} points.`	27 个账号通用专长，共 ${L.points} 点。
+T	84	same	`next unlock at ${next}`	下一项解锁于 ${next}
+T	93	same	`${t.name}, rank ${r} of ${t.max}`	${t.name}，等级 ${r}/${t.max}
+T	124	fix	`is a new spell${r.level ? ` <span class="soft">(from level ${r.level})</span>` : ''}`	是一个新增法术${r.level ? ` <span class="soft">（从等级 ${r.level} 起）</span>` : ''}
+T	128	fix	`takes ${esc(r.before)}'s spot in ${esc(r.tree)}${r.row ? ` <span class="soft">from level ${lv(r.row)}</span>` : ''}${r.desc ? ` <span class="soft">${esc(r.desc.replace(/\.$/, ''))}</span>` : ''}`	取代了 ${esc(r.before)} 在 ${esc(r.tree)} 中的位置${r.row ? ` <span class="soft">从等级 ${lv(r.row)} 起</span>` : ''}${r.desc ? ` <span class="soft">（${esc(r.desc.replace(/\.$/, ''))}）</span>` : ''}
+T	129	same	` <span class="soft">from level ${lv(r.row)}</span>`	 <span class="soft">从等级 ${lv(r.row)} 起</span>
+T	130	fix	`is new for ${esc(r.tree)}`	是 ${esc(r.tree)} 的新增天赋
+T	131	fix	`is new in ${esc(r.tree)}, row ${r.row} <span class="soft">(from level ${lv(r.row)})</span>`	是 ${esc(r.tree)} 的新增天赋，第 ${r.row} 行 <span class="soft">（从等级 ${lv(r.row)} 起）</span>
+T	132	fix	`is gone from ${esc(r.tree)}`	已从 ${esc(r.tree)} 中移除
+T	133	fix	`moved from ${esc(r.fromTree)} to ${esc(r.tree)}`	从 ${esc(r.fromTree)} 移到了 ${esc(r.tree)}
+T	134	fix	`moved from row ${r.fromRow} to row ${r.row} in ${esc(r.tree)} <span class="soft">(reachable from level ${lv(r.row)} instead of ${lv(r.fromRow)})</span>`	在 ${esc(r.tree)} 中从第 ${r.fromRow} 行移到第 ${r.row} 行 <span class="soft">（从等级 ${lv(r.row)} 起可达，而非 ${lv(r.fromRow)}）</span>
+T	135	fix	`slid along row ${r.row} in ${esc(r.tree)}`	在 ${esc(r.tree)} 第 ${r.row} 行内移动了列
+T	136	fix	`now needs ${esc(r.req)} first`	现在需要先点出 ${esc(r.req)}
+T	137	fix	`no longer needs ${esc(r.oldReq)}`	不再需要先点出 ${esc(r.oldReq)}
+T	166	fix	`<li class="under"><i>&#9707;</i><span class="txt">Under the hood: ${plural(k.icon, 'icon')} refreshed. Icons only; open Every change to see each one.</span></li>`	<li class="under"><i>&#9707;</i><span class="txt">底层改动：刷新了 ${plural(k.icon, 'icon')}。只是图标替换；展开「全部改动」可逐条查看。</span></li>
+T	167	same	`<div class="bp-words"><h4>In plain words</h4><ul>${out.join('')}</ul><p class="mmkey"><i class="k1"></i> new or replaced <i class="k2"></i> gone <i class="k3"></i> moved</p></div>`	<div class="bp-words"><h4>白话说明</h4><ul>${out.join('')}</ul><p class="mmkey"><i class="k1"></i> 新增或替换 <i class="k2"></i> 移除 <i class="k3"></i> 移动</p></div>
+T	180	same	`${k.gone} removed`	${k.gone} 项移除
+T	181	same	`${k.moved} moved`	${k.moved} 项移动
+T	193	same	`<details class="bsec" open><summary>What moved in the trees<small>${majors.length}</small></summary><ul class="brows major">${majors.join('')}</ul></details>`	<details class="bsec" open><summary>天赋树中的位置变动<small>${majors.length}</small></summary><ul class="brows major">${majors.join('')}</ul></details>
+T	194	same	`<div class="chips"><i class="quiet">No data changes</i></div>`	<div class="chips"><i class="quiet">数据无变化</i></div>
+T	195	same	`<li class="since"><b>Since you were here</b> (${nice(seen)}): ${fresh.length ? `${plural(fresh.length, 'build')} checked, ${nfresh ? plural(nfresh, 'change') + ' on the site' : 'nothing changed on the site'}.` : 'no new builds.'}</li>`	<li class="since"><b>自你上次访问以来</b>（${nice(seen)}）：${fresh.length ? `${plural(fresh.length, 'build')} 已核对，${nfresh ? plural(nfresh, 'change') + ' 于站点' : '站点无变化'}。` : '没有新构建。'}</li>
+T	196	same	`${plural(fresh.length, 'build')} checked, ${nfresh ? plural(nfresh, 'change') + ' on the site' : 'nothing changed on the site'}.`	${plural(fresh.length, 'build')} 已核对，${nfresh ? plural(nfresh, 'change') + ' 于站点' : '站点无变化'}。
+S	201	same	'no new builds.'	没有新构建。
+T	202	same	`<li class="since"><b>Every beta build</b> is checked against the site the day it lands. This is what each one changed.</li>`	<li class="since"><b>每个测试版构建</b>在发布当天都会与本站点核对。这里记录的就是每个构建带来的改动。</li>
+T	203	same	`<li class="bkey"><i class="k-new">+ new</i><i class="k-gone">&minus; gone</i><i class="k-moved">&#8644; moved</i><i class="k-prereq">&#8627; arrow</i><i class="k-text">&#9998; text</i><i class="k-icon">&#9707; icon</i></li>`	<li class="bkey"><i class="k-new">+ 新增</i><i class="k-gone">&minus; 移除</i><i class="k-moved">&#8644; 移动</i><i class="k-prereq">&#8627; 前置</i><i class="k-text">&#9998; 文本</i><i class="k-icon">&#9707; 图标</i></li>
+T	204	same	`<li class="bkey"><a class="bp-link" href="/builds">Open the full breakdown, build by build &rsaquo;</a></li>`	<li class="bkey"><a class="bp-link" href="/builds">查看按构建逐条列出的完整明细 &rsaquo;</a></li>
+T	212	same	`<span class="dot"></span>Beta build <b>${esc(UPD[0].build)}</b> · checked ${nice(UPD[0].date)} <i>&rsaquo;</i>`	<span class="dot"></span>测试版构建 <b>${esc(UPD[0].build)}</b> · 核对于 ${nice(UPD[0].date)} <i>&rsaquo;</i>
+T	243	same	`<button type="button" class="tile game" data-go="game"><span class="tk"><span class="tic logo" aria-hidden="true"><img src="/assets/wow-forever.png" alt=""></span>In the game${gameFresh ? '<i class="dot"></i>' : ''}</span><span class="tb">${gameBig}</span><span class="ts">${UPD0 ? `latest build ${esc(short(UPD0.build))} · ${day(UPD0.date)}` : ''}</span>${bspark}</button>`	<button type="button" class="tile game" data-go="game"><span class="tk"><span class="tic logo" aria-hidden="true"><img src="/assets/wow-forever.png" alt=""></span>游戏内${gameFresh ? '<i class="dot"></i>' : ''}</span><span class="tb">${gameBig}</span><span class="ts">${UPD0 ? `最新构建 ${esc(short(UPD0.build))} · ${day(UPD0.date)}` : ''}</span>${bspark}</button>
+T	244	same	`latest build ${esc(short(UPD0.build))} · ${day(UPD0.date)}`	最新构建 ${esc(short(UPD0.build))} · ${day(UPD0.date)}
+T	245	same	`<button type="button" class="tile site" data-go="site"><span class="tk"><span class="tic" aria-hidden="true"><img src="/assets/book-round.png" alt=""></span>On the site${siteFresh ? '<i class="dot"></i>' : ''}</span><span class="tb">${nSite ? nSite + ' new' : (seen ? 'Up to date' : weekN + ' this week')}</span><span class="ts">${esc(LOG[0].title)}</span>${spark}</button>`	<button type="button" class="tile site" data-go="site"><span class="tk"><span class="tic" aria-hidden="true"><img src="/assets/book-round.png" alt=""></span>站点${siteFresh ? '<i class="dot"></i>' : ''}</span><span class="tb">${nSite ? nSite + ' 项新增' : (seen ? '已是最新' : weekN + ' 项本周')}</span><span class="ts">${esc(LOG[0].title)}</span>${spark}</button>
+S	282	same	'<p class="hl">No beta build checked yet.</p>'	<p class="hl">尚未核对任何测试版构建。</p>
+T	293	fix	`<div class="sum"><div class="sumhead"><b>${n}</b><span>change${n === 1 ? '' : 's'} for players across ${T.sentence(where).replace(/\.$/, '')}</span></div>`	<div class="sum"><div class="sumhead"><b>${n}</b><span> 项改动，涉及 ${T.sentence(where).replace(/\.$/, '')}</span></div>
+T	295	fix	`<div class="sum quiet"><div class="sumhead"><b>0</b><span>changes for players in build ${esc(short(e.build))}. ${tot(e)} icon swap${tot(e) === 1 ? '' : 's'}, nothing that plays differently.</span></div></div>`	<div class="sum quiet"><div class="sumhead"><b>0</b><span>构建 ${esc(short(e.build))} 对玩家可见的内容没有变化。${tot(e)} 处图标替换，玩法上没有任何不同。</span></div></div>
+T	300	fix	`<details class="deeper" id="gameLines"><summary><span>Every change</span><small>${nAll}${nIcon ? `, ${nIcon} of them icons` : ''}</small></summary><div class="lines">${lines(e)}</div></details>`	<details class="deeper" id="gameLines"><summary><span>全部改动</span><small>${nAll}${nIcon ? `，其中 ${nIcon} 项为图标` : ''}</small></summary><div class="lines">${lines(e)}</div></details>
+S	342	same	'before / after'	改动前 / 改动后
+T	347	same	`<p class="dayhead"><span><b>${chosen.length}</b> update${chosen.length === 1 ? '' : 's'} on ${day(dayf)}</span><button type="button" class="reset">Show the latest</button></p>`	<p class="dayhead"><span><b>${chosen.length}</b> 项更新于 ${day(dayf)}</span><button type="button" class="reset">显示最新</button></p>
+T	348	same	`<p class="dayhead"><span><b>${weekN}</b> updates in the last seven days${nSite ? `, <b>${nSite}</b> since your last visit` : ''}. The latest:</span></p>`	<p class="dayhead"><span><b>${weekN}</b> 项更新发生在最近七天。最新：</span></p>
+T	349	same	`, <b>${nSite}</b> since your last visit`	，其中 <b>${nSite}</b> 项来自你上次访问之后
+T	350	same	`<ol class="ents">${chosen.map(entCard).join('')}</ol><details class="deeper" id="siteDeep"${keepOpen ? ' open' : ''}><summary><span>Everything new</span><small>${LOG.length} entries</small></summary><ol class="ents all">${LOG.map(entCard).join('')}</ol></details>`	<ol class="ents">${chosen.map(entCard).join('')}</ol><details class="deeper" id="siteDeep"${keepOpen ? ' open' : ''}><summary><span>全部新内容</span><small>${LOG.length} 条</small></summary><ol class="ents all">${LOG.map(entCard).join('')}</ol></details>
+S	452	same	'No tooltip video for this class yet'	尚未收录该职业的提示框录像
+T	464	same	`<p>No ${tree.name} tooltips captured yet. Record this tree and it fills in.</p>`	<p>尚未收录${tree.name}的天赋提示框。录制该天赋树后即会自动补全。</p>
+T	468	same	`<b>No longer a talent</b>`	<b>已不再是天赋</b>
+T	470	same	`<div class="n">${x.name}</div><div class="r">Classic talent, ${x.max} rank${x.max>1?'s':''}</div><div class="d">${x.text}</div>`	<div class="n">${x.name}</div><div class="r">经典旧世天赋，${x.max} 点</div><div class="d">${x.text}</div>
+T	471	same	`<div class="cl"><b>Baseline in Forever.</b> Every ${cls} learns it from the trainer now: it sits in the ${base.tab} tab of the ${sb.source === 'beta' ? 'spellbook below' : `level ${sb.level} demo spellbook${base.rank ? ` at ${base.rank}` : ''}`}.</div>`	<div class="cl"><b>在「永恒」中为职业技能。</b>现在每个 ${cls} 都可以从训练师处学习：它位于${sb.source === 'beta' ? '下方法术书' : `等级 ${sb.level} 试玩法术书`}的 ${base.tab} 页签中${base.rank ? `（${base.rank}）` : ''}。</div>
+T	475	same	` at ${base.rank}`	（${base.rank}）
+T	476	same	`<div class="cl"><b>Not in Forever.</b> This talent was removed or folded into another one.</div>`	<div class="cl"><b>「永恒」中已无此天赋。</b>该天赋已被移除或并入其他天赋。</div>
+T	484	same	`next row at ${next}`	下一行需 ${next} 点
+S	501	same	'WoW Forever Talent Calculator | Talents Forever'	魔兽世界：永恒 天赋计算器 | 永恒天赋
+T	505	same	`<span class="hint">No points spent. ${matchMedia('(hover: none)').matches ? 'Tap' : 'Click'} a talent to start your build.</span>`	<span class="hint">尚未投入天赋点。${matchMedia('(hover: none)').matches ? '轻点' : '点击'}一个天赋开始搭配你的方案。</span>
+T	547	same	`${shown.length} of ${(allRanks ? t.spells : maxOnly(t.spells)).length} shown`	${shown.length} / ${(allRanks ? t.spells : maxOnly(t.spells)).length} 已显示
+T	548	same	`${names} spell${names === 1 ? '' : 's'}, ${shown.length} ranks`	${names} 个法术，${shown.length} 个等级
+T	549	fix	`${shown.length} spell${shown.length === 1 ? '' : 's'}`	${shown.length} 个法术
+S	550	same	' · small numbers: level each rank is learned at'	 · 小数字：各等级的学习等级
+S	551	same	' · small numbers: level each rank is trained at, your rank lit'	 · 小数字：各等级的学习等级，当前等级高亮
+T	552	same	`<li class="none">Nothing ${filt === 'new' ? 'new' : 'new or reworked'} in this tab.</li>`	<li class="none">此页签中没有${filt === 'new' ? '新增' : '新增或重做'}内容。</li>
+T	554	same	`<label class="allr"><input type="checkbox" id="allRanks"${allRanks ? ' checked' : ''}> Show all ranks</label>`	<label class="allr"><input type="checkbox" id="allRanks"${allRanks ? ' checked' : ''}> 显示所有等级</label>
+T	557	same	`<div class="bkctl"><div class="seg" role="group" aria-label="How to read it"><button type="button" data-view="book" aria-pressed="true">The book</button><button type="button" data-view="level" aria-pressed="false">By level</button></div><div class="seg filt" role="group" aria-label="Which spells"><button type="button" data-filt="all" aria-pressed="true">All</button><button type="button" data-filt="changed" aria-pressed="false">New and reworked</button><button type="button" data-filt="new" aria-pressed="false">New only</button></div></div>`	<div class="bkctl"><div class="seg" role="group" aria-label="阅读方式"><button type="button" data-view="book" aria-pressed="true">法术书</button><button type="button" data-view="level" aria-pressed="false">按等级</button></div><div class="seg filt" role="group" aria-label="筛选法术"><button type="button" data-filt="all" aria-pressed="true">全部</button><button type="button" data-filt="changed" aria-pressed="false">新增与重做</button><button type="button" data-filt="new" aria-pressed="false">仅新增</button></div></div>
+S	559	same	'Comes with the talent'	随天赋获得
+S	560	same	'Tome or quest'	书籍或任务
+T	572	same	`${known} of ${all} learned by level ${myLv}${next ? ` · next at level ${next}` : ' · that is all of them'}`	${known} / ${all} 已在等级 ${myLv} 前学会${next ? ` · 下一项在等级 ${next}` : ' · 已全部列出'}
+T	573	same	` · next at level ${next}`	 · 下一项在等级 ${next}
+S	574	same	' · that is all of them'	 · 已全部列出
+T	581	same	`<div class="lvhead"><label>I'm level <b id="lvNum">${myLv}</b><input type="range" id="lvRange" min="1" max="60" value="${myLv}" aria-label="Your level"></label><span class="lvsum"></span></div>`	<div class="lvhead"><label>我的等级 <b id="lvNum">${myLv}</b><input type="range" id="lvRange" min="1" max="60" value="${myLv}" aria-label="你的等级"></label><span class="lvsum"></span></div>
+T	583	same	`<p class="crs">Nothing ${filt === 'new' ? 'new' : 'new or reworked'} for this class.</p>`	<p class="crs">该职业没有${filt === 'new' ? '新增' : '新增或重做'}内容。</p>
+T	608	same	`<div class="sttd muted">No tooltip read for this one yet.</div>`	<div class="sttd muted">尚未读取该法术的提示框。</div>
+T	609	same	`<div class="sttl lv"><span>${esc(d.lv)} in Classic</span><span></span></div>`	<div class="sttl lv"><span>经典旧世中 ${esc(d.lv)}</span><span></span></div>
+T	612	same	`<div class="sttl nt"><span>Racial spell: ${esc(onlyFor.join(' and '))} ${esc(c)}s only.</span><span></span></div>`	<div class="sttl nt"><span>种族法术：仅限 ${esc(onlyFor.join('、'))} 的${esc(c)}。</span><span></span></div>
+S	616	same	' Checked in game.'	 已在游戏中核对。
+T	618	same	`<div class="sttl nt"><span>Classic called this ${esc(d.was)}. Same spell, new name.</span><span></span></div>`	<div class="sttl nt"><span>经典旧世中名为${esc(d.was)}。同一法术，改了名字。</span><span></span></div>
+T	622	same	`<div class="cl"><b>Same as Classic.</b></div>`	<div class="cl"><b>与经典旧世相同。</b></div>
+T	627	same	`<div class="stts ok">Forever text from the beta client, numbers at level 60 with no gear.</div>`	<div class="stts ok">「永恒」文本来自测试版客户端，数值为等级 60 且不穿装备。</div>
+T	628	same	`<div class="stts ok">Real Forever text, read off BlizzCon demo footage${d.src ? ': ' + esc(d.src) : ''}</div>`	<div class="stts ok">真实的「永恒」文本，读取自暴雪嘉年华演示录像${d.src ? '：' + esc(d.src) : ''}</div>
+T	629	same	`<div class="stts">Classic text${d.r && d.r !== sub ? ' (' + esc(d.r) + ')' : ''}, shown for reference. Nobody has read this one on Forever footage yet, so it may have changed.</div>`	<div class="stts">经典旧世文本${d.r && d.r !== sub ? '（' + esc(d.r) + '）' : ''}，仅作参考。尚未有人在「永恒」录像中读到过这一条，因此可能已有改动。</div>
+T	647	fix	`${shown} of ${total} races`	${shown} / ${total} 个种族
+T	649	same	`<details class="legacy fold" id="${id}"${open?' open':''}><summary>${fan(icons)}<span class="ltitle"><strong>${title}</strong><span>${sub}</span></span><span class="lpill"><span class="show">Show</span><span class="hide">Hide</span></span></summary>${body}</details>`	<details class="legacy fold" id="${id}"${open ? ' open' : ''}><summary>${fan(icons)}<span class="ltitle"><strong>${title}</strong><span>${sub}</span></span><span class="lpill"><span class="show">展开</span><span class="hide">收起</span></span></summary>${body}</details>
+T	650	same	`<p class="crs">Not opened on stream: ${sb.missing.join(', ')}${sb.trainer ? ' (filled in from the trainer list where possible)' : ''}.</p>`	<p class="crs">未在直播中打开：${sb.missing.join('、')}${sb.trainer ? '（已尽可能从训练师列表补全）' : ''}。</p>
+S	651	same	' (filled in from the trainer list where possible)'	（已尽可能从训练师列表补全）
+T	652	same	`<p class="crs"><b>Small numbers</b> under a spell are the level each rank is learned at.</p>`	<p class="crs"><b>小数字</b>是各等级的学习等级。</p>
+T	653	same	`<p class="crs"><b>Small numbers</b> under a spell are the level each rank is trained at, your rank lit. A ? is a rank the trainer list didn't show. ${sb.levelsSource || ''}</p>`	<p class="crs"><b>小数字</b>是各等级的学习等级，当前等级高亮。问号表示训练师列表中未列出的等级。${sb.levelsSource || ''}</p>
+T	657	same	`Most popular ${lead.name} build, #${b.rank} overall`	最热门的${lead.name}方案，总榜第 ${b.rank} 名
+T	658	same	`#${b.rank} most popular ${cls} build`	最热门的 ${cls} 方案第 ${b.rank} 名
+T	659	same	`<b>Top ${lead.name} build</b> · `	<b>最热门的${lead.name}方案</b> · 
+T	660	same	` · viewed ${b.views}`	 · 浏览 ${b.views} 次
+T	661	same	` · <b title="shares, saves and opens of every complete build within four points of this one">across ${b.variants + 1} close builds</b>`	 · <b title="与该方案相差四点以内的所有完整方案，其分享、保存与打开次数之和">涵盖 ${b.variants + 1} 套相近方案</b>
+T	667	same	`Popular ${cls} builds`	热门 ${cls} 方案
+T	668	fix	`What people planned here for level 60, ${mdy(pop.window || POPULAR.window)}.`	大家在站点上为 60 级规划出的方案，${mdy(pop.window || POPULAR.window)}。
+T	669	fix	`<div class="pophead"><span><b>${pop.builds.toLocaleString()}</b> ${pop.buildsLabel || 'builds shared, saved or opened'}</span><span><b>${pop.full.toLocaleString()}</b> with all 51 points</span><span><b>${pop.shared.toLocaleString()}</b> shared</span><span><b>${pop.saved.toLocaleString()}</b> saved</span><span><b>${pop.opened.toLocaleString()}</b> build links opened</span></div>`	<div class="pophead"><span><b>${pop.builds.toLocaleString()}</b> ${pop.buildsLabel || '次方案分享、保存或打开'}</span><span><b>${pop.full.toLocaleString()}</b> 套点满 51 点</span><span><b>${pop.shared.toLocaleString()}</b> 次分享</span><span><b>${pop.saved.toLocaleString()}</b> 次保存</span><span><b>${pop.opened.toLocaleString()}</b> 次打开方案链接</span></div>
+T	680	same	`${cls} spellbook at level ${sb.level}`	演示中 ${cls} 在等级 ${sb.level} 拥有的全部法术，按页签逐个列出，并标注等级。
+T	681	same	`Every ${cls} trainer spell to 60, every rank. ${sb.checked ? 'Checked against the game files and in game.' : 'Checked against the game files.'}`	${cls} 训练师可教至 60 级的全部法术，每个等级。${sb.checked ? '已对照游戏文件并在游戏中核对。' : '已对照游戏文件核对。'}
+S	682	same	'Checked against the game files and in game.'	已对照游戏文件并在游戏中核对。
+S	683	same	'Checked against the game files.'	已对照游戏文件核对。
+S	686	same	'an ability a talent grants. It shows in your book once you take the talent'	天赋授予的技能。点出该天赋后就会出现在你的法术书里
+S	687	same	'a Forever talent this character had taken, not a trainer spell'	该角色已点出的「永恒」天赋，而非训练师法术
+T	688	same	`Numbers are the beta client's at level 60 with no gear on, so your in-game tooltip will read a bit higher. Show all ranks works like the checkbox in the game's book. The General tab still comes from the demo spellbook.`	数值为测试版客户端在等级 60 且不穿装备时的数据，因此游戏内提示框会略高一些。「显示所有等级」与游戏法术书中的勾选框用法一致。「通用」页签仍取自演示法术书。
+T	689	same	`Read frame by frame off stream footage (${sb.seen}). Characters were capped at ${sb.level}, so anything trained later isn't here.`	逐帧读取自直播录像（${sb.seen}）。角色等级上限为 ${sb.level}，因此之后训练的内容不在此列。
+T	695	same	`New ${cls} abilities`	新增 ${cls} 技能
+T	697	same	`, ${ren.length} renamed`	，改名 ${ren.length} 项
+T	698	same	`, ${gone.length} gone`	，移除 ${gone.length} 项
+T	709	same	`${cls} racial spells`	${cls} 种族法术
+S	779	same	'Other perks depend on this point'	其他专长依赖此点
+S	780	same	'Other talents depend on this point'	其他天赋依赖此点
+T	786	same	`<div class="gn">${t.name}<span>Rank ${r}/${t.max} · <b>${cls === 'Legacy' ? Math.max(0, pool(cls) - totalPts(cls)) : $('#ptsLeft').textContent}</b> left</span></div>`	<div class="gn">${t.name}<span>等级 ${r}/${t.max} · 剩余 <b>${cls === 'Legacy' ? Math.max(0, pool(cls) - totalPts(cls)) : $('#ptsLeft').textContent}</b></span></div>
+T	790	same	`<div class="gx"><span class="lab">Next rank</span><span>${linkNames(nxt.text, cls, t.name, found)}</span></div>`	<div class="gx"><span class="lab">下一等级</span><span>${linkNames(nxt.text, cls, t.name, found)}</span></div>
+T	791	same	`<div class="ge">Rank ${est.join(' and ')} value${est.length>1?'s':''} estimated from the rank shown in the video.</div>`	<div class="ge">等级 ${est.join('、')} 的数值为依照录像所示等级推算的结果。</div>
+T	793	same	`renamed from ${c.renamed}`	原名 ${c.renamed}
+T	794	same	`was ${c.tree} row ${c.row}, col ${c.col}`	原为 ${c.tree} 第 ${c.row} 行第 ${c.col} 列
+T	795	same	`was ${c.max} rank${c.max>1?'s':''}, now ${t.max}`	原为 ${c.max} 点，现为 ${t.max} 点
+T	797	same	`<div class="cl"><b>Changed from Classic</b>${meta}<div class="diff"><span class="lab">Classic</span><div class="old">${d.oldH}</div><span class="lab">Forever</span><div class="new">${d.newH}</div></div></div>`	<div class="cl"><b>相较经典旧世有改动</b>${meta}<div class="diff"><span class="lab">经典旧世</span><div class="old">${d.oldH}</div><span class="lab">永恒</span><div class="new">${d.newH}</div></div></div>
+T	801	same	`<div class="t">Classic rank 1: ${c.text}</div>`	<div class="t">经典旧世第 1 级：${c.text}</div>
+S	816	same	'Tap a talent to add a point. Tap its − to take one back. Hold to read first.'	点击天赋加一点。轻点其「−」取回一点，长按可先看说明。
+S	849	same	'<i>New in Forever</i> \u00b7 '	永恒新增 ·
+S	850	same	'Talent \u00b7 '	天赋 ·
+S	852	same	'Talent · '	天赋 ·
+T	853	same	`<button type="button" class="refgo" data-ref="${n.replace(/"/g, '&quot;')}">Show it in the tree</button>`	<button type="button" class="refgo" data-ref="${n.replace(/"/g, '&quot;')}">在天赋树中显示</button>
+T	871	same	`Rank ${r} of ${t.max}`	等级 ${r}/${t.max}
+T	872	same	`<div class="est">Rank ${r} value estimated from the rank shown in the video.</div>`	<div class="est">等级 ${r} 的数值为依照录像所示等级推算的结果。</div>
+T	873	same	`<div class="next">Next rank</div>`	<div class="next">下一等级</div>
+T	874	same	`<div class="est">Rank ${r+1} value estimated from the rank shown in the video.</div>`	<div class="est">等级 ${r + 1} 的数值为依照录像所示等级推算的结果。</div>
+T	875	same	`<div class="cta">Click to learn${r > 0 ? '<small>Right-click to unlearn</small>' : ''}</div>`	<div class="cta">点击学习${r > 0 ? '<small>右键点击取消学习</small>' : ''}</div>
+T	877	same	`<div class="cta no">Max rank</div>`	<div class="cta no">已满级</div>
+T	879	same	`<div class="hd"><div class="n">${t.name}</div><div class="r">Rank ${r}/${t.max}${t.passive ? ' · Passive' : ''}${t.cost ? ' · ' + t.cost : ''}</div></div>`	<div class="hd"><div class="n">${t.name}</div><div class="r">等级 ${r}/${t.max}${t.passive ? ' · 被动' : ''}${t.cost ? ' · ' + t.cost : ''}</div></div>
+S	880	same	' · Passive'	 · 被动
+T	881	same	`<details class="nxd"><summary>Next rank</summary><div class="d">${nxt.text}</div></details>`	<details class="nxd"><summary>下一等级</summary><div class="d">${nxt.text}</div></details>
+T	882	same	`<div class="est">Rank ${est.join(' and ')} value${est.length>1?'s':''} estimated from the rank shown in the video.</div>`	<div class="est">等级 ${est.join('、')} 的数值为依照录像所示等级推算的结果。</div>
+T	884	same	`<details class="cl nxd" open><summary><b>Changed from Classic</b></summary><div class="diff"><span class="lab">Classic</span><div class="old">${d.oldH}</div><span class="lab">Forever</span><div class="new">${d.newH}</div></div></details>`	<details class="cl nxd" open><summary><b>相较经典旧世有改动</b></summary><div class="diff"><span class="lab">经典旧世</span><div class="old">${d.oldH}</div><span class="lab">永恒</span><div class="new">${d.newH}</div></div></details>
+T	894	same	`Tap a name to load it, × to remove it. Kept on this device only${list.length >= 400 ? `, ${list.length} of 500` : ''}. Back up copies them all as links.`	轻点名称即可载入，轻点 × 可移除。仅保存在本设备${list.length >= 400 ? `，${list.length} / 500` : ''}。备份会把它们全部复制为链接。
+T	895	same	`, ${list.length} of 500`	，${list.length} / 500
+T	898	same	`My builds${list.length ? ` (${list.length})` : ''}`	我的方案${list.length ? `（${list.length}）` : ''}
+T	901	same	`All ${total} talents and every one of their ranks come from the beta client's own data. Nothing is estimated.`	全部 ${total} 个天赋及其每个等级都来自测试版客户端自身的数据，没有任何推算。</div>
+T	902	same	`Loaded "${b.name}"`	已载入「${b.name}」
+S	908	same	'500 builds saved on this device. Remove one to save another.'	本设备已保存 500 套方案。要再保存一套，请先移除一套。
+T	909	same	`Replaced your ${state.cls} build "${name}"`	已替换你的 ${state.cls} 方案「${name}」
+T	910	same	`Saved "${name}" on this device`	已在本设备保存「${name}」
+T	917	same	`Copied ${store.get('tf_builds', []).length} builds as links. Paste them somewhere safe.`	已把 ${store.get('tf_builds', []).length} 套方案复制为链接。请粘贴到安全的地方。
+T	922	same	`Added ${added} build${added === 1 ? '' : 's'}${full ? ', stopped at 500' : ''}`	已添加 ${added} 套方案${full ? '，已达 500 上限' : ''}
+S	923	same	', stopped at 500'	，已达 500 上限
+T	931	same	`Removed "${b.name}"`	已移除「${b.name}」
+T	934	same	`Picked up your last ${cls} build. Reset clears it.`	已载入你上次的 ${cls} 方案。点击「重置」可清除。
+S	951	same	'Stream layout on. Grab "drag to move" to slide the page clear of your cam, "drag to resize" to shrink or grow it.'	直播布局已开启。拖动「drag to move」把页面移开摄像头区域，拖动「drag to resize」缩小或放大页面。
+T	967	fix	`Notes: each line is the in-game tooltip at the rank chosen${est ? '; (est) marks text estimated from a lower rank' : ''}. Every 5 points spent in a tree unlocks its next row. Full data for this class (all talents at every rank, spellbook, tooltips, racials): ${[location.origin, 'export', cls.toLowerCase() + '.json'].join('/')}`	说明：每行都是所选等级下的游戏内提示框文本${est ? '；（推算）标记的是依据较低等级推算出的文本' : ''}。每在该天赋树中投入 5 点即解锁下一行。该职业的完整数据（各等级天赋、法术书、提示框、种族天赋）：${[location.origin, 'export', cls.toLowerCase() + '.json'].join('/')}
+S	968	same	'; (est) marks text estimated from a lower rank'	；（推算）标记的是依据较低等级推算出的文本
+S	971	same	'Build copied with full talent text. Paste it into your AI with a question.'	已复制包含完整天赋文本的方案。粘贴到你的 AI 并附上问题即可。
+T	973	same	`${spec ? spec.textContent : cls} build ${pts.join('/')} · Talents Forever`	${spec ? spec.textContent : cls} 方案 ${pts.join('/')} · 永恒天赋
+T	974	same	`${cls} talents for WoW Forever · Talents Forever`	魔兽世界：永恒 ${cls} 天赋 · 永恒天赋
+T	986	fix	`<details class="bp-more"><summary>By class<small>${plural(e.counts.talents, 'talent change')}${ns ? `, ${plural(ns, 'spell change')}` : ''}</small></summary>${strip(e, id)}${byClass(e, id)}</details>`	<details class="bp-more"><summary>按职业<small>${plural(e.counts.talents, 'talent change')}${ns ? `，${plural(ns, 'spell change')}` : ''}</small></summary>${strip(e, id)}${byClass(e, id)}</details>
+T	990	same	`<header class="bp-hero"><span class="eyebrow">Beta build tracker</span><h2>What's changed in WoW Forever</h2><p class="lede">Every beta build Blizzard ships gets checked against this site the day it lands. What each one changed, in plain words first, with every detail behind it.</p>`	<header class="bp-hero"><span class="eyebrow">测试版构建追踪</span><h2>魔兽世界：永恒 的改动</h2><p class="lede">暴雪发布的每个测试版构建，都会在当天与本站点核对。每个构建改了什么，先用白话说明，后面附上全部细节。</p>
+T	991	same	`<div class="bp-latest"><span class="dot"></span><span>Latest: build <b>${esc(latest.build)}</b>, checked ${nice(latest.date)}. ${total(latest) ? plural(total(latest), 'change') + ' on the site.' : 'Nothing changed for players.'}</span>${seen ? `<span class="you">Since you were here (${nice(seen)}): ${fresh.length ? plural(fresh.length, 'build') + ' checked, ' + (nfresh ? plural(nfresh, 'change') : 'nothing changed') : 'no new builds'}.</span>` : ''}<a class="bp-share" href="/builds" title="This page on its own">Link to this &rsaquo;</a></div></header>`	<div class="bp-latest"><span class="dot"></span><span>最新：构建 <b>${esc(latest.build)}</b>，核对于 ${nice(latest.date)}。${total(latest) ? plural(total(latest), 'change') + ' 于站点。' : '玩家可见的内容没有变化。'}</span>${seen ? `<span class="you">自你上次访问以来（${nice(seen)}）：${fresh.length ? plural(fresh.length, 'build') + ' 已核对，' + (nfresh ? plural(nfresh, 'change') : '无变化') : '没有新构建'}。</span>` : ''}<a class="bp-share" href="/builds" title="此页面本身">链接到此页 &rsaquo;</a></div></header>
+T	994	same	`<span class="you">Since you were here (${nice(seen)}): ${fresh.length ? plural(fresh.length, 'build') + ' checked, ' + (nfresh ? plural(nfresh, 'change') : 'nothing changed') : 'no new builds'}.</span>`	<span class="you">自你上次访问以来（${nice(seen)}）：${fresh.length ? plural(fresh.length, 'build') + ' 已核对，' + (nfresh ? plural(nfresh, 'change') : '无变化') : '没有新构建'}。</span>
+S	998	same	'WoW Forever Beta Build Changes | Talents Forever'	魔兽世界：永恒 测试版构建改动 | 永恒天赋
+T	1004	same	`Viewing a shared ${state.cls} build. Tweak it, or hit Reset to start your own.`	正在查看一套分享的 ${state.cls} 方案。你可以直接修改，或点击「重置」从头开始。
+T	1029	fix	`<div class="pact"${p.kind === 'link' ? ' style="margin-top:12px"' : ''}>${p.kind === 'link' ? `<a class="pgo plink" href="${esc(p.href)}">${esc(p.cta || 'Open')}</a>` : `<a class="pgo" href="${U(cls.toLowerCase())}#spellbook">Open the ${esc(cls)} spellbook</a>`}<button class="pmore" type="button">What's new</button><button class="poff" type="button">Don't show again</button></div>`	<div class="pact"${p.kind === 'link' ? ' style="margin-top:12px"' : ''}>${p.kind === 'link' ? `<a class="pgo plink" href="${esc(p.href)}">${esc(p.cta || '打开')}</a>` : `<a class="pgo" href="${U(cls.toLowerCase())}#spellbook">打开${esc(CN(cls))}法术书</a>`}<button class="pmore" type="button">更新内容</button><button class="poff" type="button">不再显示</button></div>
+T	1032	fix	`<a class="pgo" href="${U(cls.toLowerCase())}#spellbook">Open the ${esc(cls)} spellbook</a>`	<a class="pgo" href="${U(cls.toLowerCase())}#spellbook">打开${esc(CN(cls))}法术书</a>
+S	16	carry	'Max rank'	'已满级'
+S	85	carry	'all unlocked'	'已全部解锁'
+S	178	carry	'Nothing on the site changed.'	'站点内容没有变化。'
+S	179	carry	'new talent'	'新增天赋'
+S	184	carry	'rank cap'	'等级上限'
+S	190	carry	'No tree changes.'	'天赋树无变化。'
+S	220	carry	'rule changes'	'规则调整'
+S	288	carry	`<div class="sum quiet"><div class="sumhead"><b>0</b><span>changes for players in build ${esc(short(e.build))}. Checked file by file.</span></div></div>`	`<div class="sum quiet"><div class="sumhead"><b>0</b><span>构建 ${esc(short(e.build))} 对玩家可见的内容没有变化。已逐文件核对。</span></div></div>`
+S	296	carry	`<p class="whyold">The latest build, ${esc(short(UPD0.build))}, changed nothing for players. This is build ${esc(short(e.build))}, the last one that did.</p>`	`<p class="whyold">最新的构建 ${esc(short(UPD0.build))} 对玩家可见的内容没有变化。这里是 ${esc(short(e.build))}，最后一次有实际改动的构建。</p>`
+S	533	carry	'read from the trainer list, not the spellbook'	'读取自训练师列表，而非法术书'
+S	558	carry	'Portal trainer'	'传送门训练师'
+S	610	carry	'Learned at'	'学习等级'
+S	613	carry	'Comes with the talent. No trainer sells it, taking the talent puts it in your book.'	'随天赋获得。没有训练师出售，点出该天赋后就会出现在你的法术书里。'
+S	614	carry	'Taught by a portal trainer, not the class trainer.'	'由传送门训练师教授，而非职业训练师。'
+S	615	carry	'Not sold by the class trainer. Comes from a tome, a quest or a drop.'	'职业训练师不出售。来自书籍、任务或掉落。'
+S	617	carry	'Scales with '	'法强加成：'
+S	624	carry	'Same spell, new numbers'	'同一法术，数值调整'
+S	625	carry	'Reworked since Classic'	'相较经典旧世已重做'
+S	693	carry	' · from a talent'	' · 来自天赋'
+S	700	carry	'New in Forever'	'永恒新增'
+S	798	carry	'Same as Classic'	'与经典旧世相同'
+S	799	carry	'Moved, same effect'	'位置变动，效果相同'
+S	800	carry	'Changed from Classic'	'相较经典旧世有改动'
+S	878	carry	'No unspent talent points'	'没有未使用的天赋点'
+S	896	carry	'Kept on this device. Come back any time and pick it up here.'	'保存在本设备，随时回来都可以在这里取用。'
+S	899	carry	'<option value="" disabled>Nothing saved yet. Use Save this build below.</option>'	'尚未保存任何方案。请使用下方的「保存此方案」。'
+S	912	carry	'Spend some points first'	'请先投入一些点数'
+S	916	carry	'Select all and copy'	'请全选后复制'
+S	924	carry	'No build links found in that text'	'该文本中没有找到方案链接'
+S	952	carry	'Stream layout off'	'直播布局已关闭'
+S	960	carry	'Link copied'	'链接已复制'
+S	961	carry	'Select and copy the link'	'请选中并复制链接'
+S	972	carry	'Could not copy'	'复制失败'
+S	992	carry	' on the site.'	' 于站点。'
+S	993	carry	'Nothing changed for players.'	'玩家可见的内容没有变化。'
+S	1031	carry	'Open'	'展开'

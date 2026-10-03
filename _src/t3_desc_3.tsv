@@ -1,0 +1,23 @@
+0001	Removes 1 Curse from a friendly target.
+0002	Roots the target in place and causes 140 Nature damage over 21 sec. Damage caused may interrupt the effect. Only useable outdoors.
+0003	Sends bolts of holy power in all directions, causing 368 to 434 Holy damage to all Undead and Demon targets within 20 yds.
+0004	Stings the target, reducing Strength and Agility by 20 for 20 sec. Only one Sting per Hunter can be active on any one target.
+0005	Summons a Frost Resistance Totem with 5 health at the feet of the caster for 2 min. The totem increases party members' frost resistance by 30, if within 20 yards.
+0006	Summons a Nature Resistance Totem with 5 health at the feet of the caster for 2 min that increases the nature resistance of party members within 20 yards by 30.
+0007	Summons a Stoneskin Totem with 5 health at the feet of the caster. The totem protects party members within 20 yards, reducing melee damage taken by 11. Lasts 2 min.
+0008	Summons a Windfury Totem with 5 health at the feet of the caster. The totem enchants all party members main-hand weapons with wind, if they are within 20 yards. Each hit has a 20% chance of granting the attacker 1 extra attack with 122 extra melee attack power. Lasts 2 min.
+0009	Surrounds the target in a shield of fire. Every strike against the target causes 11 Fire damage to the attacker. Lasts 3 min. The caster cannot cast Fire Shield on himself.
+0010	Teleports the caster 20 yards forward, unless something is in the way. Also frees the caster from stuns and bonds.
+0011	The druid's skin becomes as tough as bark. Physical damage taken is reduced by 20%. While protected, damaging attacks will not cause spellcasting delays but non-instant spells take 1 sec longer to cast and melee combat is slowed by 25%. Lasts 15 sec.
+0012	The hunter and group members within 30 yards take on the aspect of the wild, increasing Nature resistance by 45. Only one Aspect can be active at a time.
+0013	The hunter takes on the aspects of a beast, becoming untrackable. Only one Aspect can be active at a time.
+0014	The next melee attack against the caster will cause 15 Shadow damage and reduce the damage caused by the attacker by 4 for 2 min.
+0015	The next melee attack on the caster will cause 48 Shadow damage and reduce the damage caused by the attacker by 15 for 2 min.
+0016	The warrior will cause critical hits with most attacks and will be immune to Fear effects for the next 15 sec, but all damage taken is increased by 20%.
+0017	Throws a distraction, attracting the attention of all nearby monsters for 10 seconds. Does not break stealth.
+0018	Transfers 10 health every second from the target to the caster. Lasts 5 sec.
+0019	Transforms the Druid into Moonkin Form. While in this form the armor contribution from items is increased by 360% and all party members within 30 yards have their spell critical chance increased by 3%. The Moonkin can only cast Balance spells while shapeshifted. The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
+0020	Unleashes the energy of a Seal spell upon an enemy. Refer to individual Seals for Judgement effect.
+0021	Weakens the target enemy, reducing damage caused by 11 and reducing the effectiveness of any healing by 20%. Lasts 2 min.
+0022	When activated, sacrifices your summoned demon to grant you an effect that lasts 30 min. The effect is canceled if any Demon is summoned. Imp: Increases your Fire damage by 15%. Voidwalker: Restores 3% of total Health every 4 sec. Succubus/Incubus: Increases your Shadow damage by 15%. Felhunter: Restores 2% of total Mana every 4 sec.
+0023	You are protected from all physical attacks and spells for 6 sec, but during that time you cannot attack or use physical abilities yourself. Once protected, the target cannot be made invulnerable by Divine Shield, Divine Protection or Blessing of Protection again for 1 min.

@@ -1,0 +1,50 @@
+0001	Seduces the target, preventing all actions for up to 15 sec. Any damage caused will remove the effect. Only works against Humanoids.
+0002	Send your pet into a rage causing 50% additional damage for 18 sec. While enraged, the beast does not feel pity or remorse or fear and it cannot be stopped unless killed.
+0003	Sends bolts of holy power in all directions, causing 368 to 434 Holy damage to all Undead and Demon targets within 20 yds and stunning them for 2 sec.
+0004	Shackles the target undead enemy for up to 30 sec. The shackled unit is unable to move, attack or cast spells. Any damage caused will release the target. Only one target can be shackled at a time.
+0005	Shakes the ground with thundering force, doing 122 to 142 Nature damage to all enemies within 8 yards.
+0006	Shapeshift into a bear, increasing melee attack power by 120, armor contribution from items by 180%, and health by 180. Also protects the caster from Polymorph effects and allows the use of various bear abilities.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
+0007	Shapeshift into a dire bear, increasing melee attack power by 180, armor contribution from items by 360%, and health by 1,240. Also protects the caster from Polymorph effects and allows the use of various bear abilities.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
+0008	Shapeshift into aquatic form, increasing swim speed by 50% and allowing the druid to breathe underwater. Also protects the caster from Polymorph effects.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
+0009	Shapeshift into cat form, increasing melee attack power by 120 plus Agility. Also protects the caster from Polymorph effects and allows the use of various cat abilities.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
+0010	Shield Specialization at 3/3
+0011	Shifts the imp out of phase with the world, making it unattackable unless it attacks.
+0012	Shows the location of all nearby dragonkin on the minimap. Only one form of tracking can be active at a time.
+0013	Shows the location of all nearby elementals on the minimap. Only one form of tracking can be active at a time.
+0014	Shows the location of all nearby giants on the minimap. Only one form of tracking can be active at a time.
+0015	Shows the location of all nearby humanoids on the minimap. Only one form of tracking can be active at a time.
+0016	Shows the location of all nearby humanoids on the minimap. Only one type of thing can be tracked at a time.
+0017	Shows the location of all nearby undead on the minimap until cancelled. Only one type of tracking can be used at a time.
+0018	Shows the location of all nearby undead on the minimap. Only one form of tracking can be active at a time.
+0019	Silences the enemy for 3 sec. If used on a casting target, it will counter the enemy's spellcast, preventing any spell from that school of magic from being cast for 6 sec.
+0020	Simultaneously places up to 4 totems specified in the Totem Bar. Can call different totems than Call of the Elements or Call of the Ancestors.
+0021	Simultaneously places up to 4 totems specified in the Totem Bar. Can call different totems than Call of the Elements.
+0022	Slam the target with your shield, causing 225 to 235 damage, modified by your shield block value, and has a 50% chance of dispelling 1 magic effect on the target. Also causes a high amount of threat.
+0023	Slash an enemy with razor talons, causing the target to Bleed for 120 damage over 18 sec.
+0024	Slows falling speed for 30 sec.
+0025	Soda's Mage, 13 Sep
+0026	Soda's Warrior, 13 Sep (no description line on the tooltip)
+0027	Soda's Warrior, 13 Sep (the tooltip has no description line)
+0028	Soothes the target beast, reducing the range at which it will attack you by 10 yards. Only affects Beast targets level 40 or lower. Lasts 15 sec.
+0029	Soothes the target, increasing the chance that it will attack something else.
+0030	Soothes the target, increasing the chance that it will attack something else. More effective than Soothing Kiss (Rank 1).
+0031	Spell text from the beta client. Which race gets which spell was first seen in the demo.
+0032	Spirit increased by 5%.
+0033	Still in the game: the Fury tree has Improved Intercept. It just isn't in the level 38 spellbook, so it's probably learned later than 30 now.
+0034	Still there, in the Protection tab. 116 health for 10 rage plus 10 more over 10 sec.
+0035	Stings the target, causing 10 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.
+0036	Stings the target, draining 1,108 mana over 8 sec. Only one Sting per Hunter can be active on any one target.
+0037	Stings the target, draining 616 mana over 8 sec. Only one Sting per Hunter can be active on any one target.
+0038	Stings the target, reducing the target's chance to hit with attacks by 2% for 20 sec. Only one Sting per Hunter can be active on any one target.
+0039	Stream layout turned on
+0040	Strikes fear in the enemy, causing it to run in fear for up to 10 sec. Damage caused may interrupt the effect. Only 1 target can be feared at a time.
+0041	Summons a Disease Cleansing Totem with 5 health at the feet of the caster that attempts to remove 1 disease effect from party members within 30 yards every 5 seconds. Lasts 2 min.
+0042	Summons a Fire Resistance Totem with 5 health at the feet of the caster for 5 min that increases the fire resistance of party and raid members within 30 yards by 30.
+0043	Summons a Flametongue Totem with 5 health at the feet of the caster. The totem enchants all party members' main-hand weapons with fire if they are within 30 yards. Each hit causes 6 to 22 additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. Lasts 5 min.
+0044	Summons a Grace of Air Totem with 5 health at the feet of the caster. The totem increases the agility of party members within 30 yards by 49. Lasts 5 min.
+0045	Summons a Grounding Totem with 5 health at the feet of the caster that will redirect one harmful spell cast on a nearby party member to itself every 10 seconds. Will not redirect area of effect spells. Lasts 45 sec.
+0046	Summons a Healing Stream Totem with 5 health at the feet of the caster for 5 min that heals group members within 30 yards for 11 every 2 seconds.
+0047	Summons a Poison Cleansing Totem with 5 health at the feet of the caster that attempts to remove 1 poison effect from party members within 30 yards every 5 seconds. Lasts 5 min.
+0048	Summons a Strength of Earth Totem with 5 health at the feet of the caster. The totem increases the strength of party members within 30 yards by 14. Lasts 5 min.
+0049	Summons a Tremor Totem with 5 health at the feet of the caster that shakes the ground around it, removing Fear, Charm and Sleep effects from party members within 30 yards. Lasts 5 min.
+0050	Summons a Windfury Totem with 5 health at the feet of the caster. The totem enhances the melee attacks of all party members nearby. Each main hand hit has a 20% chance of granting the attacker 1 extra attack with 179 extra melee attack power. Lasts 5 min.

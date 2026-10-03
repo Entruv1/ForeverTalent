@@ -1,0 +1,173 @@
+T	0	manual	`Replaces Classic's ${c.replaces.slice(0, -1).join(', ')} and ${c.replaces[c.replaces.length - 1]}, merged into one talent.`	`取代经典旧世的 ${c.replaces.slice(0, -1).join('、')} 与 ${c.replaces[c.replaces.length - 1]}，合并为一个天赋。`
+S	1	manual	'No Classic talent with this name.'	'经典旧世没有同名天赋。'
+T	29	manual	`${esc(a.arrow)}'s arrow now`	`${esc(a.arrow)} 的箭头现在指向它`
+T	30	manual	`taken by ${a.rate}% of ${who}`	`${who}中 ${a.rate}% 都选了它`
+T	36	manual	`${a.n} more in <b>${tn(a.ti, a.i)}</b> <small>the open ${esc(trees[a.ti].name)} talent most ${who} take, ${a.rate}%</small>`	`${a.n} 点加在 <b>${tn(a.ti, a.i)}</b> <small>这是 ${esc(trees[a.ti].name)} 中${who}最常选的开放天赋，${a.rate}%</small>`
+T	37	manual	`${f.left} point${f.left === 1 ? ' stays' : 's stay'} yours to place${f.noData ? ', nothing in the pick rates to place it by' : ''}.`	`剩余 ${f.left} 点由你自由分配${f.noData ? '，没有选取率可供参考' : ''}。`
+S	40	manual	', nothing in the pick rates to place it by'	，没有选取率可供参考
+T	41	manual	`${b.pts === 1 ? 'goes' : 'go'} with the rest: it needs ${road.n} in ${tn(road.ti, road.i)} now, which ${road.rate ? `only ${road.rate}% of ${who} take` : `no ${who.replace(/ builds$/, ' build')} takes`}`	`已并入其余点数：现在需要 ${road.n} 点在 ${tn(road.ti, road.i)}，而那里 ${road.rate ? `只有 ${road.rate}% 的${who}选了它` : `没有任何${who}选它`}`
+T	42	manual	`only ${road.rate}% of ${who} take`	`${who}中只有 ${road.rate}% 选了它`
+T	43	manual	`no ${who.replace(/ builds$/, ' build')} takes`	`没有任何${who}选它`
+T	45	manual	`would need ${need} more point${need === 1 ? '' : 's'} in ${esc(trees[b.ti].name)} first`	`还需要先在 ${esc(trees[b.ti].name)} 中多投 ${need} 点`
+T	46	manual	`would take ${short} more free point${short === 1 ? '' : 's'} than there ${short === 1 ? 'is' : 'are'}`	`需要多出 ${short} 点自由点数，当前不够`
+T	49	manual	`can't go back with what came back`	`已回退的部分无法再退回`
+T	122	manual	`ranks ${rs[0]} to ${rs[rs.length - 1]}`	`等级 ${rs[0]} 至 ${rs[rs.length - 1]}`
+T	126	manual	`is the new name of ${esc(r.before)}`	`是 ${esc(r.before)} 的新名称`
+T	127	manual	`is gone from the spellbook`	`已从法术书中移除`
+T	143	manual	`<del>${esc(o)}</del> is now <ins>${esc(n)}</ins>`	`<del>${esc(o)}</del> 改为 <ins>${esc(n)}</ins>`
+S	144	manual	' and reworded'	，措辞亦有调整
+S	145	manual	'a word changed'	措辞有改动
+T	148	manual	`<del>${esc(bare(P[0][0]))}</del> is now <ins>${esc(bare(P[0][1]))}</ins>`	`<del>${esc(bare(P[0][0]))}</del> 改为 <ins>${esc(bare(P[0][1]))}</ins>`
+T	152	manual	`<details class="wn"${open ? ' open' : ''}><summary class="src file"><i><img class="sc" src="${ICON('inv_scroll_03')}" alt="" width="18" height="18"></i><b>In the tooltip</b><span class="lpill"><span class="show">Show</span><span class="hide">Hide</span></span></summary>${textOf(r)}</details>`	`<details class="wn"${open ? ' open' : ''}><summary class="src file"><i><img class="sc" src="${ICON('inv_scroll_03')}" alt="" width="18" height="18"></i><b>提示框文本</b><span class="lpill"><span class="show">展开</span><span class="hide">收起</span></span></summary>${textOf(r)}</details>`
+S	160	manual	'Plays differently'	'玩法有变'
+S	161	manual	"Blizzard says it plays this way now. The tooltip doesn't say so."	"暴雪称它现在的玩法就是这样，但提示框里没写。"
+S	163	manual	'How it works'	'机制说明'
+S	164	manual	'How the game handles it, from Blizzard.'	'来自暴雪，说明游戏里实际怎么处理。'
+S	167	manual	'Blizzard fixed it in the game.'	'已修复'
+S	169	manual	'In a later build'	'后续构建中'
+S	170	manual	"In Blizzard's notes for this build, in the game files from a later build."	"见暴雪对本构建的说明，实际存在于后续构建的游戏文件里。"
+S	172	manual	'Known bugs'	'已知问题'
+S	173	manual	"On Blizzard's known issues list for this build."	"在暴雪针对本构建公布的已知问题清单中。"
+S	174	manual	'New talents'	'新增天赋'
+S	180	manual	"In Blizzard's notes, not in this build's game files yet."	"见暴雪说明，但本构建的游戏文件里还没有。"
+S	181	manual	"In Blizzard's notes for this build, in the game as server hotfixes and not in its files. The trees here carry them."	"见暴雪对本构建的说明，已作为服务器热修上线，但不在其文件中。此处的天赋树已包含这些改动。"
+S	182	manual	'plays differently'	'玩法有变'
+S	183	manual	'play differently'	'玩法有变'
+S	184	manual	'how it works'	'机制说明'
+S	186	manual	'in a later build'	'后续构建中'
+S	187	manual	'known bug'	'已知问题'
+S	188	manual	'known bugs'	'已知问题'
+S	189	manual	'not in the game files yet'	'游戏文件中还没有'
+S	190	manual	'in the game by hotfix'	'已作为热修上线'
+T	193	manual	` <small class="nlater">in build ${esc(bshort(o.b))}</small>`	` <small class="nlater">在构建 ${esc(bshort(o.b))} 中</small>`
+S	197	manual	'Not in the game files yet'	'游戏文件中还没有'
+S	198	manual	'In the game by hotfix'	'已作为热修上线'
+S	200	manual	'Every class'	'全职业'
+S	203	manual	'Leveling, items and the world'	'练级、物品与世界'
+T	204	manual	`<details class="ynotes"><summary><i class="bflag">${SVG.flag}</i><b>Blizzard's notes</b><small>not in a tooltip</small>${chips(all)}</summary>`	`<details class="ynotes"><summary><i class="bflag">${SVG.flag}</i><b>暴雪说明</b><small>不在提示框里</small>${chips(all)}</summary>`
+T	205	manual	`<div class="nevery"><p class="nev">Every class</p>${nbody(every, e.notes)}</div>`	`<div class="nevery"><p class="nev">全职业</p>${nbody(every, e.notes)}</div>`
+S	206	manual	'New or gone'	'新增或移除'
+S	207	manual	'In the trees'	'天赋树中'
+S	224	manual	' · cost line'	' · 消耗行'
+S	269	manual	'with talents added'	'新增的天赋'
+S	270	manual	'with talents removed'	'移除的天赋'
+S	271	manual	'with talents moved'	'移动的天赋'
+S	272	manual	'with talents under new rules'	'规则变化的天赋'
+S	273	manual	'with numbers changed'	'数值有改动的'
+S	274	manual	'with wording changed'	'措辞有改动的'
+S	275	manual	'new talents and spells'	'新增的天赋与法术'
+S	276	manual	'talents and spells taken out'	'被移除的天赋与法术'
+S	277	manual	'talents in a new row or tree'	'换了行或换了天赋树的'
+S	278	manual	'arrows, rank caps and tab names'	'箭头、等级上限与页签名'
+S	279	manual	'a number in the tooltip changed'	'提示框里的数字变了'
+S	280	manual	'the words changed, no number did'	'只改了措辞，没动数字'
+S	289	manual	'Icons only'	'仅图标'
+T	291	manual	`<button type="button" class="tile game" data-go="game"><span class="tk"><span class="tic logo" aria-hidden="true"><img src="/assets/wow-forever.png" alt=""></span>In the game${gameFresh ? '<i class="dot"></i>' : ''}</span><span class="tb">${gameBig}</span><span class="ts">${UPD0 ? `${matchMedia('(max-width:640px)').matches ? '' : 'latest: '}${esc(bname(UPD0.build))} · ${day(UPD0.date)}` : ''}</span>${bspark}</button>`	`<button type="button" class="tile game" data-go="game"><span class="tk"><span class="tic logo" aria-hidden="true"><img src="/assets/wow-forever.png" alt=""></span>游戏内${gameFresh ? '<i class="dot"></i>' : ''}</span><span class="tb">${gameBig}</span><span class="ts">${UPD0 ? `${matchMedia('(max-width:640px)').matches ? '' : '最新：'}${esc(bname(UPD0.build))} · ${day(UPD0.date)}` : ''}</span>${bspark}</button>`
+T	309	manual	`<p class="pick lens-hint">Tap a class, a race or Legacy to see its changes</p>`	`<p class="pick lens-hint">轻点某个职业、种族或传承，查看它的改动</p>`
+T	313	manual	`${esc(p)} talent and spell`	`${esc(p)}天赋与法术`
+S	315	manual	'Legacy perk'	'传承专长'
+T	318	manual	`${n} change${n === 1 ? '' : 's'} in ${esc(bname(e.build))}${isCls ? ': ' + parts : ''}`	`${n} 项变化于 ${esc(bname(e.build))}${isCls ? '：' + parts : ''}`
+T	319	manual	`nothing changed in ${esc(bname(e.build))}`	`${esc(bname(e.build))} 无变化`
+T	322	manual	`Only the ${BWORD[kf]} rows are shown; clear the filter above for all of it.`	`只显示「${BWORD[kf]}」的行；清掉上方筛选即可看全部。`
+T	323	manual	`That's every ${what} ${esc(bname(e.build))} touched, compared with ${esc(bname(prev.build))}.`	`这是 ${esc(bname(e.build))} 相比 ${esc(bname(prev.build))} 触及的全部${what}。`
+T	324	manual	`Every ${what} reads the same as in ${esc(bname(prev.build))}.`	`每一处${what}都与 ${esc(bname(prev.build))} 相同。`
+T	325	manual	`Compared with what the BlizzCon demo showed; the spellbooks came whole with this build.`	`与暴雪嘉年华演示版对比；法术书随本构建一并给出。`
+T	326	manual	` <a class="more" href="#" data-lines="${esc(p)}">Every ${esc(p)} line &rsaquo;</a>`	` <a class="more" href="#" data-lines="${esc(p)}">全部 ${esc(p)} 明细 &rsaquo;</a>`
+S	329	manual	'in Legacy'	'中传承专长'
+S	334	manual	' for players'	' 对玩家可见'
+T	338	manual	`<div class="sum quiet"><div class="sumhead"><b>0</b><span>changes for players in ${esc(bname(e.build))}. Checked file by file.</span></div></div>`	`<div class="sum quiet"><div class="sumhead"><b>0</b><span>${esc(bname(e.build))} 对玩家可见的变化。已逐文件核对。</span></div></div>`
+T	339	manual	`<details class="deeper" id="gameNotes"><summary><span>Beyond the tooltips</span><small>${e.notes.lines.length} from Blizzard's notes</small></summary>${T.notes(e)}</details>`	`<details class="deeper" id="gameNotes"><summary><span>提示框之外</span><small>${e.notes.lines.length} 条来自暴雪说明</small></summary>${T.notes(e)}</details>`
+S	343	manual	'the Legacy tree'	'传承天赋树'
+T	346	manual	`<div class="sum quiet"><div class="sumhead"><b>0</b><span>changes for players in ${esc(bname(e.build))}. ${tot(e)} icon swap${tot(e) === 1 ? '' : 's'}, nothing that plays differently.</span></div></div>`	`<div class="sum quiet"><div class="sumhead"><b>0</b><span>${esc(bname(e.build))} 对玩家可见的变化。${tot(e)} 处图标替换，没有影响玩法的改动。</span></div></div>`
+T	347	manual	`<p class="whyold">The latest, ${esc(bname(UPD0.build))}, changed nothing for players. This is ${esc(bname(e.build))}, the last one that did.</p>`	`<p class="whyold">最新的 ${esc(bname(UPD0.build))} 对玩家没有可见变化。最近一次有变化的是 ${esc(bname(e.build))}。</p>`
+T	349	manual	`Beta client ${esc(e.build)}${prevB ? `, compared with ${esc(prevB.build)}` : ''}, read file by file.`	`测试版客户端 ${esc(e.build)}${prevB ? `，对比 ${esc(prevB.build)}` : ''}，逐文件核对。`
+T	350	manual	`, compared with ${esc(prevB.build)}`	`，对比 ${esc(prevB.build)}`
+T	351	manual	` <a href="${esc(e.blue.url)}" target="_blank" rel="noopener"><i class="bflag">${T.SVG.flag}</i>Blizzard's notes for this build &rsaquo;</a>`	` <a href="${esc(e.blue.url)}" target="_blank" rel="noopener"><i class="bflag">${T.SVG.flag}</i>暴雪对本构建的说明 &rsaquo;</a>`
+T	352	manual	`<details class="deeper" id="gameNotes"><summary><span>Beyond the tooltips</span><small>${nN} from Blizzard's notes</small></summary>${T.notes(e)}</details>`	`<details class="deeper" id="gameNotes"><summary><span>提示框之外</span><small>${nN} 条来自暴雪说明</small></summary>${T.notes(e)}</details>`
+S	368	manual	'Gone. It read:'	'原文已移除：'
+S	369	manual	'Reads now:'	'现在为：'
+S	454	manual	'Back to the full panels'	'返回完整面板'
+T	463	manual	`<div class="mh"><img src="/assets/book-round.png" alt=""><div><div class="mt">Get this by email</div><div class="ms">One email when a beta build moves the trees: what moved, your classes first, then a link to the rest.</div></div></div>`	`<div class="mh"><img src="/assets/book-round.png" alt=""><div><div class="mt">用邮件接收更新</div><div class="ms">当测试版构建改动了天赋树时发一封邮件：改了什么、先看你的职业，然后附上其余内容的链接。</div></div></div>`
+T	464	manual	`<form novalidate><input type="email" name="email" autocomplete="email" inputmode="email" placeholder="you@example.com" aria-label="Your email"><button type="submit">Send me the next one</button></form>`	`<form novalidate><input type="email" name="email" autocomplete="email" inputmode="email" placeholder="you@example.com" aria-label="你的邮箱"><button type="submit">给我发下一封</button></form>`
+T	465	manual	`<p class="mo" aria-live="polite"></p><p class="mf">One click in the first message confirms it, and the same link in every message stops it. A ticked class also gets one email when its guide is up. <a href="/privacy#alerts">How it's kept</a>.</p>`	`<p class="mo" aria-live="polite"></p><p class="mf">第一封邮件里点一下即可确认，每封邮件里的同一个链接都可以退订。勾选的职业在其指南上线时也会收到一封邮件。<a href="/privacy#alerts">我们如何使用这些信息</a>。</p>`
+S	471	manual	'That does not look like an email address.'	'这看起来不像一个邮箱地址。'
+S	472	manual	'Sending the link…'	'正在发送链接…'
+T	478	manual	`<b>Check your inbox.</b> One click on the link in it and you are set. Not there in a minute? Look in junk, and mark it not junk so the next one lands.`	`<b>请查收邮件。</b>点一下邮件里的链接即可完成。一分钟内没收到？看看垃圾邮件，并把它标为「非垃圾邮件」，下一封才进得来。`
+S	479	manual	'That did not go through. Try again in a minute.'	'发送失败，请稍后再试。'
+T	483	manual	`<b>${p.email}</b> is signed in, with news off. <a href="/account">Switch it on</a> and the next build alert comes to you.`	`<b>${p.email}</b> 已登录，但订阅已关闭。<a href="/account">开启订阅</a>后，下一次构建更新就会发给你。`
+S	596	manual	' at level '	'，等级 '
+S	618	manual	'next up'	'接下来'
+S	629	manual	'Classic trainer level'	'经典旧世训练师等级'
+T	671	manual	`<div class="cl"><b>New in Forever.</b> ${esc(d.cn ? d.cn.replace(/^New in Forever\.\s*/, '') : 'No Classic spell with this name and rank.')}</div>`	`<div class="cl"><b>永恒新增。</b> ${esc(d.cn ? d.cn.replace(/^New in Forever\.\s*/, '') : '经典旧世没有同名同等级的法术。')}</div>`
+S	672	manual	'No Classic spell with this name and rank.'	'经典旧世没有同名同等级的法术。'
+T	678	manual	`<div class="stts ok">Forever text as the server's hotfix of ${+hf[3]} ${['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+hf[2] - 1]} has it, read from the beta's hotfix cache by other readers and checked against Blizzard's notes; the client's files do not carry it. Numbers at level 60 with no gear.</div>`	`<div class="stts ok">永恒版文本取自服务器 ${+hf[3]} 年 ${+hf[2]} 月的热修，由其他读者从测试版的热修缓存中读取，并与暴雪说明核对过；客户端的文件里没有这段。数值为 60 级、无装备时。</div>`
+S	723	manual	'Almost everyone takes'	'几乎人人都选'
+S	725	manual	'Almost nobody takes'	'几乎没人选'
+T	727	manual	` ${pop.stale.toLocaleString()} complete build${pop.stale === 1 ? '' : 's'} from before the trees changed ${pop.stale === 1 ? 'is' : 'are'} left out, since the game would not take ${pop.stale === 1 ? 'it' : 'them'} now.`	` 有 ${pop.stale.toLocaleString()} 套完整方案在天赋树改动之前就已生成，故被排除，因为游戏现在已不会接受它们。`
+T	750	manual	` Racial spells are in the ${cls} racial spells fold.`	` 种族法术在${CN(cls)}种族法术折叠区中。`
+T	752	manual	`New or changed since Classic.`	`经典旧世以来的新增或改动。`
+S	754	manual	"the Dwarves'"	"矮人的"
+S	755	manual	'Fear Ward'	'Fear Ward'
+S	756	manual	"the Undead's"	"亡灵的"
+S	757	manual	'Devouring Plague'	'Devouring Plague'
+T	758	manual	`<div class="h">${im ? `<img src="${im.src}" alt="">` : ''}<div><b>${s.dataset.name}</b><span>${s.dataset.lv ? 'Level ' + s.dataset.lv + ' · ' : ''}every ${cls}'s now</span></div></div><div class="d">${s.dataset.tip}</div>`	`<div class="h">${im ? `<img src="${im.src}" alt="">` : ''}<div><b>${s.dataset.name}</b><span>${s.dataset.lv ? '等级 ' + s.dataset.lv + ' · ' : ''}现在每个${CN(cls)}都有</span></div></div><div class="d">${s.dataset.tip}</div>`
+S	770	manual	'Close all'	'全部收起'
+S	771	manual	'Open all'	'全部展开'
+T	776	manual	`<b>${esc(r.talent)}</b> moved from ${esc(r.fromTree)} to ${esc(r.tree)}`	`<b>${esc(r.talent)}</b> 从 ${esc(r.fromTree)} 移到 ${esc(r.tree)}`
+T	777	manual	`<b>${esc(r.talent)}</b> moved from row ${r.fromRow} to row ${r.row}`	`<b>${esc(r.talent)}</b> 从第 ${r.fromRow} 行移到第 ${r.row} 行`
+T	778	manual	`<b>${esc(r.talent)}</b> now needs ${esc(r.req)} first`	`<b>${esc(r.talent)}</b> 现在需要先点出 ${esc(r.req)}`
+T	779	manual	`<b>${esc(r.talent)}</b> no longer needs ${esc(r.oldReq)}`	`<b>${esc(r.talent)}</b> 不再需要 ${esc(r.oldReq)}`
+T	780	manual	`<b>${esc(r.talent)}</b> is gone`	`<b>${esc(r.talent)}</b> 已被移除`
+T	781	manual	`<b>${esc(r.talent)}</b> took ${esc(r.before)}'s place`	`<b>${esc(r.talent)}</b> 取代了 ${esc(r.before)}`
+T	782	manual	`one of its points is back in your pool`	`其中一点已退回你的点数池`
+T	783	manual	`${s.n} of its points are back in your pool`	`其中 ${s.n} 点已退回你的点数池`
+S	784	manual	' The link you share from here will be the current one.'	' 你从这里分享出去的链接将指向当前版本。'
+T	787	manual	`${span(ent)} hotfixes to build ${esc(ent.build.replace(/ hotfixes$/, '').replace(/^1\.60\.1\./, ''))}`	`${span(ent)} 热修，对应于构建 ${esc(ent.build.replace(/ hotfixes$/, '').replace(/^1\.60\.1\./, ''))}`
+T	788	manual	`${when(ent.date)} beta build (${esc(ent.build)})`	`${when(ent.date)} 测试版构建（${esc(ent.build)}）`
+T	789	manual	`Made before the ${bname}, so ${its}.${share}`	`生成于${bname}之前，所以${its}。${share}`
+T	790	manual	`The trees have changed since it was made, so ${its}.${share}`	`生成之后天赋树已改动，所以${its}。${share}`
+T	792	manual	`gone from ${esc(t.tree)}`	`已从 ${esc(t.tree)} 移除`
+T	794	manual	`${a.n} in <b>${tn(a.ti, a.i)}</b> <small class="soft" style="margin:0">(${a.rate}% take it)</small>`	`${a.n} 点加在 <b>${tn(a.ti, a.i)}</b> <small class="soft" style="margin:0">（${a.rate}% 的人选它）</small>`
+T	795	manual	`<b>${tn(b.ti, b.i)}</b> stayed out, its road (${road.n} in ${tn(road.ti, road.i)}) is one ${road.rate ? `only ${road.rate}% of ${who} take` : `no ${who.replace(/ builds$/, ' build')} takes`}`	`<b>${tn(b.ti, b.i)}</b> 被排除在外，它的前置（${road.n} 点在 ${tn(road.ti, road.i)}）${road.rate ? `只有 ${road.rate}% 的${who}选了它` : `没有任何${who}选它`}`
+T	796	manual	`<b>${tn(b.ti, b.i)}</b> needs ${need ? `${need} more in ${esc(trees[b.ti].name)}` : short ? `${short} more free point${short === 1 ? '' : 's'}` : 'more in the tree'} first`	`<b>${tn(b.ti, b.i)}</b> 需要先在${need ? `${esc(trees[b.ti].name)}中多投 ${need} 点` : short ? `多出 ${short} 点自由点数` : '天赋树中投入更多点数'}`
+T	797	manual	`${need} more in ${esc(trees[b.ti].name)}`	`${esc(trees[b.ti].name)}中多投 ${need} 点`
+T	798	manual	`${short} more free point${short === 1 ? '' : 's'}`	`多出 ${short} 点自由点数`
+S	799	manual	'more in the tree'	'天赋树中投入更多点数'
+T	800	manual	`<div><h5>Filled in</h5><p>${s.n === 1 ? 'The point is' : Math.min(f.used, s.n) === s.n ? `All ${s.n}` : `${Math.min(f.used, s.n)} of the ${s.n}`} placed${f.used > s.n ? ` (with ${f.used - s.n} of your free points on the arrows)` : ''}: ${list(went)}.${f.left > 0 ? ` ${f.left} still yours${f.noData ? ', nothing in the pick rates to place it by' : ''}.` : ''}${cant.length ? ` ${list(cant)}.` : ''}</p>${same ? `<button class="un" type="button">Undo</button>` : ''}</div>`	`<div><h5>已补上的点</h5><p>${s.n === 1 ? '这一点' : Math.min(f.used, s.n) === s.n ? `全部 ${s.n} 点` : `${s.n} 点中的 ${Math.min(f.used, s.n)} 点`}已分配${f.used > s.n ? `（其中 ${f.used - s.n} 点取自你在箭头上的自由点数）` : ''}：${list(went)}。${f.left > 0 ? ` 剩余 ${f.left} 点仍归你${f.noData ? '，没有选取率可供参考' : ''}。` : ''}${cant.length ? ` ${list(cant)}。` : ''}</p>${same ? `<button class="un" type="button">撤销</button>` : ''}</div>`
+S	801	manual	'The point is'	'这一点'
+T	803	manual	`${Math.min(f.used, s.n)} of the ${s.n}`	`${s.n} 点中的 ${Math.min(f.used, s.n)} 点`
+T	804	manual	` (with ${f.used - s.n} of your free points on the arrows)`	`（其中 ${f.used - s.n} 点取自你在箭头上的自由点数）`
+T	805	manual	` ${f.left} still yours${f.noData ? ', nothing in the pick rates to place it by' : ''}.`	` 剩余 ${f.left} 点仍归你${f.noData ? '，没有选取率可供参考' : ''}。`
+T	807	manual	`<p class="soft rg">Ringed in orange below; ${TOUCH ? 'tap' : 'hover'} one for why.</p>`	`<p class="soft rg">下方以橙色圈出；${TOUCH ? '轻点' : '悬停'}可查看原因。</p>`
+S	810	manual	'Puts the point back'	'把这一点放回去'
+T	811	manual	`Puts ${placed === s.n ? `all ${s.n}` : `${placed} of ${s.n}`} back`	`放回 ${placed === s.n ? `全部 ${s.n} 点` : `${s.n} 点中的 ${placed} 点`}`
+T	814	manual	`, ${f.left} stay${f.left === 1 ? 's' : ''} yours`	`，其中 ${f.left} 点仍归你`
+T	816	manual	`${tal(b).name} skipped: its road, ${road.n} in ${tn(road.ti, road.i)}, is one ${road.rate ? `only ${road.rate}% of ${who} take` : `no ${who.replace(/ builds$/, ' build')} takes`}`	`${tal(b).name} 被跳过：它的前置（${road.n} 点在 ${tn(road.ti, road.i)}）${road.rate ? `只有 ${road.rate}% 的${who}选了它` : `没有任何${who}选它`}`
+T	817	manual	`${tal(b).name} needs ${need ? `${need} more in ${DATA[cls].trees[b.ti].name}` : short ? `${short} more free point${short === 1 ? '' : 's'}` : 'more in the tree'} first`	`${tal(b).name} 需要先在${need ? `${DATA[cls].trees[b.ti].name}中多投 ${need} 点` : short ? `多出 ${short} 点自由点数` : '天赋树中投入更多点数'}`
+T	818	manual	`${need} more in ${DATA[cls].trees[b.ti].name}`	`${DATA[cls].trees[b.ti].name}中多投 ${need} 点`
+T	820	manual	`${tal(b).name} needs ${need || short ? (need || short) + ' more' : 'more'} first`	`${tal(b).name} 还需要${need || short ? (need || short) + ' 点' : '更多点数'}`
+S	824	manual	'out of reach'	'无法触及'
+T	825	manual	`${nSkip} talent${nSkip === 1 ? '' : 's'} skipped`	`已跳过 ${nSkip} 个天赋`
+T	826	manual	`${nFar} out of reach`	`${nFar} 个无法触及`
+T	827	manual	`${cameCol}<div><h5>Put them back</h5><p class="fitline" data-v="${esc(JSON.stringify(variants))}">${esc(variants[0])}</p><button class="go" type="button">Fill it in for me</button></div>`	`${cameCol}<div><h5>把它们放回去</h5><p class="fitline" data-v="${esc(JSON.stringify(variants))}">${esc(variants[0])}</p><button class="go" type="button">帮我补上</button></div>`
+T	828	manual	`${cameCol}${fitCol}<details class="more"><summary><span class="o">More</span><span class="c">Less</span></summary>${movedCol}${nearCol}</details>`	`${cameCol}${fitCol}<details class="more"><summary><span class="o">更多</span><span class="c">收起</span></summary>${movedCol}${nearCol}</details>`
+T	829	manual	`<button class="x" type="button" aria-label="Hide this note">&times;</button><h4><i aria-hidden="true"></i>This build is older than the trees</h4><p class="lead">${lead}</p>${body}`	`<button class="x" type="button" aria-label="隐藏此说明">&times;</button><h4><i aria-hidden="true"></i>这套方案比当前天赋树更早</h4><p class="lead">${lead}</p>${body}`
+T	842	manual	`<div class="gw">This build had ${w.pts} point${w.pts === 1 ? '' : 's'} here. ${w.why.replace(/ Talents$/, '')} now, so ${w.pts === 1 ? 'it is' : 'they are'} back in your pool.</div>`	`<div class="gw">这套方案曾在此投入 ${w.pts} 点。现在${w.why.replace(/ Talents$/, '')}，所以这 ${w.pts} 点已退回你的点数池。</div>`
+S	844	manual	'they are'	'已退回'
+T	851	manual	`<div class="cl"><b>New in Forever.</b> ${replacesLine(c)}</div>`	`<div class="cl"><b>永恒新增。</b> ${replacesLine(c)}</div>`
+T	913	manual	`All ${N(pp.complete)} complete ${cls} builds`	`全部 ${N(pp.complete)} 套完整的${CN(cls)}方案`
+T	914	manual	`All complete ${cls} builds`	`全部完整的${CN(cls)}方案`
+T	915	manual	`The ${N(sn[t.name])} builds that lead in ${t.name}`	`${t.name} 中最主流的 ${N(sn[t.name])} 套方案`
+T	920	manual	`<b>${all}%</b> of ${cls} builds`	`<b>${all}%</b> 的${CN(cls)}方案`
+T	921	manual	`<b>${by[own][ti][i]}%</b> of ${own} builds${lead === own ? ' like yours' : ''}`	`<b>${by[own][ti][i]}%</b> 的${own}方案${lead === own ? '，与你的相似' : ''}`
+S	922	manual	' like yours'	'，与你的相似'
+T	923	manual	`<b>${by[lead][ti][i]}%</b> of ${lead} builds like yours`	`<b>${by[lead][ti][i]}%</b> 的${lead}方案与你的相似`
+T	924	manual	`<div class="pk">Taken by ${parts.length > 2 ? parts.slice(0, -1).join(', ') + ', and ' + parts[parts.length - 1] : parts.join(' and ')}.</div>`	`<div class="pk">选取比例：${parts.length > 2 ? parts.slice(0, -1).join('、') + '，以及 ' + parts[parts.length - 1] : parts.join(' 和 ')}。</div>`
+T	938	manual	`<div class="cl"><b>New in Forever.</b>${c.replaces ? ' ' + replacesLine(c) : ''}</div>`	`<div class="cl"><b>永恒新增。</b>${c.replaces ? ' ' + replacesLine(c) : ''}</div>`
+T	956	manual	`All ${total} talents and every one of their ranks come from the beta client's own data${hot.length ? `, except the ${hotList} trees, which carry the server's hotfixes as other readers logged them from the beta's hotfix cache, checked against Blizzard's notes` : ''}. Nothing is estimated.`	`全部 ${total} 个天赋及其所有等级均来自测试版客户端自身的数据${hot.length ? `，但 ${hotList} 天赋树除外：它们承载的是服务器热修，由其他读者从测试版的热修缓存中读取，并与暴雪说明核对过` : ''}。没有任何估测。`
+T	957	manual	`, except the ${hotList} trees, which carry the server's hotfixes as other readers logged them from the beta's hotfix cache, checked against Blizzard's notes`	`，但 ${hotList} 天赋树除外：它们承载的是服务器热修，由其他读者从测试版的热修缓存中读取，并与暴雪说明核对过`
+T	1040	manual	` <a href="${esc(e.blue.url)}" target="_blank" rel="noopener"><i class="bflag">${TRACK.SVG.flag}</i>Blizzard's notes for this build &rsaquo;</a>`	` <a href="${esc(e.blue.url)}" target="_blank" rel="noopener"><i class="bflag">${TRACK.SVG.flag}</i>暴雪对本构建的说明 &rsaquo;</a>`
+S	1044	manual	'spell change'	'法术改动'
+T	1045	manual	`<details class="bp-more"><summary>Beyond the tooltips<small>${e.notes.lines.length} from Blizzard's notes</small></summary>${TRACK.notes(e)}</details>`	`<details class="bp-more"><summary>提示框之外<small>${e.notes.lines.length} 条来自暴雪说明</small></summary>${TRACK.notes(e)}</details>`
+M	-1	manual	`${esc(f.spec)} builds`	`${esc(f.spec)} 方案`
+M	-2	manual	`${cls} builds`	`${CN(cls)} 方案`

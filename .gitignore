@@ -1,6 +1,112 @@
-# 白名单式忽略：只发布「交付物 + 说明」，其余（构建链、中间产物、node_modules）一律不进仓库
+# ===========================================================================
+# 发布白名单：本仓库只收「交付物 + 可复现的构建链」。
+#
+# 工作目录里还有大量一次性中间产物（tmp*.js / _built_* / _bak_* / 历史数据快照
+# v2|v3|v4 / _v2snap / 调试脚本 / node_modules / dist 等），一律不入库。
+#
+# 这份白名单是**验证过的**：把清单内的文件复制到空目录，依次跑
+#   gen_i18n.py -> build_data.js -> _gen_ui2.py -> build_html.py
+# 产出的单文件 HTML 与发布版逐字节相同（md5 cf72a17d08ebe623aa061d46d8fe630d）。
+#
+# 用法：往构建链里新增文件后，在下面补一行，再用 git status 确认它出现在
+# 待提交列表里。若忘了补，该文件就不会入库 —— 宁缺勿滥。
+# ===========================================================================
+
+# 先排除一切，再显式放行
 /*
 !/.gitignore
 !/.gitattributes
 !/README.md
 !/永恒天赋计算器.html
+
+# ---------------- _src：单文件 HTML 的构建链 ----------------
+!/_src/
+/_src/*
+
+# 管道脚本
+!/_src/gen_i18n.py
+!/_src/numfix.py
+!/_src/build_data.js
+!/_src/_gen_ui2.py
+!/_src/build_html.py
+!/_src/_v3_req.py
+!/_src/_numcanary.py
+!/_src/_numaudit.py
+!/_src/_scan.js
+
+# 漏译扫描工具
+!/_src/_scan5_chk.py
+!/_src/_v5scan3.js
+!/_src/talents.js
+
+# 上游站点的原始数据（talents/racials/... 由站点提供，本地只做汉化）
+!/_src/spelldesc.js
+!/_src/spellbooks.js
+!/_src/changeshots.js
+!/_src/changelog.js
+!/_src/legacy.js
+!/_src/popular.js
+!/_src/racials.js
+!/_src/updates.js
+!/_src/index.html
+
+# 页面模板与原始脚本；ui_zh.py 虽为生成物，但内含手写结构补丁段，必须随仓库发布
+!/_src/ui_zh.py
+
+# 译文对照表
+!/_src/_body_markup.html
+!/_src/_v2app.js
+!/_src/ui_zh.py
+!/_src/t2_names.tsv
+!/_src/t3_names.tsv
+!/_src/t4_names.tsv
+!/_src/t5_names.tsv
+!/_src/zh2_names.tsv
+!/_src/zh3_names.tsv
+!/_src/zh4_names.tsv
+!/_src/zh5_names.tsv
+!/_src/zh2_manual.tsv
+!/_src/extra_manual.tsv
+!/_src/zh2_tdesc.tsv
+!/_src/zh2_numwell.tsv
+!/_src/_remap_all.tsv
+!/_src/_remap_fix5.tsv
+
+# 译文批量文件（t*_desc_*.tsv 英文侧 / zh*_desc_*.tsv 中文侧）
+!/_src/t2_desc_*.tsv
+!/_src/t3_desc_*.tsv
+!/_src/t4_desc_*.tsv
+!/_src/t5_desc_*.tsv
+!/_src/zh2_desc_*.tsv
+!/_src/zh3_desc_*.tsv
+!/_src/zh4_desc_*.tsv
+!/_src/zh5_desc_*.tsv
+
+# 状态与数字对账基线
+!/_src/_ui_review.tsv
+!/_src/data_new.json
+!/_src/i18n.json
+!/_src/_new_names.json
+!/_src/_new_descs.json
+!/_src/_num_baseline.json
+!/_src/_idx_old.json
+!/_src/_ui_raw.json
+!/_src/_resolved.json
+!/_src/_res3_resolved.json
+!/_src/_i18n_undone.json
+
+# 资源：图标 / 背景 / 前后对比图 / 杂项（内联进 HTML 的原料）
+!/_src/dl/
+
+# ---------------- _exe：Electron 便携版打包链 ----------------
+!/_exe/
+/_exe/*
+!/_exe/scripts/
+!/_exe/main.js
+!/_exe/package.json
+!/_exe/package-lock.json
+!/_exe/.npmrc
+!/_exe/icon.ico
+
+# node_modules 与 dist 不入库：前者 npm install 生成，后者是产物
+# 注意：dist 里的 exe 超过 GitHub 单文件 100 MB 上限，只能作为 Release 附件。

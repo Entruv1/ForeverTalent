@@ -35,6 +35,52 @@
 | --- | --- | --- |
 | **1.1.5** | `1.60.1.70170` | 战士天赋树的服务器热修、暴雪「提示框之外」开发说明、新增技能与前后对比图 |
 
+## 从源码构建
+
+仓库里带完整构建链。依赖：**Python 3**（+ Pillow）、**Node.js 22**。
+
+### 1. 单文件 HTML（`_src/`）
+
+按顺序执行，任一步失败就不要继续：
+
+```bash
+cd _src
+python gen_i18n.py      # 合并 zh_*.tsv -> i18n.json，含数字对账与基线闸门
+node   build_data.js    # 上游数据 js + i18n.json -> zh_data.js
+python _gen_ui2.py      # 重写 ui_zh.py 的补丁表（IDX / EXTRA_S / RE_S）
+python build_html.py    # 内联资源 + 文案补丁 -> ../永恒天赋计算器.html
+
+# 校验（可选，改过 numfix.py 必跑）
+python _numcanary.py
+python _numaudit.py
+```
+
+成功判据：`gen_i18n.py` 打出 `缺口 names=0 descs=0`；`build_data.js` 打出
+`every string has a translation`；`build_html.py` 打出 **`missed: 0`** 并通过两道硬闸
+（补丁定界符自检 + `node --check` 语法自检）。
+
+### 2. 便携版 EXE（`_exe/`）
+
+```bash
+cd _exe
+npm install                      # 首次；国内走 .npmrc 里的 npmmirror 镜像
+node node_modules/electron/install.js   # electron 44 无 postinstall，需手动拉二进制
+node scripts/build-app.js        # 由根目录 HTML 派生 app.html + 生成 icon.ico
+node scripts/smoke.js            # 自检：中文数据 + 0 JS 错误 + 0 可见英文
+node scripts/dist.js             # 打包 -> dist/永恒天赋计算器-x.y.z.exe
+node scripts/verify-dist.js      # 校验 asar 内 app.html 与源文件逐字节一致
+```
+
+> 必须用 `node scripts/dist.js`，不要直接调 `electron-builder`：前者会补全
+> `PATHEXT`、注入 `npm.cmd` shim 与 npmmirror 镜像，并自行清理中间产物。
+
+### 发布白名单
+
+仓库根目录的 `.gitignore` 是**白名单式**的：工作目录里的一次性中间产物
+（`tmp*.js`、`_built_*`、`_bak_*`、历史数据快照、调试脚本、`node_modules`、`dist`）
+一律不入库。这份白名单经过验证 —— 把清单内的文件复制到空目录跑完整构建链，
+产出的单文件 HTML 与发布版**逐字节相同**。
+
 ## 免责声明
 
 - 本仓库是**非官方**粉丝汉化版，与暴雪娱乐（Blizzard Entertainment）及上游站点作者均无隶属关系。

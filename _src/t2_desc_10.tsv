@@ -1,0 +1,50 @@
+0001	Places a Blessing on the friendly target, reducing damage dealt from all sources by up to 10 for 5 min. In addition, when the target blocks a melee attack the attacker will take 14 Holy damage. Players may only have one Blessing on them per Paladin at any one time.
+0002	Places a Blessing on the party member, transfering 45 damage taken per hit to the caster. Lasts 30 sec. Players may only have one Blessing on them per Paladin at any one time.
+0003	Places the Hunter's Mark on the target, increasing the Ranged Attack Power of all attackers against that target by 26. In addition, the target of this ability can always be seen by the hunter whether it stealths or turns invisible. The target also appears on the mini-map. Lasts for 2 min.
+0004	Popular builds on the Warrior page
+0005	Pounce, stunning the target for 2 sec and causing 120 damage over 18 sec. Must be prowling and behind the target. Awards 1 combo point.
+0006	Power infuses all party and raid members, increasing their Shadow resistance by 60 for 20 min.
+0007	Power infuses all party and raid members, increasing their Spirit by 40 for 1 hour.
+0008	Power infuses all party and raid members, increasing their Stamina by 56 for 1 hour.
+0009	Power infuses the target, increasing their Stamina by 10 for 1 hour.
+0010	Protects the caster, increasing armor by 120 and increases health regeneration by 5 health per 5 sec. for 30 min.
+0011	Pummel the target for 20 damage. It also interrupts spellcasting and prevents any spell in that school from being cast for 4 sec.
+0012	Puncturing Wounds at 3/3
+0013	Purges 1 harmful magic effect from a friend or 1 beneficial magic effect from an enemy. If an effect is devoured, the Felhunter will be healed for 258.
+0014	Purges the enemy target, removing 1 magic effect.
+0015	Puts your pet in stealth mode, but slows its movement speed by 40%. The first attack from stealth receives a 50% bonus to damage. Lasts until cancelled.
+0016	Rains starshards down on the enemy target's head, causing 1,068 Arcane damage over 6 sec.
+0017	Rake the target for 23 damage and an additional 48 damage over 9 sec. Awards 1 combo point.
+0018	Ran text recognition over every talent tooltip in eleven BlizzCon streams (Xaryu, Savix, Soda, Esfand, Payo, Pikabooirl and Guzu, both days) and compared each one with what the site shows. Five ranks were wrong and are fixed: Rogue Camouflage cuts the Stealth cooldown by 3, 4, 5 and 6 sec at ranks 2 to 5, not 4, 6, 8 and 10; Warlock Soul Siphon rank 3 cuts Drain Life healing by 20%, not 30%; Mage Permafrost rank 3 slows by an additional 10%, not 9%; Paladin Vindication is 42, 85 and 127 Attack Power, not 84 and 126; Mage Fingers of Frost rank 2 keeps the 15% chance and covers the next 2 spells, rather than 30% on 1 spell. Another 56 ranks that were estimates matched the footage word for word and now show as read. In-between ranks that sit between two read ranks now round like the game does instead of showing halves.
+0019	Rank 1 text changed.
+0020	Rank 1: 12 mana, instant. The next melee attack against you deals 20 Shadow damage to the attacker and cuts their melee attack power by 43 for 2 min.
+0021	Rank 1: 50 mana, instant, 20 yd, 2 min cooldown. 50 to 57 Holy damage and roots the target for up to 2 sec. Humanoids only, very low threat. Same idea as TBC.
+0022	Rank 1: 55 mana, instant, 3 min cooldown. For 15 sec, any spell that hits you burns 18 of the attacker's mana and deals 1 Shadow damage per point burned.
+0023	Rank 1: instant, 10 min cooldown. Heals you for 220 to 257.
+0024	Rank 3 at 38: 30 mana, instant. Shadows strike anyone who hits you with a spell, melee or ranged attack for 76 Shadow damage, once every few seconds, no threat. 3 charges, lasts 10 min. Rank 1 is 50 mana and 34 damage.
+0025	Rank 3 by 38 (Classic reached that at 46) and it has a 15 sec cooldown now.
+0026	Reduces all damage your pet takes by 50% and increases the time between your pet's attacks by 60%, but deals more damage with each attack. Lasts 12 sec.
+0027	Reduces damage from falling.
+0028	Reduces the Mana cost of your Shots and Stings by 2%.
+0029	Reduces the chance enemies have to detect you while in Stealth mode as if you were 2 levels higher.
+0030	Reduces the chance you'll be hit by melee and ranged attacks by 50% for 15 sec or until you are missed 3 times.
+0031	Reduces the damage taken from all attacks by 60% for 12 sec.
+0032	Reduces the gold price of items from all vendors by 10%.
+0033	Reduces your cooldown on adding Camp features by 17%
+0034	Regenerates all nearby party members within 20 yards for 133 every 2 sec for 10 sec. Druid must channel to maintain the spell.
+0035	Replaces Drain Hope in Affliction: Tears the target apart from within, dealing 36 Shadow damage every 1 sec and increasing the damage they take from your other Shadow damage over time effects by 10%. Lasts 6 sec.
+0036	Replaces Restless Blades in Combat: Reduces the Energy cost of your Eviscerate ability by 10.
+0037	Returns the spirit to the body, restoring a dead target to life with 1,100 health and 1,700 mana.
+0038	Returns the spirit to the body, restoring a dead target to life with 150 health and 260 mana. Cannot be cast when in combat.
+0039	Returns the spirit to the body, restoring a dead target to life with 750 health and 1,200 mana.
+0040	Returns your totems to the earth, giving you 25% of the mana required to cast each totem destroyed by Totemic Recall.
+0041	Rogues can use one-handed axes now. The Hack and Slash talent lists Axe/Sword as a weapon group.
+0042	Roots the target in place and causes 112 Nature damage over 21 sec. Damage caused may interrupt the effect. You may only have 1 target Rooted at a time.
+0043	Sacrifices the Voidwalker, giving its owner a shield that will absorb 1,123 damage for 30 sec. While the shield holds, spellcasting will not be interrupted by damage.
+0044	Sacrifices the Voidwalker, giving its owner a shield that will absorb 318 damage for 30 sec. While the shield holds, spellcasting will not be interrupted by damage.
+0045	Same tooltip read on Soda's Mage and Warlock; Priests are cloth-only too. A reader caught the site listing Leather here.
+0046	Sanctified Judgement at 3/3
+0047	Sanctified Judgement now scales both numbers: rank 3 is a 100% chance to return 60% of the mana, read straight off a rank 3 of 3 tooltip on Savix's stream after <a href="https://www.reddit.com/user/ALC0LITE" target="_blank" rel="noopener">u/ALC0LITE</a> flagged it. Dwarf and Undead racials rewritten from Blizzard's own Deep Dive slides: Stoneform is a 3 min cooldown with 10% less physical damage, Cannibalize ticks 7% health and mana every 2 sec, Touch of the Grave is a 5% chance capped at 5% of your health.
+0048	Scares a beast, causing it to run in fear for up to 10 sec. Damage caused may interrupt the effect. Only one beast can be feared at a time.
+0049	Scorch the enemy for 111 to 131 Fire damage.
+0050	Seal of Righteousness in the Paladin spellbook

@@ -1,0 +1,1108 @@
+T	0	Replaces Classic's and , merged into one talent.	`Replaces Classic's ${c.replaces.slice(0, -1).join(', ')} and ${c.replaces[c.replaces.length - 1]}, merged into one talent.`
+S	1	No Classic talent with this name.	'No Classic talent with this name.'
+S	2	span	'span'
+S	3	Legacy	'Legacy'
+S	4	open	'open'
+S	5	share	'share'
+S	6	save	'save'
+S	7	load	'load'
+S	8	addon	'addon'
+S	9	self	'self'
+S	10	POST	'POST'
+S	11	event	'event'
+S	12	To be added in future patch content	'To be added in future patch content'
+T	13	Requires points in	`Requires ${t.gate} points in ${tree.name}`
+T	14	Requires points in Talents	`Requires ${need} points in ${tree.name} Talents`
+T	15	Requires point in	`Requires ${tree.talents[p].max} point${tree.talents[p].max>1?'s':''} in ${t.req}`
+S	16	Max rank	'Max rank'
+T	17	All points spent. Take one back from another to move it.	`All ${pool(cls)} ${cls === 'Legacy' ? 'Legacy ' : ''}points spent. Take one back from another ${cls === 'Legacy' ? 'perk' : 'talent'} to move it.`
+S	18	Legacy	'Legacy '
+S	19	perk	'perk'
+S	20	talent	'talent'
+S	21	maxed	'maxed'
+S	22	partial	'partial'
+S	23	locked	'locked'
+S	24	avail	'avail'
+S	25	build_settled	'build_settled'
+S	26	&lt;	'&lt;'
+T	27	builds	`${esc(f.spec)} builds`
+T	28	builds	`${cls} builds`
+T	29	's arrow now	`${esc(a.arrow)}'s arrow now`
+T	30	taken by % of	`taken by ${a.rate}% of ${who}`
+S	31	and	' and '
+T	32	back	`${lines.length ? 'then ' : ''}${list(backs)} ${backs.length === 1 ? 'goes' : 'go'} back`
+S	33	then	'then '
+S	34	goes	'goes'
+S	35	go	'go'
+T	36	more in the open talent most take, %	`${a.n} more in <b>${tn(a.ti, a.i)}</b> <small>the open ${esc(trees[a.ti].name)} talent most ${who} take, ${a.rate}%</small>`
+T	37	point yours to place.	`${f.left} point${f.left === 1 ? ' stays' : 's stay'} yours to place${f.noData ? ', nothing in the pick rates to place it by' : ''}.`
+S	38	stays	' stays'
+S	39	s stay	's stay'
+S	40	, nothing in the pick rates to place it by	', nothing in the pick rates to place it by'
+T	41	with the rest: it needs in now, which	`${b.pts === 1 ? 'goes' : 'go'} with the rest: it needs ${road.n} in ${tn(road.ti, road.i)} now, which ${road.rate ? `only ${road.rate}% of ${who} take` : `no ${who.replace(/ builds$/, ' build')} takes`}`
+T	42	only % of take	`only ${road.rate}% of ${who} take`
+T	43	no takes	`no ${who.replace(/ builds$/, ' build')} takes`
+S	44	build	' build'
+T	45	would need more point in first	`would need ${need} more point${need === 1 ? '' : 's'} in ${esc(trees[b.ti].name)} first`
+T	46	would take more free point than there	`would take ${short} more free point${short === 1 ? '' : 's'} than there ${short === 1 ? 'is' : 'are'}`
+S	47	is	'is'
+S	48	are	'are'
+T	49	can't go back with what came back	`can't go back with what came back`
+S	50	build_refit	'build_refit'
+S	51	#levelOrder	'#levelOrder'
+S	52	#levelList	'#levelList'
+S	53	#orderNote	'#orderNote'
+T	54	Talented /5 in your Legacy perks: talent points start at level .	`Talented ${tr}/5 in your Legacy perks: talent points start at level ${10 - tr}. `
+S	55	In the order the points were placed. Take a point back and add it again to move it later in the order.	'In the order the points were placed. Take a point back and add it again to move it later in the order.'
+S	56	This build came without an order, so it is listed tree by tree, row by row. Place points yourself and the order follows your clicks.	'This build came without an order, so it is listed tree by tree, row by row. Place points yourself and the order follows your clicks.'
+S	57	inv_misc_map_01	'inv_misc_map_01'
+S	58	tf_legacy	'tf_legacy'
+S	59	null	'null'
+S	60	Adventure	'Adventure'
+S	61	Talented	'Talented'
+S	62	#legacyTrees	'#legacyTrees'
+S	63	#legacyNote	'#legacyNote'
+S	64	#legacySub	'#legacySub'
+T	65	27 account-wide perks. / spent.	`27 account-wide perks. ${lTotal()} / ${L.points} spent.`
+T	66	27 account-wide perks, points.	`27 account-wide perks, ${L.points} points.`
+S	67	play	'play'
+S	68	section	'section'
+S	69	tree	'tree'
+S	70	.tbody	'.tbody'
+S	71	div	'div'
+S	72	grid	'grid'
+S	73	repeat(4,64px)	'repeat(4,64px)'
+S	74	role	'role'
+S	75	button	'button'
+S	76	svg	'svg'
+S	77	class	'class'
+S	78	arrows	'arrows'
+S	79	.thead .c b	'.thead .c b'
+S	80	.thead	'.thead'
+S	81	--fill	'--fill'
+S	82	spent	'spent'
+S	83	.thead .nr	'.thead .nr'
+T	84	next unlock at	`next unlock at ${next}`
+S	85	all unlocked	'all unlocked'
+S	86	.talent	'.talent'
+S	87	sel	'sel'
+S	88	talent	'talent '
+S	89	unknown	' unknown'
+S	90	sel	' sel'
+S	91	was	' was'
+S	92	aria-label	'aria-label'
+T	93	, rank of	`${t.name}, rank ${r} of ${t.max}`
+S	94	.rk	'.rk'
+S	95	.arrows	'.arrows'
+S	96	.grid	'.grid'
+S	97	ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz056789	'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz056789'
+S	98	gone	'gone'
+S	99	replaced	'replaced'
+S	100	most	'most'
+S	101	least	'least'
+S	102	#trees	'#trees'
+S	103	#tip	'#tip'
+S	104	New	'New'
+S	105	Replaced	'Replaced'
+S	106	Renamed	'Renamed'
+S	107	Gone	'Gone'
+S	108	Moved	'Moved'
+S	109	Arrow	'Arrow'
+S	110	Ranks	'Ranks'
+S	111	Text	'Text'
+S	112	Icon	'Icon'
+S	113	new	'new'
+S	114	renamed	'renamed'
+S	115	moved	'moved'
+S	116	prereq	'prereq'
+S	117	ranks	'ranks'
+S	118	text	'text'
+S	119	icon	'icon'
+S	120	class_	'class_'
+S	121	rank	'rank '
+T	122	ranks to	`ranks ${rs[0]} to ${rs[rs.length - 1]}`
+S	123	ranks	'ranks '
+T	124	is a new spell	`is a new spell${r.level ? ` <span class="soft">(from level ${r.level})</span>` : ''}`
+T	125	(from level )	` <span class="soft">(from level ${r.level})</span>`
+T	126	is the new name of	`is the new name of ${esc(r.before)}`
+T	127	is gone from the spellbook	`is gone from the spellbook`
+T	128	takes 's spot in	`takes ${esc(r.before)}'s spot in ${esc(r.tree)}${r.row ? ` <span class="soft">from level ${lv(r.row)}</span>` : ''}${r.desc ? ` <span class="soft">${esc(r.desc.replace(/\.$/, ''))}</span>` : ''}`
+T	129	from level	` <span class="soft">from level ${lv(r.row)}</span>`
+T	130	is new for	`is new for ${esc(r.tree)}`
+T	131	is new in , row (from level )	`is new in ${esc(r.tree)}, row ${r.row} <span class="soft">(from level ${lv(r.row)})</span>`
+T	132	is gone from	`is gone from ${esc(r.tree)}`
+T	133	moved from to	`moved from ${esc(r.fromTree)} to ${esc(r.tree)}`
+T	134	moved from row to row in (reachable from level instead of )	`moved from row ${r.fromRow} to row ${r.row} in ${esc(r.tree)} <span class="soft">(reachable from level ${lv(r.row)} instead of ${lv(r.fromRow)})</span>`
+T	135	slid along row in	`slid along row ${r.row} in ${esc(r.tree)}`
+T	136	now needs first	`now needs ${esc(r.req)} first`
+T	137	no longer needs	`no longer needs ${esc(r.oldReq)}`
+S	138	sec cooldown|sec cast|sec|min cooldown|min|yd range|yards?|yds|yd|times|stacks?|points?|targets?|charges?|hours?|Mana|Rage|Energy|Health	'sec cooldown|sec cast|sec|min cooldown|min|yd range|yards?|yds|yd|times|stacks?|points?|targets?|charges?|hours?|Mana|Rage|Energy|Health'
+T	139	&ldquo;&rdquo;	`&ldquo;${esc(trimEdge(s))}&rdquo;`
+S	140	range	'range'
+S	141	reworked	'reworked'
+S	142	reworded	'reworded'
+T	143	is now	`<del>${esc(o)}</del> is now <ins>${esc(n)}</ins>`
+S	144	and reworded	' and reworded'
+S	145	a word changed	'a word changed'
+S	146	adds	'adds '
+S	147	drops	'drops '
+T	148	is now	`<del>${esc(bare(P[0][0]))}</del> is now <ins>${esc(bare(P[0][1]))}</ins>`
+S	149	numbers	'numbers'
+S	150	wording	'wording'
+T	151	Was Now	`<span class="bd two"><span class="was"><b>Was</b> ${esc(r.before)}</span><span class="now"><b>Now</b> ${esc(r.after)}</span></span>`
+T	152	In the tooltip Show Hide	`<details class="wn"${open ? ' open' : ''}><summary class="src file"><i><img class="sc" src="${ICON('inv_scroll_03')}" alt="" width="18" height="18"></i><b>In the tooltip</b><span class="lpill"><span class="show">Show</span><span class="hide">Hide</span></span></summary>${textOf(r)}</details>`
+S	153	open	' open'
+S	154	inv_scroll_03	'inv_scroll_03'
+S	155	|line	'|line'
+T	156	Blizzard	`<span class="src blue"><i>${SVG.flag}</i><span><b>Blizzard</b> ${esc(t)}</span></span>`
+S	157	&quot;	'&quot;'
+S	158	data-gone="1"	' data-gone="1"'
+S	159	rule	'rule'
+S	160	Plays differently	'Plays differently'
+S	161	Blizzard says it plays this way now. The tooltip doesn't say so.	"Blizzard says it plays this way now. The tooltip doesn't say so."
+S	162	info	'info'
+S	163	How it works	'How it works'
+S	164	How the game handles it, from Blizzard.	'How the game handles it, from Blizzard.'
+S	165	fix	'fix'
+S	166	Fixed	'Fixed'
+S	167	Blizzard fixed it in the game.	'Blizzard fixed it in the game.'
+S	168	later	'later'
+S	169	In a later build	'In a later build'
+S	170	In Blizzard's notes for this build, in the game files from a later build.	"In Blizzard's notes for this build, in the game files from a later build."
+S	171	known	'known'
+S	172	Known bugs	'Known bugs'
+S	173	On Blizzard's known issues list for this build.	"On Blizzard's known issues list for this build."
+S	174	New talents	'New talents'
+S	175	Removed	'Removed'
+S	176	arrow	'arrow'
+S	177	Arrows	'Arrows'
+S	178	rework	'rework'
+S	179	Reworked	'Reworked'
+S	180	In Blizzard's notes, not in this build's game files yet.	"In Blizzard's notes, not in this build's game files yet."
+S	181	In Blizzard's notes for this build, in the game as server hotfixes and not in its files. The trees here carry them.	"In Blizzard's notes for this build, in the game as server hotfixes and not in its files. The trees here carry them."
+S	182	plays differently	'plays differently'
+S	183	play differently	'play differently'
+S	184	how it works	'how it works'
+S	185	fixed	'fixed'
+S	186	in a later build	'in a later build'
+S	187	known bug	'known bug'
+S	188	known bugs	'known bugs'
+S	189	not in the game files yet	'not in the game files yet'
+S	190	in the game by hotfix	'in the game by hotfix'
+S	191	hotfix	'hotfix'
+S	192	pending	'pending'
+T	193	in build	` <small class="nlater">in build ${esc(bshort(o.b))}</small>`
+S	194	many	' many'
+T	195	Developers' notes	`<details class="ndev"${o.k === 'info' ? ' open' : ''}><summary>Developers' notes</summary><span>${esc(x.d)}</span></details>`
+T	196	Developers' notes	`<details class="ndev"><summary>Developers' notes</summary><span>${esc(gd)}</span></details>`
+S	197	Not in the game files yet	'Not in the game files yet'
+S	198	In the game by hotfix	'In the game by hotfix'
+S	199	all	'all'
+S	200	Every class	'Every class'
+S	201	inv_misc_book_09	'inv_misc_book_09'
+S	202	world	'world'
+S	203	Leveling, items and the world	'Leveling, items and the world'
+T	204	Blizzard's notes not in a tooltip	`<details class="ynotes"><summary><i class="bflag">${SVG.flag}</i><b>Blizzard's notes</b><small>not in a tooltip</small>${chips(all)}</summary>`
+T	205	Every class	`<div class="nevery"><p class="nev">Every class</p>${nbody(every, e.notes)}</div>`
+S	206	New or gone	'New or gone'
+S	207	In the trees	'In the trees'
+S	208	Numbers	'Numbers'
+S	209	Wording	'Wording'
+S	210	Spells	'Spells'
+S	211	Racials	'Racials'
+T	212	Legacy.	`<li><img class="ci" src="${ICON('inv_misc_map_01')}" alt=""><span class="txt"><b>Legacy.</b> ${tell(ln, 'Legacy')}</span></li>`
+T	213	Under the hood: refreshed. Icons only; open Every change to see each one.	`<li class="under"><i>&#9707;</i><span class="txt">Under the hood: ${plural(k.icon, 'icon')} refreshed. Icons only; open Every change to see each one.</span></li>`
+T	214	In plain words new or replaced gone moved	`<div class="bp-words"><h4>In plain words</h4><ul>${out.join('')}</ul><p class="mmkey"><i class="k1"></i> new or replaced <i class="k2"></i> gone <i class="k3"></i> moved</p></div>`
+S	215	#whatsNew	'#whatsNew'
+S	216	#logDrawer	'#logDrawer'
+S	217	#logBack	'#logBack'
+S	218	#logList	'#logList'
+S	219	#wnlink	'#wnlink'
+S	220	log_seen	'log_seen'
+S	221	unread	'unread'
+S	222	#buildLog	'#buildLog'
+S	223	· spell	' · spell'
+S	224	· cost line	' · cost line'
+S	225	Nothing on the site changed.	'Nothing on the site changed.'
+S	226	new talent	'new talent'
+T	227	removed	`${k.gone} removed`
+T	228	moved	`${k.moved} moved`
+S	229	changed	' changed'
+S	230	rank cap	'rank cap'
+S	231	tab	'tab'
+S	232	renamed	' renamed'
+S	233	tooltip	'tooltip'
+S	234	reworded	' reworded'
+S	235	refreshed	' refreshed'
+S	236	No tree changes.	'No tree changes.'
+S	237	Racial	'Racial'
+S	238	first	' first'
+T	239	What moved in the trees	`<details class="bsec" open><summary>What moved in the trees<small>${majors.length}</small></summary><ul class="brows major">${majors.join('')}</ul></details>`
+T	240	No data changes	`<div class="chips"><i class="quiet">No data changes</i></div>`
+T	241	Since you were here ():	`<li class="since"><b>Since you were here</b> (${nice(seen)}): ${fresh.length ? `${plural(fresh.length, 'build')} checked, ${nfresh ? plural(nfresh, 'change') + ' on the site' : 'nothing changed on the site'}.` : 'no new builds.'}</li>`
+T	242	checked, .	`${plural(fresh.length, 'build')} checked, ${nfresh ? plural(nfresh, 'change') + ' on the site' : 'nothing changed on the site'}.`
+S	243	build	'build'
+S	244	change	'change'
+S	245	on the site	' on the site'
+S	246	nothing changed on the site	'nothing changed on the site'
+S	247	no new builds.	'no new builds.'
+T	248	Every beta build is checked against the site the day it lands. This is what each one changed.	`<li class="since"><b>Every beta build</b> is checked against the site the day it lands. This is what each one changed.</li>`
+T	249	+ new - gone moved arrow text icon	`<li class="bkey"><i class="k-new">+ new</i><i class="k-gone">&minus; gone</i><i class="k-moved">&#8644; moved</i><i class="k-prereq">&#8627; arrow</i><i class="k-text">&#9998; text</i><i class="k-icon">&#9707; icon</i></li>`
+T	250	Open the full breakdown, build by build ›	`<li class="bkey"><a class="bp-link" href="/builds">Open the full breakdown, build by build &rsaquo;</a></li>`
+S	251	bld	'bld'
+S	252	click	'click'
+S	253	.cbar	'.cbar'
+S	254	.bsec.soft	'.bsec.soft'
+S	255	start	'start'
+S	256	smooth	'smooth'
+S	257	#buildStamp	'#buildStamp'
+T	258	Beta build · checked ›	`<span class="dot"></span>Beta build <b>${esc(UPD[0].build)}</b> · checked ${nice(UPD[0].date)} <i>&rsaquo;</i>`
+S	259	build_stamp	'build_stamp'
+S	260	#dswitch	'#dswitch'
+S	261	#topicGame	'#topicGame'
+S	262	#topicSite	'#topicSite'
+S	263	.dbody	'.dbody'
+T	264	the	`the ${short(b)}`
+T	265	build	`build ${short(b)}`
+S	266	added	'added'
+S	267	removed	'removed'
+S	268	rule changes	'rule changes'
+S	269	with talents added	'with talents added'
+S	270	with talents removed	'with talents removed'
+S	271	with talents moved	'with talents moved'
+S	272	with talents under new rules	'with talents under new rules'
+S	273	with numbers changed	'with numbers changed'
+S	274	with wording changed	'with wording changed'
+S	275	new talents and spells	'new talents and spells'
+S	276	talents and spells taken out	'talents and spells taken out'
+S	277	talents in a new row or tree	'talents in a new row or tree'
+S	278	arrows, rank caps and tab names	'arrows, rank caps and tab names'
+S	279	a number in the tooltip changed	'a number in the tooltip changed'
+S	280	the words changed, no number did	'the words changed, no number did'
+S	281	Legacy perks	'Legacy perks'
+S	282	inv_misc_questionmark	'inv_misc_questionmark'
+S	283	on	'on'
+S	284	today	' today'
+S	285	flat	'flat'
+S	286	now	' now'
+S	287	No builds yet	'No builds yet'
+T	288	change	`${playerN(UPD0)} change${playerN(UPD0) === 1 ? '' : 's'}`
+S	289	Icons only	'Icons only'
+S	290	No changes	'No changes'
+T	291	In the game	`<button type="button" class="tile game" data-go="game"><span class="tk"><span class="tic logo" aria-hidden="true"><img src="/assets/wow-forever.png" alt=""></span>In the game${gameFresh ? '<i class="dot"></i>' : ''}</span><span class="tb">${gameBig}</span><span class="ts">${UPD0 ? `${matchMedia('(max-width:640px)').matches ? '' : 'latest: '}${esc(bname(UPD0.build))} · ${day(UPD0.date)}` : ''}</span>${bspark}</button>`
+S	292	(max-width:640px)	'(max-width:640px)'
+T	293	On the site	`<button type="button" class="tile site" data-go="site"><span class="tk"><span class="tic" aria-hidden="true"><img src="/assets/book-round.png" alt=""></span>On the site${siteFresh ? '<i class="dot"></i>' : ''}</span><span class="tb">${nSite ? nSite + ' new' : (seen ? 'Up to date' : weekN + ' this week')}</span><span class="ts">${esc(LOG[0].title)}</span>${spark}</button>`
+S	294	new	' new'
+S	295	Up to date	'Up to date'
+S	296	this week	' this week'
+S	297	Orcs	'Orcs'
+S	298	Undead	'Undead'
+S	299	Tauren	'Tauren'
+S	300	Trolls	'Trolls'
+S	301	Humans	'Humans'
+S	302	Dwarves	'Dwarves'
+S	303	Night Elf	'Night Elf'
+S	304	Night Elves	'Night Elves'
+S	305	Gnomes	'Gnomes'
+S	306	quiet	'quiet'
+S	307	on	' on'
+S	308	nothing here	'nothing here'
+T	309	Tap a class, a race or Legacy to see its changes	`<p class="pick lens-hint">Tap a class, a race or Legacy to see its changes</p>`
+S	310	Class	'Class'
+S	311	cls	'cls'
+S	312	inl	'inl'
+T	313	talent and spell	`${esc(p)} talent and spell`
+T	314	racial	`${esc(p.slice(5))} racial`
+S	315	Legacy perk	'Legacy perk'
+S	316	spell	'spell'
+S	317	racial	'racial'
+T	318	change in	`${n} change${n === 1 ? '' : 's'} in ${esc(bname(e.build))}${isCls ? ': ' + parts : ''}`
+T	319	nothing changed in	`nothing changed in ${esc(bname(e.build))}`
+S	320	Talents	'Talents'
+T	321	racials	`${esc(p.slice(5))} racials`
+T	322	Only the rows are shown; clear the filter above for all of it.	`Only the ${BWORD[kf]} rows are shown; clear the filter above for all of it.`
+T	323	That's every touched, compared with .	`That's every ${what} ${esc(bname(e.build))} touched, compared with ${esc(bname(prev.build))}.`
+T	324	Every reads the same as in .	`Every ${what} reads the same as in ${esc(bname(prev.build))}.`
+T	325	Compared with what the BlizzCon demo showed; the spellbooks came whole with this build.	`Compared with what the BlizzCon demo showed; the spellbooks came whole with this build.`
+T	326	Every line ›	` <a class="more" href="#" data-lines="${esc(p)}">Every ${esc(p)} line &rsaquo;</a>`
+T	327	for s	`for ${p}s`
+T	328	for	`for ${plural(p.slice(5))}`
+S	329	in Legacy	'in Legacy'
+S	330	No beta build checked yet.	'<p class="hl">No beta build checked yet.</p>'
+S	331	hot	'hot'
+T	332	The	`The ${esc(b.build)}`
+T	333	Build	`Build ${esc(b.build)}`
+S	334	for players	' for players'
+S	335	no changes	'no changes'
+S	336	latest	'latest'
+T	337	none	`none ${youWord()}`
+T	338	0 changes for players in . Checked file by file.	`<div class="sum quiet"><div class="sumhead"><b>0</b><span>changes for players in ${esc(bname(e.build))}. Checked file by file.</span></div></div>`
+T	339	Beyond the tooltips from Blizzard's notes	`<details class="deeper" id="gameNotes"><summary><span>Beyond the tooltips</span><small>${e.notes.lines.length} from Blizzard's notes</small></summary>${T.notes(e)}</details>`
+T	340	class	`<b>${nc}</b> class${nc === 1 ? '' : 'es'}`
+S	341	es	'es'
+T	342	race	`<b>${nr}</b> race${nr === 1 ? '' : 's'}`
+S	343	the Legacy tree	'the Legacy tree'
+T	344	change for players across	`<div class="sum"><div class="sumhead"><b>${n}</b><span>change${n === 1 ? '' : 's'} for players across ${T.sentence(where).replace(/\.$/, '')}</span></div>`
+S	345	rules	'rules'
+T	346	0 changes for players in . icon swap, nothing that plays differently.	`<div class="sum quiet"><div class="sumhead"><b>0</b><span>changes for players in ${esc(bname(e.build))}. ${tot(e)} icon swap${tot(e) === 1 ? '' : 's'}, nothing that plays differently.</span></div></div>`
+T	347	The latest, , changed nothing for players. This is , the last one that did.	`<p class="whyold">The latest, ${esc(bname(UPD0.build))}, changed nothing for players. This is ${esc(bname(e.build))}, the last one that did.</p>`
+T	348	Sources	`<p class="sources"><b>Sources</b> ${e.source ? esc(e.source) : `Beta client ${esc(e.build)}${prevB ? `, compared with ${esc(prevB.build)}` : ''}, read file by file.`}${e.blue && e.blue.url ? ` <a href="${esc(e.blue.url)}" target="_blank" rel="noopener"><i class="bflag">${T.SVG.flag}</i>Blizzard's notes for this build &rsaquo;</a>` : ''}</p>`
+T	349	Beta client , read file by file.	`Beta client ${esc(e.build)}${prevB ? `, compared with ${esc(prevB.build)}` : ''}, read file by file.`
+T	350	, compared with	`, compared with ${esc(prevB.build)}`
+T	351	Blizzard's notes for this build ›	` <a href="${esc(e.blue.url)}" target="_blank" rel="noopener"><i class="bflag">${T.SVG.flag}</i>Blizzard's notes for this build &rsaquo;</a>`
+T	352	Beyond the tooltips from Blizzard's notes	`<details class="deeper" id="gameNotes"><summary><span>Beyond the tooltips</span><small>${nN} from Blizzard's notes</small></summary>${T.notes(e)}</details>`
+T	353	Every change	`<details class="deeper" id="gameLines"><summary><span>Every change</span><small>${nAll}${nIcon ? `, ${nIcon} of them icons` : ''}</small></summary><div class="lines">${lines(e)}</div></details>`
+T	354	, of them icons	`, ${nIcon} of them icons`
+S	355	.btl button	'.btl button'
+S	356	changelog_build	'changelog_build'
+S	357	.you a.more	'.you a.more'
+S	358	#gameLines	'#gameLines'
+S	359	.bcls	'.bcls'
+S	360	summary b	'summary b'
+S	361	changelog_lines	'changelog_lines'
+S	362	.lens-icons button	'.lens-icons button'
+S	363	changelog_place	'changelog_place'
+S	364	none	'none'
+S	365	#gameYou	'#gameYou'
+S	366	nearest	'nearest'
+S	367	tippop	'tippop'
+S	368	Gone. It read:	'Gone. It read:'
+S	369	Reads now:	'Reads now:'
+S	370	px	'px'
+S	371	under	'under'
+S	372	pointerover	'pointerover'
+S	373	mouse	'mouse'
+S	374	.ledg img.ti[data-tip]	'.ledg img.ti[data-tip]'
+S	375	pointerout	'pointerout'
+S	376	scroll	'scroll'
+S	377	Builds	'Builds'
+S	378	The site	'The site'
+S	379	site	'site'
+S	380	builds	'builds'
+S	381	spells	'spells'
+S	382	talents	'talents'
+S	383	ability_marksmanship	'ability_marksmanship'
+S	384	inv_misc_note_02	'inv_misc_note_02'
+T	385	style="max-width:min(100%,px)"	`style="max-width:min(100%,${Math.round(w / 2)}px)"`
+T	386	· new	`<span class="cmpcap">${esc(c.cap)} · new</span><img class="solo" loading="lazy" src="${c.after}" alt="" ${mw(c.w)}>`
+T	387	Before After	`<span class="stack"><span class="cmpcap">${esc(c.cap)}</span><span class="lab">Before</span><img loading="lazy" src="${c.before}" alt="Before" ${mw(c.w)}><span class="lab a">After</span><img loading="lazy" src="${c.after}" alt="After" ${mw(c.w)}></span>`
+T	388	· slide right for after Show before Show after	`<span class="cmpcap">${esc(c.cap)} · slide right for after</span><span class="cmpbox" ${mw(c.w)}><span class="basl" style="--x:50%;aspect-ratio:${c.w}/${c.h}"><img class="a" loading="lazy" src="${c.after}" alt="After"><img class="b" loading="lazy" src="${c.before}" alt="Before"><i class="bar"></i><input type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after"></span><span class="cmpkey"><button type="button" data-x="0">Show before</button><button type="button" data-x="100">Show after</button></span></span>`
+T	389	· real pages, tap the arrows 1 of Open the book	`<span class="flipbk" data-e="${LOG.indexOf(e)}" data-i="0"><span class="cmpcap">${esc(fl.cap)} · real pages, tap the arrows</span><span class="fbstage" style="aspect-ratio:${fl.w}/${fl.h};max-width:min(100%,${Math.round(fl.w / 2)}px)"><img class="fbu" alt=""><img class="fbt" loading="lazy" src="${f0.src}" alt="${esc(f0.label)}"></span><span class="fbbar"><button type="button" data-fb="-1" aria-label="Previous page"></button><span class="fblab"><b>${esc(f0.label)}</b><small>1 of ${fl.frames.length}</small></span><button type="button" data-fb="1" aria-label="Next page"></button></span><a class="fbopen" href="${U(f0.cls.toLowerCase())}#spellbook">Open the ${esc(f0.cls)} book</a></span>`
+T	390	tap to read	`<li class="ent t-${k}${seen && e.date > seen ? ' fresh' : ''}"><span class="tsp" aria-hidden="true"><img src="${subjectIcon(e, k)}" alt="" loading="lazy"></span><time><em class="cat">${TOPIC[k][0]}</em>${nice(e.date)}${reader ? ' <i class="rd" title="A reader caught this one">reader catch</i>' : ''}${SHOTS[e.title] ? ` <i class="ph" title="Opens with pictures">${SHOTS[e.title].flip ? 'flip through' : SHOTS[e.title].before ? 'before / after' : 'pictures'}</i>` : ''}${seen && e.date > seen ? ' <i>new</i>' : ''}</time><b>${e.title}</b><span class="one">${esc(first(e.text))}</span><span class="full">${e.text}</span>${shotsH(e)}<span class="hint">tap to read</span></li>`
+S	391	fresh	' fresh'
+S	392	reader catch	' <i class="rd" title="A reader caught this one">reader catch</i>'
+S	393	flip through	'flip through'
+S	394	before / after	'before / after'
+S	395	pictures	'pictures'
+S	396	new	' <i>new</i>'
+S	397	#siteDeep	'#siteDeep'
+S	398	disabled	' disabled'
+T	399	update on Show the latest	`<p class="dayhead"><span><b>${chosen.length}</b> update${chosen.length === 1 ? '' : 's'} on ${day(dayf)}</span><button type="button" class="reset">Show the latest</button></p>`
+T	400	updates in the last seven days. The latest:	`<p class="dayhead"><span><b>${weekN}</b> updates in the last seven days${nSite ? `, <b>${nSite}</b> since your last visit` : ''}. The latest:</span></p>`
+T	401	, since your last visit	`, <b>${nSite}</b> since your last visit`
+T	402	Everything new entries	`<ol class="ents">${chosen.map(entCard).join('')}</ol><details class="deeper" id="siteDeep"${keepOpen ? ' open' : ''}><summary><span>Everything new</span><small>${LOG.length} entries</small></summary><ol class="ents all">${LOG.map(entCard).join('')}</ol></details>`
+S	403	.wbars button	'.wbars button'
+S	404	changelog_day	'changelog_day'
+S	405	.reset	'.reset'
+S	406	.shots	'.shots'
+S	407	.ent	'.ent'
+S	408	.hint	'.hint'
+S	409	tap to close	'tap to close'
+S	410	tap to read	'tap to read'
+S	411	input	'input'
+S	412	.basl	'.basl'
+S	413	.cmpkey button	'.cmpkey button'
+S	414	.cmpbox	'.cmpbox'
+S	415	ease	'ease'
+S	416	pointerdown	'pointerdown'
+S	417	pointermove	'pointermove'
+S	418	pointerup	'pointerup'
+S	419	pointercancel	'pointercancel'
+S	420	.fbt	'.fbt'
+S	421	.fbu	'.fbu'
+S	422	turn	'turn'
+S	423	back	'back'
+S	424	.fblab b	'.fblab b'
+S	425	.fblab small	'.fblab small'
+T	426	of	`${i + 1} of ${n}`
+S	427	.fbopen	'.fbopen'
+S	428	#spellbook	'#spellbook'
+T	429	Open the book	`Open the ${fr.cls} book`
+S	430	(prefers-reduced-motion: reduce)	'(prefers-reduced-motion: reduce)'
+S	431	animationend	'animationend'
+S	432	.ent.open	'.ent.open'
+S	433	.flipbk	'.flipbk'
+S	434	changelog_flip	'changelog_flip'
+S	435	page	'page'
+S	436	touchstart	'touchstart'
+S	437	.fbstage	'.fbstage'
+S	438	touchend	'touchend'
+S	439	.tile	'.tile'
+S	440	aria-pressed	'aria-pressed'
+S	441	focus	'focus'
+S	442	changelog_tab	'changelog_tab'
+S	443	game	'game'
+S	444	#logWide	'#logWide'
+S	445	wide	'wide'
+S	446	Shrink	'Shrink'
+S	447	Expand	'Expand'
+S	448	--dw	'--dw'
+S	449	log_w	'log_w'
+S	450	log_wide	'log_wide'
+S	451	tfold	'tfold'
+S	452	aria-hidden	'aria-hidden'
+S	453	true	'true'
+S	454	Back to the full panels	'Back to the full panels'
+S	455	title	'title'
+S	456	(min-width:900px)	'(min-width:900px)'
+S	457	dragging	'dragging'
+S	458	translateX(	'translateX('
+S	459	px)	'px)'
+S	460	changelog_wide	'changelog_wide'
+S	461	drag	'drag'
+S	462	#dmail	'#dmail'
+T	463	Get this by email One email when a beta build moves the trees: what moved, your classes first, then a link to the rest.	`<div class="mh"><img src="/assets/book-round.png" alt=""><div><div class="mt">Get this by email</div><div class="ms">One email when a beta build moves the trees: what moved, your classes first, then a link to the rest.</div></div></div>`
+T	464	Send me the next one	`<form novalidate><input type="email" name="email" autocomplete="email" inputmode="email" placeholder="you@example.com" aria-label="Your email"><button type="submit">Send me the next one</button></form>`
+T	465	One click in the first message confirms it, and the same link in every message stops it. A ticked class also gets one email when its guide is up. How it's kept .	`<p class="mo" aria-live="polite"></p><p class="mf">One click in the first message confirms it, and the same link in every message stops it. A ticked class also gets one email when its guide is up. <a href="/privacy#alerts">How it's kept</a>.</p>`
+S	466	.mc	'.mc'
+S	467	form	'form'
+S	468	.mo	'.mo'
+S	469	submit	'submit'
+S	470	.mc button.on	'.mc button.on'
+S	471	That does not look like an email address.	'That does not look like an email address.'
+S	472	Sending the link…	'Sending the link…'
+S	473	news_signup	'news_signup'
+S	474	content-type	'content-type'
+S	475	application/json	'application/json'
+S	476	drawer	'drawer'
+S	477	done	'done'
+T	478	Check your inbox. One click on the link in it and you are set. Not there in a minute? Look in junk, and mark it not junk so the next one lands.	`<b>Check your inbox.</b> One click on the link in it and you are set. Not there in a minute? Look in junk, and mark it not junk so the next one lands.`
+S	479	That did not go through. Try again in a minute.	'That did not go through. Try again in a minute.'
+S	480	same-origin	'same-origin'
+S	481	in	'in'
+T	482	You're on the list as . The next build alert comes to you. Your alerts	`<b>You're on the list</b> as ${p.email}. The next build alert comes to you. <a href="/account">Your alerts</a>`
+T	483	is signed in, with news off. Switch it on and the next build alert comes to you.	`<b>${p.email}</b> is signed in, with news off. <a href="/account">Switch it on</a> and the next build alert comes to you.`
+S	484	aria-expanded	'aria-expanded'
+S	485	changelog_opened	'changelog_opened'
+S	486	#logClose	'#logClose'
+S	487	false	'false'
+S	488	keydown	'keydown'
+S	489	#feedLink	'#feedLink'
+S	490	#logFeed	'#logFeed'
+S	491	Talents Forever	'Talents Forever'
+S	492	&message=	'&message='
+S	493	Page: https://talentsforever.com	'Page: https://talentsforever.com'
+S	494	\n\nWhat I noticed:\n	'\n\nWhat I noticed:\n'
+S	495	feedback_clicked	'feedback_clicked'
+S	496	#tipLink	'#tipLink'
+S	497	#tipCard	'#tipCard'
+S	498	tip_clicked	'tip_clicked'
+S	499	#sheet	'#sheet'
+S	500	class_selected	'class_selected'
+S	501	nav	'nav'
+S	502	#classes	'#classes'
+S	503	soon	'soon'
+S	504	No tooltip video for this class yet	'No tooltip video for this class yet'
+S	505	mousedown	'mousedown'
+S	506	.un	'.un'
+S	507	hit	'hit'
+S	508	touchmove	'touchmove'
+S	509	touchcancel	'touchcancel'
+S	510	contextmenu	'contextmenu'
+S	511	mouseenter	'mouseenter'
+S	512	mousemove	'mousemove'
+S	513	mouseleave	'mouseleave'
+S	514	blur	'blur'
+S	515	empty	' empty'
+T	516	No tooltips captured yet. Record this tree and it fills in.	`<p>No ${tree.name} tooltips captured yet. Record this tree and it fills in.</p>`
+T	517	repeat(,64px)	`repeat(${ROWS},64px)`
+T	518	talent	`talent ${st}`
+S	519	same	'same'
+T	520	No longer a talent	`<b>No longer a talent</b>`
+S	521	base	'base'
+T	522	Classic talent, rank	`<div class="n">${x.name}</div><div class="r">Classic talent, ${x.max} rank${x.max>1?'s':''}</div><div class="d">${x.text}</div>`
+T	523	Baseline in Forever. Every learns it from the trainer now: it sits in the tab of the .	`<div class="cl"><b>Baseline in Forever.</b> Every ${cls} learns it from the trainer now: it sits in the ${base.tab} tab of the ${sb.source === 'beta' ? 'spellbook below' : `level ${sb.level} demo spellbook${base.rank ? ` at ${base.rank}` : ''}`}.</div>`
+S	524	beta	'beta'
+S	525	spellbook below	'spellbook below'
+T	526	level demo spellbook	`level ${sb.level} demo spellbook${base.rank ? ` at ${base.rank}` : ''}`
+T	527	at	` at ${base.rank}`
+T	528	Not in Forever. This talent was removed or folded into another one.	`<div class="cl"><b>Not in Forever.</b> This talent was removed or folded into another one.</div>`
+S	529	#sheetBody	'#sheetBody'
+S	530	#sheetAdd	'#sheetAdd'
+S	531	#sheetRem	'#sheetRem'
+S	532	viewBox	'viewBox'
+S	533	.thead .c .of	'.thead .c .of'
+S	534	lead	'lead'
+S	535	all rows open	'all rows open'
+T	536	next row at	`next row at ${next}`
+S	537	.wb	'.wb'
+S	538	wb	'wb'
+T	539	back	`${was.pts} back`
+S	540	.pr	'.pr'
+S	541	pr	'pr'
+S	542	hi	' hi'
+S	543	lo	' lo'
+S	544	#split	'#split'
+S	545	#ptsLeft	'#ptsLeft'
+S	546	over	'over'
+S	547	#lvlneed	'#lvlneed'
+S	548	#bannerName	'#bannerName'
+S	549	#classData	'#classData'
+S	550	export	'export'
+S	551	.json	'.json'
+T	552	WoW Forever Talent Calculator | Talents Forever	`WoW Forever ${cls} Talent Calculator | Talents Forever`
+S	553	WoW Forever Talent Calculator | Talents Forever	'WoW Forever Talent Calculator | Talents Forever'
+S	554	#classBanner	'#classBanner'
+S	555	--cc	'--cc'
+S	556	#ffd100	'#ffd100'
+T	557	No points spent. a talent to start your build.	`<span class="hint">No points spent. ${matchMedia('(hover: none)').matches ? 'Tap' : 'Click'} a talent to start your build.</span>`
+S	558	(hover: none)	'(hover: none)'
+S	559	Tap	'Tap'
+S	560	Click	'Click'
+S	561	#bannerSum	'#bannerSum'
+S	562	#bannerBars	'#bannerBars'
+S	563	.bbar	'.bbar'
+S	564	.fl	'.fl'
+S	565	#mastIcon	'#mastIcon'
+S	566	pulse	'pulse'
+S	567	.mbook	'.mbook'
+S	568	.states	'.states'
+S	569	img	'img'
+S	570	string	'string'
+S	571	#shareLink	'#shareLink'
+S	572	#shareNative	'#shareNative'
+S	573	page_view	'page_view'
+S	574	#f48cba	'#f48cba'
+S	575	#aad372	'#aad372'
+S	576	#fff468	'#fff468'
+S	577	#ffffff	'#ffffff'
+S	578	#0070dd	'#0070dd'
+S	579	#3fc7eb	'#3fc7eb'
+S	580	#8788ee	'#8788ee'
+S	581	#ff7c0a	'#ff7c0a'
+S	582	dim	' dim'
+S	583	book	'book'
+S	584	General	'General'
+S	585	read from the trainer list, not the spellbook	'read from the trainer list, not the spellbook'
+S	586	ren	'ren'
+S	587	note	'note'
+S	588	rw	'rw'
+S	589	changed	'changed'
+S	590	num	'num'
+S	591	New	'<i class="chg new">New</i>'
+S	592	Renamed	'<i class="chg ren">Renamed</i>'
+S	593	Reworked	'<i class="chg rw">Reworked</i>'
+S	594	na	'na'
+S	595	cur	' cur'
+S	596	at level	' at level '
+S	597	TALENT	'<span class="tal">TALENT</span>'
+T	598	of shown	`${shown.length} of ${(allRanks ? t.spells : maxOnly(t.spells)).length} shown`
+T	599	spell, ranks	`${names} spell${names === 1 ? '' : 's'}, ${shown.length} ranks`
+T	600	spell	`${shown.length} spell${shown.length === 1 ? '' : 's'}`
+S	601	· small numbers: level each rank is learned at	' · small numbers: level each rank is learned at'
+S	602	· small numbers: level each rank is trained at, your rank lit	' · small numbers: level each rank is trained at, your rank lit'
+T	603	Nothing in this tab.	`<li class="none">Nothing ${filt === 'new' ? 'new' : 'new or reworked'} in this tab.</li>`
+S	604	new or reworked	'new or reworked'
+T	605	Show all ranks	`<label class="allr"><input type="checkbox" id="allRanks"${allRanks ? ' checked' : ''}> Show all ranks</label>`
+S	606	checked	' checked'
+S	607	disabled	'disabled'
+T	608	The book By level All New and reworked New only	`<div class="bkctl"><div class="seg" role="group" aria-label="How to read it"><button type="button" data-view="book" aria-pressed="true">The book</button><button type="button" data-view="level" aria-pressed="false">By level</button></div><div class="seg filt" role="group" aria-label="Which spells"><button type="button" data-filt="all" aria-pressed="true">All</button><button type="button" data-filt="changed" aria-pressed="false">New and reworked</button><button type="button" data-filt="new" aria-pressed="false">New only</button></div></div>`
+S	609	Portal trainer	'Portal trainer'
+S	610	Comes with the talent	'Comes with the talent'
+S	611	Tome or quest	'Tome or quest'
+T	612	only	`<i class="chg src">${raceOf(r.n)} only</i>`
+S	613	.bylv	'.bylv'
+S	614	li	'li'
+S	615	lvsec	'lvsec '
+S	616	next	'next'
+S	617	h4 small	'h4 small'
+S	618	next up	'next up'
+S	619	#lvNum	'#lvNum'
+S	620	.lvsum	'.lvsum'
+T	621	of learned by level	`${known} of ${all} learned by level ${myLv}${next ? ` · next at level ${next}` : ' · that is all of them'}`
+T	622	· next at level	` · next at level ${next}`
+S	623	· that is all of them	' · that is all of them'
+S	624	Dual Wield	'Dual Wield'
+S	625	classic	'classic'
+S	626	Parry	'Parry'
+S	627	Passive	'Passive'
+S	628	Trainer	'Trainer'
+S	629	Classic trainer level	'Classic trainer level'
+T	630	I'm level	`<div class="lvhead"><label>I'm level <b id="lvNum">${myLv}</b><input type="range" id="lvRange" min="1" max="60" value="${myLv}" aria-label="Your level"></label><span class="lvsum"></span></div>`
+T	631	Level	`<section class="lvsec" data-l="${L}"><h4><b>Level ${L}</b><small></small></h4><ol class="sgrid lvl">${rs.map(lvItem).join('')}</ol></section>`
+T	632	Nothing for this class.	`<p class="crs">Nothing ${filt === 'new' ? 'new' : 'new or reworked'} for this class.</p>`
+S	633	.bookcover	'.bookcover'
+S	634	level	'level'
+S	635	.pgface	'.pgface'
+S	636	.page	'.page'
+S	637	pgface	'pgface'
+S	638	IntersectionObserver	'IntersectionObserver'
+S	639	idle	'idle'
+S	640	.btab	'.btab'
+S	641	aria-selected	'aria-selected'
+S	642	out	'out'
+S	643	still	'still'
+S	644	lf s	'lf s '
+S	645	left	'left'
+S	646	right	'right'
+S	647	leaf	'leaf '
+S	648	fwd	'fwd'
+S	649	bwd	'bwd'
+S	650	turning	'turning'
+S	651	past	'past'
+S	652	lvRange	'lvRange'
+S	653	spellbook_view	'spellbook_view'
+S	654	spellbook_filter	'spellbook_filter'
+S	655	#allRanks	'#allRanks'
+S	656	spellbook_all_ranks	'spellbook_all_ranks'
+S	657	.sgrid li	'.sgrid li'
+S	658	tipon	'tipon'
+T	659	No tooltip read for this one yet.	`<div class="sttd muted">No tooltip read for this one yet.</div>`
+T	660	in Classic	`<div class="sttl lv"><span>${esc(d.lv)} in Classic</span><span></span></div>`
+S	661	Learned at	'Learned at'
+S	662	Requires	'Requires'
+T	663	Racial spell: s only.	`<div class="sttl nt"><span>Racial spell: ${esc(onlyFor.join(' and '))} ${esc(c)}s only.</span><span></span></div>`
+S	664	Comes with the talent. No trainer sells it, taking the talent puts it in your book.	'Comes with the talent. No trainer sells it, taking the talent puts it in your book.'
+S	665	Taught by a portal trainer, not the class trainer.	'Taught by a portal trainer, not the class trainer.'
+S	666	Not sold by the class trainer. Comes from a tome, a quest or a drop.	'Not sold by the class trainer. Comes from a tome, a quest or a drop.'
+S	667	Checked in game.	' Checked in game.'
+S	668	Scales with	'Scales with '
+T	669	Classic called this . Same spell, new name.	`<div class="sttl nt"><span>Classic called this ${esc(d.was)}. Same spell, new name.</span><span></span></div>`
+S	670	demo	'demo'
+T	671	New in Forever.	`<div class="cl"><b>New in Forever.</b> ${esc(d.cn ? d.cn.replace(/^New in Forever\.\s*/, '') : 'No Classic spell with this name and rank.')}</div>`
+S	672	No Classic spell with this name and rank.	'No Classic spell with this name and rank.'
+T	673	Same as Classic.	`<div class="cl"><b>Same as Classic.</b></div>`
+T	674	Classic Forever	`<div class="cl"><b>${d.ck === 'n' ? 'Same spell, new numbers' : 'Reworked since Classic'}</b><span class="key"><del>Classic</del> <ins>Forever</ins></span>${cline ? `<div class="m">Classic: ${esc(cline)}</div>` : ''}${w ? `<div class="both">${w.bothH}</div>` : ''}${d.cx ? `<div class="m">${esc(d.cx)}</div>` : ''}</div>`
+S	675	Same spell, new numbers	'Same spell, new numbers'
+S	676	Reworked since Classic	'Reworked since Classic'
+T	677	Classic:	`<div class="m">Classic: ${esc(cline)}</div>`
+T	678	Forever text as the server's hotfix of has it, read from the beta's hotfix cache by other readers and checked against Blizzard's notes; the client's files do not carry it. Numbers at level 60 with no gear.	`<div class="stts ok">Forever text as the server's hotfix of ${+hf[3]} ${['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+hf[2] - 1]} has it, read from the beta's hotfix cache by other readers and checked against Blizzard's notes; the client's files do not carry it. Numbers at level 60 with no gear.</div>`
+T	679	Forever text from the beta client, numbers at level 60 with no gear.	`<div class="stts ok">Forever text from the beta client, numbers at level 60 with no gear.</div>`
+T	680	Real Forever text, read off BlizzCon demo footage	`<div class="stts ok">Real Forever text, read off BlizzCon demo footage${d.src ? ': ' + esc(d.src) : ''}</div>`
+T	681	Classic text, shown for reference. Nobody has read this one on Forever footage yet, so it may have changed.	`<div class="stts">Classic text${d.r && d.r !== sub ? ' (' + esc(d.r) + ')' : ''}, shown for reference. Nobody has read this one on Forever footage yet, so it may have changed.</div>`
+S	682	.tipon	'.tipon'
+S	683	(max-width:760px)	'(max-width:760px)'
+S	684	.txt	'.txt'
+S	685	stt	'stt'
+S	686	inline	'inline'
+S	687	end	'end'
+S	688	mouseover	'mouseover'
+S	689	mouseout	'mouseout'
+S	690	wheel	'wheel'
+S	691	focusin	'focusin'
+S	692	focusout	'focusout'
+S	693	#allRaces	'#allRaces'
+S	694	#factions	'#factions'
+S	695	#raceCls	'#raceCls'
+S	696	faction	'faction '
+S	697	beforeend	'beforeend'
+S	698	#raceCnt	'#raceCnt'
+T	699	of races	`${shown} of ${total} races`
+S	700	#classRacials	'#classRacials'
+T	701	Show Hide	`<details class="legacy fold" id="${id}"${open?' open':''}><summary>${fan(icons)}<span class="ltitle"><strong>${title}</strong><span>${sub}</span></span><span class="lpill"><span class="show">Show</span><span class="hide">Hide</span></span></summary>${body}</details>`
+T	702	Not opened on stream: .	`<p class="crs">Not opened on stream: ${sb.missing.join(', ')}${sb.trainer ? ' (filled in from the trainer list where possible)' : ''}.</p>`
+S	703	(filled in from the trainer list where possible)	' (filled in from the trainer list where possible)'
+T	704	Small numbers under a spell are the level each rank is learned at.	`<p class="crs"><b>Small numbers</b> under a spell are the level each rank is learned at.</p>`
+T	705	Small numbers under a spell are the level each rank is trained at, your rank lit. A ? is a rank the trainer list didn't show.	`<p class="crs"><b>Small numbers</b> under a spell are the level each rank is trained at, your rank lit. A ? is a rank the trainer list didn't show. ${sb.levelsSource || ''}</p>`
+S	706	#7fc8ff	'#7fc8ff'
+S	707	#9fe870	'#9fe870'
+S	708	class="seated"	' class="seated"'
+T	709	Most popular build, # overall	`Most popular ${lead.name} build, #${b.rank} overall`
+T	710	# most popular build	`#${b.rank} most popular ${cls} build`
+T	711	Top build ·	`<b>Top ${lead.name} build</b> · `
+T	712	· viewed	` · viewed ${b.views}`
+T	713	· across close builds	` · <b title="shares, saves and opens of every complete build within four points of this one">across ${b.variants + 1} close builds</b>`
+S	714	(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)	'(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)'
+T	715	(\\d{1,2}) to (\\d{1,2}) (\\d{4})	`(\\d{1,2}) to (\\d{1,2}) ${MON} (\\d{4})`
+S	716	$3 $1 to $2, $4	'$3 $1 to $2, $4'
+T	717	( \\d{1,2}(?: to \\d{1,2})?) (\\d{4})	`(${MON} \\d{1,2}(?: to ${MON} \\d{1,2})?) (\\d{4})`
+S	718	foldPopular	'foldPopular'
+T	719	Popular builds	`Popular ${cls} builds`
+T	720	What people planned here for level 60, .	`What people planned here for level 60, ${mdy(pop.window || POPULAR.window)}.`
+T	721	with all 51 points shared saved build links opened	`<div class="pophead"><span><b>${pop.builds.toLocaleString()}</b> ${pop.buildsLabel || 'builds shared, saved or opened'}</span><span><b>${pop.full.toLocaleString()}</b> with all 51 points</span><span><b>${pop.shared.toLocaleString()}</b> shared</span><span><b>${pop.saved.toLocaleString()}</b> saved</span><span><b>${pop.opened.toLocaleString()}</b> build links opened</span></div>`
+S	722	builds shared, saved or opened	'builds shared, saved or opened'
+S	723	Almost everyone takes	'Almost everyone takes'
+S	724	high	'high'
+S	725	Almost nobody takes	'Almost nobody takes'
+S	726	low	'low'
+T	727	complete build from before the trees changed left out, since the game would not take now.	` ${pop.stale.toLocaleString()} complete build${pop.stale === 1 ? '' : 's'} from before the trees changed ${pop.stale === 1 ? 'is' : 'are'} left out, since the game would not take ${pop.stale === 1 ? 'it' : 'them'} now.`
+S	728	it	'it'
+S	729	them	'them'
+S	730	foldSpellbook	'foldSpellbook'
+T	731	spellbook	`${cls} spellbook`
+T	732	spellbook at level	`${cls} spellbook at level ${sb.level}`
+T	733	Every trainer spell to 60, every rank.	`Every ${cls} trainer spell to 60, every rank. ${sb.checked ? 'Checked against the game files and in game.' : 'Checked against the game files.'}`
+S	734	Checked against the game files and in game.	'Checked against the game files and in game.'
+S	735	Checked against the game files.	'Checked against the game files.'
+T	736	Every spell had at level in the demo, tab by tab, with ranks.	`Every spell ${/^[AEIOU]/.test(sb.race) ? 'an' : 'a'} ${sb.race} ${cls} had at level ${sb.level} in the demo, tab by tab, with ranks.`
+S	737	an	'an'
+S	738	an ability a talent grants. It shows in your book once you take the talent	'an ability a talent grants. It shows in your book once you take the talent'
+S	739	a Forever talent this character had taken, not a trainer spell	'a Forever talent this character had taken, not a trainer spell'
+T	740	Numbers are the beta client's at level 60 with no gear on, so your in-game tooltip will read a bit higher. Show all ranks works like the checkbox in the game's book. The General tab still comes from the demo spellbook.	`Numbers are the beta client's at level 60 with no gear on, so your in-game tooltip will read a bit higher. Show all ranks works like the checkbox in the game's book. The General tab still comes from the demo spellbook.`
+T	741	Read frame by frame off stream footage (). Characters were capped at , so anything trained later isn't here.	`Read frame by frame off stream footage (${sb.seen}). Characters were capped at ${sb.level}, so anything trained later isn't here.`
+T	742	Classic called it . Same spell, new name.	`Classic called it ${d.was}. Same spell, new name.`
+S	743	Level	'Level '
+S	744	· from a talent	' · from a talent'
+S	745	foldAbilities	'foldAbilities'
+T	746	New abilities	`New ${cls} abilities`
+T	747	new in Forever. From the beta's game files, compared with Classic by spell id.	`${news.length} new in Forever${ren.length ? `, ${ren.length} renamed` : ''}${gone.length ? `, ${gone.length} gone` : ''}. From the beta's game files, compared with Classic by spell id.${cr ? ` Racial spells are in the ${cls} racial spells fold.` : ''}`
+T	748	, renamed	`, ${ren.length} renamed`
+T	749	, gone	`, ${gone.length} gone`
+T	750	Racial spells are in the racial spells fold.	` Racial spells are in the ${cls} racial spells fold.`
+S	751	New in Forever	'New in Forever'
+T	752	New or changed since Classic.	`New or changed since Classic.`
+S	753	Dwarf	'Dwarf'
+S	754	the Dwarves'	"the Dwarves'"
+S	755	Fear Ward	'Fear Ward'
+S	756	the Undead's	"the Undead's"
+S	757	Devouring Plague	'Devouring Plague'
+T	758	every 's now	`<div class="h">${im ? `<img src="${im.src}" alt="">` : ''}<div><b>${s.dataset.name}</b><span>${s.dataset.lv ? 'Level ' + s.dataset.lv + ' · ' : ''}every ${cls}'s now</span></div></div><div class="d">${s.dataset.tip}</div>`
+S	759	foldClassRacials	'foldClassRacials'
+T	760	racial spells	`${cls} racial spells`
+S	761	#book	'#book'
+S	762	#foldSpellbook	'#foldSpellbook'
+S	763	toggle	'toggle'
+S	764	spellbook_link	'spellbook_link'
+S	765	details	'details'
+S	766	fold_opened	'fold_opened'
+S	767	fold_closed	'fold_closed'
+S	768	#raceAll	'#raceAll'
+S	769	.rc	'.rc'
+S	770	Close all	'Close all'
+S	771	Open all	'Open all'
+S	772	race_opened	'race_opened'
+S	773	.nm	'.nm'
+S	774	rc	'rc'
+S	775	#stale	'#stale'
+T	776	moved from to	`<b>${esc(r.talent)}</b> moved from ${esc(r.fromTree)} to ${esc(r.tree)}`
+T	777	moved from row to row	`<b>${esc(r.talent)}</b> moved from row ${r.fromRow} to row ${r.row}`
+T	778	now needs first	`<b>${esc(r.talent)}</b> now needs ${esc(r.req)} first`
+T	779	no longer needs	`<b>${esc(r.talent)}</b> no longer needs ${esc(r.oldReq)}`
+T	780	is gone	`<b>${esc(r.talent)}</b> is gone`
+T	781	took 's place	`<b>${esc(r.talent)}</b> took ${esc(r.before)}'s place`
+T	782	one of its points is back in your pool	`one of its points is back in your pool`
+T	783	of its points are back in your pool	`${s.n} of its points are back in your pool`
+S	784	The link you share from here will be the current one.	' The link you share from here will be the current one.'
+T	785	to	`${when(e.from)} to ${+d2}`
+T	786	to	`${when(e.from)} to ${when(e.date)}`
+T	787	hotfixes to build	`${span(ent)} hotfixes to build ${esc(ent.build.replace(/ hotfixes$/, '').replace(/^1\.60\.1\./, ''))}`
+T	788	beta build ()	`${when(ent.date)} beta build (${esc(ent.build)})`
+T	789	Made before the , so .	`Made before the ${bname}, so ${its}.${share}`
+T	790	The trees have changed since it was made, so .	`The trees have changed since it was made, so ${its}.${share}`
+T	791	back	`<li>${t.icon ? `<img src="${ICON(t.icon)}" alt="" loading="lazy">` : ''}<div><b>${esc(t.name)}</b><small>${b.gone ? `gone from ${esc(t.tree)}` : esc(b.why.replace(/ Talents$/, ''))}</small></div><i>${b.pts} back</i></li>`
+T	792	gone from	`gone from ${esc(t.tree)}`
+T	793	in	`${a.n} in <b>${tn(a.ti, a.i)}</b>`
+T	794	in (% take it)	`${a.n} in <b>${tn(a.ti, a.i)}</b> <small class="soft" style="margin:0">(${a.rate}% take it)</small>`
+T	795	stayed out, its road ( in ) is one	`<b>${tn(b.ti, b.i)}</b> stayed out, its road (${road.n} in ${tn(road.ti, road.i)}) is one ${road.rate ? `only ${road.rate}% of ${who} take` : `no ${who.replace(/ builds$/, ' build')} takes`}`
+T	796	needs first	`<b>${tn(b.ti, b.i)}</b> needs ${need ? `${need} more in ${esc(trees[b.ti].name)}` : short ? `${short} more free point${short === 1 ? '' : 's'}` : 'more in the tree'} first`
+T	797	more in	`${need} more in ${esc(trees[b.ti].name)}`
+T	798	more free point	`${short} more free point${short === 1 ? '' : 's'}`
+S	799	more in the tree	'more in the tree'
+T	800	Filled in placed: .	`<div><h5>Filled in</h5><p>${s.n === 1 ? 'The point is' : Math.min(f.used, s.n) === s.n ? `All ${s.n}` : `${Math.min(f.used, s.n)} of the ${s.n}`} placed${f.used > s.n ? ` (with ${f.used - s.n} of your free points on the arrows)` : ''}: ${list(went)}.${f.left > 0 ? ` ${f.left} still yours${f.noData ? ', nothing in the pick rates to place it by' : ''}.` : ''}${cant.length ? ` ${list(cant)}.` : ''}</p>${same ? `<button class="un" type="button">Undo</button>` : ''}</div>`
+S	801	The point is	'The point is'
+T	802	All	`All ${s.n}`
+T	803	of the	`${Math.min(f.used, s.n)} of the ${s.n}`
+T	804	(with of your free points on the arrows)	` (with ${f.used - s.n} of your free points on the arrows)`
+T	805	still yours.	` ${f.left} still yours${f.noData ? ', nothing in the pick rates to place it by' : ''}.`
+T	806	Undo	`<button class="un" type="button">Undo</button>`
+T	807	Ringed in orange below; one for why.	`<p class="soft rg">Ringed in orange below; ${TOUCH ? 'tap' : 'hover'} one for why.</p>`
+S	808	tap	'tap'
+S	809	hover	'hover'
+S	810	Puts the point back	'Puts the point back'
+T	811	Puts back	`Puts ${placed === s.n ? `all ${s.n}` : `${placed} of ${s.n}`} back`
+T	812	all	`all ${s.n}`
+T	813	of	`${placed} of ${s.n}`
+T	814	, stay yours	`, ${f.left} stay${f.left === 1 ? 's' : ''} yours`
+T	815	builds	`${f.spec} builds`
+T	816	skipped: its road, in , is one	`${tal(b).name} skipped: its road, ${road.n} in ${tn(road.ti, road.i)}, is one ${road.rate ? `only ${road.rate}% of ${who} take` : `no ${who.replace(/ builds$/, ' build')} takes`}`
+T	817	needs first	`${tal(b).name} needs ${need ? `${need} more in ${DATA[cls].trees[b.ti].name}` : short ? `${short} more free point${short === 1 ? '' : 's'}` : 'more in the tree'} first`
+T	818	more in	`${need} more in ${DATA[cls].trees[b.ti].name}`
+T	819	skipped ( road)	`${tal(b).name} skipped (${tn(road.ti, road.i)} road)`
+T	820	needs first	`${tal(b).name} needs ${need || short ? (need || short) + ' more' : 'more'} first`
+S	821	more	' more'
+S	822	more	'more'
+S	823	skipped	'skipped'
+S	824	out of reach	'out of reach'
+T	825	talent skipped	`${nSkip} talent${nSkip === 1 ? '' : 's'} skipped`
+T	826	out of reach	`${nFar} out of reach`
+T	827	Put them back Fill it in for me	`${cameCol}<div><h5>Put them back</h5><p class="fitline" data-v="${esc(JSON.stringify(variants))}">${esc(variants[0])}</p><button class="go" type="button">Fill it in for me</button></div>`
+T	828	More Less	`${cameCol}${fitCol}<details class="more"><summary><span class="o">More</span><span class="c">Less</span></summary>${movedCol}${nearCol}</details>`
+T	829	× This build is older than the trees	`<button class="x" type="button" aria-label="Hide this note">&times;</button><h4><i aria-hidden="true"></i>This build is older than the trees</h4><p class="lead">${lead}</p>${body}`
+S	830	.fitline	'.fitline'
+S	831	.go	'.go'
+S	832	flash	'flash'
+S	833	first_point_spent	'first_point_spent'
+S	834	Other perks depend on this point	'Other perks depend on this point'
+S	835	Other talents depend on this point	'Other talents depend on this point'
+S	836	#toast	'#toast'
+S	837	show	'show'
+S	838	#sheetClose	'#sheetClose'
+S	839	#ghost	'#ghost'
+S	840	#trees .talent.sel, #legacyTrees .talent.sel	'#trees .talent.sel, #legacyTrees .talent.sel'
+T	841	Rank / · left	`<div class="gn">${t.name}<span>Rank ${r}/${t.max} · <b>${cls === 'Legacy' ? Math.max(0, pool(cls) - totalPts(cls)) : $('#ptsLeft').textContent}</b> left</span></div>`
+T	842	This build had point here. now, so back in your pool.	`<div class="gw">This build had ${w.pts} point${w.pts === 1 ? '' : 's'} here. ${w.why.replace(/ Talents$/, '')} now, so ${w.pts === 1 ? 'it is' : 'they are'} back in your pool.</div>`
+S	843	it is	'it is'
+S	844	they are	'they are'
+T	845	Next rank	`<div class="gx"><span class="lab">Next rank</span><span>${linkNames(nxt.text, cls, t.name, found)}</span></div>`
+T	846	Rank value estimated from the rank shown in the video.	`<div class="ge">Rank ${est.join(' and ')} value${est.length>1?'s':''} estimated from the rank shown in the video.</div>`
+S	847	cmp	'cmp'
+T	848	renamed from	`renamed from ${c.renamed}`
+T	849	was row , col	`was ${c.tree} row ${c.row}, col ${c.col}`
+T	850	was rank, now	`was ${c.max} rank${c.max>1?'s':''}, now ${t.max}`
+T	851	New in Forever.	`<div class="cl"><b>New in Forever.</b> ${replacesLine(c)}</div>`
+T	852	Changed from Classic Classic Forever	`<div class="cl"><b>Changed from Classic</b>${meta}<div class="diff"><span class="lab">Classic</span><div class="old">${d.oldH}</div><span class="lab">Forever</span><div class="new">${d.newH}</div></div></div>`
+S	853	Same as Classic	'Same as Classic'
+S	854	Moved, same effect	'Moved, same effect'
+S	855	Changed from Classic	'Changed from Classic'
+T	856	Classic rank 1:	`<div class="t">Classic rank 1: ${c.text}</div>`
+S	857	above	'above'
+S	858	below	'below'
+S	859	clamped	'clamped'
+S	860	--ax	'--ax'
+S	861	bump	'bump'
+S	862	.ref, .refchip, .refgo	'.ref, .refchip, .refgo'
+S	863	refgo	'refgo'
+S	864	.refopen	'.refopen'
+S	865	.ref	'.ref'
+S	866	tooltip_ref	'tooltip_ref'
+S	867	phone	'phone'
+S	868	center	'center'
+S	869	refd	'refd'
+S	870	tf_ghosthint	'tf_ghosthint'
+S	871	Tap a talent to add a point. Tap its − to take one back. Hold to read first.	'Tap a talent to add a point. Tap its − to take one back. Hold to read first.'
+S	872	Your	'Your'
+S	873	The	'The'
+S	874	When	'When'
+S	875	While	'While'
+S	876	After	'After'
+S	877	And	'And'
+S	878	Or	'Or'
+S	879	Each	'Each'
+S	880	Any	'Any'
+S	881	All	'All'
+S	882	If	'If'
+S	883	Causes	'Causes'
+S	884	Gives	'Gives'
+S	885	Increases	'Increases'
+S	886	Reduces	'Reduces'
+S	887	Allows	'Allows'
+S	888	With	'With'
+S	889	Casting	'Casting'
+S	890	Using	'Using'
+S	891	Activating	'Activating'
+S	892	Attack	'Attack'
+S	893	Shoot	'Shoot'
+S	894	Block	'Block'
+S	895	Dodge	'Dodge'
+S	896	Defense	'Defense'
+S	897	Languages	'Languages'
+T	898	, row	`${tr.name}, row ${t.row}`
+T	899	spell	`${cls} spell${rk ? ', ' + rk.toLowerCase() : ''}`
+T	900	Hold to explain	`<div class="refhint">Hold <kbd>${REFKEY}</kbd> to explain ${show.length ? 'the other ' : ''}${rest === 1 ? 'name' : rest + ' names'}</div>`
+S	901	the other	'the other '
+S	902	name	'name'
+S	903	names	' names'
+S	904	New in Forever \u00b7	'<i>New in Forever</i> \u00b7 '
+S	905	Talent \u00b7	'Talent \u00b7 '
+S	906	keyup	'keyup'
+S	907	Talent ·	'Talent · '
+T	908	Show it in the tree	`<button type="button" class="refgo" data-ref="${n.replace(/"/g, '&quot;')}">Show it in the tree</button>`
+S	909	.talent.refd	'.talent.refd'
+S	910	tf_prs	'tf_prs'
+S	911	.trees .talent .pr	'.trees .talent .pr'
+S	912	#prset	'#prset'
+T	913	All complete builds	`All ${N(pp.complete)} complete ${cls} builds`
+T	914	All complete builds	`All complete ${cls} builds`
+T	915	The builds that lead in	`The ${N(sn[t.name])} builds that lead in ${t.name}`
+S	916	#prBtn	'#prBtn'
+S	917	#pickRates	'#pickRates'
+S	918	tf_pr	'tf_pr'
+S	919	pick_rates	'pick_rates'
+T	920	% of builds	`<b>${all}%</b> of ${cls} builds`
+T	921	% of builds	`<b>${by[own][ti][i]}%</b> of ${own} builds${lead === own ? ' like yours' : ''}`
+S	922	like yours	' like yours'
+T	923	% of builds like yours	`<b>${by[lead][ti][i]}%</b> of ${lead} builds like yours`
+T	924	Taken by .	`<div class="pk">Taken by ${parts.length > 2 ? parts.slice(0, -1).join(', ') + ', and ' + parts[parts.length - 1] : parts.join(' and ')}.</div>`
+S	925	, and	', and '
+T	926	Rank of	`Rank ${r} of ${t.max}`
+T	927	Rank value estimated from the rank shown in the video.	`<div class="est">Rank ${r} value estimated from the rank shown in the video.</div>`
+T	928	Next rank	`<div class="next">Next rank</div>`
+T	929	Rank value estimated from the rank shown in the video.	`<div class="est">Rank ${r+1} value estimated from the rank shown in the video.</div>`
+T	930	Click to learn	`<div class="cta">Click to learn${r > 0 ? '<small>Right-click to unlearn</small>' : ''}</div>`
+S	931	Right-click to unlearn	'<small>Right-click to unlearn</small>'
+T	932	Max rank	`<div class="cta no">Max rank</div>`
+S	933	No unspent talent points	'No unspent talent points'
+T	934	Rank /	`<div class="hd"><div class="n">${t.name}</div><div class="r">Rank ${r}/${t.max}${t.passive ? ' · Passive' : ''}${t.cost ? ' · ' + t.cost : ''}</div></div>`
+S	935	· Passive	' · Passive'
+T	936	Next rank	`<details class="nxd"><summary>Next rank</summary><div class="d">${nxt.text}</div></details>`
+T	937	Rank value estimated from the rank shown in the video.	`<div class="est">Rank ${est.join(' and ')} value${est.length>1?'s':''} estimated from the rank shown in the video.</div>`
+T	938	New in Forever.	`<div class="cl"><b>New in Forever.</b>${c.replaces ? ' ' + replacesLine(c) : ''}</div>`
+T	939	Changed from Classic Classic Forever	`<details class="cl nxd" open><summary><b>Changed from Classic</b></summary><div class="diff"><span class="lab">Classic</span><div class="old">${d.oldH}</div><span class="lab">Forever</span><div class="new">${d.newH}</div></div></details>`
+S	940	.refrow	'.refrow'
+S	941	.refs	'.refs'
+S	942	#level	'#level'
+S	943	option	'option'
+S	944	#bannerSum .spec	'#bannerSum .spec'
+S	945	tf_builds	'tf_builds'
+S	946	#buildList	'#buildList'
+S	947	#copyBuilds	'#copyBuilds'
+S	948	#buildHint	'#buildHint'
+T	949	Tap a name to load it, × to remove it. Kept on this device only. Back up copies them all as links.	`Tap a name to load it, × to remove it. Kept on this device only${list.length >= 400 ? `, ${list.length} of 500` : ''}. Back up copies them all as links.`
+T	950	, of 500	`, ${list.length} of 500`
+S	951	Kept on this device. Come back any time and pick it up here.	'Kept on this device. Come back any time and pick it up here.'
+S	952	#loadBuild	'#loadBuild'
+T	953	My builds	`My builds${list.length ? ` (${list.length})` : ''}`
+S	954	Nothing saved yet. Use Save this build below.	'<option value="" disabled>Nothing saved yet. Use Save this build below.</option>'
+S	955	#cvsRead	'#cvsRead'
+T	956	All talents and every one of their ranks come from the beta client's own data. Nothing is estimated.	`All ${total} talents and every one of their ranks come from the beta client's own data${hot.length ? `, except the ${hotList} trees, which carry the server's hotfixes as other readers logged them from the beta's hotfix cache, checked against Blizzard's notes` : ''}. Nothing is estimated.`
+T	957	, except the trees, which carry the server's hotfixes as other readers logged them from the beta's hotfix cache, checked against Blizzard's notes	`, except the ${hotList} trees, which carry the server's hotfixes as other readers logged them from the beta's hotfix cache, checked against Blizzard's notes`
+T	958	Loaded ""	`Loaded "${b.name}"`
+S	959	build_loaded	'build_loaded'
+S	960	top	'top'
+S	961	#bname	'#bname'
+S	962	#bnameIn	'#bnameIn'
+S	963	#saveBuild	'#saveBuild'
+S	964	500 builds saved on this device. Remove one to save another.	'500 builds saved on this device. Remove one to save another.'
+T	965	Replaced your build ""	`Replaced your ${state.cls} build "${name}"`
+T	966	Saved "" on this device	`Saved "${name}" on this device`
+S	967	build_saved	'build_saved'
+S	968	Spend some points first	'Spend some points first'
+S	969	#bnameOk	'#bnameOk'
+S	970	#pasteIn	'#pasteIn'
+S	971	#pasteBox	'#pasteBox'
+S	972	Select all and copy	'Select all and copy'
+T	973	Copied builds as links. Paste them somewhere safe.	`Copied ${store.get('tf_builds', []).length} builds as links. Paste them somewhere safe.`
+S	974	builds_copied	'builds_copied'
+S	975	#addBuilds	'#addBuilds'
+S	976	#pasteNo	'#pasteNo'
+S	977	#pasteOk	'#pasteOk'
+T	978	Added build	`Added ${added} build${added === 1 ? '' : 's'}${full ? ', stopped at 500' : ''}`
+S	979	, stopped at 500	', stopped at 500'
+S	980	No build links found in that text	'No build links found in that text'
+S	981	builds_imported	'builds_imported'
+S	982	#bnameNo	'#bnameNo'
+S	983	.bchip	'.bchip'
+S	984	bx	'bx'
+S	985	sure	'sure'
+S	986	remove?	'remove?'
+T	987	Removed ""	`Removed "${b.name}"`
+S	988	panel	'panel'
+S	989	tf_last_	'tf_last_'
+T	990	Picked up your last build. Reset clears it.	`Picked up your last ${cls} build. Reset clears it.`
+S	991	#reset	'#reset'
+S	992	#reset2	'#reset2'
+S	993	tf_geo	'tf_geo'
+S	994	--ml	'--ml'
+S	995	--mr	'--mr'
+S	996	--mw	'--mw'
+S	997	--mt	'--mt'
+S	998	#legacy	'#legacy'
+S	999	.app	'.app'
+S	1000	transitionend	'transitionend'
+S	1001	max-width	'max-width'
+S	1002	stream	'stream'
+S	1003	#streamMode	'#streamMode'
+S	1004	--shift	'--shift'
+S	1005	#dragbar	'#dragbar'
+S	1006	guide	'guide'
+S	1007	Stream layout on. Grab "drag to move" to slide the page clear of your cam, "drag to resize" to shrink or grow it.	'Stream layout on. Grab "drag to move" to slide the page clear of your cam, "drag to resize" to shrink or grow it.'
+S	1008	Stream layout off	'Stream layout off'
+S	1009	stream_layout	'stream_layout'
+S	1010	#dmove	'#dmove'
+S	1011	#dsize	'#dsize'
+S	1012	#dreset	'#dreset'
+S	1013	#dsize, #dreset	'#dsize, #dreset'
+S	1014	resize	'resize'
+S	1015	share_copied	'share_copied'
+S	1016	Link copied	'Link copied'
+S	1017	Select and copy the link	'Select and copy the link'
+S	1018	#copy	'#copy'
+S	1019	#copy2	'#copy2'
+T	1020	(level , points)	`${spec ? spec.textContent : cls} ${pts.join('/')} (level ${state.level}, ${spent} points)`
+T	1021	Maxed:	`Maxed: ${maxed.join(', ')}`
+S	1022	(est)	' (est)'
+T	1023	Notes: each line is the in-game tooltip at the rank chosen. Every 5 points spent in a tree unlocks its next row. Full data for this class (all talents at every rank, spellbook, tooltips, racials):	`Notes: each line is the in-game tooltip at the rank chosen${est ? '; (est) marks text estimated from a lower rank' : ''}. Every 5 points spent in a tree unlocks its next row. Full data for this class (all talents at every rank, spellbook, tooltips, racials): ${[location.origin, 'export', cls.toLowerCase() + '.json'].join('/')}`
+S	1024	; (est) marks text estimated from a lower rank	'; (est) marks text estimated from a lower rank'
+S	1025	#copyAI	'#copyAI'
+S	1026	copy_ai	'copy_ai'
+S	1027	Build copied with full talent text. Paste it into your AI with a question.	'Build copied with full talent text. Paste it into your AI with a question.'
+S	1028	Could not copy	'Could not copy'
+T	1029	build · Talents Forever	`${spec ? spec.textContent : cls} build ${pts.join('/')} · Talents Forever`
+T	1030	talents for WoW Forever · Talents Forever	`${cls} talents for WoW Forever · Talents Forever`
+S	1031	share_native	'share_native'
+S	1032	#cmp	'#cmp'
+S	1033	tf_cmp	'tf_cmp'
+S	1034	compare_toggled	'compare_toggled'
+S	1035	sectionPage	'sectionPage'
+S	1036	buildsPanel	'buildsPanel'
+S	1037	.topbar	'.topbar'
+S	1038	bp	'bp'
+T	1039	Sources	`<p class="sources"><b>Sources</b> ${e.source ? esc(e.source) : `Beta client ${esc(e.build)}${prevB ? `, compared with ${esc(prevB.build)}` : ''}, read file by file.`}${e.blue && e.blue.url ? ` <a href="${esc(e.blue.url)}" target="_blank" rel="noopener"><i class="bflag">${TRACK.SVG.flag}</i>Blizzard's notes for this build &rsaquo;</a>` : ''}</p>`
+T	1040	Blizzard's notes for this build ›	` <a href="${esc(e.blue.url)}" target="_blank" rel="noopener"><i class="bflag">${TRACK.SVG.flag}</i>Blizzard's notes for this build &rsaquo;</a>`
+S	1041	quiet	' quiet'
+T	1042	By class	`<details class="bp-more"><summary>By class<small>${plural(e.counts.talents, 'talent change')}${ns ? `, ${plural(ns, 'spell change')}` : ''}</small></summary>${strip(e, id)}${byClass(e, id)}</details>`
+S	1043	talent change	'talent change'
+S	1044	spell change	'spell change'
+T	1045	Beyond the tooltips from Blizzard's notes	`<details class="bp-more"><summary>Beyond the tooltips<small>${e.notes.lines.length} from Blizzard's notes</small></summary>${TRACK.notes(e)}</details>`
+S	1046	bpage	'bpage'
+T	1047	Beta build tracker What's changed in WoW Forever Every beta build Blizzard ships gets checked against this site the day it lands. What each one changed, in plain words first, with every detail behind it.	`<header class="bp-hero"><span class="eyebrow">Beta build tracker</span><h2>What's changed in WoW Forever</h2><p class="lede">Every beta build Blizzard ships gets checked against this site the day it lands. What each one changed, in plain words first, with every detail behind it.</p>`
+T	1048	Latest: , checked . Link to this ›	`<div class="bp-latest"><span class="dot"></span><span>Latest: ${/ hotfixes$/.test(latest.build) ? `the <b>${esc(latest.build)}</b>` : `build <b>${esc(latest.build)}</b>`}, checked ${nice(latest.date)}. ${total(latest) ? plural(total(latest), 'change') + ' on the site.' : 'Nothing changed for players.'}</span>${seen ? `<span class="you">Since you were here (${nice(seen)}): ${fresh.length ? plural(fresh.length, 'build') + ' checked, ' + (nfresh ? plural(nfresh, 'change') : 'nothing changed') : 'no new builds'}.</span>` : ''}<a class="bp-share" href="/builds" title="This page on its own">Link to this &rsaquo;</a></div></header>`
+T	1049	the	`the <b>${esc(latest.build)}</b>`
+T	1050	build	`build <b>${esc(latest.build)}</b>`
+S	1051	on the site.	' on the site.'
+S	1052	Nothing changed for players.	'Nothing changed for players.'
+T	1053	Since you were here (): .	`<span class="you">Since you were here (${nice(seen)}): ${fresh.length ? plural(fresh.length, 'build') + ' checked, ' + (nfresh ? plural(nfresh, 'change') : 'nothing changed') : 'no new builds'}.</span>`
+S	1054	checked,	' checked, '
+S	1055	nothing changed	'nothing changed'
+S	1056	no new builds	'no new builds'
+S	1057	WoW Forever Beta Build Changes | Talents Forever	'WoW Forever Beta Build Changes | Talents Forever'
+S	1058	#buildsBtn	'#buildsBtn'
+S	1059	builds_opened	'builds_opened'
+S	1060	#sectionPage	'#sectionPage'
+S	1061	#racials	'#racials'
+S	1062	legacy_opened	'legacy_opened'
+T	1063	Viewing a shared build. Tweak it, or hit Reset to start your own.	`Viewing a shared ${state.cls} build. Tweak it, or hit Reset to start your own.`
+S	1064	shared_build_opened	'shared_build_opened'
+S	1065	view	'view'
+S	1066	built	'built'
+S	1067	seeded	'seeded'
+S	1068	pagehide	'pagehide'
+S	1069	visibilitychange	'visibilitychange'
+S	1070	hidden	'hidden'
+S	1071	popstate	'popstate'
+S	1072	wrapped_open	'wrapped_open'
+S	1073	pick_rates_spec	'pick_rates_spec'
+S	1074	pickRates	'pickRates'
+S	1075	#pinw	'#pinw'
+S	1076	tf_pins_off	'tf_pins_off'
+S	1077	.masthead	'.masthead'
+S	1078	.pin	'.pin'
+S	1079	haspin	'haspin'
+S	1080	haspin2	'haspin2'
+S	1081	#c39bff	'#c39bff'
+S	1082	(hover: hover) and (pointer: fine)	'(hover: hover) and (pointer: fine)'
+S	1083	pincard	'pincard'
+S	1084	pinCard	'pinCard'
+S	1085	dialog	'dialog'
+S	1086	link	'link'
+S	1087	here	'here'
+T	1088	What's new Don't show again	`<div class="pact"${p.kind === 'link' ? ' style="margin-top:12px"' : ''}>${p.kind === 'link' ? `<a class="pgo plink" href="${esc(p.href)}">${esc(p.cta || 'Open')}</a>` : `<a class="pgo" href="${U(cls.toLowerCase())}#spellbook">Open the ${esc(cls)} spellbook</a>`}<button class="pmore" type="button">What's new</button><button class="poff" type="button">Don't show again</button></div>`
+S	1089	style="margin-top:12px"	' style="margin-top:12px"'
+S	1090	Open	'Open'
+T	1091	Open the spellbook	`<a class="pgo" href="${U(cls.toLowerCase())}#spellbook">Open the ${esc(cls)} spellbook</a>`
+S	1092	(max-width:480px)	'(max-width:480px)'
+S	1093	--cx	'--cx'
+S	1094	--dx	'--dx'
+T	1095	calc(50% - px)	`calc(50% - ${dx}px)`
+S	1096	pin_open	'pin_open'
+S	1097	.pincard	'.pincard'
+S	1098	:focus-visible	':focus-visible'
+S	1099	.px	'.px'
+S	1100	.poff	'.poff'
+S	1101	pin_dismiss	'pin_dismiss'
+S	1102	.pmore	'.pmore'
+S	1103	pin_whatsnew	'pin_whatsnew'
+S	1104	.pgo	'.pgo'
+S	1105	pin_cta	'pin_cta'
+S	1106	plink	'plink'
+S	1107	hashchange	'hashchange'

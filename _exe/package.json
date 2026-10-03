@@ -1,0 +1,57 @@
+{
+  "name": "talents-forever-cn",
+  "productName": "永恒天赋计算器",
+  "version": "1.1.5",
+  "description": "魔兽世界：永恒 天赋计算器 — 离线单文件中文版",
+  "main": "main.js",
+  "author": "Entruv",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "prepare-app": "node scripts/build-app.js",
+    "start": "electron .",
+    "smoke": "node scripts/smoke.js",
+    "dist": "node scripts/dist.js"
+  },
+  "devDependencies": {
+    "electron": "44.3.0",
+    "electron-builder": "26.15.3"
+  },
+  "build": {
+    "appId": "com.entruv.talentsforever.cn",
+    "productName": "永恒天赋计算器",
+    "copyright": "Talent data (c) talentsforever.com — 本地离线中文版",
+    "asar": true,
+    "compression": "normal",
+    "npmRebuild": false,
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "files": [
+      "main.js",
+      "app.html",
+      "icon.ico",
+      "package.json"
+    ],
+    "afterPack": "scripts/afterPack.js",
+    "win": {
+      "icon": "icon.ico",
+      "requestedExecutionLevel": "asInvoker",
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "artifactName": "永恒天赋计算器-${version}.exe"
+    },
+    "portable": {
+      "artifactName": "永恒天赋计算器-${version}.exe",
+      "unicode": true,
+      "requestExecutionLevel": "user"
+    }
+  }
+}

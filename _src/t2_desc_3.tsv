@@ -1,0 +1,50 @@
+0001	Armor increased by 1,000.
+0002	Assume a Shadowform, increasing your Shadow damage by 15% and reducing Physical damage done to you by 15%. However, you may not cast Holy spells while in this form.
+0003	Attempts to disengage from the target by reducing threat. Disables auto-attack.
+0004	Attempts to disengage from the target by reducing threat. More effective than Disengage (Rank 1). Disables auto-attack.
+0005	Attempts to remove 1 Frenzy effect from an enemy creature.
+0006	Backstab the target, causing 150% weapon damage plus 135 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.
+0007	Banishes the enemy target, preventing all action but making it invulnerable for up to 20 sec. Only one target can be banished at a time. Only works on Demons and Elementals.
+0008	Base cast is 2 sec now, down from 3 in Classic. Improved Ghost Wolf takes 1 sec per rank and lets it work indoors, so at 2/2 it is instant: that is what Guzu's tooltip showed. Readers caught both halves of this.
+0009	Baseline Ret strike on a 12 sec cooldown: weapon damage plus Holy. Rank 5 by 38. Several talents build on it.
+0010	Baseline, in the Arms tab. Instant, 30 sec cooldown: a melee hit that heals you for 10% of your maximum health, usable within 20 sec of killing something non-trivial. Read off Soda's stream via a reader.
+0011	Bashes the target with your shield for 18 damage. It also interrupts spellcasting and prevents any spell in that school from being cast for 6 sec.
+0012	Bear bleed from later expansions, in Forever as a baseline ability: the Shredding Attacks talent cuts its Rage cost. Not in the level 38 spellbook, so it comes later. Thanks to a reader.
+0013	Begins a ritual that sacrifices a random participant to summon a doomguard. The doomguard must be immediately subjugated or it will attack the ritual participants. Requires the caster and 4 additional party members to complete the ritual. In order to participate, all players must right-click the portal and not move until the ritual is complete.
+0014	Begins taming a beast to be your companion. Your armor is reduced by 100% while you focus on taming the beast for 20 sec. If you lose the beast's attention for any reason, the taming process will fail. Once tamed, the beast will be very unhappy and disloyal. Try feeding the pet immediately to make it happy.
+0015	Bite the enemy, causing 16 to 18 damage.
+0016	Blasts a single enemy for 21 to 27 damage and lowers the melee attack power of all enemies in melee range by 164 for 30 sec.
+0017	Blasts a single enemy for 9 to 13 damage and lowers the attack power of all enemies in melee range by 110 for 30 sec.
+0018	Blasts nearby enemies with thunder increasing, the time between their attacks by 20% for 14 sec and doing 23 damage to them. Will affect up to 4 targets.
+0019	Blasts nearby enemies with thunder, increasing the time between their attacks by 20% for 18 sec and doing 37 damage to them. Will affect up to 4 targets.
+0020	Blasts nearby enemies, increasing the time between their attacks by 20% for 10 sec and doing 10 damage to them. Will affect up to 4 targets.
+0021	Blizzard pushed 69893 on the evening of 16 Sep. Compared file by file with 69876: 18 client files changed and none of them hold talent, spell, racial or Legacy data.
+0022	Both are Night Elf racials and were only in the book because the Priest we read was a Night Elf. They stay under Priest racials with every race's pair. Santum on Discord caught it.
+0023	Both trainable now, not talents. Consecration comes at level 20.
+0024	Both trainable now, not talents. They're in the Balance tab at 38.
+0025	Breathes lightning, instantly dealing 20 to 22 Nature damage to a single target.
+0026	Brings a dead player back to life with 150 health and 260 mana. Cannot be cast when in combat.
+0027	Brings a dead player back to life with 750 health and 1,000 mana. Cannot be cast when in combat.
+0028	Burn the enemy's soul, causing 344 to 430 Fire damage.
+0029	Burns the enemy for 10 Fire damage and then an additional 15 Fire damage over 15 sec.
+0030	Call Pet is named after your pet. The demo Hunter's read Call Owl.
+0031	Call of the Ancestors in the Shaman spellbook
+0032	Calls down a pillar of fire, burning all enemies within the area for 100 to 126 Fire damage and an additional 84 Fire damage over 8 sec. Only one Flamestrike can be active per Mage at a time.
+0033	Camouflage at rank 2
+0034	Cannibalize 1,020 of your own Health over 15 sec to gain 1,020 Mana.
+0035	Cannibalize 440 of your own Health over 15 sec to gain 440 Mana.
+0036	Causes 10 to 12 Nature damage to the target.
+0037	Causes an explosion of holy light around the caster, causing 103 to 117 Holy damage to all enemy targets within 10 yards and healing all party members within 10 yards for 151 to 175. These effects cause no threat.\n\nEach time Holy Fire deals damage, you have a 5% chance for your next Holy Nova to cost no Mana.
+0038	Causes the enemy target to run in horror for 3 sec and causes 285 Shadow damage. The caster gains 100% of the damage caused in health.
+0039	Causes your attacks to ignore 0 of your target's Armor and increases the damage dealt by your Rupture ability by 10%. The amount of Armor reduced increases with your level.
+0040	Changed. It no longer eats your seal. 10 yd range, 10 sec cooldown. Judging Seal of Fury taunts for 4 sec, so Paladins can tank pulls now.
+0041	Changed. Rank 1 makes you untrackable and adds 50 melee attack power. Classic was untrackable only. Spotted by a reader on Xaryu's stream.
+0042	Changed. Rank 3 at 38: 45 mana, instant, 30 yd. Reduces the target's melee attack power by 85 and the effectiveness of healing on it by 20% for 2 min. Rank 1 is 35 mana and 43 attack power. (Classic reduced flat melee damage instead of attack power.)
+0043	Changed. Rank 4 at 38: 190 mana, 30 yd, channeled, 30 sec cooldown. Rains starshards on the target for 816 Arcane damage over 6 sec. Rank 1 is 50 mana for 216. (Classic: no cooldown and far less damage.)
+0044	Changed. Works in Battle or Defensive Stance. Rank 4 slows attacks 20% for 22 sec and hits up to 4 targets, where Classic was 10% for 30. Read off Xaryu's stream, thanks to a reader.
+0045	Changed: 15 min cooldown, 60% less damage for 12 sec (Classic was 30 min, 75% for 10 sec). In Esfand's video it was ready while Retaliation was on cooldown, so the shared cooldown with Retaliation and Recklessness looks gone. Two readers flagged this.
+0046	Changed: 2 charges and 7 sec baseline (Classic was 1 block for 5 sec). Still 10 Rage, 5 sec cooldown, Defensive Stance. Read from a Tyler1 spellbook screenshot a reader sent in.
+0047	Channeled, 3 min cooldown. Regenerate 50% of your maximum Health over 6 sec. Any movement, action, or damage taken will cancel the effect.
+0048	Channeled, 3 min cooldown. Regenerate 50% of your maximum Health over 6 sec; any movement, action or damage taken cancels it.
+0049	Charge an enemy, causing 25 damage and stunning it for 3 sec.
+0050	Charge an enemy, immobilizing them and interrupting any spell they are casting for 4 sec.\n\nLeap behind an enemy.

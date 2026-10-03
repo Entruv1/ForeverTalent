@@ -1,0 +1,25 @@
+0001	21% of base mana
+0002	510 Mana
+0003	615 Mana
+0004	740 Mana
+0005	<a href="https://www.reddit.com/user/kevinhill92" target="_blank" rel="noopener">u/kevinhill92</a> saw it say 5% for casters and 10% for melee. It is the other way round. The beta files carry two copies of the racial: Warriors, Paladins and Rogues get the 5% one, Priests, Mages and Warlocks the 10% one. Fixed.
+0006	<p class="lead">Beta builds move talents. A link from before a patch could show points the game no longer allows.</p><ul><li><b>Every build you open is checked against today's trees.</b> What no longer fits comes back to you.</li><li><b>The talents it left are <span class="orange">ringed in orange</span>.</b> A card above the trees says what moved and why.</li><li><b>Fill it in for me</b> puts the points back where the rules allow. Undo is right there.</li><li><b>Popular</b> only lists builds the game takes now.</li></ul><p>Thanks to <a href="https://www.reddit.com/user/Davajey" target="_blank" rel="noopener">u/Davajey</a>, whose Shaman link was the first to stop fitting.</p>
+0007	Druid: Revive is new, and it has its own icon
+0008	Fire, Frost
+0009	Fire, Nature, Frost
+0010	Makes: 3 Blinding Powder
+0011	Makes: Crippling Poison
+0012	Makes: Crippling Poison II
+0013	Makes: Deadly Poison
+0014	Makes: Deadly Poison II
+0015	Old links open on today's trees
+0016	Popular builds keep counting now
+0017	Priest: racial spells in one place
+0018	The Popular builds on each class page were a snapshot of 13 to 17 Sep. Now the list keeps those numbers and adds the beta on top: every build you make, share, save or open from a link counts, and the list refreshes itself a few times a day. Clicks from the list itself never count, so it cannot feed itself. Most #1 builds held. Paladin's top spot moved to 10/8/33 Retribution.
+0019	The Priest racial spells fold described Shadowguard as a bolt of shadow. It is the Troll's answer to Lightning Shield: shadows around you for 10 minutes, and the next three attackers to land a spell, melee or ranged hit take 96 Shadow damage at rank 6, no threat, one hit every few seconds. The spellbook tooltip had it right all along; the short line under Racials did not. Fixed. Thanks to <a href="https://www.reddit.com/user/Typical_Effect_9054" target="_blank" rel="noopener">u/Typical_Effect_9054</a>.
+0020	The Priest racial spells fold now opens with the two Classic racials every Priest learns in Forever: Fear Ward, once the Dwarves', and Devouring Plague, once the Undead's. The site had stopped saying so because Classic already had their spell ids. Below them each race's own two spells, as before. The New Priest abilities fold lists class spells only now; the five new racial spells it used to repeat live with their race. Thanks to <a href="https://www.reddit.com/user/Lunilah" target="_blank" rel="noopener">u/Lunilah</a> for spotting it.
+0021	The spellbook was the last part of the site still read off BlizzCon demo footage, and those characters stopped at level 38. Now it comes from the beta's own files: every trainer spell to level 60, every rank, the level you learn it at, and what changed from Classic. Untick Show all ranks to see only the top rank, like the box in the game's book.<br><br><b>How it is checked.</b> Every spell, rank and level comes straight from the game's own files. To test the files I read a real trainer in the beta. <a href="https://www.reddit.com/user/paraizord" target="_blank" rel="noopener">u/paraizord</a> pointed out that a city trainer lists everything to 60, even for a level 1, so one visit shows a whole class. The Stormwind mage trainer sells 158 spells. The files had 157 of them, every level right, and the one they lacked is in the book now. The visit also showed which ranks the trainer doesn't sell, like Fireball rank 12 and the portals, and those say so in their tooltip.
+0022	Troll Priest: Shadowguard is a shield, not a bolt
+0023	Undead: Touch of the Grave had its two chances swapped
+0024	Your spells and attacks have a chance (10% for casters, 5% for melee) to drain Health from the target, up to 5% of your maximum Health. 1 sec internal cooldown.
+0025	u/Appropriate_Plan8612 spotted two things. Revive wore Rebirth's icon on the abilities page, and its first rank was compared with a Classic spell that never existed. The reason: the Classic client the site compares against is also the Season of Discovery client, and Season of Discovery had a Revive. Classic did not. Four more spells had the same mix-up: Mangle, Totemic Projection, Rage of the Farseer and the Hunter's Enchanted Flare. All five say New in Forever now, and the Druid's new abilities list went from 3 to 5.

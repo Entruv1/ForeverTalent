@@ -1,0 +1,50 @@
+0001	Charges an enemy, immobilizes it for 1 sec, and adds 130 melee attack power to the boar's next attack.
+0002	Chastise the target, causing 132 to 148 Holy damage and Immobilizing them for up to 2 sec. Only works against Humanoids. This spell causes very low threat
+0003	Cleanses a friendly target, removing 1 poison effect, 1 disease effect, and 1 magic effect.
+0004	Cleave rank 2 in the Warrior spellbook
+0005	Compared file by file with 69893: 407 client files changed, and none of the 73 tables that hold talent, spell, racial or Legacy data is among them. One game rules table (cfg_gamerules) did change.
+0006	Confuses up to 5 enemies within 8 yds for 3 sec. Any damage taken will break the effect.
+0007	Conjures 10 bottles of crystal water, providing the mage and his allies with something to drink.\n\nConjured items disappear if logged out for more than 15 minutes.
+0008	Conjures 10 cinnamon rolls, providing the mage and his allies with something to eat.\n\nConjured items disappear if logged out for more than 15 minutes.
+0009	Conjures 20 bottles of fresh water, providing the mage and his allies with something to drink.\n\nConjured items disappear if logged out for more than 15 minutes.
+0010	Conjures 20 bottles of mineral water, providing the mage and his allies with something to drink.\n\nConjured items disappear if logged out for more than 15 minutes.
+0011	Conjures 20 bottles of purified water, providing the mage and his allies with something to drink.\n\nConjured items disappear if logged out for more than 15 minutes.
+0012	Conjures 20 bottles of sparkling water, providing the mage and his allies with something to drink.\n\nConjured items disappear if logged out for more than 15 minutes.
+0013	Conjures 20 bottles of spring water, providing the mage and his allies with something to drink.\n\nConjured items disappear if logged out for more than 15 minutes.
+0014	Conjures 20 bottles of water, providing the mage and his allies with something to drink.\n\nConjured items disappear if logged out for more than 15 minutes.
+0015	Conjures 20 loaves of bread, providing the mage and his allies with something to eat.\n\nConjured items disappear if logged out for more than 15 minutes.
+0016	Conjures 20 loaves of pumpernickel, providing the mage and his allies with something to eat.\n\nConjured items disappear if logged out for more than 15 minutes.
+0017	Conjures 20 loaves of rye, providing the mage and his allies with something to eat.\n\nConjured items disappear if logged out for more than 15 minutes.
+0018	Conjures 20 loaves of sourdough, providing the mage and his allies with something to eat.\n\nConjured items disappear if logged out for more than 15 minutes.
+0019	Conjures 20 muffins, providing the mage and his allies with something to eat.\n\nConjured items disappear if logged out for more than 15 minutes.
+0020	Conjures 20 sweet rolls, providing the mage and his allies with something to eat.\n\nConjured items disappear if logged out for more than 15 minutes.
+0021	Conjures a mana agate that can be used to instantly restore 375 to 425 mana.\n\nConjured items disappear if logged out for more than 15 minutes.
+0022	Conjures a mana citrine that can be used to instantly restore 775 to 925 mana.\n\nConjured items disappear if logged out for more than 15 minutes.
+0023	Conjures a mana jade that can be used to instantly restore 550 to 650 mana.\n\nConjured items disappear if logged out for more than 15 minutes.
+0024	Conjures a mana ruby that can be used to instantly restore 1,000 to 1,200 mana.\n\nConjured items disappear if logged out for more than 15 minutes.
+0025	Consecrates the land beneath the Paladin, doing 16 Holy damage over 8 sec to enemies who enter the area The first 4 enemies who enter the area will take an additional 32 damage over 8 sec.
+0026	Continuously fires a volley of ammo at the target area, causing 112 Arcane damage to enemy targets within 8 yards every 1 sec for 6 sec.
+0027	Controls a humanoid mind up to level 59, but increases the time between attacks by 25%. Lasts up to 1 min.
+0028	Converts 140 health into 140 Mana for you. Spirit increases the amount of Mana converted. Mana gained is increased by your Spirit.
+0029	Converts up to 10 Rage per second into health for 10 sec. Each point of Rage is converted into 1% health.
+0030	Counterattack at rank 1
+0031	Counters the enemy's spellcast, preventing any spell from that school of magic from being cast for 10 sec. Generates a high amount of threat.
+0032	Cower, causing no damage but lowering your threat a large amount, making the enemy less likely to attack you.
+0033	Cower, causing no damage but lowering your threat a medium amount, making the enemy less likely to attack you.
+0034	Cower, causing no damage but lowering your threat, making the enemy less likely to attack you.
+0035	Creates a Firestone which can be used to enchant your weapon with Fire, increasing your spell critical strike chance by 1% and the damage done by your Fire spells by up to 14.\n\nConjured items disappear if logged out for more than 15 minutes.
+0036	Creates a Greater Firestone which can be used to enchant your weapon with Fire, increasing your spell critical strike chance by 2% and the damage done by your Fire spells by up to 17.
+0037	Creates a Greater Healthstone that can be used to instantly restore 960 health.\n\nConjured items disappear if logged out for more than 15 minutes.
+0038	Creates a Greater Soulstone. The Soulstone can be used to store one target's soul. If the target dies while their soul is stored, they will be able to resurrect with 1,600 health and 2,200 mana.\n\nConjured items disappear if logged out for more than 15 minutes.
+0039	Creates a Greater Spellstone which can be used to enchant your weapon with Shadow, increasing your spell haste by 2% and the damage done by your Shadow spells by up to 17.\n\nConjured items disappear if logged out for more than 15 minutes.
+0040	Creates a Healthstone that can be used to instantly restore 600 health.\n\nConjured items disappear if logged out for more than 15 minutes.
+0041	Creates a Lesser Firestone which can be used to enchant your weapon with Fire, increasing your spell critical strike chance by 1% and the damage done by your Fire spells by up to 10.\n\nConjured items disappear if logged out for more than 15 minutes.
+0042	Creates a Lesser Healthstone that can be used to instantly restore 300 health.\n\nConjured items disappear if logged out for more than 15 minutes.
+0043	Creates a Lesser Soulstone. The Soulstone can be used to store one target's soul. If the target dies while their soul is stored, they will be able to resurrect with 750 health and 1,200 mana.\n\nConjured items disappear if logged out for more than 15 minutes.
+0044	Creates a Major Firestone which can be used to enchant your weapon with Fire, increasing your spell critical strike chance by 2% and the damage done by your Fire spells by up to 21.
+0045	Creates a Major Healthstone that can be used to instantly restore 1,440 health.\n\nConjured items disappear if logged out for more than 15 minutes.
+0046	Creates a Major Soulstone. The Soulstone can be used to store one target's soul. If the target dies while their soul is stored, they will be able to resurrect with 2,200 health and 2,800 mana.\n\nConjured items disappear if logged out for more than 15 minutes.
+0047	Creates a Major Spellstone which can be used to enchant your weapon with Shadow, increasing your spell haste by 2% and the damage done by your Shadow spells by up to 21.\n\nConjured items disappear if logged out for more than 15 minutes.
+0048	Creates a Minor Healthstone that can be used to instantly restore 120 health.\n\nConjured items disappear if logged out for more than 15 minutes.
+0049	Creates a Minor Soulstone. The Soulstone can be used to store one target's soul. If the target dies while their soul is stored, they will be able to resurrect with 400 health and 700 mana.\n\nConjured items disappear if logged out for more than 15 minutes.
+0050	Creates a Soulstone. The Soulstone can be used to store one target's soul. If the target dies while their soul is stored, they will be able to resurrect with 1,100 health and 1,700 mana.\n\nConjured items disappear if logged out for more than 15 minutes.

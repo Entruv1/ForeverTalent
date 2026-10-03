@@ -1,0 +1,50 @@
+0001	Half a second faster than Classic. Rank 7 is a 2.5 sec cast.
+0002	Heals a friendly target for 1,096 to 1,300.
+0003	Heals a friendly target for 965 to 1,077 and another 994 over 21 sec.
+0004	Heals a friendly target for an amount equal to the Paladin's maximum health and restores 250 of their mana. Drains all of the Paladin's remaining Mana when used, but does not interrupt Mana regeneration.
+0005	Heals a friendly target for an amount equal to the Paladin's maximum health. Drains all of the Paladin's remaining Mana when used, but does not interrupt Mana regeneration.
+0006	Heals the friendly target for 245 to 281, then jumps to heal additional nearby targets. If cast on a party member, the heal will only jump to other party members. Each jump is 50% as effective as the previous target. Heals 3 total targets.
+0007	Heals your pet 103 health every second while you focus. Lasts 5 sec.
+0008	Health regeneration rate increased by 10%. In addition, 10% of total Health regeneration will continue during combat.
+0009	Hellfire in the Warlock spellbook
+0010	Hex of Weakness and Shadowguard are confirmed for Troll Priests, read from demo spellbook tooltips <a href="https://www.reddit.com/user/Schiffers" target="_blank" rel="noopener">u/Schiffers</a> shared after <a href="https://www.reddit.com/user/Demonboy_jr" target="_blank" rel="noopener">u/Demonboy_jr</a> tipped us off, and matched against <a href="https://www.reddit.com/user/admiralbfalcon" target="_blank" rel="noopener">u/admiralbfalcon</a>'s captures of Xaryu's stream. Hex now cuts attack power instead of flat damage. Under Racials on the Priest page.
+0011	Howl, causing 5 enemies within 10 yds to flee in terror for 10 sec. Damage caused may interrupt the effect.
+0012	Human Priest
+0013	Human racials on the Priest page
+0014	Human racials on the Warrior page
+0015	Hurls a hammer that strikes an enemy for 286 to 314 Holy damage. Only usable on enemies that have 20% or less health.
+0016	I made a level 1 of every class in the beta and read every talent and tooltip the game would show. All 468 talents match the site, name and max rank. A few things were off and are fixed. Counterattack and Mutilate showed their bonus damage before the game applies the weapon percent: Counterattack rank 1 is plus 13, not 26, and Mutilate is plus 13, not 17. Each Skyborne order showed a racial it does not get: High Order has Read Ley Line, Windshaper has Skysight. Contingency Plan has its two missing numbers, 926 absorbed and 670 healed at top rank. Seal of Command's judgement shows its full range, Wild Growth reaches 43 yards, and amounts over a thousand have commas like the game.
+0017	Ice shards pelt the target area doing 1,168 Frost damage over 8 sec.
+0018	Icon is the client's now.
+0019	Ignites a target that is already afflicted by Immolate, dealing 249 to 316 Fire damage and consuming the Immolate spell.
+0020	Ignites the area surrounding the caster, causing 142 Fire damage to himself and 142 Fire damage to all nearby enemies every 1 sec. Lasts 15 sec.
+0021	Imbue the Shaman's weapon with fire. Each hit causes 13 to 42 additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. When applied to main hand, disables any benefit you personally receive from Flametongue Totem. Lasts for 60 minutes.
+0022	Imbue the Shaman's weapon with frost. Each hit has a chance of causing 117 additional Frost damage and slowing the target's movement speed by 25% for 8 sec. Lasts for 60 minutes.
+0023	Imbue the Shaman's weapon with wind. Each hit has a 20% chance of granting you 2 extra attacks with 103 extra melee attack power. When applied to main hand, disables any benefit you personally receive from Windfury Totem. Lasts for 60 minutes.
+0024	Imbue the Shaman's weapon with wind. Each hit has a 20% chance of granting you 2 extra attacks with 221 extra melee attack power. When appied to main hand, disables any benefit you personally receive from Windfury Totem. Lasts for 60 minutes.
+0025	Imbue the Shaman's weapon, increasing melee attack power by 118 and allowing melee attacks to cause additional threat when using that weapon. Lasts for 60 minutes.
+0026	Imbues the Druid with natural energy. Each of the Druid's melee attacks has a chance of causing the caster to enter a Clearcasting state. The Clearcasting state reduces the Mana, Rage or Energy cost of your next damage or healing spell or offensive ability by 100%. Lasts 10 min.
+0027	Improved Drains on the Warlock page
+0028	Improved Ghost Wolf at 2/2
+0029	Improved Gouge at 3/3
+0030	Improved Gouge at 3/3 said 2 sec. The beta says 1.5 sec, and a stream check caught it. The site was rounding talent seconds to whole numbers where the game keeps the half. Fixed there and on Improved Mind Blast, Improved Arcane Shot, Improved Corruption, Bane and Fel Domination. Riposte, Resourcefulness, Demonic Brand and Berserking had a ? where a number belongs, those are filled in. Every rank of every talent was then checked line by line against Wowhead's beta data.
+0031	Improved Holy Strike at 2/2
+0032	Incapacitates the target for up to 25 sec. Only works on Humanoids that are not in combat. Any damage taken will break the effect. Only 1 target may be sapped at a time. Does not break Stealth.
+0033	Increases Arcane resistance by 120.
+0034	Increases Armor by 290 and frost resistance by 6. If an enemy strikes the caster, they may have their movement slowed by 30% and the time between their attacks increased by 25% for 5 sec. Only one type of Armor spell can be active on the Mage at any time. Lasts 30 min.
+0035	Increases Fire resistance by 120.
+0036	Increases Frost resistance by 120.
+0037	Increases Holy damage done by party members within 30 yards by 10%. Players may only have one Aura on them per Paladin at any one time.
+0038	Increases Nature resistance by 120.
+0039	Increases Physical damage done by 15% for 6 sec.
+0040	Increases Shadow resistance by 120.
+0041	Increases all resistances by 2 and causes all spells you fully resist to restore 1% of your total mana. 1 sec. cooldown.
+0042	Increases chance to block by 20% for 10 sec, and deals 153 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat.
+0043	Increases chance to block by 75% for 7 sec, but will only block 2 attacks.
+0044	Increases damage done by your Swipe ability by 20% and reduces the chance enemies have to detect you while Prowling as if you were 2 levels higher.
+0045	Increases movement and mounted movement speed by 4%. This does not stack with other movement speed increasing effects.
+0046	Increases party members' Stamina by 12.
+0047	Increases ranged and melee attack speed by 40% for 15 sec.
+0048	Increases stealth detection and shows hidden units within detection range on the minimap. Only one form of tracking can be active at a time.
+0049	Increases the area of effect and duration of your Battle Shout and Demoralizing Shout by 10%.
+0050	Increases the armor and resistances given by your Frost Armor and Ice Armor spells by 15%. In addition, gives your Frost Ward a 10% chance to reflect Frost spells and effects while active.

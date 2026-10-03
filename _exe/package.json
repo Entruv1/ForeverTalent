@@ -1,7 +1,7 @@
 {
   "name": "talents-forever-cn",
   "productName": "永恒天赋计算器",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "魔兽世界：永恒 天赋计算器 — 离线单文件中文版",
   "main": "main.js",
   "author": "Entruv",

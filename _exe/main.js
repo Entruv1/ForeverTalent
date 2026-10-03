@@ -344,6 +344,66 @@ const SMOKE_JS = `(() => {
   })();
   // 前后对比图 / 法术书翻页（v2 的大头）
   out.shotImgs = document.querySelectorAll('img.solo, .shots img, .fbbar ~ img').length;
+
+  // ---------------- 图标完整性 ----------------
+  // 2026-10-03 用户截图报「战士·狂怒 两个天赋图标缺失」：dl/ 是当初一次性抓的，
+  // 上游后来新增了天赋与截图 → 本地**静默缺文件**，构建全绿，界面上只剩天赋名缩写。
+  // 两条独立断言：
+  //   (1) 数据里引用到的每个图标名，必须真的以键存在于 window.__ICONS（内联表）。
+  //       —— 直接盯住「名字对但图没有」这一整类问题，不依赖图片真的去解码。
+  //   (2) 页面上任何 data: 图片若 complete 但 naturalWidth === 0，就是真的解不开。
+  try {
+    const IC = window.__ICONS || {};
+    const miss = [];
+    const need = (n, where) => { if (n && !IC[n]) miss.push(where + ' -> ' + n); };
+    Object.entries(window.TALENT_DATA || {}).forEach(([cls, cv]) => {
+      ((cv && cv.trees) || []).forEach((tr) => {
+        need(tr.icon, cls + '/' + tr.name + '/tree');
+        (tr.talents || []).forEach((t) => need(t.icon, cls + '/' + (t.name || '?')));
+      });
+    });
+    Object.values(window.RACIALS || {}).forEach((side) => (Array.isArray(side) ? side : []).forEach((r) => {
+      if (!r) return;
+      need(r.icon, 'race/' + r.race);
+      (r.abilities || []).forEach((a) => need(a && a[2], 'race/' + r.race + '/' + (a && a[0])));
+    }));
+    Object.entries(window.CLASS_RACIALS || {}).forEach(([cls, o]) => {
+      Object.entries((o && o.races) || {}).forEach(([race, arr]) => {
+        (arr || []).forEach((a) => need(a && a[2], cls + '/racial/' + race));
+      });
+    });
+    Object.entries(window.CLASS_ABILITIES || {}).forEach(([cls, arr]) => {
+      (arr || []).forEach((a) => need(a && a[2], cls + '/ability'));
+    });
+    Object.entries(window.SPELLBOOK_ICONS || {}).forEach(([nm, ic]) => need(ic, 'book/' + nm));
+    ((window.LEGACY || {}).trees || []).forEach((tr) => {
+      need(tr.icon, 'legacy/' + tr.name + '/tree');
+      (tr.perks || []).forEach((p) => need(p && p.icon, 'legacy/' + tr.name + '/' + (p && p.name)));
+    });
+    (window.UPDATES || []).forEach((e) => {
+      Object.values((e && e.talents) || {}).forEach((rows) => {
+        (rows || []).forEach((r) => {
+          need(r.icon, 'upd/' + e.build + '/' + r.talent);
+          need(r.beforeIcon, 'upd/' + e.build + '/' + r.talent + '/before');
+        });
+      });
+    });
+    out.iconMissingCount = miss.length;
+    out.iconMissing = miss.slice(0, 30);
+  } catch (e) { out.iconCheckErr = e.message; }
+  try {
+    const bad = [];
+    document.querySelectorAll('img').forEach((im) => {
+      if (!/^data:image/.test(im.getAttribute('src') || '')) return;
+      if (im.complete && im.naturalWidth === 0) {
+        const host = im.closest('[data-name]') || im.parentElement;
+        bad.push((host && (host.getAttribute('data-name') || host.title)) || im.outerHTML.slice(0, 70));
+      }
+    });
+    out.brokenImgCount = bad.length;
+    out.brokenImgs = bad.slice(0, 20);
+  } catch (e) { out.brokenImgErr = e.message; }
+
   // 天赋提示框：桌面版走悬停（触屏才用 #sheet），这里派发 mouseenter 后读 #tip
   try {
     const tk = document.querySelector('#trees .talent');

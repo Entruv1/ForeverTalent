@@ -59,6 +59,10 @@ console.log('  传承专长节点  : %s 个  %s', data.legacyTalents, (data.lega
 console.log('  更新内容抽屉  : %s  条目 %s 条', data.drawerOpen ? '已打开' : '未打开', data.logItems);
 console.log('  抽屉首条      : %s', data.logFirst);
 console.log('  前后对比图    : %s 张', data.shotImgs);
+console.log('  图标缺失      : %s 个（数据引用的名字在 __ICONS 里找不到）', data.iconMissingCount);
+(data.iconMissing || []).forEach((s) => console.log('      ? ' + s));
+console.log('  坏图          : %s 个（data: 图但解不开）', data.brokenImgCount);
+(data.brokenImgs || []).forEach((s) => console.log('      ? ' + s));
 console.log('  提示框        : %s  %s', data.tipOpen ? '已弹出' : '未弹出', (data.tipText || '').slice(0, 70));
 console.log('  新按钮        : 直播布局=%s 对比经典旧世=%s 年度总结=%s', data.hasStreamBtn, data.hasCmpBtn, data.hasGiftBtn);
 console.log('  热门方案载入  : %s  %s → %s',
@@ -104,6 +108,14 @@ if (data.drawerOpen !== true) problems.push('「更新内容」抽屉点不开')
 if (!data.logItems) problems.push('「更新内容」抽屉没有条目');
 if (data.logFirst && !CJK.test(data.logFirst)) problems.push('「更新内容」首条不是中文：' + data.logFirst);
 if (data.tipCjk !== true) problems.push('天赋提示框没有中文正文：' + data.tipText);
+// 图标完整性：2026-10-03 用户截图报的「战士·狂怒 两个图标缺失」就是这条漏掉的
+if (data.iconCheckErr) problems.push('图标完整性检查抛异常：' + data.iconCheckErr);
+if (data.iconMissingCount) {
+  problems.push('有 ' + data.iconMissingCount + ' 处图标缺失：' + (data.iconMissing || []).slice(0, 5).join(' | '));
+}
+if (data.brokenImgCount) {
+  problems.push('有 ' + data.brokenImgCount + ' 张内联图解不开：' + (data.brokenImgs || []).slice(0, 5).join(' | '));
+}
 if (!data.hasStreamBtn || !data.hasCmpBtn) problems.push('v2 的「直播布局 / 对比经典旧世」按钮缺失');
 // 热门方案的「载入」：必须是页内载入 + 页面还在
 if (!data.loadFound) problems.push('热门方案里没有找到带 data-code 的「载入」按钮');

@@ -9,12 +9,12 @@
 
 | 产物 | 适用平台 | 大小 | 位置 |
 | --- | --- | --- | --- |
-| `永恒天赋计算器-1.1.5.exe` | Windows，双击即用、免安装、不写注册表 | 106 MB | [Releases](../../releases/latest) |
+| `永恒天赋计算器-1.1.6.exe` | Windows，双击即用、免安装、不写注册表 | 101 MB | [Releases](../../releases/latest) |
 | `永恒天赋计算器.html` | 任意现代浏览器，双击即用 | 19 MB | 仓库根目录，或 [Releases](../../releases/latest) |
 
 ## 特性
 
-- **完全离线**：图标、天赋树底图、前后对比截图等 858 张图片全部内联进单个 HTML，断网可用。
+- **完全离线**：图标、天赋树底图、前后对比截图等 866 张图片全部内联进单个 HTML，断网可用。
 - **全中文**：职业、天赋、法术、改动说明均按《魔兽世界》官方译名（参照 Wowhead 中文）汉化。
 - **干净**：不含任何广告、统计或追踪脚本（`googletagmanager` / `adsbygoogle` / `dataLayer` 计数均为 0）。
 - **离线路由**：站内跳转要么在页内完成，要么交给系统浏览器打开上游页面，不会掉进文件系统根目录。
@@ -33,7 +33,8 @@
 
 | 本地版本 | 对应上游站点 | 内容 |
 | --- | --- | --- |
-| **1.1.5** | `1.60.1.70170` | 战士天赋树的服务器热修、暴雪「提示框之外」开发说明、新增技能与前后对比图 |
+| **1.1.6** | `1.60.1.70170` | 补齐 9 个缺失的图标/对比图（战士·狂怒两个天赋此前是空块），并给构建链加上资源完整性硬闸 |
+| 1.1.5 | `1.60.1.70170` | 战士天赋树的服务器热修、暴雪「提示框之外」开发说明、新增技能与前后对比图 |
 
 ## 从源码构建
 
@@ -45,19 +46,21 @@
 
 ```bash
 cd _src
+python _assets_fetch.py --write   # 体检并补齐 dl/ 里缺的图标/对比图（缺失时构建会直接失败）
 python gen_i18n.py      # 合并 zh_*.tsv -> i18n.json，含数字对账与基线闸门
 node   build_data.js    # 上游数据 js + i18n.json -> zh_data.js
 python _gen_ui2.py      # 重写 ui_zh.py 的补丁表（IDX / EXTRA_S / RE_S）
 python build_html.py    # 内联资源 + 文案补丁 -> ../永恒天赋计算器.html
 
-# 校验（可选，改过 numfix.py 必跑）
-python _numcanary.py
-python _numaudit.py
+# 校验
+python _numcanary.py    # 数字对账金丝雀（改过 numfix.py 必跑）
+python _numaudit.py     # 数字对账只读审计
+python _ghverify.py     # 白名单复现：把仓库文件复制到空目录跑完整链、比 md5
 ```
 
 成功判据：`gen_i18n.py` 打出 `缺口 names=0 descs=0`；`build_data.js` 打出
-`every string has a translation`；`build_html.py` 打出 **`missed: 0`** 并通过两道硬闸
-（补丁定界符自检 + `node --check` 语法自检）。
+`every string has a translation`；`build_html.py` 打出 **`missed: 0`** 并通过三道硬闸
+（补丁定界符自检 + 资源完整性 + `node --check` 语法自检）。
 
 ### 2. 便携版 EXE（`_exe/`）
 
@@ -78,8 +81,9 @@ node scripts/verify-dist.js      # 校验 asar 内 app.html 与源文件逐字�
 
 仓库根目录的 `.gitignore` 是**白名单式**的：工作目录里的一次性中间产物
 （`tmp*.js`、`_built_*`、`_bak_*`、历史数据快照、调试脚本、`node_modules`、`dist`）
-一律不入库。这份白名单经过验证 —— 把清单内的文件复制到空目录跑完整构建链，
-产出的单文件 HTML 与发布版**逐字节相同**。
+一律不入库。这份白名单经过验证 —— `python _src/_ghverify.py` 会把清单内的文件复制到空目录
+跑完整构建链，产出的单文件 HTML 与发布版**逐字节相同**才算过。
+（它顺带做覆盖性检查：构建脚本引用到的输入文件若没放行，会直接点出来。）
 
 ## 免责声明
 

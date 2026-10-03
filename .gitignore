@@ -39,6 +39,15 @@
 !/_src/_v5scan3.js
 !/_src/talents.js
 
+# 资源完整性：_data_refs.js 从真实数据对象里抽引用清单，_assets_fetch.py 用它体检/补齐 dl/。
+# 这两个是 build_html.py 的资源闸门依赖 —— 漏了它们，别人 clone 下来直接构建失败。
+!/_src/_data_refs.js
+!/_src/_assets_fetch.py
+
+# 白名单复现验证：把仓库名单复制到空目录跑完整构建链、比 md5。
+# 就是它抓出了 fonts.css 漏放行导致「仓库推送全绿但别人构建不出来」。
+!/_src/_ghverify.py
+
 # 上游站点的原始数据（talents/racials/... 由站点提供，本地只做汉化）
 !/_src/spelldesc.js
 !/_src/spellbooks.js
@@ -49,6 +58,9 @@
 !/_src/racials.js
 !/_src/updates.js
 !/_src/index.html
+# fonts.css 是构建输入（Google Fonts 的 latin 分片，会被内联进 <style>）。
+# 漏了它 build_html.py 第 146 行直接 FileNotFoundError —— 仓库就构建不出来了。
+!/_src/fonts.css
 
 # 页面模板与原始脚本；ui_zh.py 虽为生成物，但内含手写结构补丁段，必须随仓库发布
 !/_src/ui_zh.py

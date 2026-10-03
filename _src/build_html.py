@@ -50,6 +50,28 @@ report = []
 def note(kind, msg):
     report.append((kind, msg))
 
+# ---------------------------------------------------------------- 资源完整性闸门（第一道）
+# 为什么单靠下面 img_sub() 的缺失统计不够：天赋图标在页面里是**运行时按名字查表**的
+# ——模板写的是 `/assets/icons/${n}.jpg`，真正的名字来自 zh_data.js 的 icon 字段。
+# 少一张图时静态路径那条路根本不经过，img_sub() 看到的全是「命中」。
+# 事故（2026-10-03）：dl/ 是当初一次性抓的，上游后来新增了天赋与截图，本地就静默缺 6 个图标
+# + 3 张对比图 → 界面上只剩天赋名缩写没有图标，构建全绿地出了坏包。
+# 这里按**数据里真实引用到的名字**对账，缺一个就拒绝产出。
+# 补法：cd _src && python _assets_fetch.py --write
+import importlib
+_af = importlib.import_module('_assets_fetch')
+_refs = _af.scan()
+_ON_DISK = {'icons': ICONS, 'bg': BGS, 'changes': CHANGES}
+_absent = [(k, n, c) for k in _af.KINDS for n, c in sorted(_refs[k].items()) if n not in _ON_DISK[k]]
+if _absent:
+    print('\n!! 资源缺失（数据引用了 %d 种，dl/ 里没有），拒绝产出：' % len(_absent))
+    for k, n, c in _absent:
+        print('   %-8s %-36s 被引用 %d 次' % (k, n, c))
+    print('   补法：python _assets_fetch.py --write')
+    raise SystemExit('资源缺失，拒绝产出')
+note('ok  ', '资源完整性：icons %d / bg %d / changes %d 全部命中' %
+     (len(_refs['icons']), len(_refs['bg']), len(_refs['changes'])))
+
 # ================================================================ 1. 资源 -> data URI
 # 注意：这一步放在文案补丁之后。脚本里的模板字符串含有 /assets/xxx.png，
 # 若先内联，这些字面量就不再与补丁清单逐字节一致。
@@ -64,6 +86,7 @@ html = re.sub(r'<script[^>]*src="/lab/[^"]*"[^>]*></script>[ \t]*\r?\n?', '', ht
 note('ok  ', 'drop %d /lab/ 标签（实验层，非交付内容）' % _lab_n)
 
 missing_img = []
+missing_data_img = []
 
 def img_sub(m):
     kind, name, ext = m.group(1), m.group(2), m.group(3)
@@ -215,8 +238,7 @@ body = apply_res(body, ui_zh.RE_B, 'RB')
 # ================================================================ 5.5 资源内联（正文 + 脚本）
 script = inline_assets(script)
 body = inline_assets(body)
-if missing_img:
-    print('!! unresolved asset refs:', sorted(set(missing_img))[:20], '(共 %d 种)' % len(set(missing_img)))
+# missing_img 的判定与硬闸在第 6 步末尾（要和数据层的缺失合并后一次性拒绝产出）
 
 # ================================================================ 6. 拼装
 img_js = ('window.__ICONS=' + json.dumps(ICONS, ensure_ascii=False) + ';\n'
@@ -226,7 +248,10 @@ data_js = open('zh_data.js', encoding='utf-8').read()
 def js_img(m):
     kind, name, ext = m.group(1), m.group(2), m.group(3)
     tbl = {'changes': CHANGES, 'icons': ICONS, 'bg': BGS}[kind]
-    return tbl.get(name, PIXEL)
+    if name not in tbl:
+        missing_data_img.append(m.group(0))
+        return PIXEL
+    return tbl[name]
 
 data_js = re.sub(r'/assets/(changes|icons|bg)/([A-Za-z0-9_.\-]+)\.(jpg|png)(\?[^"\'`)\s\\]*)?', js_img, data_js)
 # data_js 里也可能引用 misc（独立命名 / 带子目录）的图，
@@ -236,6 +261,22 @@ for key, uri in MISC.items():
 left = re.findall(r'/assets/[A-Za-z0-9_./\-]+', data_js)
 if left:
     note('MISS', 'leftover asset paths in zh_data.js: %s' % sorted(set(left))[:5])
+
+# ---------------------------------------------------------------- 资源闸门
+# 事故：dl/ 是当初一次性抓的，上游后来新增了天赋/截图，本地就**静默缺文件**，
+# img_sub() 回退成 1x1 透明像素 → 界面上只剩天赋名缩写、没有图标，构建却全绿。
+# （2026-10-03 用户截图报的「战士·狂怒 两个图标缺失」就是这个：4 个天赋图标 + 3 张对比图缺失。）
+# 缺失一律拒绝产出。补法：cd _src && python _assets_fetch.py --write
+_missing = sorted(set(missing_img))
+_missing_data = sorted(set(missing_data_img))
+if _missing or _missing_data:
+    print('\n!! 资源缺失，拒绝产出：')
+    for r in _missing:
+        print('   正文  ' + r)
+    for r in _missing_data:
+        print('   数据  ' + r)
+    print('   补法：python _assets_fetch.py --write')
+    raise SystemExit('资源缺失，拒绝产出')
 
 for blob in (img_js, data_js, script):
     assert '</script' not in blob.lower(), blob[:200]

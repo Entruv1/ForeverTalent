@@ -1,0 +1,6 @@
+# 白名单式忽略：只发布「交付物 + 说明」，其余（构建链、中间产物、node_modules）一律不进仓库
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/永恒天赋计算器.html

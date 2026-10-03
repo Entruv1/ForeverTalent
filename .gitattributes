@@ -1,0 +1,10 @@
+# 单文件产物按二进制处理，防止换行转换改写内联资源（19 MB HTML 里全是 data URI 与内联脚本）
+永恒天赋计算器.html  binary
+*.exe                binary
+*.png                binary
+*.jpg                binary
+
+# 文本文件统一 LF
+*.md                 text eol=lf
+.gitignore           text eol=lf
+.gitattributes       text eol=lf

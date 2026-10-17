@@ -1,0 +1,80 @@
+d0000	Gives your Frost damage spells a 40% chance to apply the Winter's Chill effect, which increases the damage done by your Cone of Cold spell to the target by 40%, stacking up to 5 times.
+d0001	Gives your Frost damage spells a 60% chance to apply the Winter's Chill effect, which increases the damage done by your Cone of Cold spell to the target by 40%, stacking up to 5 times.
+d0002	Gives your Frost damage spells a 80% chance to apply the Winter's Chill effect, which increases the damage done by your Cone of Cold spell to the target by 40%, stacking up to 5 times.
+d0003	Gone from Elemental.
+d0004	Gone from Shadow.
+d0005	Gone.
+d0006	Grants your Main Hand melee attacks against enemies afflicted by your Rend a 12% chance to allow an activation of Overpower.
+d0007	Grants your Main Hand melee attacks against enemies afflicted by your Rend a 16% chance to allow an activation of Overpower.
+d0008	Grants your Main Hand melee attacks against enemies afflicted by your Rend a 20% chance to allow an activation of Overpower.
+d0009	Grants your Main Hand melee attacks against enemies afflicted by your Rend a 4% chance to allow an activation of Overpower.
+d0010	Grants your Main Hand melee attacks against enemies afflicted by your Rend a 8% chance to allow an activation of Overpower.
+d0011	Grants your melee and ranged attacks against enemies afflicted by Hunter's Mark a 10% chance to allow an activation of Mongoose Bite. Lasts 10 sec.
+d0012	Grants your melee and ranged attacks against enemies afflicted by Hunter's Mark a 5% chance to allow an activation of Mongoose Bite. Lasts 10 sec.
+d0013	Grounding Totem is now correctly destroyed after redirecting a spell.
+d0014	Hunters who selected the Ferocity talent will not see the critical strike chance of their pet increase on the character sheet. This is a visual bug only.
+d0015	Improved Concussive Shot now has the correct chance to activate.
+d0016	Improved Fire Blast is the new name of Wake of Fire.
+d0017	Improved Seal of Fury and Shield Specialization
+d0018	Improved Seal of Fury and Shield Specialization no longer generate threat when restoring Mana.
+d0019	Improved Wing Clip now has the correct chance to activate and reduced chance to activate if using ranks substantially below your current level.
+d0020	Increased the number of spawn locations of Elemental Convergences and Leylines in most Eastern Kingdoms and Kalimdor zones.
+d0021	Increases the Ranged Attack Power of party or raid members within 45 yards by 50. Lasts 30 min.
+d0022	Increases the Ranged Attack Power of party or raid members within 45 yards by 75. Lasts 30 min.
+d0023	Increases the Ranged Attack Power of party or raid members within 45 yds by 30.
+d0024	Increases the Ranged Attack Power of party or raid members within 45 yds by 40.
+d0025	Increases the damage done by your Fire Nova spell by 10% and reduces its cooldown by 2 sec, and increases the duration of your Magma Totem by 10 sec.
+d0026	Increases the damage done by your Fire Nova spell by 20% and reduces its cooldown by 4 sec, and increases the duration of your Magma Totem by 20 sec.
+d0027	Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 10%, as well as increases the duration of your Flame Shock spell by 6 sec.
+d0028	Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 15%, as well as increases the duration of your Flame Shock spell by 9 sec.
+d0029	Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 5%, as well as increases the duration of your Flame Shock spell by 3 sec.
+d0030	Increases the damage done by your Fire spells by 1% per your Fire effects on the target, up to a maximum increase of 4%. Effects which mix multiple schools of magic do not qualify.
+d0031	Increases the damage done by your Fire spells by 2% per your Fire effects on the target, up to a maximum increase of 8%. Effects which mix multiple schools of magic do not qualify.
+d0032	Increases the damage done by your Fire spells by 3% per your Fire effects on the target, up to a maximum increase of 12%. Effects which mix multiple schools of magic do not qualify.
+d0033	Increases the range of your Frostbolt, Frost Blast, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 10%.
+d0034	Increases the range of your Frostbolt, Frost Blast, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 20%.
+d0035	Increases the range of your Lightning Bolt, Chain Lightning, Fire Nova, and Lava Burst spells by 3 yards and reduces the cooldown of Totemic Projection by 10 sec.
+d0036	Increases the range of your Lightning Bolt, Chain Lightning, Fire Nova, and Lava Burst spells by 6 yards and reduces the cooldown of Totemic Projection by 20 sec.
+d0037	Increases your critical strike bonus to damage and healing by 2%.
+d0038	Increases your critical strike chance with all spells and abilities by 1%.
+d0039	Increases your critical strike chance with all spells and attacks by 2%.
+d0040	Increases your melee ability critical strike damage by 12% and your Off Hand weapon damage by 20%.
+d0041	Increases your melee ability critical strike damage by 18% and your Off Hand weapon damage by 30%.
+d0042	Increases your melee ability critical strike damage by 24% and your Off Hand weapon damage by 40%.
+d0043	Increases your melee ability critical strike damage by 30% and your Off Hand weapon damage by 50%.
+d0044	Increases your melee ability critical strike damage by 6% and your Off Hand weapon damage by 10%.
+d0045	Inner Focus will now correctly only be used on a single spell, even if you spell queue another spell into Penance's channel.
+d0046	Instant, 2 min cooldown. For 8 sec, your non-periodic damaging abilities cost 10% less (Mana, Rage or Energy) and deal 10% more damage. For Priests, your non-periodic damaging or healing abilities cost 10% less Mana and do 10% more damage or healing. Periodic effects get nothing from it; a channeled spell is not periodic. The Mage's own tooltip is the one that leaves out non-periodic.
+d0047	Instant, 3 min cooldown. Instantly removes all Curses and Banes, and reduces all Magical damage taken by 5% for 8 sec.
+d0048	Instant. Cultivate a nearby herb, growing a duplicate you can harvest without requiring Herbalism skill. Each herb may only be cultivated once. In play it goes on a 15 min cooldown, though its tooltip shows none.
+d0049	Is not activated by Traps.
+d0050	Judgement of Righteousness and Judgement of Fury now have the correct spell power coefficients for instant cast spells.
+d0051	Launches a projectile of pure Arcane energy at the enemy target, causing 122 to 146 Arcane damage. This spell gains additional Spell Damage equal to 5% of your maximum Mana.
+d0052	Launches a projectile of pure Arcane energy at the enemy target, causing 193 to 231 Arcane damage. This spell gains additional Spell Damage equal to 5% of your maximum Mana.
+d0053	Launches a projectile of pure Arcane energy at the enemy target, causing 296 to 356 Arcane damage. This spell gains additional Spell Damage equal to 5% of your maximum Mana.
+d0054	Launches a projectile of pure Arcane energy at the enemy target, causing 406 to 496 Arcane damage. This spell gains additional Spell Damage equal to 5% of your maximum Mana.
+d0055	Legacy Challenge
+d0056	Legacy respec cost
+d0057	Lingering Rage no longer stops the player's Health Regeneration after combat.
+d0058	Mass Salvation is the new name of Greater Blessing of Salvation.
+d0059	Moonkin Aura
+d0060	Moonkin Aura now only increases Spell Critical Strike chance, and is Raid wide.
+d0061	Moved along row 2 in Elemental.
+d0062	Moved along row 3 in Elemental.
+d0063	Moved along row 4 in Discipline.
+d0064	Moved along row 5 in Elemental.
+d0065	Moved from Arcane row 4 to Arcane row 1.
+d0066	Moved from Discipline row 2 to Discipline row 3.
+d0067	Moved from Discipline row 4 to Discipline row 2.
+d0068	Moved from Shadow row 3 to Shadow row 2.
+d0069	Multiple instances of Insect Swarm will no longer continue to reduce the target's hit chance.
+d0070	New spell Frost Blast. 1.5 second cast. Deals low frost damage. Slows/chills. Benefits from talents that benefit Frostbolt.
+d0071	New spell, 3 ranks, learned at level 24: Quickly launch a weak blast of frost at the enemy, causing 28 to 30 Frost damage and slowing movement speed by 40% for 9 sec.
+d0072	New spell: Remove target party or raid member's Salvation or Mass Salvation.
+d0073	New talent in Arcane, row 4: Launches a projectile of pure Arcane energy at the enemy target, causing 122 to 146 Arcane damage. This spell gains additional Spell Damage equal to 5% of your maximum Mana.
+d0074	New talent in Elemental, row 7: Gain mastery over Fire and Lightning, reducing the cast time of Lightning Bolt and Lava Burst by 0.5 sec, and removing the cooldown from Chain Lightning. Lasts 15 sec.
+d0075	New: 2 sec cast, 2 min cooldown. Attempt to tap into the power of a nearby leyline, increasing your Health and Mana regeneration by 100%. Lasts 30 sec if no leyline is nearby, and 15 min if one is found.
+d0076	New: Increases your critical strike bonus to damage and healing by 2%.
+d0077	New: Increases your critical strike chance with all spells and abilities by 1%.
+d0078	New: Increases your critical strike chance with all spells and attacks by 2%.
+d0079	No longer needs Death Wish. Two readers of the hotfix cache saw this arrow go, and build 70291's own files confirm it; Blizzard's notes do not mention it.

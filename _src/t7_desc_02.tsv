@@ -1,0 +1,80 @@
+d0000	Faerie Fire: Now generates threat while in Bear Form or Dire Bear Form (instead of just initiating combat at 0 threat).
+d0001	Fifteenth beta build
+d0002	Fills the Paladin with divine fury for 30 sec, causing melee attacks to deal an additional 14 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to 50% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy inflicts 66 to 72 Holy damage to an enemy and taunts the target to attack you for 4 sec.
+d0003	Fills the Paladin with divine fury for 30 sec, causing melee attacks to deal an additional 19 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to 50% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy inflicts 86 to 94 Holy damage to an enemy and taunts the target to attack you for 4 sec.
+d0004	Fills the Paladin with divine fury for 30 sec, causing melee attacks to deal an additional 25 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to 50% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy inflicts 111 to 121 Holy damage to an enemy and taunts the target to attack you for 4 sec.
+d0005	Fills the Paladin with divine fury for 30 sec, causing melee attacks to deal an additional 32 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to 50% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy inflicts 140 to 150 Holy damage to an enemy and taunts the target to attack you for 4 sec.
+d0006	Fills the Paladin with divine fury for 30 sec, causing melee attacks to deal an additional 35 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to 50% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy inflicts 153 to 167 Holy damage to an enemy and taunts the target to attack you for 4 sec.
+d0007	Find Treasure: Now also grants a chance to find additional items in most chests.
+d0008	Fire Nova's tooltip now correctly increases when placing talents into Trial By Fire (the talent formerly known as Improved Fire Nova).
+d0009	Fixed a bug causing Hunter pets to gain health repeatedly when low health.
+d0010	Fixed a bug that reduced XP granted to players who were in a party with higher-level players killing lower-level enemies.
+d0011	Fixed a bug where Deep Wounds was scaling with attack power for your Offhand weapon.
+d0012	Fixed a bug where Druids couldn’t use Mana Potions while in Bear/Dire Bear/Cat Form.
+d0013	Fixed a bug where Rage calculations on Damage absorbs were not being handled correctly. Damage absorbs should now be properly ignored when calculating Rage received from attacks (as if the Warrior/Druid had no absorb active).
+d0014	Fixed a bug where the Rage calculation was incorrectly using the player’s health to determine Rage gained, instead of an expected creature’s health. This incorrectly resulted in less Rage earned while wearing more Stamina gear.
+d0015	Fixed a bug where the Rage calculation was not correctly handling increased damage taken from combat multipliers, in particular from taking critical strikes or crushing blows.
+d0016	Fixed an issue allowing multiple Cure of Recklessness debuffs to be active on a target.
+d0017	Fixed an issue allowing multiple Faerie Fire debuffs to be active on a target.
+d0018	Fixed an issue causing Holy Fire Rank 5 periodic damage to be higher than Rank 6.
+d0019	Fixed an issue causing Infusion of Light to grant Holy Shock 50% increased damage against enemies.
+d0020	Fixed an issue causing Last Stand to not grant the correct amount of health to the player on activation.
+d0021	Fixed an issue causing Seal of Righteousness to gain almost twice as much benefit from Spell Damage than intended.
+d0022	Fixed an issue causing the Improved Mend Pet talent to increase the Mana cost of Mend Pet instead of decrease.
+d0023	Fixed an issue preventing Frostbite and Fingers of Frost from activating from your Ice Armor and Frost Armor spells.
+d0024	Fixed an issue where Bartering was discounting training and repairing.
+d0025	Fixed an issue where Cat Form was reducing your maximum health.
+d0026	Fixed an issue where Devouring Contagion was causing the bounced Devouring Plague to cost Mana, perform a cast animation, and put the caster's Devouring Plague back on full cooldown.
+d0027	Fixed an issue where Heart of the Wild, Feral Swiftness, Thick Hide, and Leader of the Pack were not applying correctly to characters when they logged in.
+d0028	Fixed an issue where Impact could proc off of Flamestrike’s periodic damage.
+d0029	Fixed an issue where Improved Berserker Rage was not removing Movement Impairing Effects.
+d0030	Fixed an issue where Judgement of Righteousness had an incorrect Spell Damage coefficient.
+d0031	Fixed an issue where Missile Barrage could reduce the cost and duration of a second Arcane Missiles cast.
+d0032	Fixed an issue where Overpower was not able to activate vs. significantly lower level enemies.
+d0033	Fixed an issue where Presence of Mind would not be consumed by spell casts.
+d0034	Fixed an issue where Rogues could swap specializations to keep their energy full.
+d0035	Fixed an issue where Seal of Fury was granting Mana back to the Paladin even if the Improved Seal of Fury talent was not active.
+d0036	Fixed an issue where Shadow Word: Death was not benefitting from Shadowform's increase to critical strike damage.
+d0037	Fixed an issue where Sniper Shot was not benefitting from a few Marksmanship talents.
+d0038	Fixed an issue where Stormstrike could be consumed by other players or pets that weren't the casting Shaman.
+d0039	Fixed an issue where Summon Incubus was available to summon at no Soul Shard cost with the Reagent Economy Legacy Perk.
+d0040	Fixed an issue where Totemic Recall cost 70 silver on the trainer instead of 22 silver, as intended.
+d0041	Fixed an issue where Weaponmaster's Sword Specialization could be activated by Shield Bash and Shield Slam.
+d0042	Fixed an issue where Will of the Forsaken could sometimes not be used while asleep or charmed.
+d0043	Fixed an issue where casting Mind Vision would cause the target to stand up and interrupt drinks.
+d0044	Fixed an issue where casting Power Word: Shield would say SHIELDED twice in your scrolling combat text.
+d0045	Fixed an issue where high ranks of Rejuvenation were preventing other Druids from applying Rejuvenation to the target.
+d0046	Fixed an issue where high ranks of Renew were preventing other Priests from applying Renew to the target.
+d0047	Fixed an issue where pets were only ever inheriting the player's Melee Critical Strike chance instead of whichever is higher, melee or ranged.
+d0048	Fixed an issue where using a focus macro to cast Light's Vigil was causing it to not go onto the appropriate target.
+d0049	Fixed an issue where you couldn't cast Soul Link on your pet.
+d0050	Fixed an issue with Retribution Aura that caused it to use the target being struck’s spell power instead of the casting Paladin’s spell power.
+d0051	Fixed an issue with Shadow Weaving's Tooltip. It now correctly states that it causes the target to take increased damage from you.
+d0052	Fixed various issues around Clearcasting. Clearingcast now correctly does not roll for every target struck by a spell. Clearcasting no longer has a chance to activate off of Dampen Magic and Amplify Magic. Clearcasting no longer has a chance to be activated by abilities cast when not in combat.
+d0053	Flametongue Totem and Windfury Totem now correctly only affect players.
+d0054	Flametongue Totem will now correctly use the target’s attack speed if they are Shapeshifted, instead of using the speed of their equipped weapon.
+d0055	Fourteenth beta build
+d0056	Frost Blast
+d0057	Frost Channeling now correctly reduces the Mage's threat.
+d0058	Gain 1% increased movement speed every 5 sec spent moving, up to a maximum of 30% increase. Taking damage or standing still will reduce this effect. In addition, you move 3% faster while mounted.
+d0059	Gain mastery over Fire and Lightning, reducing the cast time of Lightning Bolt and Lava Burst by 0.5 sec, and removing the cooldown from Chain Lightning. Lasts 15 sec.
+d0060	Gives all members of the raid or group that share the same class with the target a reduction to all threat generated by 30% for 1 hour.
+d0061	Gives you a 100% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 70% chance while casting Arcane Blast or Arcane Wrath.
+d0062	Gives you a 100% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 100% of the Energy you had when last in Cat Form, plus 10 Energy per second spent outside Bear Form or Dire Bear Form, up to 100 Energy.
+d0063	Gives you a 16% chance after Blocking and a 40% chance after receiving a non-periodic critical strike to gain an extra attack. Stores up to 4 extra attacks. Cannot occur from Blocks more than once every 1.5 sec.
+d0064	Gives you a 20% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 14% chance while casting Arcane Blast or Arcane Wrath.
+d0065	Gives you a 20% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 20% of the Energy you had when last in Cat Form, plus 2 Energy per second spent outside Bear Form or Dire Bear Form, up to 20 Energy.
+d0066	Gives you a 24% chance after Blocking and a 60% chance after receiving a non-periodic critical strike to gain an extra attack. Stores up to 4 extra attacks. Cannot occur from Blocks more than once every 1.5 sec.
+d0067	Gives you a 32% chance after Blocking and a 80% chance after receiving a non-periodic critical strike to gain an extra attack. Stores up to 4 extra attacks. Cannot occur from Blocks more than once every 1.5 sec.
+d0068	Gives you a 40% chance after Blocking and a 100% chance after receiving a non-periodic critical strike to gain an extra attack. Stores up to 4 extra attacks. Cannot occur from Blocks more than once every 1.5 sec.
+d0069	Gives you a 40% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 28% chance while casting Arcane Blast or Arcane Wrath.
+d0070	Gives you a 40% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 40% of the Energy you had when last in Cat Form, plus 4 Energy per second spent outside Bear Form or Dire Bear Form, up to 40 Energy.
+d0071	Gives you a 60% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 42% chance while casting Arcane Blast or Arcane Wrath.
+d0072	Gives you a 60% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 60% of the Energy you had when last in Cat Form, plus 6 Energy per second spent outside Bear Form or Dire Bear Form, up to 60 Energy.
+d0073	Gives you a 8% chance after Blocking and a 20% chance after receiving a non-periodic critical strike to gain an extra attack. Stores up to 4 extra attacks. Cannot occur from Blocks more than once every 1.5 sec.
+d0074	Gives you a 80% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 56% chance while casting Arcane Blast or Arcane Wrath.
+d0075	Gives you a 80% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 80% of the Energy you had when last in Cat Form, plus 8 Energy per second spent outside Bear Form or Dire Bear Form, up to 80 Energy.
+d0076	Gives your Arcane Blast spell a 20% chance, your Arcane Missile hits a 5% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 10% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec.
+d0077	Gives your Arcane Blast spell a 40% chance, your Arcane Missile hits a 10% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec.
+d0078	Gives your Frost damage spells a 100% chance to apply the Winter's Chill effect, which increases the damage done by your Cone of Cold spell to the target by 40%, stacking up to 5 times.
+d0079	Gives your Frost damage spells a 20% chance to apply the Winter's Chill effect, which increases the damage done by your Cone of Cold spell to the target by 40%, stacking up to 5 times.

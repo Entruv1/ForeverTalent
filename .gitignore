@@ -6,7 +6,7 @@
 #
 # 这份白名单是**验证过的**：把清单内的文件复制到空目录，依次跑
 #   gen_i18n.py -> build_data.js -> _gen_ui2.py -> build_html.py
-# 产出的单文件 HTML 与发布版逐字节相同（md5 cf72a17d08ebe623aa061d46d8fe630d）。
+# 产出的单文件 HTML 与发布版逐字节相同（v1.1.9: md5 d6b8622caec910d76bd5746a91be031a，1030 个文件）。
 #
 # 用法：往构建链里新增文件后，在下面补一行，再用 git status 确认它出现在
 # 待提交列表里。若忘了补，该文件就不会入库 —— 宁缺勿滥。
@@ -73,10 +73,14 @@
 !/_src/t3_names.tsv
 !/_src/t4_names.tsv
 !/_src/t5_names.tsv
+!/_src/t6_names.tsv
+!/_src/t7_names.tsv
 !/_src/zh2_names.tsv
 !/_src/zh3_names.tsv
 !/_src/zh4_names.tsv
 !/_src/zh5_names.tsv
+!/_src/zh6_names.tsv
+!/_src/zh7_names.tsv
 !/_src/zh2_manual.tsv
 !/_src/extra_manual.tsv
 !/_src/zh2_tdesc.tsv
@@ -89,10 +93,14 @@
 !/_src/t3_desc_*.tsv
 !/_src/t4_desc_*.tsv
 !/_src/t5_desc_*.tsv
+!/_src/t6_desc_*.tsv
+!/_src/t7_desc_*.tsv
 !/_src/zh2_desc_*.tsv
 !/_src/zh3_desc_*.tsv
 !/_src/zh4_desc_*.tsv
 !/_src/zh5_desc_*.tsv
+!/_src/zh6_desc_*.tsv
+!/_src/zh7_desc_*.tsv
 
 # 状态与数字对账基线
 !/_src/_ui_review.tsv

@@ -243,14 +243,14 @@ window.TALENT_DATA = {
       "passive": false,
       "icon": "inv_spear_01",
       "desc": [
-       "A brutal attack that deals 40% weapon damage, plus an additional 80% weapon damage against Giants, Dragonkin, and mounted targets."
+       "A brutal attack that deals 40% weapon damage. Deals an additional 80% weapon damage against Giants, Dragonkin, and mounted targets. Mounted targets are dismounted."
       ],
       "complete": true,
       "confirmed": [
        1
       ],
       "src": "beta",
-      "cost": "15 Rage | Melee Range | Instant | 20 sec cooldown | Requires Two-Handed Axes, Two-Handed Maces, Polearms, Two-Handed Swords, Staves",
+      "cost": "15 Rage | Melee Range | Instant | 20 sec cooldown | Requires Battle Stance",
       "classic": {
        "status": "new"
       }
@@ -300,6 +300,7 @@ window.TALENT_DATA = {
        2
       ],
       "src": "beta",
+      "req": "Deep Wounds",
       "classic": {
        "status": "changed",
        "tree": "Arms",
@@ -317,11 +318,11 @@ window.TALENT_DATA = {
       "passive": true,
       "icon": "inv_sword_01",
       "desc": [
-       "Your Main Hand melee attacks against enemies afflicted by your Rend have a 4% chance to allow the use of your Overpower ability on the target. Lasts 6 sec.",
-       "Your Main Hand melee attacks against enemies afflicted by your Rend have a 8% chance to allow the use of your Overpower ability on the target. Lasts 6 sec.",
-       "Your Main Hand melee attacks against enemies afflicted by your Rend have a 12% chance to allow the use of your Overpower ability on the target. Lasts 6 sec.",
-       "Your Main Hand melee attacks against enemies afflicted by your Rend have a 16% chance to allow the use of your Overpower ability on the target. Lasts 6 sec.",
-       "Your Main Hand melee attacks against enemies afflicted by your Rend have a 20% chance to allow the use of your Overpower ability on the target. Lasts 6 sec."
+       "Grants your Main Hand melee attacks against enemies afflicted by your Rend a 4% chance to allow an activation of Overpower.",
+       "Grants your Main Hand melee attacks against enemies afflicted by your Rend a 8% chance to allow an activation of Overpower.",
+       "Grants your Main Hand melee attacks against enemies afflicted by your Rend a 12% chance to allow an activation of Overpower.",
+       "Grants your Main Hand melee attacks against enemies afflicted by your Rend a 16% chance to allow an activation of Overpower.",
+       "Grants your Main Hand melee attacks against enemies afflicted by your Rend a 20% chance to allow an activation of Overpower."
       ],
       "complete": true,
       "confirmed": [
@@ -403,7 +404,7 @@ window.TALENT_DATA = {
       "icon": "ability_warrior_decisivestrike",
       "desc": [
        "Reduces the global cooldown and cast time of your Slam ability by 0.25 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 3.0 sec.",
-       "Reduces the global cooldown and cast time of your Slam ability by 0.50 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 3 sec."
+       "Reduces the global cooldown and cast time of your Slam ability by 0.50 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 3.0 sec."
       ],
       "complete": true,
       "confirmed": [
@@ -411,7 +412,6 @@ window.TALENT_DATA = {
        2
       ],
       "src": "beta",
-      "hotfix": "2026-10-02",
       "classic": {
        "status": "changed",
        "tree": "Fury",
@@ -532,7 +532,6 @@ window.TALENT_DATA = {
        5
       ],
       "src": "beta",
-      "hotfix": "2026-10-02",
       "classic": {
        "status": "changed",
        "tree": "Fury",
@@ -597,7 +596,6 @@ window.TALENT_DATA = {
        5
       ],
       "src": "beta",
-      "hotfix": "2026-10-02",
       "classic": {
        "status": "new"
       }
@@ -625,7 +623,6 @@ window.TALENT_DATA = {
        5
       ],
       "src": "beta",
-      "hotfix": "2026-10-02",
       "classic": {
        "status": "changed",
        "tree": "Fury",
@@ -654,7 +651,6 @@ window.TALENT_DATA = {
        3
       ],
       "src": "beta",
-      "hotfix": "2026-10-02",
       "classic": {
        "status": "new"
       }
@@ -674,7 +670,6 @@ window.TALENT_DATA = {
        1
       ],
       "src": "beta",
-      "hotfix": "2026-10-02",
       "cost": "10 Rage | Instant",
       "classic": {
        "status": "changed",
@@ -704,7 +699,6 @@ window.TALENT_DATA = {
        3
       ],
       "src": "beta",
-      "hotfix": "2026-10-02",
       "fixed": [
        "20%",
        "6"
@@ -741,7 +735,6 @@ window.TALENT_DATA = {
        5
       ],
       "src": "beta",
-      "hotfix": "2026-10-02",
       "classic": {
        "status": "changed",
        "tree": "Fury",
@@ -766,7 +759,6 @@ window.TALENT_DATA = {
        1
       ],
       "src": "beta",
-      "hotfix": "2026-10-02",
       "classic": {
        "status": "new"
       }
@@ -826,7 +818,8 @@ window.TALENT_DATA = {
        "row": 4,
        "col": 2,
        "max": 2,
-       "text": "Reduces the Rage cost of your Execute ability by 2."
+       "text": "Reduces the Rage cost of your Execute ability by 2.",
+       "moved": true
       }
      },
      {
@@ -846,7 +839,6 @@ window.TALENT_DATA = {
        2
       ],
       "src": "beta",
-      "hotfix": "2026-10-02",
       "classic": {
        "status": "changed",
        "tree": "Fury",
@@ -931,7 +923,6 @@ window.TALENT_DATA = {
        5
       ],
       "src": "beta",
-      "hotfix": "2026-10-02",
       "req": "Death Wish",
       "classic": {
        "status": "changed",
@@ -939,7 +930,9 @@ window.TALENT_DATA = {
        "row": 6,
        "col": 3,
        "max": 5,
-       "text": "Increases your attack speed by 10% for your next 3 swings after dealing a melee critical strike."
+       "text": "Increases your attack speed by 10% for your next 3 swings after dealing a melee critical strike.",
+       "moved": true,
+       "note": "now requires Death Wish, not Enrage"
       }
      },
      {
@@ -951,7 +944,7 @@ window.TALENT_DATA = {
       "icon": "racial_troll_berserk",
       "desc": [
        "Your Enrage, Berserker Rage, Bloodrage, Death Wish, and Bloodthirst abilities cause your next 3 melee attacks to restore 0.5% of your maximum Health.",
-       "Your Enrage, Berserker Rage, Bloodrage, Death Wish, and Bloodthirst abilities cause your next 3 melee attacks to restore 1% of your maximum Health."
+       "Your Enrage, Berserker Rage, Bloodrage, Death Wish, and Bloodthirst abilities cause your next 3 melee attacks to restore 1.0% of your maximum Health."
       ],
       "complete": true,
       "confirmed": [
@@ -959,7 +952,6 @@ window.TALENT_DATA = {
        2
       ],
       "src": "beta",
-      "hotfix": "2026-10-02",
       "req": "Enrage",
       "classic": {
        "status": "new"
@@ -980,7 +972,6 @@ window.TALENT_DATA = {
        1
       ],
       "src": "beta",
-      "hotfix": "2026-10-02",
       "cost": "30 Rage | Melee Range | Instant | 6 sec cooldown",
       "classic": {
        "status": "changed",
@@ -988,7 +979,8 @@ window.TALENT_DATA = {
        "row": 7,
        "col": 2,
        "max": 1,
-       "text": "Instantly attack the target causing damage equal to 45% of your attack power. In addition, the next 5 successful melee attacks will restore 10 health. This effect lasts 8 sec."
+       "text": "Instantly attack the target causing damage equal to 45% of your attack power. In addition, the next 5 successful melee attacks will restore 10 health. This effect lasts 8 sec.",
+       "note": "no longer requires Death Wish"
       }
      }
     ],
@@ -1016,7 +1008,7 @@ window.TALENT_DATA = {
    {
     "name": "Protection",
     "bg": 163,
-    "icon": "ability_warrior_defensivestance",
+    "icon": "inv_shield_06",
     "talents": [
      {
       "name": "Improved Bloodrage",
@@ -1035,7 +1027,6 @@ window.TALENT_DATA = {
        2
       ],
       "src": "beta",
-      "hotfix": "2026-10-02",
       "classic": {
        "status": "changed",
        "tree": "Protection",
@@ -1101,7 +1092,6 @@ window.TALENT_DATA = {
        5
       ],
       "src": "beta",
-      "hotfix": "2026-10-02",
       "classic": {
        "status": "changed",
        "tree": "Protection",
@@ -1135,7 +1125,6 @@ window.TALENT_DATA = {
        5
       ],
       "src": "beta",
-      "hotfix": "2026-10-02",
       "classic": {
        "status": "changed",
        "tree": "Protection",
@@ -1165,7 +1154,6 @@ window.TALENT_DATA = {
        3
       ],
       "src": "beta",
-      "hotfix": "2026-10-02",
       "classic": {
        "status": "changed",
        "tree": "Protection",
@@ -1220,7 +1208,6 @@ window.TALENT_DATA = {
        1
       ],
       "src": "beta",
-      "hotfix": "2026-10-02",
       "cost": "Instant | 3 min cooldown",
       "classic": {
        "status": "changed",
@@ -1228,7 +1215,8 @@ window.TALENT_DATA = {
        "row": 3,
        "col": 1,
        "max": 1,
-       "text": "When activated, this ability temporarily grants you 30% of your maximum hit points for 20 seconds. After the effect expires, the hit points are lost."
+       "text": "When activated, this ability temporarily grants you 30% of your maximum hit points for 20 seconds. After the effect expires, the hit points are lost.",
+       "note": "no longer requires Improved Bloodrage"
       }
      },
      {
@@ -1272,7 +1260,6 @@ window.TALENT_DATA = {
        3
       ],
       "src": "beta",
-      "hotfix": "2026-10-02",
       "classic": {
        "status": "changed",
        "tree": "Protection",
@@ -1354,7 +1341,6 @@ window.TALENT_DATA = {
        1
       ],
       "src": "beta",
-      "hotfix": "2026-10-02",
       "classic": {
        "status": "new"
       }
@@ -1376,7 +1362,6 @@ window.TALENT_DATA = {
        2
       ],
       "src": "beta",
-      "hotfix": "2026-10-02",
       "classic": {
        "status": "moved",
        "tree": "Protection",
@@ -1396,7 +1381,7 @@ window.TALENT_DATA = {
       "icon": "ability_warrior_shieldwall",
       "desc": [
        "Reduces the cooldown of your Shield Wall ability by 5.5 min.",
-       "Reduces the cooldown of your Shield Wall ability by 11 min."
+       "Reduces the cooldown of your Shield Wall ability by 11.0 min."
       ],
       "complete": true,
       "confirmed": [
@@ -1457,7 +1442,6 @@ window.TALENT_DATA = {
        3
       ],
       "src": "beta",
-      "hotfix": "2026-10-02",
       "classic": {
        "status": "new"
       }
@@ -1485,9 +1469,14 @@ window.TALENT_DATA = {
        5
       ],
       "src": "beta",
-      "hotfix": "2026-10-02",
       "classic": {
-       "status": "new"
+       "status": "changed",
+       "tree": "Protection",
+       "row": 6,
+       "col": 3,
+       "max": 5,
+       "text": "Increases the damage you deal with One-Handed Melee weapons by 2%.",
+       "renamed": "One-Handed Weapon Specialization"
       }
      },
      {
@@ -1506,7 +1495,7 @@ window.TALENT_DATA = {
       ],
       "src": "beta",
       "req": "Concussion Blow",
-      "cost": "20 Rage | Melee Range | Instant | 6 sec cooldown",
+      "cost": "20 Rage | Melee Range | Instant | 6 sec cooldown | Requires Shields",
       "classic": {
        "status": "changed",
        "tree": "Protection",
@@ -1535,17 +1524,12 @@ window.TALENT_DATA = {
       "max": 2,
       "text": "Reduces the cooldown of your Taunt ability by 1 sec.",
       "row": 4
-     },
-     {
-      "name": "One-Handed Weapon Specialization",
-      "max": 5,
-      "text": "Increases the damage you deal with One-Handed Melee weapons by 2%.",
-      "row": 6
      }
     ]
    }
   ],
-  "source": "Talent trees and every rank's text from the WoW Forever beta client, build 1.60.1.70170. The Warrior trees carry the server's hotfixes of 1 to 2 Oct 2026 over that build, read from the beta's hotfix cache by other readers and cross-checked with Blizzard's notes; those are not in the client's files."
+  "source": "Talent trees and every rank's text from the WoW Forever beta client, build 1.60.1.70425.",
+  "classic_total": 52
  },
  "Paladin": {
   "icon": "class_paladin",
@@ -1803,7 +1787,7 @@ window.TALENT_DATA = {
       "icon": "ability_paladin_infusionoflight",
       "desc": [
        "Your Holy Shock and Flash of Light critical hits reduce the cast time of your next Holy Light cast within 15 sec by 0.5 sec.",
-       "Your Holy Shock and Flash of Light critical hits reduce the cast time of your next Holy Light cast within 15 sec by 1 sec."
+       "Your Holy Shock and Flash of Light critical hits reduce the cast time of your next Holy Light cast within 15 sec by 1.0 sec."
       ],
       "complete": true,
       "confirmed": [
@@ -1845,7 +1829,8 @@ window.TALENT_DATA = {
        "row": 4,
        "col": 2,
        "max": 5,
-       "text": "After getting a critical effect from your Flash of Light, Holy Light, or Holy Shock heal spell, gives you a 20% chance to gain Mana equal to the base cost of the spell."
+       "text": "After getting a critical effect from your Flash of Light, Holy Light, or Holy Shock heal spell, gives you a 20% chance to gain Mana equal to the base cost of the spell.",
+       "note": "now requires Reverence"
       }
      },
      {
@@ -1865,13 +1850,14 @@ window.TALENT_DATA = {
       "src": "beta",
       "cost": "4% of base mana | Instant | 2 min cooldown",
       "classic": {
-       "status": "moved",
+       "status": "changed",
        "tree": "Holy",
        "row": 5,
        "col": 2,
        "max": 1,
        "text": "When activated, gives your next Flash of Light, Holy Light, or Holy Shock spell a 100% critical effect chance.",
-       "moved": true
+       "moved": true,
+       "note": "no longer requires Illumination"
       }
      },
      {
@@ -1913,7 +1899,7 @@ window.TALENT_DATA = {
        1
       ],
       "src": "beta",
-      "cost": "160 Mana | 40 yd range | Instant | 10 sec cooldown",
+      "cost": "160 Mana | Enemy: 20 yd range | Friendly: 40 yd range | Instant | 10 sec cooldown",
       "classic": {
        "status": "changed",
        "tree": "Holy",
@@ -1921,7 +1907,8 @@ window.TALENT_DATA = {
        "col": 2,
        "max": 1,
        "text": "Blasts the target with Holy energy, causing 204 to 220 Holy damage to an enemy, or 204 to 220 healing to an ally.",
-       "moved": true
+       "moved": true,
+       "note": "no longer requires Divine Favor"
       }
      },
      {
@@ -1993,7 +1980,7 @@ window.TALENT_DATA = {
       ],
       "src": "beta",
       "req": "Holy Shock",
-      "cost": "730 Mana | 40 yd range | 1.5 sec cast | 6 sec cooldown",
+      "cost": "730 Mana | Enemy: 20 yd range | Friendly: 40 yd range | 1.5 sec cast | 6 sec cooldown",
       "classic": {
        "status": "new"
       }
@@ -2142,7 +2129,7 @@ window.TALENT_DATA = {
       ],
       "src": "beta",
       "classic": {
-       "status": "changed",
+       "status": "same",
        "tree": "Protection",
        "row": 2,
        "col": 2,
@@ -2238,9 +2225,9 @@ window.TALENT_DATA = {
       "passive": true,
       "icon": "inv_shield_06",
       "desc": [
-       "Increases the amount of damage absorbed by your shield by 10%, and gives your blocks a 33% chance to restore 6% of your maximum Mana. May only occur once every 3 sec.",
-       "Increases the amount of damage absorbed by your shield by 20%, and gives your blocks a 66% chance to restore 6% of your maximum Mana. May only occur once every 3 sec.",
-       "Increases the amount of damage absorbed by your shield by 30%, and gives your blocks a 100% chance to restore 6% of your maximum Mana. May only occur once every 3 sec."
+       "Increases the amount of damage absorbed by your shield by 10%, and gives your blocks a 33% chance to restore 4% of your maximum Mana. May only occur once every 3 sec.",
+       "Increases the amount of damage absorbed by your shield by 20%, and gives your blocks a 66% chance to restore 4% of your maximum Mana. May only occur once every 3 sec.",
+       "Increases the amount of damage absorbed by your shield by 30%, and gives your blocks a 100% chance to restore 4% of your maximum Mana. May only occur once every 3 sec."
       ],
       "complete": true,
       "confirmed": [
@@ -2350,12 +2337,13 @@ window.TALENT_DATA = {
       ],
       "src": "beta",
       "classic": {
-       "status": "same",
+       "status": "moved",
        "tree": "Protection",
        "row": 4,
        "col": 2,
        "max": 3,
-       "text": "Decreases the cooldown of your Hammer of Justice spell by 5 sec."
+       "text": "Decreases the cooldown of your Hammer of Justice spell by 5 sec.",
+       "moved": true
       }
      },
      {
@@ -2386,11 +2374,11 @@ window.TALENT_DATA = {
       "passive": true,
       "icon": "spell_holy_blessingofstrength",
       "desc": [
-       "Gives you a 8% chance to gain an extra attack after Blocking a melee attack and a 20% chance to gain an extra attack after being the victim of a non-periodic critical strike.",
-       "Gives you a 16% chance to gain an extra attack after Blocking a melee attack and a 40% chance to gain an extra attack after being the victim of a non-periodic critical strike.",
-       "Gives you a 24% chance to gain an extra attack after Blocking a melee attack and a 60% chance to gain an extra attack after being the victim of a non-periodic critical strike.",
-       "Gives you a 32% chance to gain an extra attack after Blocking a melee attack and a 80% chance to gain an extra attack after being the victim of a non-periodic critical strike.",
-       "Gives you a 40% chance to gain an extra attack after Blocking a melee attack and a 100% chance to gain an extra attack after being the victim of a non-periodic critical strike."
+       "Gives you a 8% chance after Blocking and a 20% chance after receiving a non-periodic critical strike to gain an extra attack. Stores up to 4 extra attacks. Cannot occur from Blocks more than once every 1.5 sec.",
+       "Gives you a 16% chance after Blocking and a 40% chance after receiving a non-periodic critical strike to gain an extra attack. Stores up to 4 extra attacks. Cannot occur from Blocks more than once every 1.5 sec.",
+       "Gives you a 24% chance after Blocking and a 60% chance after receiving a non-periodic critical strike to gain an extra attack. Stores up to 4 extra attacks. Cannot occur from Blocks more than once every 1.5 sec.",
+       "Gives you a 32% chance after Blocking and a 80% chance after receiving a non-periodic critical strike to gain an extra attack. Stores up to 4 extra attacks. Cannot occur from Blocks more than once every 1.5 sec.",
+       "Gives you a 40% chance after Blocking and a 100% chance after receiving a non-periodic critical strike to gain an extra attack. Stores up to 4 extra attacks. Cannot occur from Blocks more than once every 1.5 sec."
       ],
       "complete": true,
       "confirmed": [
@@ -2460,7 +2448,8 @@ window.TALENT_DATA = {
        "row": 7,
        "col": 2,
        "max": 1,
-       "text": "Increases chance to block by 30% for 10 sec, and deals 65 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges."
+       "text": "Increases chance to block by 30% for 10 sec, and deals 65 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges.",
+       "note": "now requires Templar's Bulwark, not Blessing of Sanctuary"
       }
      }
     ],
@@ -2649,9 +2638,9 @@ window.TALENT_DATA = {
       "passive": true,
       "icon": "spell_holy_vindication",
       "desc": [
-       "Gives your damaging melee attacks a chance to reduce the target's Attack Power by 67, and increase your Attack Power by 1% for 30 sec.",
-       "Gives your damaging melee attacks a chance to reduce the target's Attack Power by 133, and increase your Attack Power by 2% for 30 sec.",
-       "Gives your damaging melee attacks a chance to reduce the target's Attack Power by 200, and increase your Attack Power by 3% for 30 sec."
+       "Gives your damaging melee attacks a chance to reduce the target's Attack Power by 68, and increase your Attack Power by 1% for 30 sec.",
+       "Gives your damaging melee attacks a chance to reduce the target's Attack Power by 136, and increase your Attack Power by 2% for 30 sec.",
+       "Gives your damaging melee attacks a chance to reduce the target's Attack Power by 204, and increase your Attack Power by 3% for 30 sec."
       ],
       "complete": true,
       "confirmed": [
@@ -2666,7 +2655,7 @@ window.TALENT_DATA = {
        "row": 3,
        "col": 1,
        "max": 3,
-       "text": "Gives the Paladin's damaging melee attacks a chance to reduce the target's Strength and Agility by 5%"
+       "text": "Gives the Paladin's damaging melee attacks a chance to reduce the target's Strength and Agility by 5% for 10 sec."
       }
      },
      {
@@ -2709,7 +2698,7 @@ window.TALENT_DATA = {
       "src": "beta",
       "cost": "65 Mana | Instant",
       "classic": {
-       "status": "changed",
+       "status": "same",
        "tree": "Retribution",
        "row": 3,
        "col": 3,
@@ -2843,7 +2832,8 @@ window.TALENT_DATA = {
        "col": 2,
        "max": 5,
        "text": "Gives you a 3% bonus to Physical and Holy damage you deal for 8 sec after dealing a critical strike from a weapon swing, spell, or ability.",
-       "moved": true
+       "moved": true,
+       "note": "now requires Sanctified Judgement, not Conviction"
       }
      },
      {
@@ -2880,9 +2870,9 @@ window.TALENT_DATA = {
       "passive": true,
       "icon": "ability_paladin_enlightenedjudgements",
       "desc": [
+       "Increases your spell damage by up to 10% of your Intellect.",
        "Increases your spell damage by up to 20% of your Intellect.",
-       "Increases your spell damage by up to 40% of your Intellect.",
-       "Increases your spell damage by up to 60% of your Intellect."
+       "Increases your spell damage by up to 30% of your Intellect."
       ],
       "complete": true,
       "confirmed": [
@@ -2904,7 +2894,7 @@ window.TALENT_DATA = {
       "icon": "spell_holy_divinepurpose",
       "desc": [
        "Reduces the cast time of your Hammer of Wrath by 0.5 sec, and reduces all threat you generate by 10% while Righteous Fury is not active.",
-       "Reduces the cast time of your Hammer of Wrath by 1 sec, and reduces all threat you generate by 20% while Righteous Fury is not active."
+       "Reduces the cast time of your Hammer of Wrath by 1.0 sec, and reduces all threat you generate by 20% while Righteous Fury is not active."
       ],
       "complete": true,
       "confirmed": [
@@ -2964,7 +2954,8 @@ window.TALENT_DATA = {
     ]
    }
   ],
-  "source": "Talent trees and every rank's text from the WoW Forever beta client, build 1.60.1.70170."
+  "source": "Talent trees and every rank's text from the WoW Forever beta client, build 1.60.1.70425.",
+  "classic_total": 44
  },
  "Hunter": {
   "icon": "class_hunter",
@@ -3224,7 +3215,8 @@ window.TALENT_DATA = {
        "row": 4,
        "col": 2,
        "max": 2,
-       "text": "Gives the Mend Pet spell a 15% chance of cleansing 1 Curse, Disease, Magic or Poison effect from the pet each tick."
+       "text": "Gives the Mend Pet spell a 15% chance of cleansing 1 Curse, Disease, Magic or Poison effect from the pet each tick.",
+       "moved": true
       }
      },
      {
@@ -3267,7 +3259,7 @@ window.TALENT_DATA = {
       "passive": false,
       "icon": "ability_hunter_animalhandler",
       "desc": [
-       "Command a hawk to dive-bomb your targeted enemy, dealing 32 Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot."
+       "Command a hawk to dive-bomb your targeted enemy, dealing 32 plus 5% of your Ranged Attack Power Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot."
       ],
       "complete": true,
       "confirmed": [
@@ -3297,12 +3289,13 @@ window.TALENT_DATA = {
       ],
       "src": "beta",
       "classic": {
-       "status": "same",
+       "status": "changed",
        "tree": "Beast Mastery",
        "row": 5,
        "col": 1,
        "max": 2,
-       "text": "While your pet is active, you and your pet will regenerate 1% of total health every 10 sec."
+       "text": "While your pet is active, you and your pet will regenerate 1% of total health every 10 sec.",
+       "note": "rank 2 is 1% and 5 sec where Classic had 2% and 10 sec"
       }
      },
      {
@@ -3328,7 +3321,8 @@ window.TALENT_DATA = {
        "row": 5,
        "col": 2,
        "max": 1,
-       "text": "Command your pet to intimidate the target on the next successful melee attack, causing a high amount of threat and stunning the target for 3 sec."
+       "text": "Command your pet to intimidate the target on the next successful melee attack, causing a high amount of threat and stunning the target for 3 sec.",
+       "note": "now requires Bestial Swiftness"
       }
      },
      {
@@ -3702,7 +3696,7 @@ window.TALENT_DATA = {
       "passive": false,
       "icon": "ability_trueshot",
       "desc": [
-       "Increases the Ranged Attack Power of party members within 45 yds by 30."
+       "Increases the Ranged Attack Power of party or raid members within 45 yds by 30."
       ],
       "complete": true,
       "confirmed": [
@@ -3717,7 +3711,8 @@ window.TALENT_DATA = {
        "col": 2,
        "max": 1,
        "text": "Increases the attack power of party members within 45 yards by 50. Lasts 30 min.",
-       "moved": true
+       "moved": true,
+       "note": "no longer requires Barrage"
       }
      },
      {
@@ -3750,7 +3745,8 @@ window.TALENT_DATA = {
        "row": 4,
        "col": 3,
        "max": 5,
-       "text": "Increases your ranged weapon critical strike damage bonus by 6%."
+       "text": "Increases your ranged weapon critical strike damage bonus by 6%.",
+       "note": "now requires Careful Aim, not Lethal Shots"
       }
      },
      {
@@ -3761,8 +3757,8 @@ window.TALENT_DATA = {
       "passive": true,
       "icon": "ability_hunter_rapidregeneration",
       "desc": [
-       "Hitting a target with your Serpent Sting ability grants you 25% and consuming Rapid Killing grants you 50% of your Mana regeneration while casting for the next 15 sec.",
-       "Hitting a target with your Serpent Sting ability grants you 50% and consuming Rapid Killing grants you 100% of your Mana regeneration while casting for the next 15 sec."
+       "Afflicting a target with Serpent Sting allows 25% of your Mana Regeneration to continue while casting for 15 sec, increased to 50% when Rapid Killing is consumed.",
+       "Afflicting a target with Serpent Sting allows 50% of your Mana Regeneration to continue while casting for 15 sec, increased to 100% when Rapid Killing is consumed."
       ],
       "complete": true,
       "confirmed": [
@@ -3800,7 +3796,8 @@ window.TALENT_DATA = {
        "row": 5,
        "col": 2,
        "max": 3,
-       "text": "Increases the damage done by your Multi-Shot and Volley spells by 5%."
+       "text": "Increases the damage done by your Multi-Shot and Volley spells by 5%.",
+       "moved": true
       }
      },
      {
@@ -3820,12 +3817,13 @@ window.TALENT_DATA = {
       "src": "beta",
       "cost": "8% of base mana | 15 yd range | Instant | 30 sec cooldown",
       "classic": {
-       "status": "same",
+       "status": "moved",
        "tree": "Marksmanship",
        "row": 5,
        "col": 1,
        "max": 1,
-       "text": "A short-range shot that deals 50% weapon damage and disorients the target for 4 sec. Any damage caused will remove the effect. Turns off your attack when used."
+       "text": "A short-range shot that deals 50% weapon damage and disorients the target for 4 sec. Any damage caused will remove the effect. Turns off your attack when used.",
+       "moved": true
       }
      },
      {
@@ -3878,14 +3876,7 @@ window.TALENT_DATA = {
       "req": "Trueshot Aura",
       "cost": "365 Mana | 8-45 yd range | 4 sec cast | 15 sec cooldown",
       "classic": {
-       "status": "changed",
-       "tree": "Marksmanship",
-       "row": 3,
-       "col": 1,
-       "max": 1,
-       "text": "An aimed shot that increases ranged damage by 70.",
-       "moved": true,
-       "renamed": "Aimed Shot"
+       "status": "new"
       }
      }
     ],
@@ -3895,6 +3886,12 @@ window.TALENT_DATA = {
       "max": 5,
       "text": "Increases the Ranged Attack Power bonus of your Hunter's Mark spell by 3%.",
       "row": 2
+     },
+     {
+      "name": "Aimed Shot",
+      "max": 1,
+      "text": "An aimed shot that increases ranged damage by 70.",
+      "row": 3
      },
      {
       "name": "Improved Scorpid Sting",
@@ -3933,7 +3930,11 @@ window.TALENT_DATA = {
       ],
       "src": "beta",
       "classic": {
-       "status": "new"
+       "status": "new",
+       "replaces": [
+        "Monster Slaying",
+        "Humanoid Slaying"
+       ]
       }
      },
      {
@@ -4084,7 +4085,8 @@ window.TALENT_DATA = {
        "row": 2,
        "col": 3,
        "max": 5,
-       "text": "Gives your Wing Clip ability a 4% chance to immobilize the target for 5 sec."
+       "text": "Gives your Wing Clip ability a 4% chance to immobilize the target for 5 sec.",
+       "moved": true
       }
      },
      {
@@ -4185,7 +4187,11 @@ window.TALENT_DATA = {
       ],
       "src": "beta",
       "classic": {
-       "status": "new"
+       "status": "new",
+       "replaces": [
+        "Trap Mastery",
+        "Improved Feign Death"
+       ]
       }
      },
      {
@@ -4196,11 +4202,11 @@ window.TALENT_DATA = {
       "passive": true,
       "icon": "ability_dualwield",
       "desc": [
-       "Increases your melee critical strike damage by 6% and your Off Hand weapon damage by 10%.",
-       "Increases your melee critical strike damage by 12% and your Off Hand weapon damage by 20%.",
-       "Increases your melee critical strike damage by 18% and your Off Hand weapon damage by 30%.",
-       "Increases your melee critical strike damage by 24% and your Off Hand weapon damage by 40%.",
-       "Increases your melee critical strike damage by 30% and your Off Hand weapon damage by 50%."
+       "Increases your melee ability critical strike damage by 6% and your Off Hand weapon damage by 10%.",
+       "Increases your melee ability critical strike damage by 12% and your Off Hand weapon damage by 20%.",
+       "Increases your melee ability critical strike damage by 18% and your Off Hand weapon damage by 30%.",
+       "Increases your melee ability critical strike damage by 24% and your Off Hand weapon damage by 40%.",
+       "Increases your melee ability critical strike damage by 30% and your Off Hand weapon damage by 50%."
       ],
       "complete": true,
       "confirmed": [
@@ -4250,8 +4256,8 @@ window.TALENT_DATA = {
       "passive": true,
       "icon": "ability_hunter_resourcefulness",
       "desc": [
-       "Reduces the mana cost of your Trap abilities and melee abilities by 30%. In addition, your critical strikes have a 30% chance to allow 50% of your Mana regeneration to continue while casting for 30 sec.",
-       "Reduces the mana cost of your Trap abilities and melee abilities by 60%. In addition, your critical strikes have a 60% chance to allow 50% of your Mana regeneration to continue while casting for 30 sec."
+       "Reduces the Mana cost of your Trap and melee abilities by 30%, and grants your melee and ranged ability Critical Strikes a 50% chance to allow 50% of your Mana Regeneration to continue while casting for 30 sec.",
+       "Reduces the Mana cost of your Trap and melee abilities by 60%, and grants your melee and ranged ability Critical Strikes a 100% chance to allow 50% of your Mana Regeneration to continue while casting for 30 sec."
       ],
       "complete": true,
       "confirmed": [
@@ -4271,8 +4277,8 @@ window.TALENT_DATA = {
       "passive": true,
       "icon": "ability_hunter_swiftstrike",
       "desc": [
-       "Your attacks against targets with Hunter's Mark have a 5% chance to activate your Mongoose Bite for 5 sec.",
-       "Your attacks against targets with Hunter's Mark have a 10% chance to activate your Mongoose Bite for 5 sec."
+       "Grants your melee and ranged attacks against enemies afflicted by Hunter's Mark a 5% chance to allow an activation of Mongoose Bite. Lasts 10 sec.",
+       "Grants your melee and ranged attacks against enemies afflicted by Hunter's Mark a 10% chance to allow an activation of Mongoose Bite. Lasts 10 sec."
       ],
       "complete": true,
       "confirmed": [
@@ -4418,7 +4424,8 @@ window.TALENT_DATA = {
     ]
    }
   ],
-  "source": "Talent trees and every rank's text from the WoW Forever beta client, build 1.60.1.70170."
+  "source": "Talent trees and every rank's text from the WoW Forever beta client, build 1.60.1.70425.",
+  "classic_total": 46
  },
  "Rogue": {
   "icon": "class_rogue",
@@ -4704,12 +4711,13 @@ window.TALENT_DATA = {
       ],
       "src": "beta",
       "classic": {
-       "status": "same",
+       "status": "moved",
        "tree": "Assassination",
        "row": 4,
        "col": 2,
        "max": 5,
-       "text": "Increases the damage dealt by your poisons by 4% and gives your poisons an additional 8% chance to resist dispel effects."
+       "text": "Increases the damage dealt by your poisons by 4% and gives your poisons an additional 8% chance to resist dispel effects.",
+       "moved": true
       }
      },
      {
@@ -4867,12 +4875,14 @@ window.TALENT_DATA = {
       ],
       "src": "beta",
       "classic": {
-       "status": "same",
+       "status": "changed",
        "tree": "Assassination",
        "row": 6,
        "col": 2,
        "max": 5,
-       "text": "Your critical strikes from abilities that add combo points have a 20% chance to add an additional combo point."
+       "text": "Your critical strikes from abilities that add combo points have a 20% chance to add an additional combo point.",
+       "moved": true,
+       "note": "no longer requires Cold Blood"
       }
      },
      {
@@ -4891,7 +4901,7 @@ window.TALENT_DATA = {
       ],
       "src": "beta",
       "req": "Mutilate",
-      "cost": "25 Energy | 100 yd range | Instant",
+      "cost": "25 Energy | 1 to 5 Combo Points | Instant",
       "classic": {
        "status": "new"
       }
@@ -5011,13 +5021,7 @@ window.TALENT_DATA = {
       ],
       "src": "beta",
       "classic": {
-       "status": "changed",
-       "tree": "Combat",
-       "row": 2,
-       "col": 1,
-       "max": 3,
-       "text": "Increases the critical strike chance of your Backstab ability by 10%.",
-       "renamed": "Improved Backstab"
+       "status": "new"
       }
      },
      {
@@ -5281,12 +5285,17 @@ window.TALENT_DATA = {
       ],
       "src": "beta",
       "classic": {
-       "status": "new",
+       "status": "changed",
+       "tree": "Combat",
+       "row": 5,
+       "col": 3,
+       "max": 5,
+       "text": "Gives you a 1% chance to get an extra attack on the same target after dealing damage with your Sword.",
+       "renamed": "Sword Specialization",
        "replaces": [
         "Dagger Specialization",
         "Fist Weapon Specialization",
-        "Mace Specialization",
-        "Sword Specialization"
+        "Mace Specialization"
        ]
       }
      },
@@ -5373,6 +5382,12 @@ window.TALENT_DATA = {
     ],
     "removed": [
      {
+      "name": "Improved Backstab",
+      "max": 3,
+      "text": "Increases the critical strike chance of your Backstab ability by 10%.",
+      "row": 2
+     },
+     {
       "name": "Dagger Specialization",
       "max": 5,
       "text": "Increases your chance to get a critical strike with Daggers by 1%.",
@@ -5382,12 +5397,6 @@ window.TALENT_DATA = {
       "name": "Mace Specialization",
       "max": 5,
       "text": "Increases your skill with Maces by 1, and gives you a 1% chance to stun your target for 3 sec with a mace.",
-      "row": 5
-     },
-     {
-      "name": "Sword Specialization",
-      "max": 5,
-      "text": "Gives you a 1% chance to get an extra attack on the same target after dealing damage with your Sword.",
       "row": 5
      },
      {
@@ -5720,7 +5729,7 @@ window.TALENT_DATA = {
        "max": 1,
        "text": "When used, adds 2 combo points to your target. You must add to or use those combo points within 10 sec or the combo points are lost.",
        "moved": true,
-       "note": "no longer requires Stealth (Classic did)"
+       "note": "no longer requires Preparation, no longer requires Stealth (Classic did)"
       }
      },
      {
@@ -5748,7 +5757,7 @@ window.TALENT_DATA = {
        "row": 4,
        "col": 3,
        "max": 3,
-       "text": "Causes your attacks to ignore 0 of your target's Armor and increases the damage dealt by your Rupture ability by 10%. The amount of Armor reduced increases with your level."
+       "text": "Causes your attacks to ignore 100 of your target's Armor and increases the damage dealt by your Rupture ability by 10%. The amount of Armor reduced increases with your level."
       }
      },
      {
@@ -5774,7 +5783,8 @@ window.TALENT_DATA = {
        "row": 5,
        "col": 3,
        "max": 2,
-       "text": "Reduces the Energy cost of your Cheap Shot and Garrote abilities by 10."
+       "text": "Reduces the Energy cost of your Cheap Shot and Garrote abilities by 10.",
+       "moved": true
       }
      },
      {
@@ -5825,7 +5835,8 @@ window.TALENT_DATA = {
        "row": 5,
        "col": 4,
        "max": 1,
-       "text": "An instant strike that damages the opponent and causes the target to hemorrhage, increasing any Physical damage dealt to the target by up to 3. Lasts 30 charges or 15 sec. Awards 1 combo point."
+       "text": "An instant strike that damages the opponent and causes the target to hemorrhage, increasing any Physical damage dealt to the target by up to 3. Lasts 30 charges or 15 sec. Awards 1 combo point.",
+       "moved": true
       }
      },
      {
@@ -5929,7 +5940,8 @@ window.TALENT_DATA = {
     ]
    }
   ],
-  "source": "Talent trees and every rank's text from the WoW Forever beta client, build 1.60.1.70170."
+  "source": "Talent trees and every rank's text from the WoW Forever beta client, build 1.60.1.70425.",
+  "classic_total": 51
  },
  "Priest": {
   "icon": "class_priest",
@@ -5947,11 +5959,11 @@ window.TALENT_DATA = {
       "passive": true,
       "icon": "spell_holy_searinglight",
       "desc": [
-       "Your Smite and Penance spells deal 2% increased damage to targets afflicted with your Holy Fire.",
-       "Your Smite and Penance spells deal 4% increased damage to targets afflicted with your Holy Fire.",
-       "Your Smite and Penance spells deal 6% increased damage to targets afflicted with your Holy Fire.",
-       "Your Smite and Penance spells deal 8% increased damage to targets afflicted with your Holy Fire.",
-       "Your Smite and Penance spells deal 10% increased damage to targets afflicted with your Holy Fire."
+       "Your Smite and Penance spells deal 2% increased damage to targets afflicted with your Holy Fire or Shadow Word: Pain.",
+       "Your Smite and Penance spells deal 4% increased damage to targets afflicted with your Holy Fire or Shadow Word: Pain.",
+       "Your Smite and Penance spells deal 6% increased damage to targets afflicted with your Holy Fire or Shadow Word: Pain.",
+       "Your Smite and Penance spells deal 8% increased damage to targets afflicted with your Holy Fire or Shadow Word: Pain.",
+       "Your Smite and Penance spells deal 10% increased damage to targets afflicted with your Holy Fire or Shadow Word: Pain."
       ],
       "complete": true,
       "confirmed": [
@@ -5989,7 +6001,8 @@ window.TALENT_DATA = {
        "row": 1,
        "col": 3,
        "max": 5,
-       "text": "Increases your damage with Wands by 5%."
+       "text": "Increases your damage with Wands by 5%.",
+       "moved": true
       }
      },
      {
@@ -6027,9 +6040,9 @@ window.TALENT_DATA = {
       "passive": true,
       "icon": "spell_nature_manaregentotem",
       "desc": [
-       "Reduces the threat generated by your Holy spells by 10% and reduces the duration of Stun, Fear, and Silence effects inflicted on you by 5%.",
-       "Reduces the threat generated by your Holy spells by 20% and reduces the duration of Stun, Fear, and Silence effects inflicted on you by 10%.",
-       "Reduces the threat generated by your Holy spells by 30% and reduces the duration of Stun, Fear, and Silence effects inflicted on you by 15%."
+       "Reduces the threat generated by your spells by 10% and reduces the duration of Stun, Fear, and Silence effects inflicted on you by 5%.",
+       "Reduces the threat generated by your spells by 20% and reduces the duration of Stun, Fear, and Silence effects inflicted on you by 10%.",
+       "Reduces the threat generated by your spells by 30% and reduces the duration of Stun, Fear, and Silence effects inflicted on you by 15%."
       ],
       "complete": true,
       "confirmed": [
@@ -6071,31 +6084,36 @@ window.TALENT_DATA = {
       }
      },
      {
-      "name": "Improved Power Word: Shield",
-      "max": 3,
+      "name": "Mental Strength",
+      "max": 5,
       "row": 2,
       "col": 3,
       "passive": true,
-      "icon": "spell_holy_powerwordshield",
+      "icon": "spell_nature_enchantarmor",
       "desc": [
-       "Increases the damage absorbed by your Power Word: Shield by 7%.",
-       "Increases the damage absorbed by your Power Word: Shield by 14%.",
-       "Increases the damage absorbed by your Power Word: Shield by 20%."
+       "Increases your total Intellect by 2%.",
+       "Increases your total Intellect by 4%.",
+       "Increases your total Intellect by 6%.",
+       "Increases your total Intellect by 8%.",
+       "Increases your total Intellect by 10%."
       ],
       "complete": true,
       "confirmed": [
        1,
        2,
-       3
+       3,
+       4,
+       5
       ],
       "src": "beta",
       "classic": {
        "status": "changed",
        "tree": "Discipline",
-       "row": 2,
-       "col": 3,
-       "max": 3,
-       "text": "Increases the damage absorbed by your Power Word: Shield by 5%."
+       "row": 5,
+       "col": 2,
+       "max": 5,
+       "text": "Increases your maximum Mana by 2%.",
+       "moved": true
       }
      },
      {
@@ -6179,6 +6197,35 @@ window.TALENT_DATA = {
       }
      },
      {
+      "name": "Improved Power Word: Shield",
+      "max": 3,
+      "row": 3,
+      "col": 3,
+      "passive": true,
+      "icon": "spell_holy_powerwordshield",
+      "desc": [
+       "Increases the damage absorbed by your Power Word: Shield by 7%.",
+       "Increases the damage absorbed by your Power Word: Shield by 14%.",
+       "Increases the damage absorbed by your Power Word: Shield by 20%."
+      ],
+      "complete": true,
+      "confirmed": [
+       1,
+       2,
+       3
+      ],
+      "src": "beta",
+      "classic": {
+       "status": "changed",
+       "tree": "Discipline",
+       "row": 2,
+       "col": 3,
+       "max": 3,
+       "text": "Increases the damage absorbed by your Power Word: Shield by 5%.",
+       "moved": true
+      }
+     },
+     {
       "name": "Meditation",
       "max": 3,
       "row": 3,
@@ -6203,7 +6250,8 @@ window.TALENT_DATA = {
        "row": 3,
        "col": 3,
        "max": 3,
-       "text": "Allows 5% of your Mana regeneration to continue while casting."
+       "text": "Allows 5% of your Mana regeneration to continue while casting.",
+       "moved": true
       }
      },
      {
@@ -6235,35 +6283,29 @@ window.TALENT_DATA = {
       }
      },
      {
-      "name": "Mental Strength",
-      "max": 5,
+      "name": "Improved Mana Burn",
+      "max": 2,
       "row": 4,
       "col": 2,
       "passive": true,
-      "icon": "spell_nature_enchantarmor",
+      "icon": "spell_shadow_manaburn",
       "desc": [
-       "Increases your total Intellect by 3%.",
-       "Increases your total Intellect by 6%.",
-       "Increases your total Intellect by 9%.",
-       "Increases your total Intellect by 12%.",
-       "Increases your total Intellect by 15%."
+       "Reduces the casting time of your Mana Burn spell by 0.5 sec.",
+       "Reduces the casting time of your Mana Burn spell by 1.0 sec."
       ],
       "complete": true,
       "confirmed": [
        1,
-       2,
-       3,
-       4,
-       5
+       2
       ],
       "src": "beta",
       "classic": {
        "status": "changed",
        "tree": "Discipline",
-       "row": 5,
-       "col": 2,
-       "max": 5,
-       "text": "Increases your maximum Mana by 2%.",
+       "row": 4,
+       "col": 4,
+       "max": 2,
+       "text": "Reduces the casting time of your Mana Burn spell by 0.25 secs.",
        "moved": true
       }
      },
@@ -6288,32 +6330,6 @@ window.TALENT_DATA = {
       }
      },
      {
-      "name": "Improved Mana Burn",
-      "max": 2,
-      "row": 4,
-      "col": 4,
-      "passive": true,
-      "icon": "spell_shadow_manaburn",
-      "desc": [
-       "Reduces the casting time of your Mana Burn spell by 0.5 sec.",
-       "Reduces the casting time of your Mana Burn spell by 1 sec."
-      ],
-      "complete": true,
-      "confirmed": [
-       1,
-       2
-      ],
-      "src": "beta",
-      "classic": {
-       "status": "changed",
-       "tree": "Discipline",
-       "row": 4,
-       "col": 4,
-       "max": 2,
-       "text": "Reduces the casting time of your Mana Burn spell by 0.25 secs."
-      }
-     },
-     {
       "name": "Penance",
       "max": 1,
       "row": 5,
@@ -6321,14 +6337,14 @@ window.TALENT_DATA = {
       "passive": false,
       "icon": "spell_holy_penance",
       "desc": [
-       "Launches a volley of holy light at the target, causing 81 Holy damage to an enemy, or 184 healing to an ally, instantly and every 1 sec for 2 sec."
+       "Launches a volley of holy light at the target, causing 44 Holy damage to an enemy, or 133 healing to an ally, instantly and every 1 sec for 2 sec."
       ],
       "complete": true,
       "confirmed": [
        1
       ],
       "src": "beta",
-      "cost": "100 Mana | 40 yd range | Channeled | 12 sec cooldown",
+      "cost": "150 Mana | Enemy: 36 yd range | Friendly: 40 yd range | Channeled | 12 sec cooldown",
       "classic": {
        "status": "new"
       }
@@ -6369,9 +6385,9 @@ window.TALENT_DATA = {
       "passive": true,
       "icon": "spell_holy_devineaegis",
       "desc": [
-       "Your critical heals create a protective shield on the target, absorbing 5% of the amount healed. Lasts 12 sec.",
-       "Your critical heals create a protective shield on the target, absorbing 10% of the amount healed. Lasts 12 sec.",
-       "Your critical heals create a protective shield on the target, absorbing 15% of the amount healed. Lasts 12 sec."
+       "Your non-periodic critical heals create a protective shield on the target, absorbing 5% of the amount healed. Shields up to 1,200 damage and lasts 12 sec.",
+       "Your non-periodic critical heals create a protective shield on the target, absorbing 10% of the amount healed. Shields up to 1,200 damage and lasts 12 sec.",
+       "Your non-periodic critical heals create a protective shield on the target, absorbing 15% of the amount healed. Shields up to 1,200 damage and lasts 12 sec."
       ],
       "complete": true,
       "confirmed": [
@@ -6407,7 +6423,8 @@ window.TALENT_DATA = {
        "row": 7,
        "col": 2,
        "max": 1,
-       "text": "Infuses the target with power, increasing their spell damage and healing by 20%. Lasts 15 sec."
+       "text": "Infuses the target with power, increasing their spell damage and healing by 20%. Lasts 15 sec.",
+       "note": "now requires Penance, not Mental Strength"
       }
      }
     ],
@@ -6441,7 +6458,7 @@ window.TALENT_DATA = {
    {
     "name": "Holy",
     "bg": 202,
-    "icon": "spell_holy_holybolt",
+    "icon": "spell_holy_guardianspirit",
     "talents": [
      {
       "name": "Twilight Focus",
@@ -6678,7 +6695,7 @@ window.TALENT_DATA = {
        "row": 3,
        "col": 4,
        "max": 3,
-       "text": "Increases your target's armor by 8% for 15 sec after getting a critical effect from"
+       "text": "Increases your target's armor by 8% for 15 sec after getting a critical effect from your Flash Heal, Heal, Greater Heal, or Prayer of Healing spell."
       }
      },
      {
@@ -6986,12 +7003,13 @@ window.TALENT_DATA = {
       ],
       "src": "beta",
       "classic": {
-       "status": "same",
+       "status": "moved",
        "tree": "Shadow",
        "row": 1,
        "col": 3,
        "max": 5,
-       "text": "Gives your Shadow damage spells a 2% chance to stun the target for 3 sec."
+       "text": "Gives your Shadow damage spells a 2% chance to stun the target for 3 sec.",
+       "moved": true
       }
      },
      {
@@ -7023,35 +7041,41 @@ window.TALENT_DATA = {
        "row": 1,
        "col": 2,
        "max": 5,
-       "text": "Gives you a 20% chance to gain a 100% bonus to your Spirit after killing a target that yields experience. For the duration, your Mana will regenerate at a 50% rate while casting. Lasts 15 sec."
+       "text": "Gives you a 20% chance to gain a 100% bonus to your Spirit after killing a target that yields experience. For the duration, your Mana will regenerate at a 50% rate while casting. Lasts 15 sec.",
+       "moved": true
       }
      },
      {
-      "name": "Shadow Affinity",
-      "max": 3,
+      "name": "Improved Mind Blast",
+      "max": 5,
       "row": 2,
       "col": 1,
       "passive": true,
-      "icon": "spell_shadow_shadowward",
+      "icon": "spell_shadow_unholyfrenzy",
       "desc": [
-       "Reduces the threat generated by your Shadow spells by 10%.",
-       "Reduces the threat generated by your Shadow spells by 20%.",
-       "Reduces the threat generated by your Shadow spells by 30%."
+       "Reduces the cooldown of your Mind Blast spell by 0.5 sec.",
+       "Reduces the cooldown of your Mind Blast spell by 1 sec.",
+       "Reduces the cooldown of your Mind Blast spell by 1.5 sec.",
+       "Reduces the cooldown of your Mind Blast spell by 2 sec.",
+       "Reduces the cooldown of your Mind Blast spell by 2.5 sec."
       ],
       "complete": true,
       "confirmed": [
        1,
        2,
-       3
+       3,
+       4,
+       5
       ],
       "src": "beta",
       "classic": {
-       "status": "changed",
+       "status": "moved",
        "tree": "Shadow",
-       "row": 2,
-       "col": 1,
-       "max": 3,
-       "text": "Reduces the threat generated by your Shadow spells by 8%."
+       "row": 3,
+       "col": 2,
+       "max": 5,
+       "text": "Reduces the cooldown of your Mind Blast spell by 0.5 sec.",
+       "moved": true
       }
      },
      {
@@ -7072,12 +7096,13 @@ window.TALENT_DATA = {
       ],
       "src": "beta",
       "classic": {
-       "status": "same",
+       "status": "moved",
        "tree": "Shadow",
        "row": 2,
        "col": 2,
        "max": 2,
-       "text": "Increases the duration of your Shadow Word: Pain spell by 3 sec."
+       "text": "Increases the duration of your Shadow Word: Pain spell by 3 sec.",
+       "moved": true
       }
      },
      {
@@ -7108,38 +7133,6 @@ window.TALENT_DATA = {
       }
      },
      {
-      "name": "Improved Mind Blast",
-      "max": 5,
-      "row": 3,
-      "col": 1,
-      "passive": true,
-      "icon": "spell_shadow_unholyfrenzy",
-      "desc": [
-       "Reduces the cooldown of your Mind Blast spell by 0.5 sec.",
-       "Reduces the cooldown of your Mind Blast spell by 1 sec.",
-       "Reduces the cooldown of your Mind Blast spell by 1.5 sec.",
-       "Reduces the cooldown of your Mind Blast spell by 2 sec.",
-       "Reduces the cooldown of your Mind Blast spell by 2.5 sec."
-      ],
-      "complete": true,
-      "confirmed": [
-       1,
-       2,
-       3,
-       4,
-       5
-      ],
-      "src": "beta",
-      "classic": {
-       "status": "same",
-       "tree": "Shadow",
-       "row": 3,
-       "col": 2,
-       "max": 5,
-       "text": "Reduces the cooldown of your Mind Blast spell by 0.5 sec."
-      }
-     },
-     {
       "name": "Improved Psychic Scream",
       "max": 2,
       "row": 3,
@@ -7158,12 +7151,14 @@ window.TALENT_DATA = {
       "src": "beta",
       "req": "Blackout",
       "classic": {
-       "status": "same",
+       "status": "changed",
        "tree": "Shadow",
        "row": 3,
        "col": 1,
        "max": 2,
-       "text": "Reduces the cooldown of your Psychic Scream spell by 2 sec."
+       "text": "Reduces the cooldown of your Psychic Scream spell by 2 sec.",
+       "moved": true,
+       "note": "now requires Blackout"
       }
      },
      {
@@ -7199,8 +7194,8 @@ window.TALENT_DATA = {
       "passive": true,
       "icon": "spell_shadow_soulleech_2",
       "desc": [
-       "Your Mind Flay now deals 10% more damage, gains 5 yards increased range, but slows the target's movement speed by 35%.",
-       "Your Mind Flay now deals 20% more damage, gains 10 yards increased range, but slows the target's movement speed by 20%."
+       "Each instance of damage of Mind Flay deals 10% more damage than its previous instance of damage.",
+       "Each instance of damage of Mind Flay deals 20% more damage than its previous instance of damage."
       ],
       "complete": true,
       "confirmed": [
@@ -7214,29 +7209,30 @@ window.TALENT_DATA = {
       }
      },
      {
-      "name": "Improved Fade",
-      "max": 2,
+      "name": "Dark Inspiration",
+      "max": 5,
       "row": 4,
       "col": 1,
       "passive": true,
-      "icon": "spell_magic_lesserinvisibilty",
+      "icon": "spell_warlock_demonsoul",
       "desc": [
-       "Decreases the cooldown of your Fade ability by 3 sec.",
-       "Decreases the cooldown of your Fade ability by 6 sec."
+       "Your Mind Blast and fully channeled Mind Flay causes Dark Inspiration, increasing yours and your party's Spirit by 3% for 10 sec.",
+       "Your Mind Blast and fully channeled Mind Flay causes Dark Inspiration, increasing yours and your party's Spirit by 6% for 10 sec.",
+       "Your Mind Blast and fully channeled Mind Flay causes Dark Inspiration, increasing yours and your party's Spirit by 9% for 10 sec.",
+       "Your Mind Blast and fully channeled Mind Flay causes Dark Inspiration, increasing yours and your party's Spirit by 12% for 10 sec.",
+       "Your Mind Blast and fully channeled Mind Flay causes Dark Inspiration, increasing yours and your party's Spirit by 15% for 10 sec."
       ],
       "complete": true,
       "confirmed": [
        1,
-       2
+       2,
+       3,
+       4,
+       5
       ],
       "src": "beta",
       "classic": {
-       "status": "same",
-       "tree": "Shadow",
-       "row": 4,
-       "col": 2,
-       "max": 2,
-       "text": "Decreases the cooldown of your Fade ability by 3 sec."
+       "status": "new"
       }
      },
      {
@@ -7254,7 +7250,7 @@ window.TALENT_DATA = {
        1
       ],
       "src": "beta",
-      "cost": "40 Mana | 30 yd range | Instant | 1 min cooldown",
+      "cost": "40 Mana | 30 yd range | Instant | 30 sec cooldown",
       "classic": {
        "status": "changed",
        "tree": "Shadow",
@@ -7273,9 +7269,9 @@ window.TALENT_DATA = {
       "passive": true,
       "icon": "spell_shadow_blackplague",
       "desc": [
-       "Your Shadow damage spells have a 33% chance to increase the Shadow damage you deal by 2% for 15 sec, stacking up to 5 times.",
-       "Your Shadow damage spells have a 67% chance to increase the Shadow damage you deal by 2% for 15 sec, stacking up to 5 times.",
-       "Your Shadow damage spells have a 100% chance to increase the Shadow damage you deal by 2% for 15 sec, stacking up to 5 times."
+       "Your Shadow damage spells have a 33% chance to increase the Shadow damage the target takes from you by 2% for 15 sec, stacking up to 5 times.",
+       "Your Shadow damage spells have a 67% chance to increase the Shadow damage the target takes from you by 2% for 15 sec, stacking up to 5 times.",
+       "Your Shadow damage spells have a 100% chance to increase the Shadow damage the target takes from you by 2% for 15 sec, stacking up to 5 times."
       ],
       "complete": true,
       "confirmed": [
@@ -7290,7 +7286,8 @@ window.TALENT_DATA = {
        "row": 4,
        "col": 4,
        "max": 5,
-       "text": "Your Shadow damage spells have a 20% chance to cause your target to be vulnerable to Shadow damage. This vulnerability increases the Shadow damage dealt to your target by 3% and lasts 15 sec. Stacks up to 5 times."
+       "text": "Your Shadow damage spells have a 20% chance to cause your target to be vulnerable to Shadow damage. This vulnerability increases the Shadow damage dealt to your target by 3% and lasts 15 sec. Stacks up to 5 times.",
+       "moved": true
       }
      },
      {
@@ -7315,7 +7312,8 @@ window.TALENT_DATA = {
        "row": 5,
        "col": 1,
        "max": 1,
-       "text": "Silences the target, preventing them from casting spells for 5 sec."
+       "text": "Silences the target, preventing them from casting spells for 5 sec.",
+       "note": "no longer requires Improved Psychic Scream"
       }
      },
      {
@@ -7326,8 +7324,8 @@ window.TALENT_DATA = {
       "passive": true,
       "icon": "spell_shadow_devouringplague",
       "desc": [
-       "Reduces the mana cost of your Devouring Plague by 25%.\n\nTargets that die while Devouring Plague is active spreads it, jumping to a nearby enemy within 5 yds for the remaining duration.",
-       "Reduces the mana cost of your Devouring Plague by 50%.\n\nTargets that die while Devouring Plague is active spreads it, jumping to a nearby enemy within 10 yds for the remaining duration."
+       "Reduces the mana cost of your Devouring Plague by 25%.\n\nTargets that die while Devouring Plague is active spreads it, jumping to 2 nearby enemies within 5 yds for the remaining duration.",
+       "Reduces the mana cost of your Devouring Plague by 50%.\n\nTargets that die while Devouring Plague is active spreads it, jumping to 2 nearby enemies within 10 yds for the remaining duration."
       ],
       "complete": true,
       "confirmed": [
@@ -7424,6 +7422,18 @@ window.TALENT_DATA = {
     ],
     "removed": [
      {
+      "name": "Shadow Affinity",
+      "max": 3,
+      "text": "Reduces the threat generated by your Shadow spells by 8%.",
+      "row": 2
+     },
+     {
+      "name": "Improved Fade",
+      "max": 2,
+      "text": "Decreases the cooldown of your Fade ability by 3 sec.",
+      "row": 4
+     },
+     {
       "name": "Improved Vampiric Embrace",
       "max": 2,
       "text": "Increases the percentage healed by Vampiric Embrace by an additional 5%.",
@@ -7432,7 +7442,8 @@ window.TALENT_DATA = {
     ]
    }
   ],
-  "source": "Talent trees and every rank's text from the WoW Forever beta client, build 1.60.1.70170."
+  "source": "Talent trees and every rank's text from the WoW Forever beta client, build 1.60.1.70425.",
+  "classic_total": 47
  },
  "Shaman": {
   "icon": "class_shaman",
@@ -7507,16 +7518,16 @@ window.TALENT_DATA = {
       }
      },
      {
-      "name": "Elemental Warding",
+      "name": "Elemental Devastation",
       "max": 3,
       "row": 2,
       "col": 1,
       "passive": true,
-      "icon": "spell_nature_spiritarmor",
+      "icon": "spell_fire_elementaldevastation",
       "desc": [
-       "Reduces damage taken from Fire, Frost, and Nature effects by 3%.",
-       "Reduces damage taken from Fire, Frost, and Nature effects by 7%.",
-       "Reduces damage taken from Fire, Frost, and Nature effects by 10%."
+       "Your Critical Strikes with direct damage spells increase your chance to get a Critical Strike with melee attacks by 3% for 10 sec.",
+       "Your Critical Strikes with direct damage spells increase your chance to get a Critical Strike with melee attacks by 6% for 10 sec.",
+       "Your Critical Strikes with direct damage spells increase your chance to get a Critical Strike with melee attacks by 9% for 10 sec."
       ],
       "complete": true,
       "confirmed": [
@@ -7528,10 +7539,11 @@ window.TALENT_DATA = {
       "classic": {
        "status": "changed",
        "tree": "Elemental",
-       "row": 2,
-       "col": 2,
+       "row": 4,
+       "col": 4,
        "max": 3,
-       "text": "Reduces damage taken from Fire, Frost and Nature effects by 4%."
+       "text": "Your offensive spell crits will increase your chance to get a critical strike with melee attacks by 3% for 10 sec.",
+       "moved": true
       }
      },
      {
@@ -7546,7 +7558,7 @@ window.TALENT_DATA = {
        "Reduces the cooldown of your Shock spells by 0.4 sec.",
        "Reduces the cooldown of your Shock spells by 0.6 sec.",
        "Reduces the cooldown of your Shock spells by 0.8 sec.",
-       "Reduces the cooldown of your Shock spells by 1 sec."
+       "Reduces the cooldown of your Shock spells by 1.0 sec."
       ],
       "complete": true,
       "confirmed": [
@@ -7568,90 +7580,9 @@ window.TALENT_DATA = {
       }
      },
      {
-      "name": "Call of Flame",
-      "max": 3,
-      "row": 2,
-      "col": 3,
-      "passive": true,
-      "icon": "spell_fire_immolation",
-      "desc": [
-       "Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 5%.",
-       "Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 10%.",
-       "Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 15%."
-      ],
-      "complete": true,
-      "confirmed": [
-       1,
-       2,
-       3
-      ],
-      "src": "beta",
-      "classic": {
-       "status": "changed",
-       "tree": "Elemental",
-       "row": 2,
-       "col": 3,
-       "max": 3,
-       "text": "Increases the damage done by your Fire Totems by 5%."
-      }
-     },
-     {
-      "name": "Elemental Devastation",
-      "max": 3,
-      "row": 2,
-      "col": 4,
-      "passive": true,
-      "icon": "spell_fire_elementaldevastation",
-      "desc": [
-       "Your offensive spell critical strikes will increase your chance to get a critical strike with melee attacks by 3% for 10 sec.",
-       "Your offensive spell critical strikes will increase your chance to get a critical strike with melee attacks by 6% for 10 sec.",
-       "Your offensive spell critical strikes will increase your chance to get a critical strike with melee attacks by 9% for 10 sec."
-      ],
-      "complete": true,
-      "confirmed": [
-       1,
-       2,
-       3
-      ],
-      "src": "beta",
-      "classic": {
-       "status": "changed",
-       "tree": "Elemental",
-       "row": 4,
-       "col": 4,
-       "max": 3,
-       "text": "Your offensive spell crits will increase your chance to get a critical strike with melee attacks by 3% for 10 sec.",
-       "moved": true
-      }
-     },
-     {
-      "name": "Elemental Focus",
-      "max": 1,
-      "row": 3,
-      "col": 2,
-      "passive": true,
-      "icon": "spell_shadow_manaburn",
-      "desc": [
-       "Gives you a 10% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell. The Clearcasting state reduces the mana cost of your next damage spell by 100%."
-      ],
-      "complete": true,
-      "confirmed": [
-       1
-      ],
-      "src": "beta",
-      "classic": {
-       "status": "same",
-       "tree": "Elemental",
-       "row": 3,
-       "col": 1,
-       "max": 1,
-       "text": "Gives you a 10% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell. The Clearcasting state reduces the mana cost of your next damage spell by 100%."
-      }
-     },
-     {
       "name": "Elemental Alacrity",
       "max": 3,
-      "row": 3,
+      "row": 2,
       "col": 3,
       "passive": true,
       "icon": "spell_lightning_lightningbolt01",
@@ -7675,19 +7606,102 @@ window.TALENT_DATA = {
        "max": 5,
        "text": "Reduces the cast time of your Lightning Bolt and Chain Lightning spells by 0.2 sec.",
        "moved": true,
-       "renamed": "Lightning Mastery"
+       "renamed": "Lightning Mastery",
+       "note": "no longer requires Call of Thunder"
       }
      },
      {
-      "name": "Improved Fire Nova",
+      "name": "Call of Flame",
+      "max": 3,
+      "row": 2,
+      "col": 4,
+      "passive": true,
+      "icon": "spell_fire_immolation",
+      "desc": [
+       "Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 5%, as well as increases the duration of your Flame Shock spell by 3 sec.",
+       "Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 10%, as well as increases the duration of your Flame Shock spell by 6 sec.",
+       "Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 15%, as well as increases the duration of your Flame Shock spell by 9 sec."
+      ],
+      "complete": true,
+      "confirmed": [
+       1,
+       2,
+       3
+      ],
+      "src": "beta",
+      "classic": {
+       "status": "changed",
+       "tree": "Elemental",
+       "row": 2,
+       "col": 3,
+       "max": 3,
+       "text": "Increases the damage done by your Fire Totems by 5%.",
+       "moved": true
+      }
+     },
+     {
+      "name": "Elemental Focus",
+      "max": 1,
+      "row": 3,
+      "col": 1,
+      "passive": true,
+      "icon": "spell_shadow_manaburn",
+      "desc": [
+       "Gives you a 10% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell. The Clearcasting state reduces the mana cost of your next damage spell by 100%."
+      ],
+      "complete": true,
+      "confirmed": [
+       1
+      ],
+      "src": "beta",
+      "classic": {
+       "status": "same",
+       "tree": "Elemental",
+       "row": 3,
+       "col": 1,
+       "max": 1,
+       "text": "Gives you a 10% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell. The Clearcasting state reduces the mana cost of your next damage spell by 100%."
+      }
+     },
+     {
+      "name": "Elemental Warding",
+      "max": 3,
+      "row": 3,
+      "col": 2,
+      "passive": true,
+      "icon": "spell_nature_spiritarmor",
+      "desc": [
+       "Reduces damage taken from Fire, Frost, and Nature effects by 3%.",
+       "Reduces damage taken from Fire, Frost, and Nature effects by 7%.",
+       "Reduces damage taken from Fire, Frost, and Nature effects by 10%."
+      ],
+      "complete": true,
+      "confirmed": [
+       1,
+       2,
+       3
+      ],
+      "src": "beta",
+      "classic": {
+       "status": "changed",
+       "tree": "Elemental",
+       "row": 2,
+       "col": 2,
+       "max": 3,
+       "text": "Reduces damage taken from Fire, Frost and Nature effects by 4%.",
+       "moved": true
+      }
+     },
+     {
+      "name": "Trial by Fire",
       "max": 2,
       "row": 4,
       "col": 1,
       "passive": true,
       "icon": "spell_fire_sealoffire",
       "desc": [
-       "Increases the damage done by your Fire Nova spell by 10% and reduces its cooldown by 2 sec.",
-       "Increases the damage done by your Fire Nova spell by 20% and reduces its cooldown by 4 sec."
+       "Increases the damage done by your Fire Nova spell by 10% and reduces its cooldown by 2 sec, and increases the duration of your Magma Totem by 10 sec.",
+       "Increases the damage done by your Fire Nova spell by 20% and reduces its cooldown by 4 sec, and increases the duration of your Magma Totem by 20 sec."
       ],
       "complete": true,
       "confirmed": [
@@ -7734,29 +7748,22 @@ window.TALENT_DATA = {
       }
      },
      {
-      "name": "Call of Thunder",
+      "name": "Earthbound",
       "max": 1,
       "row": 4,
-      "col": 3,
+      "col": 4,
       "passive": true,
-      "icon": "spell_nature_callstorm",
+      "icon": "spell_nature_stranglevines",
       "desc": [
-       "Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by 3%."
+       "Your Earthbind Totem Immobilizes nearby targets for 5 sec when cast."
       ],
       "complete": true,
       "confirmed": [
        1
       ],
       "src": "beta",
-      "req": "Elemental Alacrity",
       "classic": {
-       "status": "changed",
-       "tree": "Elemental",
-       "row": 3,
-       "col": 3,
-       "max": 5,
-       "text": "Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by an additional 1%.",
-       "moved": true
+       "status": "new"
       }
      },
      {
@@ -7767,8 +7774,8 @@ window.TALENT_DATA = {
       "passive": true,
       "icon": "spell_nature_stormreach",
       "desc": [
-       "Increases the range of your Lightning Bolt, Chain Lightning, Fire Nova, and Lava Burst spells by 3 yards, and increases the range of your Flame Shock spell by 8 yards.",
-       "Increases the range of your Lightning Bolt, Chain Lightning, Fire Nova, and Lava Burst spells by 6 yards, and increases the range of your Flame Shock spell by 15 yards."
+       "Increases the range of your Lightning Bolt, Chain Lightning, Fire Nova, and Lava Burst spells by 3 yards and reduces the cooldown of Totemic Projection by 10 sec.",
+       "Increases the range of your Lightning Bolt, Chain Lightning, Fire Nova, and Lava Burst spells by 6 yards and reduces the cooldown of Totemic Projection by 20 sec."
       ],
       "complete": true,
       "confirmed": [
@@ -7787,10 +7794,30 @@ window.TALENT_DATA = {
       }
      },
      {
+      "name": "Lava Burst",
+      "max": 1,
+      "row": 5,
+      "col": 2,
+      "passive": false,
+      "icon": "spell_shaman_lavaburst",
+      "desc": [
+       "You hurl molten lava at the target, dealing 113 to 145 Fire damage. If your Flame Shock is on the target, Lava Burst deals 20% increased damage."
+      ],
+      "complete": true,
+      "confirmed": [
+       1
+      ],
+      "src": "beta",
+      "cost": "135 Mana | 30 yd range | 2.5 sec cast | 10 sec cooldown",
+      "classic": {
+       "status": "new"
+      }
+     },
+     {
       "name": "Lightning Overload",
       "max": 3,
       "row": 5,
-      "col": 2,
+      "col": 3,
       "passive": true,
       "icon": "spell_nature_lightningoverload",
       "desc": [
@@ -7805,25 +7832,7 @@ window.TALENT_DATA = {
        3
       ],
       "src": "beta",
-      "classic": {
-       "status": "new"
-      }
-     },
-     {
-      "name": "Earthbound",
-      "max": 1,
-      "row": 5,
-      "col": 4,
-      "passive": true,
-      "icon": "spell_nature_stranglevines",
-      "desc": [
-       "Your Earthbind Totem Immobilizes nearby targets for 5 sec when cast."
-      ],
-      "complete": true,
-      "confirmed": [
-       1
-      ],
-      "src": "beta",
+      "req": "Elemental Alacrity",
       "classic": {
        "status": "new"
       }
@@ -7851,7 +7860,7 @@ window.TALENT_DATA = {
        5
       ],
       "src": "beta",
-      "req": "Call of Thunder",
+      "req": "Lightning Overload",
       "classic": {
        "status": "changed",
        "tree": "Elemental",
@@ -7859,37 +7868,44 @@ window.TALENT_DATA = {
        "col": 2,
        "max": 1,
        "text": "Increases the critical strike damage bonus of your Searing, Magma, and Fire Nova Totems and your Fire, Frost, and Nature spells by 100%.",
-       "moved": true
+       "moved": true,
+       "note": "now requires Lightning Overload"
       }
      },
      {
-      "name": "Lava Burst",
+      "name": "Elemental Mastery",
       "max": 1,
       "row": 7,
       "col": 2,
       "passive": false,
-      "icon": "spell_shaman_lavaburst",
+      "icon": "spell_nature_wispheal",
       "desc": [
-       "You hurl molten lava at the target, dealing 150 to 192 Fire damage. If your Flame Shock is on the target, Lava Burst deals 20% increased damage."
+       "Gain mastery over Fire and Lightning, reducing the cast time of Lightning Bolt and Lava Burst by 0.5 sec, and removing the cooldown from Chain Lightning. Lasts 15 sec."
       ],
       "complete": true,
       "confirmed": [
        1
       ],
       "src": "beta",
-      "req": "Lightning Overload",
-      "cost": "165 Mana | 30 yd range | 2.5 sec cast | 10 sec cooldown",
+      "req": "Lava Burst",
+      "cost": "Instant | 3 min cooldown",
       "classic": {
-       "status": "new"
+       "status": "changed",
+       "tree": "Elemental",
+       "row": 7,
+       "col": 2,
+       "max": 1,
+       "text": "When activated, this spell gives your next Fire, Frost, or Nature damage spell a 100% critical strike chance and reduces the mana cost by 100%.",
+       "note": "now requires Lava Burst, not Elemental Fury"
       }
      }
     ],
     "removed": [
      {
-      "name": "Elemental Mastery",
-      "max": 1,
-      "text": "When activated, this spell gives your next Fire, Frost, or Nature damage spell a 100% critical strike chance and reduces the mana cost by 100%.",
-      "row": 7
+      "name": "Call of Thunder",
+      "max": 5,
+      "text": "Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by an additional 1%.",
+      "row": 3
      }
     ]
    },
@@ -7987,7 +8003,8 @@ window.TALENT_DATA = {
        "row": 1,
        "col": 2,
        "max": 5,
-       "text": "Increases your maximum Mana by 1%."
+       "text": "Increases your maximum Mana by 1%.",
+       "moved": true
       }
      },
      {
@@ -8047,8 +8064,8 @@ window.TALENT_DATA = {
       "passive": true,
       "icon": "spell_nature_spiritwolf",
       "desc": [
-       "Reduces the cast time of your Ghost Wolf spell by 1 sec, and Ghost Wolf may be used indoors.",
-       "Reduces the cast time of your Ghost Wolf spell by 3 sec, and Ghost Wolf may be used indoors."
+       "Reduces the cast time of your Ghost Wolf spell by 1.0 sec, and Ghost Wolf may be used indoors.",
+       "Reduces the cast time of your Ghost Wolf spell by 3.0 sec, and Ghost Wolf may be used indoors."
       ],
       "complete": true,
       "confirmed": [
@@ -8113,13 +8130,14 @@ window.TALENT_DATA = {
       ],
       "src": "beta",
       "classic": {
-       "status": "moved",
+       "status": "changed",
        "tree": "Enhancement",
        "row": 5,
        "col": 2,
        "max": 3,
        "text": "Increases the melee attack power bonus of your Rockbiter Weapon by 7%, your Windfury Weapon effect by 13% and increases the damage caused by your Flametongue Weapon and Frostbrand Weapon by 5%.",
-       "moved": true
+       "moved": true,
+       "note": "rank 2 is 13% where Classic had 14%"
       }
      },
      {
@@ -8198,7 +8216,8 @@ window.TALENT_DATA = {
        "row": 4,
        "col": 3,
        "max": 5,
-       "text": "Increases your armor value from items by 2%."
+       "text": "Increases your armor value from items by 2%.",
+       "moved": true
       }
      },
      {
@@ -8231,7 +8250,8 @@ window.TALENT_DATA = {
        "row": 4,
        "col": 2,
        "max": 5,
-       "text": "Increases your attack speed by 10% for your next 3 swings after dealing a critical strike."
+       "text": "Increases your attack speed by 10% for your next 3 swings after dealing a critical strike.",
+       "note": "now requires Mental Dexterity, not Thundering Strikes"
       }
      },
      {
@@ -8249,7 +8269,7 @@ window.TALENT_DATA = {
        1
       ],
       "src": "beta",
-      "cost": "125 Mana | Melee Range | Instant | 8 sec cooldown",
+      "cost": "8% of base mana | Melee Range | Instant | 8 sec cooldown",
       "classic": {
        "status": "changed",
        "tree": "Enhancement",
@@ -8257,7 +8277,8 @@ window.TALENT_DATA = {
        "col": 2,
        "max": 1,
        "text": "Gives you an extra attack. In addition, the next 2 sources of Nature damage dealt to the target are increased by 20%. Lasts 12 sec.",
-       "moved": true
+       "moved": true,
+       "note": "no longer requires Elemental Weapons"
       }
      },
      {
@@ -8282,6 +8303,7 @@ window.TALENT_DATA = {
        "col": 3,
        "max": 1,
        "text": "Gives a chance to parry enemy melee attacks.",
+       "moved": true,
        "renamed": "Parry"
       }
      },
@@ -8448,18 +8470,18 @@ window.TALENT_DATA = {
       }
      },
      {
-      "name": "Totemic Focus",
+      "name": "Tidal Focus",
       "max": 5,
       "row": 1,
       "col": 3,
       "passive": true,
-      "icon": "spell_nature_moonglow",
+      "icon": "spell_frost_manarecharge",
       "desc": [
-       "Reduces the Mana cost of your totems and any spells that summon or move them by 5%.",
-       "Reduces the Mana cost of your totems and any spells that summon or move them by 10%.",
-       "Reduces the Mana cost of your totems and any spells that summon or move them by 15%.",
-       "Reduces the Mana cost of your totems and any spells that summon or move them by 20%.",
-       "Reduces the Mana cost of your totems and any spells that summon or move them by 25%."
+       "Reduces the Mana cost of your healing spells by 1% and improves your chance to hit by 1%.",
+       "Reduces the Mana cost of your healing spells by 2% and improves your chance to hit by 2%.",
+       "Reduces the Mana cost of your healing spells by 3% and improves your chance to hit by 3%.",
+       "Reduces the Mana cost of your healing spells by 4% and improves your chance to hit by 4%.",
+       "Reduces the Mana cost of your healing spells by 5% and improves your chance to hit by 5%."
       ],
       "complete": true,
       "confirmed": [
@@ -8473,11 +8495,10 @@ window.TALENT_DATA = {
       "classic": {
        "status": "changed",
        "tree": "Restoration",
-       "row": 2,
+       "row": 1,
        "col": 3,
        "max": 5,
-       "text": "Reduces the Mana cost of your totems by 5%.",
-       "moved": true
+       "text": "Reduces the Mana cost of your healing spells by 1%."
       }
      },
      {
@@ -8534,18 +8555,18 @@ window.TALENT_DATA = {
       }
      },
      {
-      "name": "Tidal Focus",
+      "name": "Totemic Focus",
       "max": 5,
       "row": 2,
       "col": 3,
       "passive": true,
-      "icon": "spell_frost_manarecharge",
+      "icon": "spell_nature_moonglow",
       "desc": [
-       "Reduces the Mana cost of your healing spells by 1% and improves your chance to hit by 1%.",
-       "Reduces the Mana cost of your healing spells by 2% and improves your chance to hit by 2%.",
-       "Reduces the Mana cost of your healing spells by 3% and improves your chance to hit by 3%.",
-       "Reduces the Mana cost of your healing spells by 4% and improves your chance to hit by 4%.",
-       "Reduces the Mana cost of your healing spells by 5% and improves your chance to hit by 5%."
+       "Reduces the Mana cost of your totems and any spells that summon or move them by 5%.",
+       "Reduces the Mana cost of your totems and any spells that summon or move them by 10%.",
+       "Reduces the Mana cost of your totems and any spells that summon or move them by 15%.",
+       "Reduces the Mana cost of your totems and any spells that summon or move them by 20%.",
+       "Reduces the Mana cost of your totems and any spells that summon or move them by 25%."
       ],
       "complete": true,
       "confirmed": [
@@ -8559,11 +8580,10 @@ window.TALENT_DATA = {
       "classic": {
        "status": "changed",
        "tree": "Restoration",
-       "row": 1,
+       "row": 2,
        "col": 3,
        "max": 5,
-       "text": "Reduces the Mana cost of your healing spells by 1%.",
-       "moved": true
+       "text": "Reduces the Mana cost of your totems by 5%."
       }
      },
      {
@@ -8589,7 +8609,8 @@ window.TALENT_DATA = {
        "row": 2,
        "col": 1,
        "max": 2,
-       "text": "Reduces the cooldown of your Reincarnation spell by 10 min and increases the amount of health and mana you reincarnate with by an additional 10%."
+       "text": "Reduces the cooldown of your Reincarnation spell by 10 min and increases the amount of health and mana you reincarnate with by an additional 10%.",
+       "moved": true
       }
      },
      {
@@ -8612,13 +8633,14 @@ window.TALENT_DATA = {
       ],
       "src": "beta",
       "classic": {
-       "status": "moved",
+       "status": "changed",
        "tree": "Restoration",
        "row": 2,
        "col": 2,
        "max": 3,
        "text": "Increases your target's armor value by 8% for 15 sec after getting a critical effect from one of your healing spells.",
-       "moved": true
+       "moved": true,
+       "note": "rank 2 is 17% where Classic had 16%"
       }
      },
      {
@@ -8657,14 +8679,14 @@ window.TALENT_DATA = {
       "passive": false,
       "icon": "ability_shaman_watershield",
       "desc": [
-       "The caster is surrounded by 3 globes of water. When a spell, melee, or ranged attack hits the caster or when one of the caster's healing spells gets a critical result, 2% of maximum mana is restored to the caster, expending one water globe. Only one globe will activate every few seconds. Lasts 10 min.\n\nOnly one Elemental Shield can be active on the Shaman at any one time."
+       "The caster is surrounded by 3 globes of water. When a spell, melee, or ranged attack hits the caster or when one of the caster's spells gets a critical result, 2% of maximum mana is restored to the caster, expending one water globe. Only one globe will activate every few seconds. Lasts 10 min.\n\nOnly one Elemental Shield can be active on the Shaman at any one time."
       ],
       "complete": true,
       "confirmed": [
        1
       ],
       "src": "beta",
-      "cost": "Instant | 15 sec cooldown",
+      "cost": "Instant",
       "classic": {
        "status": "new"
       }
@@ -8698,7 +8720,8 @@ window.TALENT_DATA = {
        "row": 4,
        "col": 3,
        "max": 5,
-       "text": "Increases the critical effect chance of your healing and lightning spells by 1%."
+       "text": "Increases the critical effect chance of your healing and lightning spells by 1%.",
+       "moved": true
       }
      },
      {
@@ -8748,7 +8771,7 @@ window.TALENT_DATA = {
        1
       ],
       "src": "beta",
-      "cost": "10 Mana | Instant | 5 min cooldown",
+      "cost": "10 Mana | Instant | 5 min cooldown | Tools: Water Totem",
       "classic": {
        "status": "changed",
        "tree": "Restoration",
@@ -8756,7 +8779,8 @@ window.TALENT_DATA = {
        "col": 2,
        "max": 1,
        "text": "Summons a Mana Tide Totem with 5 health at the feet of the caster for 12 sec that restores 170 mana every 3 seconds to group members within 20 yards.",
-       "moved": true
+       "moved": true,
+       "note": "no longer requires Restorative Totems"
       }
      },
      {
@@ -8784,7 +8808,8 @@ window.TALENT_DATA = {
        "row": 5,
        "col": 1,
        "max": 3,
-       "text": "Your Healing Wave spells have a 33% chance to increase the effect of subsequent Healing Wave spells on that target by 6% for 15 sec. This effect will stack up to 3 times."
+       "text": "Your Healing Wave spells have a 33% chance to increase the effect of subsequent Healing Wave spells on that target by 6% for 15 sec. This effect will stack up to 3 times.",
+       "moved": true
       }
      },
      {
@@ -8836,7 +8861,7 @@ window.TALENT_DATA = {
       ],
       "src": "beta",
       "classic": {
-       "status": "changed",
+       "status": "same",
        "tree": "Restoration",
        "row": 6,
        "col": 3,
@@ -8882,7 +8907,8 @@ window.TALENT_DATA = {
     ]
    }
   ],
-  "source": "Talent trees and every rank's text from the WoW Forever beta client, build 1.60.1.70170."
+  "source": "Talent trees and every rank's text from the WoW Forever beta client, build 1.60.1.70425.",
+  "classic_total": 46
  },
  "Mage": {
   "icon": "class_mage",
@@ -8959,11 +8985,11 @@ window.TALENT_DATA = {
       "passive": true,
       "icon": "spell_nature_starfall",
       "desc": [
-       "Gives you a 20% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 14% chance while casting Arcane Blast.",
-       "Gives you a 40% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 28% chance while casting Arcane Blast.",
-       "Gives you a 60% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 42% chance while casting Arcane Blast.",
-       "Gives you a 80% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 56% chance while casting Arcane Blast.",
-       "Gives you a 100% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 70% chance while casting Arcane Blast."
+       "Gives you a 20% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 14% chance while casting Arcane Blast or Arcane Wrath.",
+       "Gives you a 40% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 28% chance while casting Arcane Blast or Arcane Wrath.",
+       "Gives you a 60% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 42% chance while casting Arcane Blast or Arcane Wrath.",
+       "Gives you a 80% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 56% chance while casting Arcane Blast or Arcane Wrath.",
+       "Gives you a 100% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 70% chance while casting Arcane Blast or Arcane Wrath."
       ],
       "complete": true,
       "confirmed": [
@@ -8982,6 +9008,27 @@ window.TALENT_DATA = {
        "max": 5,
        "text": "Gives you a 20% chance to avoid interruption caused by damage while channeling Arcane Missiles.",
        "renamed": "Improved Arcane Missiles"
+      }
+     },
+     {
+      "name": "Missile Barrage",
+      "max": 2,
+      "row": 1,
+      "col": 4,
+      "passive": true,
+      "icon": "ability_mage_missilebarrage",
+      "desc": [
+       "Gives your Arcane Blast spell a 20% chance, your Arcane Missile hits a 5% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 10% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec.",
+       "Gives your Arcane Blast spell a 40% chance, your Arcane Missile hits a 10% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec."
+      ],
+      "complete": true,
+      "confirmed": [
+       1,
+       2
+      ],
+      "src": "beta",
+      "classic": {
+       "status": "new"
       }
      },
      {
@@ -9154,14 +9201,14 @@ window.TALENT_DATA = {
       "passive": false,
       "icon": "spell_arcane_blast",
       "desc": [
-       "Blasts the target with energy, dealing 57 to 65 Arcane damage. Each time you cast Arcane Blast, the damage of all your other spells is increased by 10% and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 8 sec or until any other damage spell is cast."
+       "Blasts the target with energy, dealing 34 to 38 Arcane damage. Each time you cast Arcane Blast, you gain 15% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 15 sec from time of initial application."
       ],
       "complete": true,
       "confirmed": [
        1
       ],
       "src": "beta",
-      "cost": "15% of base mana | 30 yd range | 2.5 sec cast",
+      "cost": "15% of base mana | 30 yd range | 1.5 sec cast",
       "classic": {
        "status": "new"
       }
@@ -9245,24 +9292,28 @@ window.TALENT_DATA = {
        "row": 4,
        "col": 4,
        "max": 3,
-       "text": "Allows 5% of your Mana regeneration to continue while casting."
+       "text": "Allows 5% of your Mana regeneration to continue while casting.",
+       "moved": true,
+       "note": "now requires Arcane Concentration"
       }
      },
      {
-      "name": "Missile Barrage",
+      "name": "Arcane Wrath",
       "max": 1,
       "row": 4,
       "col": 4,
-      "passive": true,
-      "icon": "ability_mage_missilebarrage",
+      "passive": false,
+      "icon": "ability_mage_netherwindpresence",
       "desc": [
-       "Gives your Arcane Blast spell a 40% chance, and your Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec."
+       "Launches a projectile of pure Arcane energy at the enemy target, causing 122 to 146 Arcane damage. This spell gains additional Spell Damage equal to 5% of your maximum Mana."
       ],
       "complete": true,
       "confirmed": [
        1
       ],
       "src": "beta",
+      "req": "Arcane Blast",
+      "cost": "140 Mana | 30 yd range | 3.5 sec cast | 6 sec cooldown",
       "classic": {
        "status": "new"
       }
@@ -9321,7 +9372,8 @@ window.TALENT_DATA = {
        "row": 5,
        "col": 3,
        "max": 5,
-       "text": "Increases your maximum Mana by 2%."
+       "text": "Increases your maximum Mana by 2%.",
+       "note": "no longer requires Arcane Resilience"
       }
      },
      {
@@ -9349,7 +9401,9 @@ window.TALENT_DATA = {
        "row": 6,
        "col": 2,
        "max": 3,
-       "text": "Increases your spell damage and critical strike chance by 1%."
+       "text": "Increases your spell damage and critical strike chance by 1%.",
+       "moved": true,
+       "note": "no longer requires Presence of Mind"
       }
      },
      {
@@ -9375,7 +9429,8 @@ window.TALENT_DATA = {
        "row": 7,
        "col": 2,
        "max": 1,
-       "text": "When activated, your spells deal 30% more damage while costing 30% more mana to cast. This effect lasts 15 sec."
+       "text": "When activated, your spells deal 30% more damage while costing 30% more mana to cast. This effect lasts 15 sec.",
+       "note": "now requires Presence of Mind, not Arcane Instability"
       }
      }
     ],
@@ -9394,15 +9449,15 @@ window.TALENT_DATA = {
     "icon": "spell_fire_firebolt02",
     "talents": [
      {
-      "name": "Wake of Fire",
+      "name": "Improved Fire Blast",
       "max": 2,
       "row": 1,
       "col": 1,
       "passive": true,
       "icon": "spell_fire_lavaspawn",
       "desc": [
-       "Reduces the cooldown of your Fire Blast spell by 1 sec. Killing a non-trivial target increases the critical strike chance of your next Fire Blast cast within 30 sec by 25%.",
-       "Reduces the cooldown of your Fire Blast spell by 2 sec. Killing a non-trivial target increases the critical strike chance of your next Fire Blast cast within 30 sec by 50%."
+       "Reduces the cooldown of your Fire Blast spell by 1 sec and increases its range by 8 yards.",
+       "Reduces the cooldown of your Fire Blast spell by 2 sec and increases its range by 15 yards."
       ],
       "complete": true,
       "confirmed": [
@@ -9417,8 +9472,7 @@ window.TALENT_DATA = {
        "col": 3,
        "max": 3,
        "text": "Reduces the cooldown of your Fire Blast spell by 0.5 sec.",
-       "moved": true,
-       "renamed": "Improved Fire Blast"
+       "moved": true
       }
      },
      {
@@ -9480,7 +9534,8 @@ window.TALENT_DATA = {
        "row": 1,
        "col": 2,
        "max": 5,
-       "text": "Reduces the casting time of your Fireball spell by 0.1 sec."
+       "text": "Reduces the casting time of your Fireball spell by 0.1 sec.",
+       "moved": true
       }
      },
      {
@@ -9595,7 +9650,8 @@ window.TALENT_DATA = {
        "row": 3,
        "col": 4,
        "max": 2,
-       "text": "Gives your Fire spells a 35% chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by 15%."
+       "text": "Gives your Fire spells a 35% chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by 15%.",
+       "moved": true
       }
      },
      {
@@ -9713,7 +9769,7 @@ window.TALENT_DATA = {
       "passive": true,
       "icon": "spell_fire_firebolt",
       "desc": [
-       "Non-periodic critical strikes with Fireball, Frostfire Bolt, Fire Blast, and Scorch reduce the cast time of your next Pyroblast cast within 20 sec by 25%, stacking up to 3 times."
+       "Non-periodic critical strikes with Fireball, Frostfire Bolt, Fire Blast, and Scorch reduce the cast time of your next Pyroblast cast within 20 sec by 25%, stacking up to 3 times. Fire Blast grants an additional stack every time it deals damage."
       ],
       "complete": true,
       "confirmed": [
@@ -9755,7 +9811,7 @@ window.TALENT_DATA = {
      },
      {
       "name": "Critical Mass",
-      "max": 3,
+      "max": 5,
       "row": 5,
       "col": 2,
       "passive": true,
@@ -9763,17 +9819,21 @@ window.TALENT_DATA = {
       "desc": [
        "Increases the critical strike chance of your Fire spells by 2%.",
        "Increases the critical strike chance of your Fire spells by 4%.",
-       "Increases the critical strike chance of your Fire spells by 6%."
+       "Increases the critical strike chance of your Fire spells by 6%.",
+       "Increases the critical strike chance of your Fire spells by 8%.",
+       "Increases the critical strike chance of your Fire spells by 10%."
       ],
       "complete": true,
       "confirmed": [
        1,
        2,
-       3
+       3,
+       4,
+       5
       ],
       "src": "beta",
       "classic": {
-       "status": "same",
+       "status": "changed",
        "tree": "Fire",
        "row": 5,
        "col": 2,
@@ -9803,34 +9863,31 @@ window.TALENT_DATA = {
        "row": 5,
        "col": 3,
        "max": 1,
-       "text": "A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for 160 to 192 Fire damage, and dazing them for 6 sec."
+       "text": "A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for 160 to 192 Fire damage, and dazing them for 6 sec.",
+       "note": "no longer requires Pyroblast"
       }
      },
      {
       "name": "Fire Power",
-      "max": 5,
+      "max": 3,
       "row": 6,
       "col": 3,
       "passive": true,
       "icon": "spell_fire_immolation",
       "desc": [
-       "Increases the damage done by your Fire spells by 2%.",
-       "Increases the damage done by your Fire spells by 4%.",
-       "Increases the damage done by your Fire spells by 6%.",
-       "Increases the damage done by your Fire spells by 8%.",
-       "Increases the damage done by your Fire spells by 10%."
+       "Increases the damage done by your Fire spells by 1% per your Fire effects on the target, up to a maximum increase of 4%. Effects which mix multiple schools of magic do not qualify.",
+       "Increases the damage done by your Fire spells by 2% per your Fire effects on the target, up to a maximum increase of 8%. Effects which mix multiple schools of magic do not qualify.",
+       "Increases the damage done by your Fire spells by 3% per your Fire effects on the target, up to a maximum increase of 12%. Effects which mix multiple schools of magic do not qualify."
       ],
       "complete": true,
       "confirmed": [
        1,
        2,
-       3,
-       4,
-       5
+       3
       ],
       "src": "beta",
       "classic": {
-       "status": "same",
+       "status": "changed",
        "tree": "Fire",
        "row": 6,
        "col": 3,
@@ -9906,11 +9963,11 @@ window.TALENT_DATA = {
       "passive": true,
       "icon": "spell_frost_frostbolt02",
       "desc": [
-       "Reduces the casting time of your Frostbolt spell by 0.1 sec.",
-       "Reduces the casting time of your Frostbolt spell by 0.2 sec.",
-       "Reduces the casting time of your Frostbolt spell by 0.3 sec.",
-       "Reduces the casting time of your Frostbolt spell by 0.4 sec.",
-       "Reduces the casting time of your Frostbolt spell by 0.5 sec."
+       "Reduces the casting time of your Frostbolt and Frost Blast spells by 0.1 sec.",
+       "Reduces the casting time of your Frostbolt and Frost Blast spells by 0.2 sec.",
+       "Reduces the casting time of your Frostbolt and Frost Blast spells by 0.3 sec.",
+       "Reduces the casting time of your Frostbolt and Frost Blast spells by 0.4 sec.",
+       "Reduces the casting time of your Frostbolt and Frost Blast spells by 0.5 sec."
       ],
       "complete": true,
       "confirmed": [
@@ -9922,7 +9979,7 @@ window.TALENT_DATA = {
       ],
       "src": "beta",
       "classic": {
-       "status": "same",
+       "status": "changed",
        "tree": "Frost",
        "row": 1,
        "col": 2,
@@ -10019,7 +10076,8 @@ window.TALENT_DATA = {
        "row": 2,
        "col": 4,
        "max": 3,
-       "text": "Increases the duration of your Chill effects by 1 sec and reduces the target's speed by an additional 4%."
+       "text": "Increases the duration of your Chill effects by 1 sec and reduces the target's speed by an additional 4%.",
+       "moved": true
       }
      },
      {
@@ -10068,12 +10126,13 @@ window.TALENT_DATA = {
       ],
       "src": "beta",
       "classic": {
-       "status": "same",
+       "status": "moved",
        "tree": "Frost",
        "row": 2,
        "col": 2,
        "max": 3,
-       "text": "Gives your Chill effects a 5% chance to freeze the target for 5 sec."
+       "text": "Gives your Chill effects a 5% chance to freeze the target for 5 sec.",
+       "moved": true
       }
      },
      {
@@ -10141,7 +10200,7 @@ window.TALENT_DATA = {
       "passive": false,
       "icon": "spell_frost_frostblast",
       "desc": [
-       "Deals 28 to 32 Frost damage to an enemy target. Deals 300% increased damage to Frozen targets."
+       "Deals 28 to 32 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets."
       ],
       "complete": true,
       "confirmed": [
@@ -10189,8 +10248,8 @@ window.TALENT_DATA = {
       "passive": true,
       "icon": "spell_shadow_darkritual",
       "desc": [
-       "Increases the range of your Frostbolt and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 10%.",
-       "Increases the range of your Frostbolt and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 20%."
+       "Increases the range of your Frostbolt, Frost Blast, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 10%.",
+       "Increases the range of your Frostbolt, Frost Blast, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 20%."
       ],
       "complete": true,
       "confirmed": [
@@ -10199,7 +10258,7 @@ window.TALENT_DATA = {
       ],
       "src": "beta",
       "classic": {
-       "status": "same",
+       "status": "changed",
        "tree": "Frost",
        "row": 4,
        "col": 1,
@@ -10258,7 +10317,9 @@ window.TALENT_DATA = {
        "row": 4,
        "col": 3,
        "max": 5,
-       "text": "Increases the critical strike chance of all your spells against frozen targets by 10%."
+       "text": "Increases the critical strike chance of all your spells against frozen targets by 10%.",
+       "moved": true,
+       "note": "no longer requires Improved Frost Nova"
       }
      },
      {
@@ -10286,7 +10347,8 @@ window.TALENT_DATA = {
        "row": 5,
        "col": 3,
        "max": 3,
-       "text": "Increases the damage dealt by your Cone of Cold spell by 15%."
+       "text": "Increases the damage dealt by your Cone of Cold spell by 15%.",
+       "moved": true
       }
      },
      {
@@ -10345,11 +10407,11 @@ window.TALENT_DATA = {
       "passive": true,
       "icon": "spell_frost_chillingblast",
       "desc": [
-       "Gives your Frost damage spells a 20% chance to apply the Winter's Chill effect, which increases the chance your Ice Lance and Frostbolt spells will critically hit the target by 2% for 15 sec. Stacks up to 1 times.",
-       "Gives your Frost damage spells a 40% chance to apply the Winter's Chill effect, which increases the chance your Ice Lance and Frostbolt spells will critically hit the target by 2% for 15 sec. Stacks up to 2 times.",
-       "Gives your Frost damage spells a 60% chance to apply the Winter's Chill effect, which increases the chance your Ice Lance and Frostbolt spells will critically hit the target by 2% for 15 sec. Stacks up to 3 times.",
-       "Gives your Frost damage spells a 80% chance to apply the Winter's Chill effect, which increases the chance your Ice Lance and Frostbolt spells will critically hit the target by 2% for 15 sec. Stacks up to 4 times.",
-       "Gives your Frost damage spells a 100% chance to apply the Winter's Chill effect, which increases the chance your Ice Lance and Frostbolt spells will critically hit the target by 2% for 15 sec. Stacks up to 5 times."
+       "Gives your Frost damage spells a 20% chance to apply the Winter's Chill effect, which increases the damage done by your Cone of Cold spell to the target by 40%, stacking up to 5 times.",
+       "Gives your Frost damage spells a 40% chance to apply the Winter's Chill effect, which increases the damage done by your Cone of Cold spell to the target by 40%, stacking up to 5 times.",
+       "Gives your Frost damage spells a 60% chance to apply the Winter's Chill effect, which increases the damage done by your Cone of Cold spell to the target by 40%, stacking up to 5 times.",
+       "Gives your Frost damage spells a 80% chance to apply the Winter's Chill effect, which increases the damage done by your Cone of Cold spell to the target by 40%, stacking up to 5 times.",
+       "Gives your Frost damage spells a 100% chance to apply the Winter's Chill effect, which increases the damage done by your Cone of Cold spell to the target by 40%, stacking up to 5 times."
       ],
       "complete": true,
       "confirmed": [
@@ -10392,14 +10454,16 @@ window.TALENT_DATA = {
        "row": 7,
        "col": 2,
        "max": 1,
-       "text": "Instantly shields you, absorbing 454 damage. Lasts 1 min. While the shield holds, spells will not be interrupted."
+       "text": "Instantly shields you, absorbing 454 damage. Lasts 1 min. While the shield holds, spells will not be interrupted.",
+       "note": "now requires Cold Snap, not Ice Block"
       }
      }
     ],
     "removed": []
    }
   ],
-  "source": "Talent trees and every rank's text from the WoW Forever beta client, build 1.60.1.70170."
+  "source": "Talent trees and every rank's text from the WoW Forever beta client, build 1.60.1.70425.",
+  "classic_total": 49
  },
  "Warlock": {
   "icon": "class_warlock",
@@ -10501,30 +10565,30 @@ window.TALENT_DATA = {
       }
      },
      {
-      "name": "Malediction",
-      "max": 5,
+      "name": "Grim Reach",
+      "max": 2,
       "row": 2,
       "col": 1,
       "passive": true,
-      "icon": "spell_shadow_curseofachimonde",
+      "icon": "spell_shadow_callofbone",
       "desc": [
-       "Increases all periodic damage done by your Warlock spells by 1%.",
-       "Increases all periodic damage done by your Warlock spells by 2%.",
-       "Increases all periodic damage done by your Warlock spells by 3%.",
-       "Increases all periodic damage done by your Warlock spells by 4%.",
-       "Increases all periodic damage done by your Warlock spells by 5%."
+       "Increases the range of your Affliction spells by 10%.",
+       "Increases the range of your Affliction spells by 20%."
       ],
       "complete": true,
       "confirmed": [
        1,
-       2,
-       3,
-       4,
-       5
+       2
       ],
       "src": "beta",
       "classic": {
-       "status": "new"
+       "status": "moved",
+       "tree": "Affliction",
+       "row": 4,
+       "col": 1,
+       "max": 2,
+       "text": "Increases the range of your Affliction spells by 10%.",
+       "moved": true
       }
      },
      {
@@ -10634,7 +10698,7 @@ window.TALENT_DATA = {
       "passive": false,
       "icon": "spell_shadow_contagion",
       "desc": [
-       "Increases the effect of your next Curse of Weakness or Bane of Agony by 50%, or your next Curse of Exhaustion by 20%. Lasts 30 sec."
+       "Increases the effect of your next Curse of Weakness or Bane of Agony by 50%, or your next Curse of Exhaustion by 50%. Lasts 30 sec."
       ],
       "complete": true,
       "confirmed": [
@@ -10799,7 +10863,14 @@ window.TALENT_DATA = {
       ],
       "src": "beta",
       "classic": {
-       "status": "new"
+       "status": "changed",
+       "tree": "Affliction",
+       "row": 2,
+       "col": 4,
+       "max": 5,
+       "text": "Increases the Health drained by your Drain Life spell by 2%.",
+       "moved": true,
+       "renamed": "Improved Drain Life"
       }
      },
      {
@@ -10810,11 +10881,11 @@ window.TALENT_DATA = {
       "passive": true,
       "icon": "spell_shadow_shadetruesight",
       "desc": [
-       "Increases the damage dealt or life drained by your Shadow spells by 1%.",
        "Increases the damage dealt or life drained by your Shadow spells by 2%.",
-       "Increases the damage dealt or life drained by your Shadow spells by 3%.",
        "Increases the damage dealt or life drained by your Shadow spells by 4%.",
-       "Increases the damage dealt or life drained by your Shadow spells by 5%."
+       "Increases the damage dealt or life drained by your Shadow spells by 6%.",
+       "Increases the damage dealt or life drained by your Shadow spells by 8%.",
+       "Increases the damage dealt or life drained by your Shadow spells by 10%."
       ],
       "complete": true,
       "confirmed": [
@@ -10831,7 +10902,9 @@ window.TALENT_DATA = {
        "row": 6,
        "col": 2,
        "max": 5,
-       "text": "Increases the damage dealt or life drained by your Shadow spells by 2%."
+       "text": "Increases the damage dealt or life drained by your Shadow spells by 2%.",
+       "moved": true,
+       "note": "no longer requires Siphon Life"
       }
      },
      {
@@ -10868,18 +10941,6 @@ window.TALENT_DATA = {
       "max": 2,
       "text": "Gives you a 50% chance to get a 100% increase to your Mana regeneration for 10 sec if the target is killed by you while you drain its soul. In addition your Mana may continue to regenerate while casting at 50% of normal.",
       "row": 2
-     },
-     {
-      "name": "Improved Drain Life",
-      "max": 5,
-      "text": "Increases the Health drained by your Drain Life spell by 2%.",
-      "row": 2
-     },
-     {
-      "name": "Grim Reach",
-      "max": 2,
-      "text": "Increases the range of your Affliction spells by 10%.",
-      "row": 4
      },
      {
       "name": "Improved Drain Mana",
@@ -11097,12 +11158,12 @@ window.TALENT_DATA = {
       "classic": {
        "status": "changed",
        "tree": "Demonology",
-       "row": 3,
+       "row": 2,
        "col": 3,
        "max": 5,
-       "text": "Increases the maximum Health of your Imp, Voidwalker, Succubus, Incubus, and Felhunter by 3%.",
-       "moved": true,
-       "renamed": "Fel Stamina"
+       "text": "Increases the maximum Mana of your Imp, Voidwalker, Succubus, Incubus, and Felhunter by 3%.",
+       "renamed": "Fel Intellect",
+       "note": "takes in Classic's Fel Stamina too, the pets' health"
       }
      },
      {
@@ -11170,7 +11231,7 @@ window.TALENT_DATA = {
       ],
       "src": "beta",
       "cost": "100 yd range | Instant",
-      "asis": "As in the game's files, build 1.60.1.70170: the Imp gives Shadow damage and the Succubus Fire, the other way round from Classic.",
+      "asis": "Swapped on purpose: the Imp gives Shadow damage and the Succubus Fire, the other way round from Classic and the opposite of Master Demonologist, so Demonic Pact can stack them (Blizzard on the WoW: Forever Podcast, episode 2, 64:00; game files build 1.60.1.70425).",
       "classic": {
        "status": "changed",
        "tree": "Demonology",
@@ -11199,13 +11260,14 @@ window.TALENT_DATA = {
       ],
       "src": "beta",
       "classic": {
-       "status": "moved",
+       "status": "changed",
        "tree": "Demonology",
        "row": 4,
        "col": 2,
        "max": 2,
        "text": "Reduces the casting time of your Imp, Voidwalker, Succubus, Incubus, and Felhunter Summoning spells by 2 sec and the Mana cost by 20%.",
-       "moved": true
+       "moved": true,
+       "note": "no longer requires Fel Domination"
       }
      },
      {
@@ -11250,13 +11312,14 @@ window.TALENT_DATA = {
       "req": "Master Summoner",
       "cost": "Instant | 5 min cooldown",
       "classic": {
-       "status": "moved",
+       "status": "changed",
        "tree": "Demonology",
        "row": 3,
        "col": 2,
        "max": 1,
        "text": "Your next Imp, Voidwalker, Succubus, Incubus, or Felhunter Summon spell has its casting time reduced by 5.5 sec and its Mana cost reduced by 50%.",
-       "moved": true
+       "moved": true,
+       "note": "now requires Master Summoner"
       }
      },
      {
@@ -11267,9 +11330,9 @@ window.TALENT_DATA = {
       "passive": true,
       "icon": "ability_demonhunter_chaoticimprint_fire",
       "desc": [
-       "Your Searing Pain generates 17% less threat and brands the target for 10 sec. Your pet's next 2 attacks against the target generate high threat and deal 65 to 68 Fire or Shadow damage based on the pet.",
-       "Your Searing Pain generates 33% less threat and brands the target for 10 sec. Your pet's next 4 attacks against the target generate high threat and deal 65 to 68 Fire or Shadow damage based on the pet.",
-       "Your Searing Pain generates 50% less threat and brands the target for 10 sec. Your pet's next 6 attacks against the target generate high threat and deal 65 to 68 Fire or Shadow damage based on the pet."
+       "Your Searing Pain generates 17% less threat and brands the target for 10 sec. Your pet's next 2 attacks against the target deal 65 to 68 Fire or Shadow damage based on the pet. If Shadow damage is dealt, it has high threat.",
+       "Your Searing Pain generates 33% less threat and brands the target for 10 sec. Your pet's next 4 attacks against the target deal 65 to 68 Fire or Shadow damage based on the pet. If Shadow damage is dealt, it has high threat.",
+       "Your Searing Pain generates 50% less threat and brands the target for 10 sec. Your pet's next 6 attacks against the target deal 65 to 68 Fire or Shadow damage based on the pet. If Shadow damage is dealt, it has high threat."
       ],
       "complete": true,
       "confirmed": [
@@ -11384,7 +11447,8 @@ window.TALENT_DATA = {
        "row": 6,
        "col": 3,
        "max": 5,
-       "text": "Grants both the Warlock and the summoned demon an effect as long as that demon is active.Imp - Reduces threat caused by 4%.Voidwalker - Reduces physical damage taken by 2%.Succubus/Incubus - Increases all damage caused by 2%.Felhunter - Increases all resistances by.2 per level."
+       "text": "Grants both the Warlock and the summoned demon an effect as long as that demon is active. Imp - Reduces threat caused by 4%. Voidwalker - Reduces physical damage taken by 2%. Succubus/Incubus - Increases all damage caused by 2%. Felhunter - Increases all resistances by .2 per level.",
+       "note": "no longer requires Unholy Power"
       }
      },
      {
@@ -11416,10 +11480,10 @@ window.TALENT_DATA = {
       "row": 1
      },
      {
-      "name": "Fel Intellect",
+      "name": "Fel Stamina",
       "max": 5,
-      "text": "Increases the maximum Mana of your Imp, Voidwalker, Succubus, Incubus, and Felhunter by 3%.",
-      "row": 2
+      "text": "Increases the maximum Health of your Imp, Voidwalker, Succubus, Incubus, and Felhunter by 3%.",
+      "row": 3
      },
      {
       "name": "Improved Subjugate Demon",
@@ -11454,8 +11518,8 @@ window.TALENT_DATA = {
       "passive": true,
       "icon": "spell_shadow_corpseexplode",
       "desc": [
-       "Increases the range of your damaging spells by 10%.",
-       "Increases the range of your damaging spells by 20%."
+       "Increases the range of your Destruction spells by 10%.",
+       "Increases the range of your Destruction spells by 20%."
       ],
       "complete": true,
       "confirmed": [
@@ -11464,7 +11528,7 @@ window.TALENT_DATA = {
       ],
       "src": "beta",
       "classic": {
-       "status": "changed",
+       "status": "moved",
        "tree": "Destruction",
        "row": 4,
        "col": 2,
@@ -11656,7 +11720,8 @@ window.TALENT_DATA = {
        "col": 3,
        "max": 1,
        "text": "Increases the critical strike damage bonus of your Destruction spells by 100%.",
-       "moved": true
+       "moved": true,
+       "note": "no longer requires Devastation"
       }
      },
      {
@@ -11681,7 +11746,8 @@ window.TALENT_DATA = {
        "row": 3,
        "col": 4,
        "max": 1,
-       "text": "Instantly blasts the target for 91 to 103 Shadow damage. If the target dies within 5 sec of Shadowburn, and yields experience or honor, the caster gains a Soul Shard."
+       "text": "Instantly blasts the target for 91 to 103 Shadow damage. If the target dies within 5 sec of Shadowburn, and yields experience or honor, the caster gains a Soul Shard.",
+       "moved": true
       }
      },
      {
@@ -11738,6 +11804,7 @@ window.TALENT_DATA = {
        "col": 4,
        "max": 5,
        "text": "Increases the critical strike chance of your Searing Pain spell by 2%.",
+       "moved": true,
        "renamed": "Improved Searing Pain"
       }
      },
@@ -11764,7 +11831,8 @@ window.TALENT_DATA = {
        "col": 2,
        "max": 1,
        "text": "Ignites a target that is already afflicted by Immolate, dealing 249 to 315 Fire damage and consuming the Immolate spell.",
-       "moved": true
+       "moved": true,
+       "note": "no longer requires Improved Immolate"
       }
      },
      {
@@ -11921,7 +11989,8 @@ window.TALENT_DATA = {
     ]
    }
   ],
-  "source": "Talent trees and every rank's text from the WoW Forever beta client, build 1.60.1.70170."
+  "source": "Talent trees and every rank's text from the WoW Forever beta client, build 1.60.1.70425.",
+  "classic_total": 50
  },
  "Druid": {
   "icon": "class_druid",
@@ -11960,7 +12029,8 @@ window.TALENT_DATA = {
        "row": 1,
        "col": 1,
        "max": 5,
-       "text": "Reduces the cast time of your Wrath spell by 0.1 sec."
+       "text": "Reduces the cast time of your Wrath spell by 0.1 sec.",
+       "moved": true
       }
      },
      {
@@ -12330,7 +12400,8 @@ window.TALENT_DATA = {
        "row": 6,
        "col": 2,
        "max": 5,
-       "text": "Increases the damage done by your Starfire, Moonfire and Wrath spells by."
+       "text": "Increases the damage done by your Starfire, Moonfire and Wrath spells by 2%.",
+       "note": "no longer requires Nature's Grace"
       }
      },
      {
@@ -12341,7 +12412,7 @@ window.TALENT_DATA = {
       "passive": false,
       "icon": "spell_nature_forceofnature",
       "desc": [
-       "Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party members within 45 yards have their Critical Strike chance increased by 3%, exclusive with Leader of the Pack. Also protects the caster from Polymorph effects and prevents the use of healing spells.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects."
+       "Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party or raid members within 45 yards have their spell Critical Strike chance increased by 3%. Also protects the caster from Polymorph effects and prevents the use of healing spells.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects."
       ],
       "complete": true,
       "confirmed": [
@@ -12459,7 +12530,8 @@ window.TALENT_DATA = {
        "col": 2,
        "max": 5,
        "text": "Increases your Intellect by 4%. In addition, while in Bear or Dire Bear Form your Stamina is increased by 4% and while in Cat Form your Strength is increased by 4%.",
-       "moved": true
+       "moved": true,
+       "note": "no longer requires Predatory Strikes"
       }
      },
      {
@@ -12515,7 +12587,8 @@ window.TALENT_DATA = {
        "row": 2,
        "col": 1,
        "max": 5,
-       "text": "Increases threat caused in Bear and Dire Bear Form by 3% and reduces the chance enemies have to detect you while Prowling."
+       "text": "Increases threat caused in Bear and Dire Bear Form by 3% and reduces the chance enemies have to detect you while Prowling.",
+       "moved": true
       }
      },
      {
@@ -12541,7 +12614,8 @@ window.TALENT_DATA = {
        "row": 2,
        "col": 2,
        "max": 2,
-       "text": "Increases the stun duration of your Bash and Pounce abilities by 0.5 sec."
+       "text": "Increases the stun duration of your Bash and Pounce abilities by 0.5 sec.",
+       "moved": true
       }
      },
      {
@@ -12569,7 +12643,8 @@ window.TALENT_DATA = {
        "row": 2,
        "col": 3,
        "max": 5,
-       "text": "Increases your Armor contribution from items by 2%."
+       "text": "Increases your Armor contribution from items by 2%.",
+       "moved": true
       }
      },
      {
@@ -12637,21 +12712,22 @@ window.TALENT_DATA = {
       "passive": false,
       "icon": "ability_hunter_pet_bear",
       "desc": [
-       "Charge an enemy, immobilizing them and interrupting any spell they are casting for 4 sec.\n\nLeap behind an enemy."
+       "Charge an enemy, immobilizing them and interrupting any spell they are casting for 4 sec.\n\nFeral Charge (Cat): 8-25 yd range, Instant, 30 sec cooldown, Requires Cat Form. Leap behind an enemy."
       ],
       "complete": true,
       "confirmed": [
        1
       ],
       "src": "beta",
-      "cost": "5 Rage | 8-25 yd range | Instant | 15 sec cooldown | Requires Cat Form, Bear Form, Dire Bear Form",
+      "cost": "5 Rage | 8-25 yd range | Instant | 15 sec cooldown | Requires Bear Form, Dire Bear Form",
       "classic": {
        "status": "changed",
        "tree": "Feral Combat",
        "row": 3,
        "col": 2,
        "max": 1,
-       "text": "Causes you to charge an enemy, immobilizing and interrupting any spell being cast for 4 sec."
+       "text": "Causes you to charge an enemy, immobilizing and interrupting any spell being cast for 4 sec.",
+       "moved": true
       }
      },
      {
@@ -12677,7 +12753,8 @@ window.TALENT_DATA = {
        "row": 3,
        "col": 3,
        "max": 3,
-       "text": "Increases your critical strike chance while in Bear, Dire Bear or Cat Form by 2%."
+       "text": "Increases your critical strike chance while in Bear, Dire Bear or Cat Form by 2%.",
+       "moved": true
       }
      },
      {
@@ -12747,7 +12824,8 @@ window.TALENT_DATA = {
        "row": 4,
        "col": 2,
        "max": 3,
-       "text": "Increases your melee attack power in Cat, Bear and Dire Bear Forms by 50% of your level."
+       "text": "Increases your melee attack power in Cat, Bear and Dire Bear Forms by 50% of your level.",
+       "moved": true
       }
      },
      {
@@ -12774,7 +12852,9 @@ window.TALENT_DATA = {
        "row": 4,
        "col": 3,
        "max": 2,
-       "text": "Your critical strikes from Cat Form abilities that add combo points have a 50% chance to add an additional combo point."
+       "text": "Your critical strikes from Cat Form abilities that add combo points have a 50% chance to add an additional combo point.",
+       "moved": true,
+       "note": "takes in Classic's Primal Fury too, the 5 Rage on a critical strike in Bear Form"
       }
      },
      {
@@ -12807,7 +12887,7 @@ window.TALENT_DATA = {
       "passive": true,
       "icon": "spell_nature_unyeildingstamina",
       "desc": [
-       "While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the critical strike chance of all party members within 45 yards by 3%, exclusive with Moonkin Aura."
+       "While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the melee and ranged Critical Strike chance of all party or raid members within 45 yards by 3%."
       ],
       "complete": true,
       "confirmed": [
@@ -12825,15 +12905,15 @@ window.TALENT_DATA = {
       }
      },
      {
-      "name": "Predatory Instincts",
+      "name": "Natural Instinct",
       "max": 2,
       "row": 5,
       "col": 4,
       "passive": true,
       "icon": "ability_druid_predatoryinstincts",
       "desc": [
-       "Increases the critical strike damage bonus of your melee abilities by 10%.",
-       "Increases the critical strike damage bonus of your melee abilities by 20%."
+       "Increases the critical strike damage bonus of your melee abilities by 10% and increases your spell healing by 12% of your Intellect.",
+       "Increases the critical strike damage bonus of your melee abilities by 20% and increases your spell healing by 25% of your Intellect."
       ],
       "complete": true,
       "confirmed": [
@@ -12916,7 +12996,7 @@ window.TALENT_DATA = {
       ],
       "src": "beta",
       "req": "Leader of the Pack",
-      "cost": "Instant | 3 min cooldown",
+      "cost": "Instant | 3 min cooldown | Requires Cat Form, Bear Form, Dire Bear Form",
       "classic": {
        "status": "new"
       }
@@ -12928,12 +13008,6 @@ window.TALENT_DATA = {
       "max": 5,
       "text": "Increases the Attack Power reduction of your Demoralizing Roar by 8% and the damage caused by your Ferocious Bite by 3%.",
       "row": 1
-     },
-     {
-      "name": "Primal Fury",
-      "max": 2,
-      "text": "Gives you a 50% chance to gain an additional 5 Rage anytime you get a critical strike while in Bear and Dire Bear Form.",
-      "row": 4
      },
      {
       "name": "Faerie Fire (Feral)",
@@ -12989,11 +13063,11 @@ window.TALENT_DATA = {
       "passive": true,
       "icon": "spell_holy_blessingofstamina",
       "desc": [
-       "Gives you a 20% chance to gain 10 Rage when you shapeshift into Bear Form or Dire Bear Form. When you shift into Cat Form, you will regain 20% of the Energy you had when you were last in Cat Form, plus 2 Energy for each second you spent not in Bear Form, Cat Form, or Dire Bear Form, up to a maximum of 20 Energy.",
-       "Gives you a 40% chance to gain 10 Rage when you shapeshift into Bear Form or Dire Bear Form. When you shift into Cat Form, you will regain 40% of the Energy you had when you were last in Cat Form, plus 4 Energy for each second you spent not in Bear Form, Cat Form, or Dire Bear Form, up to a maximum of 40 Energy.",
-       "Gives you a 60% chance to gain 10 Rage when you shapeshift into Bear Form or Dire Bear Form. When you shift into Cat Form, you will regain 60% of the Energy you had when you were last in Cat Form, plus 6 Energy for each second you spent not in Bear Form, Cat Form, or Dire Bear Form, up to a maximum of 60 Energy.",
-       "Gives you a 80% chance to gain 10 Rage when you shapeshift into Bear Form or Dire Bear Form. When you shift into Cat Form, you will regain 80% of the Energy you had when you were last in Cat Form, plus 8 Energy for each second you spent not in Bear Form, Cat Form, or Dire Bear Form, up to a maximum of 80 Energy.",
-       "Gives you a 100% chance to gain 10 Rage when you shapeshift into Bear Form or Dire Bear Form. When you shift into Cat Form, you will regain 100% of the Energy you had when you were last in Cat Form, plus 10 Energy for each second you spent not in Bear Form, Cat Form, or Dire Bear Form, up to a maximum of 100 Energy."
+       "Gives you a 20% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 20% of the Energy you had when last in Cat Form, plus 2 Energy per second spent outside Bear Form or Dire Bear Form, up to 20 Energy.",
+       "Gives you a 40% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 40% of the Energy you had when last in Cat Form, plus 4 Energy per second spent outside Bear Form or Dire Bear Form, up to 40 Energy.",
+       "Gives you a 60% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 60% of the Energy you had when last in Cat Form, plus 6 Energy per second spent outside Bear Form or Dire Bear Form, up to 60 Energy.",
+       "Gives you a 80% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 80% of the Energy you had when last in Cat Form, plus 8 Energy per second spent outside Bear Form or Dire Bear Form, up to 80 Energy.",
+       "Gives you a 100% chance to gain 10 Rage when shapeshifting into Bear Form or Dire Bear Form. Shapeshifting into Cat Form restores 100% of the Energy you had when last in Cat Form, plus 10 Energy per second spent outside Bear Form or Dire Bear Form, up to 100 Energy."
       ],
       "complete": true,
       "confirmed": [
@@ -13162,7 +13236,8 @@ window.TALENT_DATA = {
        "col": 3,
        "max": 5,
        "text": "Increases the effect of all healing spells by 2%.",
-       "moved": true
+       "moved": true,
+       "note": "no longer requires Insect Swarm"
       }
      },
      {
@@ -13236,12 +13311,13 @@ window.TALENT_DATA = {
       ],
       "src": "beta",
       "classic": {
-       "status": "same",
+       "status": "moved",
        "tree": "Restoration",
        "row": 4,
        "col": 4,
        "max": 3,
-       "text": "Increases the effect of your Rejuvenation spell by 5%."
+       "text": "Increases the effect of your Rejuvenation spell by 5%.",
+       "moved": true
       }
      },
      {
@@ -13267,7 +13343,8 @@ window.TALENT_DATA = {
        "col": 2,
        "max": 1,
        "text": "Consumes a Rejuvenation or Regrowth effect on a friendly target to instantly heal them an amount equal to 12 sec. of Rejuvenation or 18 sec. of Regrowth.",
-       "moved": true
+       "moved": true,
+       "note": "no longer requires Tranquil Spirit"
       }
      },
      {
@@ -13370,12 +13447,13 @@ window.TALENT_DATA = {
       "src": "beta",
       "req": "Improved Rejuvenation",
       "classic": {
-       "status": "same",
+       "status": "changed",
        "tree": "Restoration",
        "row": 6,
        "col": 3,
        "max": 5,
-       "text": "Increases the critical effect chance of your Regrowth spell by 10%."
+       "text": "Increases the critical effect chance of your Regrowth spell by 10%.",
+       "note": "now requires Improved Rejuvenation"
       }
      },
      {
@@ -13416,11 +13494,13 @@ window.TALENT_DATA = {
     ]
    }
   ],
-  "source": "Talent trees and every rank's text from the WoW Forever beta client, build 1.60.1.70170."
+  "source": "Talent trees and every rank's text from the WoW Forever beta client, build 1.60.1.70425.",
+  "classic_total": 47
  }
 };
 window.TALENT_ORDER_V1 = {"Warrior":[["Improved Heroic Strike","Deflection","Improved Rend","Improved Charge","Improved Tactical Mastery","Improved Overpower","Anger Management","Deep Wounds","Spearing Strike","Two-Handed Weapon Specialization","Impale","Bloodthrill","Sweeping Strikes","Weaponmaster","Improved Slam","Improved Hamstring","Mortal Strike"],["Booming Voice","Cruelty","Iron Will","Unbridled Wrath","Improved Cleave","Piercing Howl","Blood Craze","Boundless Rage","Dual Wield Specialization","Raging Blows","Enrage","Improved Execute","Precision","Death Wish","Improved Intercept","Improved Berserker Rage","Flurry","Bloodthirst"],["Shield Specialization","Anticipation","Improved Bloodrage","Toughness","Improved Thunder Clap","Last Stand","Master of Defense","Improved Revenge","Defiance","Improved Sunder Armor","Improved Disarm","Vanguard","Improved Shield Wall","Concussion Blow","Improved Shield Bash","Vitality","Focused Rage","Bastion","Shield Slam"]],"Paladin":[["Improved Holy Strike","Divine Strength","Divine Intellect","Healing Light","Spiritual Focus","Improved Seals","Unyielding Faith","Voice of Truth","Reverence","Purifying Power","Infusion of Light","Illumination","Divine Favor","Divine Precision","Holy Shock","Consecrated Ground","Holy Power","Light's Vigil"],["Toughness","Redoubt","Precision","Guardian's Favor","Anticipation","Improved Seal of Fury","Improved Righteous Fury","Shield Specialization","Sacred Duty","Swift Judgement","One-Handed Weapon Specialization","Improved Hammer of Justice","Templar's Bulwark","Reckoning","Iron Creed","Holy Shield"],["Deflection","Benediction","Improved Judgement","Holy Conduit","Conviction","Vindication","Sanctified Judgement","Seal of Command","Pursuit of Justice","Eye for an Eye","Sacred Arbiter","Crusade","Two-Handed Weapon Specialization","Vengeance","Repentance","Champion of the Light","Instrument of Law","Twist of Light"]],"Hunter":[["Deadly Aspects","Endurance Training","Focused Fire","Improved Aspect of the Monkey","Pathfinding","Improved Revive Pet","Bestial Swiftness","Unleashed Fury","Improved Mend Pet","Ferocity","Summon Hawk","Spirit Bond","Intimidation","Bestial Discipline","Frenzy","Bestial Wrath"],["Hawk Eye","Improved Concussive Shot","Lethal Attacks","Improved Stings","Efficiency","Careful Aim","Rapid Killing","Improved Arcane Shot","Lone Wolf","Trueshot Aura","Mortal Shots","Rapid Recuperation","Barrage","Scatter Shot","Ranged Weapon Specialization","Sniper Shot"],["Improved Tracking","Deflection","Entrapment","Savage Strikes","Survivalist","Improved Wing Clip","Clever Traps","Surefooted","Deterrence","Survival Tactics","Predator's Edge","Counterattack","Resourcefulness","Expose Prey","Survivalist's Discipline","Strider Kick","Lightning Reflexes","Lacerating Strikes"]],"Rogue":[["Improved Gouge","Remorseless Attacks","Malice","Ruthlessness","Murder","Improved Slice and Dice","Relentless Strikes","Improved Expose Armor","Lethality","Vile Poisons","Cold Blood","Improved Poisons","Vigor","Mutilate","Improved Kidney Shot","Seal Fate","Venom"],["Improved Eviscerate","Improved Sinister Strike","Lightning Reflexes","Puncturing Wounds","Deflection","Precision","Endurance","Riposte","Improved Sprint","Improved Kick","Restless Blades","Dual Wield Specialization","Blade Flurry","Hack and Slash","Weapon Expertise","Aggression","Adrenaline Rush"],["Camouflage","Master of Deception","Opportunity","Setup","Elusiveness","Dirty Tricks","Improved Ambush","Initiative","Ghostly Strike","Improved Distract","Heightened Senses","Premeditation","Serrated Blades","Dirty Deeds","Preparation","Hemorrhage","Quietus","Cutthroat","Thousand Cuts"]],"Priest":[["Power in Light","Wand Specialization","Twin Disciplines","Silent Resolve","Holy Precision","Improved Power Word: Shield","Martyrdom","Mental Agility","Inner Focus","Meditation","Improved Inner Fire","Mental Strength","Soul Warding","Improved Mana Burn","Penance","Renewed Hope","Divine Aegis","Power Infusion"],["Twilight Focus","Improved Renew","Holy Specialization","Spell Warding","Divine Fury","Holy Nova","Blessed Recovery","Inspiration","Holy Reach","Improved Healing","Searing Light","Binding Heal","Litany of Light","Spirit of Redemption","Spiritual Guidance","Spiritual Healing","Prayer of Mending"],["Shadow Focus","Blackout","Spirit Tap","Shadow Affinity","Improved Shadow Word: Pain","Shadow Reach","Improved Mind Blast","Improved Psychic Scream","Mind Flay","Improved Mind Flay","Improved Fade","Vampiric Embrace","Shadow Weaving","Silence","Devouring Contagion","Early Demise","Darkness","Shadowform"]],"Shaman":[["Convection","Concussion","Elemental Warding","Reverberation","Call of Flame","Elemental Devastation","Elemental Focus","Elemental Fury","Improved Fire Nova","Eye of the Storm","Call of Thunder","Elemental Reach","Lightning Overload","Earthbound","Elemental Alacrity","Lava Burst"],["Earth's Grasp","Thundering Strikes","Ancestral Knowledge","Guardian Totems","Mental Dexterity","Improved Ghost Wolf","Improved Lightning Shield","Elemental Weapons","Shamanistic Focus","Anticipation","Toughness","Flurry","Stormstrike","Spirit Weapons","Mental Quickness","Improved Stormstrike","Maelstrom Weapon","Rage of the Farseer"],["Improved Healing Wave","Tidal Mastery","Mindfulness","Natural Grace","Tidal Focus","Improved Reincarnation","Ancestral Healing","Healing Focus","Water Shield","Totemic Focus","Restorative Totems","Mana Tide Totem","Healing Way","Nature's Swiftness","Purification","Riptide"]],"Mage":[["Wand Specialization","Arcane Focus","Improved Channeling","Arcane Subtlety","Magic Absorption","Arcane Concentration","Arcane Resilience","Arcane Geometry","Arcane Impact","Arcane Blast","Arcane Shielding","Improved Counterspell","Arcane Meditation","Missile Barrage","Presence of Mind","Arcane Mind","Arcane Instability","Arcane Power"],["Wake of Fire","Incineration","Improved Fireball","Ignite","Flame Throwing","Impact","Burning Soul","Improved Flamestrike","Pyroblast","Improved Scorch","Improved Fire Ward","Hot Streak","Master of Elements","Critical Mass","Blast Wave","Fire Power","Combustion"],["Frost Warding","Improved Frostbolt","Elemental Precision","Ice Shards","Permafrost","Improved Frost Nova","Frostbite","Piercing Ice","Frost Channeling","Ice Lance","Improved Blizzard","Arctic Reach","Ice Block","Shatter","Improved Cone of Cold","Cold Snap","Fingers of Frost","Winter's Chill","Ice Barrier"]],"Warlock":[["Improved Life Tap","Suppression","Improved Corruption","Malediction","Soul Harvesting","Improved Drains","Improved Bane of Agony","Fel Concentration","Amplify Curse","Pandemic","Malevolence","Nightfall","Curse of Exhaustion","Siphon Life","Soul Siphon","Shadow Mastery","Drain Hope"],["Improved Health Funnel","Improved Imp","Demonic Embrace","Unholy Power","Demonic Aegis","Improved Voidwalker","Fel Vitality","Demonic Energies","Improved Sayaad","Demonic Sacrifice","Master Summoner","Decimation","Fel Domination","Demonic Brand","Improved Felhunter","Soul Link","Demonic Knowledge","Master Demonologist","Demonic Pact"],["Destructive Reach","Improved Shadow Bolt","Bane","Molten Skin","Cataclysm","Aftermath","Ruin","Shadowburn","Intensity","Agonizing Flames","Conflagrate","Pyroclasm","Bane of Havoc","Fire and Brimstone","Shadow and Flame","Incinerate"]],"Druid":[["Improved Wrath","Genesis","Moonglow","Improved Moonfire","Nature's Majesty","Nature's Reach","Improved Entangling Roots","Nature's Splendor","Balance of Nature","Vengeance","Insect Swarm","Improved Starfire","Overgrowth","Nature's Grace","Eclipse","Moonfury","Moonkin Form"],["Ferocity","Heart of the Wild","Feral Swiftness","Feral Instinct","Brutal Impact","Thick Hide","Savage Fury","Feral Charge","Sharpened Claws","Shredding Attacks","Mangle","Predatory Strikes","Primal Fury","Predatory Instincts","Leader of the Pack","King of the Jungle","Natural Reaction","Rend and Tear","Berserk"],["Nature's Focus","Furor","Naturalist","Subtlety","Natural Shapeshifter","Reflection","Gift of Nature","Gift of the Earthmother","Tranquil Spirit","Improved Rejuvenation","Swiftmend","Nature's Swiftness","Living Spirit","Improved Tranquility","Improved Regrowth","Wild Growth"]]};
 window.TALENT_ORDER_V3 = {"Warrior":[["Improved Heroic Strike","Deflection","Improved Rend","Improved Charge","Improved Tactical Mastery","Improved Overpower","Anger Management","Deep Wounds","Spearing Strike","Two-Handed Weapon Specialization","Impale","Bloodthrill","Sweeping Strikes","Weaponmaster","Improved Slam","Improved Hamstring","Mortal Strike"],["Booming Voice","Cruelty","Iron Will","Unbridled Wrath","Improved Cleave","Piercing Howl","Blood Craze","Boundless Rage","Dual Wield Specialization","Raging Blows","Enrage","Improved Execute","Precision","Death Wish","Improved Intercept","Improved Berserker Rage","Flurry","Bloodthirst"],["Shield Specialization","Anticipation","Improved Bloodrage","Toughness","Improved Thunder Clap","Last Stand","Master of Defense","Improved Revenge","Defiance","Improved Sunder Armor","Improved Disarm","Vanguard","Improved Shield Wall","Concussion Blow","Improved Shield Bash","Bastion","Focused Rage","Shield Slam"]],"Paladin":[["Improved Holy Strike","Divine Strength","Divine Intellect","Healing Light","Spiritual Focus","Improved Seals","Unyielding Faith","Voice of Truth","Reverence","Purifying Power","Infusion of Light","Illumination","Divine Favor","Divine Precision","Holy Shock","Consecrated Ground","Holy Power","Light's Vigil"],["Toughness","Redoubt","Precision","Guardian's Favor","Anticipation","Improved Seal of Fury","Improved Righteous Fury","Shield Specialization","Sacred Duty","Swift Judgement","One-Handed Weapon Specialization","Improved Hammer of Justice","Templar's Bulwark","Reckoning","Iron Creed","Holy Shield"],["Deflection","Benediction","Improved Judgement","Holy Conduit","Conviction","Vindication","Sanctified Judgement","Seal of Command","Pursuit of Justice","Eye for an Eye","Sacred Arbiter","Crusade","Two-Handed Weapon Specialization","Vengeance","Repentance","Champion of the Light","Instrument of Law","Twist of Light"]],"Hunter":[["Deadly Aspects","Endurance Training","Focused Fire","Improved Aspect of the Monkey","Pathfinding","Improved Revive Pet","Bestial Swiftness","Unleashed Fury","Improved Mend Pet","Ferocity","Summon Hawk","Spirit Bond","Intimidation","Bestial Discipline","Frenzy","Bestial Wrath"],["Hawk Eye","Improved Concussive Shot","Lethal Attacks","Improved Stings","Efficiency","Careful Aim","Rapid Killing","Improved Arcane Shot","Lone Wolf","Trueshot Aura","Mortal Shots","Rapid Recuperation","Barrage","Scatter Shot","Ranged Weapon Specialization","Sniper Shot"],["Improved Tracking","Deflection","Entrapment","Savage Strikes","Survivalist","Improved Wing Clip","Clever Traps","Surefooted","Deterrence","Survival Tactics","Predator's Edge","Counterattack","Resourcefulness","Expose Prey","Survivalist's Discipline","Strider Kick","Lightning Reflexes","Lacerating Strikes"]],"Rogue":[["Improved Gouge","Remorseless Attacks","Malice","Ruthlessness","Murder","Improved Slice and Dice","Relentless Strikes","Improved Expose Armor","Lethality","Vile Poisons","Cold Blood","Improved Poisons","Vigor","Mutilate","Improved Kidney Shot","Seal Fate","Venom"],["Improved Eviscerate","Improved Sinister Strike","Lightning Reflexes","Puncturing Wounds","Deflection","Precision","Endurance","Riposte","Improved Sprint","Improved Kick","Flawless Execution","Dual Wield Specialization","Blade Flurry","Hack and Slash","Weapon Expertise","Aggression","Adrenaline Rush"],["Camouflage","Master of Deception","Opportunity","Setup","Elusiveness","Dirty Tricks","Improved Ambush","Initiative","Ghostly Strike","Improved Distract","Heightened Senses","Premeditation","Serrated Blades","Dirty Deeds","Preparation","Hemorrhage","Quietus","Cutthroat","Thousand Cuts"]],"Priest":[["Power in Light","Wand Specialization","Twin Disciplines","Silent Resolve","Holy Precision","Improved Power Word: Shield","Martyrdom","Mental Agility","Inner Focus","Meditation","Improved Inner Fire","Mental Strength","Soul Warding","Improved Mana Burn","Penance","Renewed Hope","Divine Aegis","Power Infusion"],["Twilight Focus","Improved Renew","Holy Specialization","Spell Warding","Divine Fury","Holy Nova","Blessed Recovery","Inspiration","Holy Reach","Improved Healing","Searing Light","Binding Heal","Litany of Light","Spirit of Redemption","Spiritual Guidance","Spiritual Healing","Prayer of Mending"],["Shadow Focus","Blackout","Spirit Tap","Shadow Affinity","Improved Shadow Word: Pain","Shadow Reach","Improved Mind Blast","Improved Psychic Scream","Mind Flay","Improved Mind Flay","Improved Fade","Vampiric Embrace","Shadow Weaving","Silence","Devouring Contagion","Early Demise","Darkness","Shadowform"]],"Shaman":[["Convection","Concussion","Elemental Warding","Reverberation","Call of Flame","Elemental Devastation","Elemental Focus","Elemental Fury","Improved Fire Nova","Eye of the Storm","Call of Thunder","Elemental Reach","Lightning Overload","Earthbound","Elemental Alacrity","Lava Burst"],["Earth's Grasp","Thundering Strikes","Ancestral Knowledge","Guardian Totems","Mental Dexterity","Improved Ghost Wolf","Improved Lightning Shield","Elemental Weapons","Shamanistic Focus","Anticipation","Toughness","Flurry","Stormstrike","Spirit Weapons","Mental Quickness","Improved Stormstrike","Maelstrom Weapon","Rage of the Farseer"],["Improved Healing Wave","Totemic Focus","Mindfulness","Natural Grace","Tidal Focus","Improved Reincarnation","Ancestral Healing","Healing Focus","Water Shield","Tidal Mastery","Restorative Totems","Mana Tide Totem","Healing Way","Nature's Swiftness","Purification","Riptide"]],"Mage":[["Wand Specialization","Arcane Focus","Improved Channeling","Arcane Subtlety","Magic Absorption","Arcane Concentration","Arcane Resilience","Arcane Geometry","Arcane Impact","Arcane Blast","Arcane Shielding","Improved Counterspell","Arcane Meditation","Missile Barrage","Presence of Mind","Arcane Mind","Arcane Instability","Arcane Power"],["Wake of Fire","Incineration","Improved Fireball","Ignite","Flame Throwing","Impact","Burning Soul","Improved Flamestrike","Pyroblast","Improved Scorch","Improved Fire Ward","Hot Streak","Master of Elements","Critical Mass","Blast Wave","Fire Power","Combustion"],["Frost Warding","Improved Frostbolt","Elemental Precision","Ice Shards","Permafrost","Improved Frost Nova","Frostbite","Piercing Ice","Frost Channeling","Ice Lance","Improved Blizzard","Arctic Reach","Ice Block","Shatter","Improved Cone of Cold","Cold Snap","Fingers of Frost","Winter's Chill","Ice Barrier"]],"Warlock":[["Improved Life Tap","Suppression","Improved Corruption","Malediction","Soul Harvesting","Improved Drains","Improved Bane of Agony","Fel Concentration","Amplify Curse","Pandemic","Malevolence","Nightfall","Curse of Exhaustion","Siphon Life","Soul Siphon","Shadow Mastery","Wrack"],["Improved Health Funnel","Improved Imp","Demonic Embrace","Unholy Power","Demonic Aegis","Improved Voidwalker","Fel Vitality","Demonic Energies","Improved Sayaad","Demonic Sacrifice","Master Summoner","Decimation","Fel Domination","Demonic Brand","Improved Felhunter","Soul Link","Demonic Knowledge","Master Demonologist","Demonic Pact"],["Destructive Reach","Improved Shadow Bolt","Bane","Molten Skin","Cataclysm","Aftermath","Ruin","Shadowburn","Intensity","Agonizing Flames","Conflagrate","Pyroclasm","Bane of Havoc","Fire and Brimstone","Shadow and Flame","Incinerate"]],"Druid":[["Improved Wrath","Genesis","Moonglow","Improved Moonfire","Nature's Majesty","Nature's Reach","Improved Entangling Roots","Nature's Splendor","Insect Swarm","Vengeance","Improved Starfire","Overgrowth","Nature's Grace","Eclipse","Moonfury","Moonkin Form"],["Ferocity","Heart of the Wild","Feral Swiftness","Feral Instinct","Brutal Impact","Thick Hide","Savage Fury","Feral Charge","Sharpened Claws","Shredding Attacks","Mangle","Predatory Strikes","Primal Fury","Predatory Instincts","Leader of the Pack","King of the Jungle","Natural Reaction","Rend and Tear","Berserk"],["Nature's Focus","Furor","Naturalist","Subtlety","Natural Shapeshifter","Reflection","Gift of Nature","Gift of the Earthmother","Tranquil Spirit","Improved Rejuvenation","Swiftmend","Nature's Swiftness","Living Spirit","Improved Tranquility","Improved Regrowth","Wild Growth"]]};
 window.TALENT_ORDER_V4 = {"Warrior":[["Improved Heroic Strike","Deflection","Improved Rend","Improved Charge","Improved Tactical Mastery","Improved Overpower","Anger Management","Deep Wounds","Spearing Strike","Two-Handed Weapon Specialization","Impale","Bloodthrill","Sweeping Strikes","Weaponmaster","Improved Slam","Improved Hamstring","Mortal Strike"],["Booming Voice","Cruelty","Iron Will","Unbridled Wrath","Improved Cleave","Piercing Howl","Blood Craze","Boundless Rage","Dual Wield Specialization","Raging Blows","Enrage","Improved Execute","Precision","Death Wish","Improved Intercept","Improved Berserker Rage","Flurry","Bloodthirst"],["Shield Specialization","Anticipation","Improved Bloodrage","Toughness","Improved Thunder Clap","Last Stand","Master of Defense","Improved Revenge","Defiance","Improved Sunder Armor","Improved Disarm","Vanguard","Improved Shield Wall","Concussion Blow","Improved Shield Bash","Bastion","Focused Rage","Shield Slam"]],"Paladin":[["Divine Strength","Divine Intellect","Healing Light","Spiritual Focus","Improved Seals","Unyielding Faith","Voice of Truth","Reverence","Purifying Power","Infusion of Light","Illumination","Divine Favor","Divine Precision","Holy Shock","Consecrated Ground","Holy Power","Light's Vigil"],["Toughness","Redoubt","Precision","Guardian's Favor","Anticipation","Improved Seal of Fury","Improved Righteous Fury","Shield Specialization","Sacred Duty","Swift Judgement","One-Handed Weapon Specialization","Improved Hammer of Justice","Templar's Bulwark","Reckoning","Iron Creed","Holy Shield"],["Deflection","Benediction","Improved Judgement","Holy Conduit","Conviction","Vindication","Sanctified Judgement","Seal of Command","Pursuit of Justice","Eye for an Eye","Sacred Arbiter","Two-Handed Weapon Specialization","Vengeance","Repentance","Champion of the Light","Instrument of Law","Twist of Light"]],"Hunter":[["Deadly Aspects","Endurance Training","Focused Fire","Improved Aspect of the Monkey","Pathfinding","Improved Revive Pet","Bestial Swiftness","Unleashed Fury","Improved Mend Pet","Ferocity","Summon Hawk","Spirit Bond","Intimidation","Bestial Discipline","Frenzy","Bestial Wrath"],["Hawk Eye","Improved Concussive Shot","Lethal Attacks","Improved Stings","Efficiency","Careful Aim","Rapid Killing","Improved Arcane Shot","Lone Wolf","Trueshot Aura","Mortal Shots","Rapid Recuperation","Barrage","Scatter Shot","Ranged Weapon Specialization","Sniper Shot"],["Improved Tracking","Deflection","Entrapment","Savage Strikes","Survivalist","Improved Wing Clip","Clever Traps","Surefooted","Deterrence","Survival Tactics","Predator's Edge","Counterattack","Resourcefulness","Expose Prey","Survivalist's Discipline","Strider Kick","Lightning Reflexes","Lacerating Strikes"]],"Rogue":[["Improved Gouge","Remorseless Attacks","Malice","Ruthlessness","Murder","Improved Slice and Dice","Relentless Strikes","Improved Expose Armor","Lethality","Vile Poisons","Cold Blood","Improved Poisons","Vigor","Mutilate","Improved Kidney Shot","Seal Fate","Venom"],["Improved Eviscerate","Improved Sinister Strike","Lightning Reflexes","Puncturing Wounds","Deflection","Precision","Endurance","Riposte","Improved Sprint","Improved Kick","Flawless Execution","Dual Wield Specialization","Blade Flurry","Hack and Slash","Weapon Expertise","Aggression","Adrenaline Rush"],["Camouflage","Master of Deception","Opportunity","Setup","Elusiveness","Dirty Tricks","Improved Ambush","Initiative","Ghostly Strike","Improved Distract","Heightened Senses","Premeditation","Serrated Blades","Dirty Deeds","Preparation","Hemorrhage","Quietus","Cutthroat","Thousand Cuts"]],"Priest":[["Power in Light","Wand Specialization","Twin Disciplines","Silent Resolve","Holy Precision","Improved Power Word: Shield","Martyrdom","Mental Agility","Inner Focus","Meditation","Improved Inner Fire","Mental Strength","Soul Warding","Improved Mana Burn","Penance","Renewed Hope","Divine Aegis","Power Infusion"],["Twilight Focus","Improved Renew","Holy Specialization","Spell Warding","Divine Fury","Holy Nova","Blessed Recovery","Inspiration","Holy Reach","Improved Healing","Searing Light","Binding Heal","Litany of Light","Spirit of Redemption","Spiritual Guidance","Spiritual Healing","Prayer of Mending"],["Shadow Focus","Blackout","Spirit Tap","Shadow Affinity","Improved Shadow Word: Pain","Shadow Reach","Improved Mind Blast","Improved Psychic Scream","Mind Flay","Improved Mind Flay","Improved Fade","Vampiric Embrace","Shadow Weaving","Silence","Devouring Contagion","Early Demise","Darkness","Shadowform"]],"Shaman":[["Convection","Concussion","Elemental Warding","Reverberation","Call of Flame","Elemental Devastation","Elemental Focus","Elemental Alacrity","Improved Fire Nova","Eye of the Storm","Call of Thunder","Elemental Reach","Lightning Overload","Earthbound","Elemental Fury","Lava Burst"],["Earth's Grasp","Thundering Strikes","Ancestral Knowledge","Guardian Totems","Mental Dexterity","Improved Ghost Wolf","Improved Lightning Shield","Elemental Weapons","Shamanistic Focus","Anticipation","Toughness","Flurry","Stormstrike","Spirit Weapons","Mental Quickness","Improved Stormstrike","Maelstrom Weapon","Rage of the Farseer"],["Improved Healing Wave","Totemic Focus","Mindfulness","Natural Grace","Tidal Focus","Improved Reincarnation","Ancestral Healing","Healing Focus","Water Shield","Tidal Mastery","Restorative Totems","Mana Tide Totem","Healing Way","Nature's Swiftness","Purification","Riptide"]],"Mage":[["Wand Specialization","Arcane Focus","Improved Channeling","Arcane Subtlety","Magic Absorption","Arcane Concentration","Arcane Resilience","Arcane Geometry","Arcane Impact","Arcane Blast","Arcane Shielding","Improved Counterspell","Arcane Meditation","Missile Barrage","Presence of Mind","Arcane Mind","Arcane Instability","Arcane Power"],["Wake of Fire","Incineration","Improved Fireball","Ignite","Flame Throwing","Impact","Burning Soul","Improved Flamestrike","Pyroblast","Improved Scorch","Improved Fire Ward","Hot Streak","Master of Elements","Critical Mass","Blast Wave","Fire Power","Combustion"],["Frost Warding","Improved Frostbolt","Elemental Precision","Ice Shards","Permafrost","Improved Frost Nova","Frostbite","Piercing Ice","Frost Channeling","Ice Lance","Improved Blizzard","Arctic Reach","Ice Block","Shatter","Improved Cone of Cold","Cold Snap","Fingers of Frost","Winter's Chill","Ice Barrier"]],"Warlock":[["Improved Life Tap","Suppression","Improved Corruption","Malediction","Soul Harvesting","Improved Drains","Improved Bane of Agony","Fel Concentration","Amplify Curse","Pandemic","Malevolence","Nightfall","Curse of Exhaustion","Siphon Life","Soul Siphon","Shadow Mastery","Wrack"],["Improved Health Funnel","Improved Imp","Demonic Embrace","Unholy Power","Demonic Aegis","Improved Voidwalker","Fel Vitality","Demonic Energies","Improved Sayaad","Demonic Sacrifice","Master Summoner","Decimation","Fel Domination","Demonic Brand","Improved Felhunter","Soul Link","Demonic Knowledge","Master Demonologist","Demonic Pact"],["Destructive Reach","Improved Shadow Bolt","Bane","Molten Skin","Cataclysm","Aftermath","Ruin","Shadowburn","Intensity","Agonizing Flames","Conflagrate","Pyroclasm","Bane of Havoc","Fire and Brimstone","Shadow and Flame","Incinerate"]],"Druid":[["Improved Wrath","Genesis","Moonglow","Improved Moonfire","Nature's Majesty","Nature's Reach","Improved Entangling Roots","Nature's Splendor","Insect Swarm","Vengeance","Improved Starfire","Overgrowth","Nature's Grace","Eclipse","Moonfury","Moonkin Form"],["Ferocity","Heart of the Wild","Feral Swiftness","Feral Instinct","Brutal Impact","Thick Hide","Savage Fury","Feral Charge","Sharpened Claws","Shredding Attacks","Primal Bite","Predatory Strikes","Blood Frenzy","Predatory Instincts","Leader of the Pack","King of the Jungle","Natural Reaction","Rend and Tear","Berserk"],["Nature's Focus","Furor","Naturalist","Subtlety","Natural Shapeshifter","Reflection","Gift of Nature","Gift of the Earthmother","Tranquil Spirit","Improved Rejuvenation","Swiftmend","Nature's Swiftness","Living Spirit","Improved Tranquility","Improved Regrowth","Wild Growth"]]};
 window.TALENT_ORDER_V5 = {"Warrior":[["Improved Heroic Strike","Deflection","Improved Rend","Improved Charge","Improved Tactical Mastery","Improved Overpower","Anger Management","Deep Wounds","Spearing Strike","Two-Handed Weapon Specialization","Impale","Bloodthrill","Sweeping Strikes","Weaponmaster","Improved Slam","Improved Hamstring","Mortal Strike"],["Booming Voice","Cruelty","Iron Will","Unbridled Wrath","Improved Cleave","Piercing Howl","Blood Craze","Boundless Rage","Dual Wield Specialization","Raging Blows","Enrage","Improved Execute","Precision","Death Wish","Improved Intercept","Improved Berserker Rage","Flurry","Bloodthirst"],["Shield Specialization","Anticipation","Improved Bloodrage","Toughness","Improved Thunder Clap","Last Stand","Master of Defense","Improved Revenge","Defiance","Improved Sunder Armor","Improved Disarm","Vanguard","Improved Shield Wall","Concussion Blow","Improved Shield Bash","Bastion","Focused Rage","Shield Slam"]],"Paladin":[["Divine Strength","Divine Intellect","Healing Light","Spiritual Focus","Improved Seals","Unyielding Faith","Voice of Truth","Reverence","Purifying Power","Infusion of Light","Illumination","Divine Favor","Divine Precision","Holy Shock","Consecrated Ground","Holy Power","Light's Vigil"],["Toughness","Redoubt","Precision","Guardian's Favor","Anticipation","Improved Seal of Fury","Improved Righteous Fury","Shield Specialization","Sacred Duty","Swift Judgement","One-Handed Weapon Specialization","Improved Hammer of Justice","Templar's Bulwark","Reckoning","Iron Creed","Holy Shield"],["Deflection","Benediction","Improved Judgement","Holy Conduit","Conviction","Vindication","Sanctified Judgement","Seal of Command","Pursuit of Justice","Eye for an Eye","Sacred Arbiter","Two-Handed Weapon Specialization","Vengeance","Repentance","Champion of the Light","Instrument of Law","Twist of Light"]],"Hunter":[["Deadly Aspects","Endurance Training","Focused Fire","Improved Aspect of the Monkey","Pathfinding","Improved Revive Pet","Bestial Swiftness","Unleashed Fury","Improved Mend Pet","Ferocity","Summon Hawk","Spirit Bond","Intimidation","Bestial Discipline","Frenzy","Bestial Wrath"],["Hawk Eye","Improved Concussive Shot","Lethal Attacks","Improved Stings","Efficiency","Careful Aim","Rapid Killing","Improved Arcane Shot","Lone Wolf","Trueshot Aura","Mortal Shots","Rapid Recuperation","Barrage","Scatter Shot","Ranged Weapon Specialization","Sniper Shot"],["Improved Tracking","Deflection","Entrapment","Savage Strikes","Survivalist","Improved Wing Clip","Clever Traps","Surefooted","Deterrence","Survival Tactics","Predator's Edge","Counterattack","Resourcefulness","Expose Prey","Survivalist's Discipline","Strider Kick","Lightning Reflexes","Lacerating Strikes"]],"Rogue":[["Improved Gouge","Remorseless Attacks","Malice","Ruthlessness","Murder","Improved Slice and Dice","Relentless Strikes","Improved Expose Armor","Lethality","Vile Poisons","Cold Blood","Improved Poisons","Vigor","Mutilate","Improved Kidney Shot","Seal Fate","Venom"],["Improved Eviscerate","Improved Sinister Strike","Lightning Reflexes","Puncturing Wounds","Deflection","Precision","Endurance","Riposte","Improved Sprint","Improved Kick","Flawless Execution","Dual Wield Specialization","Blade Flurry","Hack and Slash","Weapon Expertise","Aggression","Adrenaline Rush"],["Camouflage","Master of Deception","Opportunity","Setup","Elusiveness","Dirty Tricks","Improved Ambush","Initiative","Ghostly Strike","Improved Distract","Heightened Senses","Premeditation","Serrated Blades","Dirty Deeds","Preparation","Hemorrhage","Quietus","Cutthroat","Thousand Cuts"]],"Priest":[["Power in Light","Wand Specialization","Twin Disciplines","Silent Resolve","Holy Precision","Improved Power Word: Shield","Martyrdom","Mental Agility","Inner Focus","Meditation","Improved Inner Fire","Mental Strength","Soul Warding","Improved Mana Burn","Penance","Renewed Hope","Divine Aegis","Power Infusion"],["Twilight Focus","Improved Renew","Holy Specialization","Spell Warding","Divine Fury","Holy Nova","Blessed Recovery","Inspiration","Holy Reach","Improved Healing","Searing Light","Binding Heal","Litany of Light","Spirit of Redemption","Spiritual Guidance","Spiritual Healing","Prayer of Mending"],["Shadow Focus","Blackout","Spirit Tap","Shadow Affinity","Improved Shadow Word: Pain","Shadow Reach","Improved Mind Blast","Improved Psychic Scream","Mind Flay","Improved Mind Flay","Improved Fade","Vampiric Embrace","Shadow Weaving","Silence","Devouring Contagion","Early Demise","Darkness","Shadowform"]],"Shaman":[["Convection","Concussion","Elemental Warding","Reverberation","Call of Flame","Elemental Devastation","Elemental Focus","Elemental Alacrity","Improved Fire Nova","Eye of the Storm","Call of Thunder","Elemental Reach","Lightning Overload","Earthbound","Elemental Fury","Lava Burst"],["Earth's Grasp","Thundering Strikes","Ancestral Knowledge","Guardian Totems","Mental Dexterity","Improved Ghost Wolf","Improved Lightning Shield","Elemental Weapons","Shamanistic Focus","Anticipation","Toughness","Flurry","Stormstrike","Spirit Weapons","Mental Quickness","Improved Stormstrike","Maelstrom Weapon","Rage of the Farseer"],["Improved Healing Wave","Totemic Focus","Mindfulness","Natural Grace","Tidal Focus","Improved Reincarnation","Ancestral Healing","Healing Focus","Water Shield","Tidal Mastery","Restorative Totems","Mana Tide Totem","Healing Way","Nature's Swiftness","Purification","Riptide"]],"Mage":[["Wand Specialization","Arcane Focus","Improved Channeling","Arcane Subtlety","Magic Absorption","Arcane Concentration","Arcane Resilience","Arcane Geometry","Arcane Impact","Arcane Blast","Arcane Shielding","Improved Counterspell","Arcane Meditation","Missile Barrage","Presence of Mind","Arcane Mind","Arcane Instability","Arcane Power"],["Wake of Fire","Incineration","Improved Fireball","Ignite","Flame Throwing","Impact","Burning Soul","Improved Flamestrike","Pyroblast","Improved Scorch","Improved Fire Ward","Heating Up","Master of Elements","Critical Mass","Blast Wave","Fire Power","Combustion"],["Frost Warding","Improved Frostbolt","Elemental Precision","Ice Shards","Permafrost","Improved Frost Nova","Frostbite","Piercing Ice","Frost Channeling","Ice Lance","Improved Blizzard","Arctic Reach","Ice Block","Shatter","Improved Cone of Cold","Cold Snap","Fingers of Frost","Winter's Chill","Ice Barrier"]],"Warlock":[["Improved Life Tap","Suppression","Improved Corruption","Malediction","Soul Harvest","Improved Drains","Improved Bane of Agony","Fel Concentration","Amplify Curse","Pandemic","Malevolence","Nightfall","Curse of Exhaustion","Siphon Life","Soul Siphon","Shadow Mastery","Wrack"],["Improved Health Funnel","Improved Imp","Demonic Embrace","Unholy Power","Demonic Aegis","Improved Voidwalker","Fel Vitality","Demonic Energies","Improved Sayaad","Demonic Sacrifice","Master Summoner","Decimation","Fel Domination","Demonic Brand","Improved Felhunter","Soul Link","Demonic Knowledge","Master Demonologist","Demonic Pact"],["Destructive Reach","Improved Shadow Bolt","Bane","Molten Skin","Cataclysm","Aftermath","Ruin","Shadowburn","Intensity","Agonizing Flames","Conflagrate","Pyroclasm","Bane of Havoc","Fire and Brimstone","Shadow and Flame","Incinerate"]],"Druid":[["Improved Wrath","Genesis","Moonglow","Improved Moonfire","Nature's Majesty","Nature's Reach","Improved Entangling Roots","Nature's Splendor","Insect Swarm","Vengeance","Improved Starfire","Overgrowth","Nature's Grace","Eclipse","Moonfury","Moonkin Form"],["Ferocity","Heart of the Wild","Feral Swiftness","Feral Instinct","Brutal Impact","Thick Hide","Shredding Attacks","Savage Fury","Feral Charge","Sharpened Claws","Shifting Power","Primal Bite","Predatory Strikes","Blood Frenzy","Improved Shifting Power","Leader of the Pack","Predatory Instincts","Natural Reaction","Rend and Tear","Berserk"],["Nature's Focus","Furor","Naturalist","Subtlety","Natural Shapeshifter","Reflection","Gift of Nature","Gift of the Earthmother","Tranquil Spirit","Improved Rejuvenation","Swiftmend","Nature's Swiftness","Living Spirit","Improved Tranquility","Improved Regrowth","Wild Growth"]]};
-window.TALENT_RENAMES = {"Mangle":"Primal Bite","Primal Fury":"Blood Frenzy","Hot Streak":"Heating Up","Soul Harvesting":"Soul Harvest"};
+window.TALENT_ORDER_V6 = {"Warrior":[["Improved Heroic Strike","Deflection","Improved Rend","Improved Charge","Improved Tactical Mastery","Improved Overpower","Anger Management","Deep Wounds","Spearing Strike","Two-Handed Weapon Specialization","Impale","Bloodthrill","Sweeping Strikes","Weaponmaster","Improved Slam","Improved Hamstring","Mortal Strike"],["Booming Voice","Cruelty","Lingering Rage","Unbridled Wrath","Furious Precision","Piercing Howl","Blood Craze","Dual Wield Specialization","Raging Blows","Enrage","Improved Execute","Improved Berserker Rage","Death Wish","Improved Intercept","Flurry","Gore Drinker","Bloodthirst"],["Improved Bloodrage","Shield Specialization","Iron Will","Anticipation","Improved Revenge","Improved Thunder Clap","Last Stand","Master of Defense","Improved Disarm","Defiance","Improved Sunder Armor","Vanguard","Improved Shield Bash","Improved Shield Wall","Concussion Blow","Focused Rage","Bastion","Shield Slam"]],"Paladin":[["Divine Strength","Divine Intellect","Healing Light","Spiritual Focus","Improved Seals","Unyielding Faith","Voice of Truth","Reverence","Purifying Power","Infusion of Light","Illumination","Divine Favor","Divine Precision","Holy Shock","Consecrated Ground","Holy Power","Light's Vigil"],["Toughness","Redoubt","Precision","Guardian's Favor","Anticipation","Improved Seal of Fury","Improved Righteous Fury","Shield Specialization","Sacred Duty","Swift Judgement","One-Handed Weapon Specialization","Improved Hammer of Justice","Templar's Bulwark","Reckoning","Iron Creed","Holy Shield"],["Deflection","Benediction","Improved Judgement","Holy Conduit","Conviction","Vindication","Sanctified Judgement","Seal of Command","Pursuit of Justice","Eye for an Eye","Sacred Arbiter","Two-Handed Weapon Specialization","Vengeance","Repentance","Champion of the Light","Instrument of Law","Twist of Light"]],"Hunter":[["Deadly Aspects","Endurance Training","Focused Fire","Improved Aspect of the Monkey","Pathfinding","Improved Revive Pet","Bestial Swiftness","Unleashed Fury","Improved Mend Pet","Ferocity","Summon Hawk","Spirit Bond","Intimidation","Bestial Discipline","Frenzy","Bestial Wrath"],["Hawk Eye","Improved Concussive Shot","Lethal Attacks","Improved Stings","Efficiency","Careful Aim","Rapid Killing","Improved Arcane Shot","Lone Wolf","Trueshot Aura","Mortal Shots","Rapid Recuperation","Barrage","Scatter Shot","Ranged Weapon Specialization","Sniper Shot"],["Improved Tracking","Deflection","Entrapment","Savage Strikes","Survivalist","Improved Wing Clip","Clever Traps","Surefooted","Deterrence","Survival Tactics","Predator's Edge","Counterattack","Resourcefulness","Expose Prey","Survivalist's Discipline","Strider Kick","Lightning Reflexes","Lacerating Strikes"]],"Rogue":[["Improved Gouge","Remorseless Attacks","Malice","Ruthlessness","Murder","Improved Slice and Dice","Relentless Strikes","Improved Expose Armor","Lethality","Vile Poisons","Cold Blood","Improved Poisons","Vigor","Mutilate","Improved Kidney Shot","Seal Fate","Venom"],["Improved Eviscerate","Improved Sinister Strike","Lightning Reflexes","Puncturing Wounds","Deflection","Precision","Endurance","Riposte","Improved Sprint","Improved Kick","Flawless Execution","Dual Wield Specialization","Blade Flurry","Hack and Slash","Weapon Expertise","Aggression","Adrenaline Rush"],["Camouflage","Master of Deception","Opportunity","Setup","Elusiveness","Dirty Tricks","Improved Ambush","Initiative","Ghostly Strike","Improved Distract","Heightened Senses","Premeditation","Serrated Blades","Dirty Deeds","Preparation","Hemorrhage","Quietus","Cutthroat","Thousand Cuts"]],"Priest":[["Power in Light","Wand Specialization","Twin Disciplines","Silent Resolve","Holy Precision","Improved Power Word: Shield","Martyrdom","Mental Agility","Inner Focus","Meditation","Improved Inner Fire","Mental Strength","Soul Warding","Improved Mana Burn","Penance","Renewed Hope","Divine Aegis","Power Infusion"],["Twilight Focus","Improved Renew","Holy Specialization","Spell Warding","Divine Fury","Holy Nova","Blessed Recovery","Inspiration","Holy Reach","Improved Healing","Searing Light","Binding Heal","Litany of Light","Spirit of Redemption","Spiritual Guidance","Spiritual Healing","Prayer of Mending"],["Shadow Focus","Blackout","Spirit Tap","Shadow Affinity","Improved Shadow Word: Pain","Shadow Reach","Improved Mind Blast","Improved Psychic Scream","Mind Flay","Improved Mind Flay","Improved Fade","Vampiric Embrace","Shadow Weaving","Silence","Devouring Contagion","Early Demise","Darkness","Shadowform"]],"Shaman":[["Convection","Concussion","Elemental Warding","Reverberation","Call of Flame","Elemental Devastation","Elemental Focus","Elemental Alacrity","Improved Fire Nova","Eye of the Storm","Call of Thunder","Elemental Reach","Lightning Overload","Earthbound","Elemental Fury","Lava Burst"],["Earth's Grasp","Thundering Strikes","Ancestral Knowledge","Guardian Totems","Mental Dexterity","Improved Ghost Wolf","Improved Lightning Shield","Elemental Weapons","Shamanistic Focus","Anticipation","Toughness","Flurry","Stormstrike","Spirit Weapons","Mental Quickness","Improved Stormstrike","Maelstrom Weapon","Rage of the Farseer"],["Improved Healing Wave","Totemic Focus","Mindfulness","Natural Grace","Tidal Focus","Improved Reincarnation","Ancestral Healing","Healing Focus","Water Shield","Tidal Mastery","Restorative Totems","Mana Tide Totem","Healing Way","Nature's Swiftness","Purification","Riptide"]],"Mage":[["Wand Specialization","Arcane Focus","Improved Channeling","Arcane Subtlety","Magic Absorption","Arcane Concentration","Arcane Resilience","Arcane Geometry","Arcane Impact","Arcane Blast","Arcane Shielding","Improved Counterspell","Arcane Meditation","Missile Barrage","Presence of Mind","Arcane Mind","Arcane Instability","Arcane Power"],["Wake of Fire","Incineration","Improved Fireball","Ignite","Flame Throwing","Impact","Burning Soul","Improved Flamestrike","Pyroblast","Improved Scorch","Improved Fire Ward","Heating Up","Master of Elements","Critical Mass","Blast Wave","Fire Power","Combustion"],["Frost Warding","Improved Frostbolt","Elemental Precision","Ice Shards","Permafrost","Improved Frost Nova","Frostbite","Piercing Ice","Frost Channeling","Ice Lance","Improved Blizzard","Arctic Reach","Ice Block","Shatter","Improved Cone of Cold","Cold Snap","Fingers of Frost","Winter's Chill","Ice Barrier"]],"Warlock":[["Improved Life Tap","Suppression","Improved Corruption","Malediction","Soul Harvest","Improved Drains","Improved Bane of Agony","Fel Concentration","Amplify Curse","Pandemic","Malevolence","Nightfall","Curse of Exhaustion","Siphon Life","Soul Siphon","Shadow Mastery","Wrack"],["Improved Health Funnel","Improved Imp","Demonic Embrace","Unholy Power","Demonic Aegis","Improved Voidwalker","Fel Vitality","Demonic Energies","Improved Sayaad","Demonic Sacrifice","Master Summoner","Decimation","Fel Domination","Demonic Brand","Improved Felhunter","Soul Link","Demonic Knowledge","Master Demonologist","Demonic Pact"],["Destructive Reach","Improved Shadow Bolt","Bane","Molten Skin","Cataclysm","Aftermath","Ruin","Shadowburn","Intensity","Agonizing Flames","Conflagrate","Pyroclasm","Bane of Havoc","Fire and Brimstone","Shadow and Flame","Incinerate"]],"Druid":[["Improved Wrath","Genesis","Moonglow","Improved Moonfire","Nature's Majesty","Nature's Reach","Improved Entangling Roots","Nature's Splendor","Insect Swarm","Vengeance","Improved Starfire","Overgrowth","Nature's Grace","Eclipse","Moonfury","Moonkin Form"],["Ferocity","Heart of the Wild","Feral Swiftness","Feral Instinct","Brutal Impact","Thick Hide","Shredding Attacks","Savage Fury","Feral Charge","Sharpened Claws","Shifting Power","Primal Bite","Predatory Strikes","Blood Frenzy","Improved Shifting Power","Leader of the Pack","Natural Instinct","Natural Reaction","Rend and Tear","Berserk"],["Nature's Focus","Furor","Naturalist","Subtlety","Natural Shapeshifter","Reflection","Gift of Nature","Gift of the Earthmother","Tranquil Spirit","Improved Rejuvenation","Swiftmend","Nature's Swiftness","Living Spirit","Improved Tranquility","Improved Regrowth","Wild Growth"]]};
+window.TALENT_RENAMES = {"Mangle":"Primal Bite","Primal Fury":"Blood Frenzy","Hot Streak":"Heating Up","Soul Harvesting":"Soul Harvest","Predatory Instincts":"Natural Instinct","Improved Fire Nova":"Trial by Fire","Wake of Fire":"Improved Fire Blast"};

@@ -1,0 +1,4 @@
+d0000	Classic Era's own tooltip for rank 6 says 99-143 damage at 1 point to 407-451 at 5, numbers its spell row does not give: the row is 93-137 to 377-421, the same as Forever's.
+d0001	Classic Era's recipe text for Deadly Poison V says 105 charges, a slip: its coat spell's text and enchant row say 120.
+d0002	Classic Era's recipe text left out the stacking and the charges, but Classic's Wound Poison already stacked up to 5 times and had 60, 75, 90 and 105 charges at ranks 1 to 4 (its coat spells' text and enchant rows say so).
+d0003	The tooltip names no number, but in the game files the threat Feint drops is five times Classic's: 750, 1,200, 1,950, 3,000 and 4,000 at ranks 1 to 5 where Classic had 150, 240, 390, 600 and 800, and 5 more a level where Classic had 1. Blizzard's 7 Oct deep dive says "Threat reduction doubled."

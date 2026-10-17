@@ -309,7 +309,7 @@ else:
     total = 0
     for k, js in enumerate(bodies):
         total += len(js)
-        fd, tmp = tempfile.mkstemp(suffix='.js', dir=os.getcwd())
+        fd, tmp = tempfile.mkstemp(suffix='.js', prefix='tfchk_')
         os.close(fd)
         try:
             with open(tmp, 'w', encoding='utf-8', newline='') as f:
@@ -318,7 +318,13 @@ else:
             if r.returncode != 0:
                 bad.append((k, (r.stderr or r.stdout).strip()[:1200]))
         finally:
-            os.remove(tmp)
+            # 临时文件放系统 temp 目录；删不掉也不算构建失败 ——
+            # 沙箱的批量删除保护会拦下清理（SAFE_DELETE_BULK_CONFIRM_REQUIRED），
+            # 之前它把「清理被拦」污染成 rc=1，让 _ghverify.py 误判成「仓库缺文件」。
+            try:
+                os.remove(tmp)
+            except OSError:
+                pass
     if bad:
         for k, msg in bad:
             print('!! 第 %d 段内联脚本语法错误：\n%s' % (k, msg))

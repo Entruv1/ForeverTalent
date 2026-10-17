@@ -1,0 +1,80 @@
+d0000	Reach 300 skill in Enchanting for the first time.
+d0001	Reach 300 skill in Engineering for the first time.
+d0002	Reach 300 skill in Leatherworking for the first time.
+d0003	Reach 300 skill in Tailoring for the first time.
+d0004	Reach exalted reputation with the Darkspear Raiders or Theramore Expeditionary Force.
+d0005	Reach exalted reputation with the Defilers or League of Arathor.
+d0006	Reach exalted reputation with the Frostwolf Clan or Stormpike Guard.
+d0007	Reach exalted reputation with the Warsong Outriders or Silverwing Sentinels.
+d0008	Reach level 25 for the first time on a Druid.
+d0009	Reach level 25 for the first time on a Hunter.
+d0010	Reach level 25 for the first time on a Mage.
+d0011	Reach level 25 for the first time on a Paladin.
+d0012	Reach level 25 for the first time on a Priest.
+d0013	Reach level 25 for the first time on a Rogue.
+d0014	Reach level 25 for the first time on a Shaman.
+d0015	Reach level 25 for the first time on a Warlock.
+d0016	Reach level 25 for the first time on a Warrior.
+d0017	Reach level 45 for the first time on a Druid.
+d0018	Reach level 45 for the first time on a Hunter.
+d0019	Reach level 45 for the first time on a Mage.
+d0020	Reach level 45 for the first time on a Paladin.
+d0021	Reach level 45 for the first time on a Priest.
+d0022	Reach level 45 for the first time on a Rogue.
+d0023	Reach level 45 for the first time on a Shaman.
+d0024	Reach level 45 for the first time on a Warlock.
+d0025	Reach level 45 for the first time on a Warrior.
+d0026	Reach level 60 for the first time on a Druid.
+d0027	Reach level 60 for the first time on a Hunter.
+d0028	Reach level 60 for the first time on a Mage.
+d0029	Reach level 60 for the first time on a Paladin.
+d0030	Reach level 60 for the first time on a Priest.
+d0031	Reach level 60 for the first time on a Rogue.
+d0032	Reach level 60 for the first time on a Shaman.
+d0033	Reach level 60 for the first time on a Warlock.
+d0034	Reach level 60 for the first time on a Warrior.
+d0035	Reach the rank of Field Marshal or Warlord in the Player vs. Player Honor System.
+d0036	Reach the rank of Grand Marshal or High Warlord in the Player vs. Player Honor System.
+d0037	Reach the rank of Knight-Lieutenant or Blood Guard in the Player vs. Player Honor System.
+d0038	Reach the rank of Lieutenant-Commander or Champion in the Player vs. Player Honor System.
+d0039	Reach the rank of Sergeant in the Player vs. Player Honor System.
+d0040	Read in game on a Paladin, a Shaman and a Warrior, 17 Sep 2026
+d0041	Read in game on a level 1 Dwarf Hunter, 17 Sep 2026 (Cloth, Leather)
+d0042	Read in game on a level 1 Human Paladin, 17 Sep 2026 (Cloth, Leather, Mail)
+d0043	Read in game on a level 1 Night Elf Rogue, 17 Sep 2026
+d0044	Read in game on a level 1 Orc Shaman, 17 Sep 2026 (Cloth, Leather)
+d0045	Read in game on a level 1 Troll Priest, 17 Sep 2026
+d0046	Read in game on a level 1 Undead Warrior, 17 Sep 2026 (Cloth, Leather, Mail)
+d0047	Read in game on all nine classes, 17 Sep 2026: the game shows the name and nothing else
+d0048	Read in game on all ten races, 17 Sep 2026; the list follows your race
+d0049	Read in game with no wand equipped on a Priest, a Warlock and two Mages, 17 and 18 Sep 2026
+d0050	Returns the spirit to the body, restoring a dead target to life with 1,100 health and 1700 mana.
+d0051	Returns the spirit to the body, restoring a dead target to life with 1,600 health and 2200 mana.
+d0052	Returns the spirit to the body, restoring a dead target to life with 2,200 health and 2800 mana.
+d0053	Row 4 of Enhancement opens at level 25 (20 with the Legacy perk Talented at 5/5), so that is when the talent can give it. The game files still put the spell itself at level 40.
+d0054	Row 4 of Shadow opens at level 25 (20 with the Legacy perk Talented at 5/5), so that is when the talent can give it. The game files still put the spell itself at level 30.
+d0055	Row 4 of Survival opens at level 25 (20 with the Legacy perk Talented at 5/5), so that is when the talent can give it. The game files still put the spell itself at level 30.
+d0056	Row 5 of Demonology opens at level 30 (25 with the Legacy perk Talented at 5/5), so that is when the talent can give it. The game files still put the spell itself at level 40.
+d0057	Sanctified Judgement now scales both numbers: rank 3 is a 100% chance to return 60% of the mana, read straight off a rank 3 of 3 tooltip on Savix's stream after <a href="https://www.reddit.com/user/ALC0LITE" target="_blank" rel="noopener">u/ALC0LITE</a> flagged it. Dwarf and Undead racials rewritten from Blizzard's own Deep Dive slides: Stoneform is a 3 min cooldown with 10% less physical damage, Cannibalize ticks 7% health and mana every 2 sec, Touch of the Grave is a 5% chance capped at 5% of your health (10% for Priests, Mages and Warlocks, see 20 Sep).
+d0058	Savix's Rogue, 12 Sep; also read in game on a Night Elf Rogue, 17 Sep 2026
+d0059	Since build 70009 Thorns grows with the caster's spell power (Blizzard's notes give no number). The damage shown is the base, with no gear.
+d0060	Soda's Druid, 13 Sep; the same list read in game on a Tauren and a Windshaper Skyborne, 17 Sep 2026
+d0061	Soda's Gnome Warlock, 13 Sep; the same text read in game on all nine classes, 17 Sep 2026
+d0062	Soda's Mage, 13 Sep; the same list read in game, 17 and 18 Sep 2026
+d0063	Soda's Warlock, 13 Sep; the same list read in game, 17 Sep 2026
+d0064	Soda's Warrior, 13 Sep (no description line on the tooltip); Requires Bows from the beta client 1.60.1.70170
+d0065	Some of what Blizzard's notes say about a beta build never shows up in a tooltip: Warrior Rage from crits, Druid forms that ignore Disarm, a Rank 1 Frostbolt that can't proc Frostbite at 60. Those lines are in What's new now, under <b>Beyond the tooltips</b>, in Blizzard's own words and sorted by class: what plays differently, what got fixed, the known bugs, and the talents that reached the game by server hotfix but are not in its files. Pick your class at the top of What's new and they sit at the foot of its card.
+d0066	Soul Harvest is the new name of Soul Harvesting.
+d0067	Spearing Strike takes any melee weapon, and weapon lines come from the files now
+d0068	Still a 3 sec cast, but Improved Ghost Wolf takes 1 sec off at rank 1 and all 3 at rank 2, and lets it work indoors: instant at 2/2, as Guzu's tooltip showed.
+d0069	Still here: level 14 from the quest Power over Poison, as in Classic. Since build 70170 High Order Skyborne can take that quest too (Blizzard's notes).
+d0070	Still there, Protection tab: 20% of your base health for 10 Rage, plus 10 more over 10 sec.
+d0071	Swapped on purpose: the Imp gives Shadow damage and the Succubus Fire, the other way round from Classic and the opposite of Master Demonologist, so Demonic Pact can stack them (Blizzard on the WoW: Forever Podcast, episode 2, 64:00; game files build 1.60.1.70291).
+d0072	Talents Forever runs inside the game now, free on CurseForge. <a href="/ideas">The addon page</a> walks through every screen; here is the short version.<br><br><b>Plan without spending.</b> The same three trees, in the game's own window. Click a talent to plan a point, right click to take it back. Nothing goes on your character until you press Apply, or you switch on hands-free and let it place points as you level. The Plan page lists every point by level, the bar under the trees shows the build at any level, and hovering a level lights up the talents you gain by then.<br><br><b>Popular builds, in game.</b> The list from this site, refreshed from the live counts. Try it rings a build's talents over your own so you see where it differs. Load makes it your plan.<br><br><b>Builds travel.</b> The same link this site makes. Paste one in and it loads. Party, Guild or a whisper sends it, and anyone with the addon gets it as a card. Phone QR draws the build as a code your phone opens on the site. Saved builds stay with the character.<br><br><b>The trainer, and the whole road.</b> A card when you level with something to learn, and the trainer's whole list inside the addon; prices fill in once you have visited your trainer with the addon on. The Spellbook list beside the window shows every ability to 60 at the level you learn it, with what you know already in green. The game only shows what you have and the trainer only what you can buy today.<br><br><b>Coach, Races, Ctrl.</b> Three quick reads on your plan. Every race your class can be, with its racials. Hold Ctrl on a talent and the tooltip shows the spell it changes.<br><br><b>Off switches.</b> Every page, the level-up card, other people's builds, the minimap book, the character-pane tab. Hands-free starts off.<br><br><b>Where it came from.</b> Eight questions and a box on this site, for five days. About 130 of you voted, 43 wrote in, and most of the list above started as one of those notes. The page names the ones who left a name.<br><br>It is still the beta. Say what is off from the Feedback button inside the addon, or on the page, and it gets read.
+d0073	Tenth beta build
+d0074	The Warrior pass in Blizzard's <a href="https://us.forums.blizzard.com/en/wow/t/2360696/4" target="_blank" rel="noopener">1 Oct notes</a> never reached build 70170's files. The game got it anyway, as server hotfixes on 1 to 2 Oct, and the Warrior trees here show it now. Fury has <b>Lingering Rage</b> in row 2, <b>Furious Precision</b> in row 3 and <b>Gore Drinker</b> in row 6 behind Enrage. <b>Improved Cleave</b>, <b>Boundless Rage</b> and <b>Precision</b> are gone, <b>Iron Will</b> sits in row 1 of Protection, Improved Berserker Rage is a row higher, Flurry's arrow comes from Death Wish, Bloodthirst deals 45% of your Attack Power and Berserker Rage is yours at 30. Protection loses <b>Toughness</b>; Improved Bloodrage, Improved Revenge, Improved Disarm and Improved Shield Bash each move up a row, Anticipation drops to row 2, and Focused Rage and Bastion swap rows. <b>Dual Wield Specialization</b> keeps its off-hand Rage after all, 10% a rank up to 50%, and its off-hand hit is Furious Precision's now.<br><br>Where this came from: not the client's files, which never got the pass. Three independent readers of the beta's hotfix cache, as it stood on 2 Oct, give the trees, checked against Blizzard's notes wherever the notes speak. Some of it is not in the notes: Precision is simply missing from the hotfix tree, two arrows rest on two of those readers (Bloodthirst without Death Wish, Last Stand without Improved Bloodrage), Vanguard and Flurry slide along their rows, and Piercing Howl (10 yds), Intimidating Shout (8 yds) and Improved Slam (3.0 sec off at rank 1, where the 24 Sep notes said 1.5) read the way the hotfix readers and a 2 Oct in-game recording show them. The notes also say Dual Wield Specialization lost its off-hand Rage; the hotfix tree gives it back. If the game disagrees with any of it, say so and it gets fixed. Every link and saved build from before still opens, points that sat on the gone talents come back to you, and <b>Fill it in for me</b> offers the new ones. <b>In the game</b> under What's new has the full list.
+d0075	The about page names who builds on the data export
+d0076	The data behind the calculator has been free to take since the start, one JSON file per class under CC BY 4.0. Someone has. <a href="https://www.curseforge.com/wow/addons/class-pilot-forever" rel="noopener" target="_blank">Class Pilot Forever</a> by Envy4K is a leveling guide addon that reads the trees from here and sends shared builds back to the calculator, and the <a href="/about">about page</a> now says so. Build on the data and credit the site with a link, and your tool goes on that list too.
+d0077	The first Wrapped only saw about eleven hours of the week. The counter behind it hit its free limit on launch day and stopped recording, and I didn't catch it until now. A second count was running the whole time, so the numbers are rebuilt from both. It is at least 79,715 builds people shared, saved or opened over five days, 13 to 17 Sep, not 16,176 over six (some visitors block the second count, so the true number is higher), and the Wrapped and every class's Popular builds fold now show it. Popular builds also rank by build family now: builds within a few points of each other count together, so one much-clicked link can't outrank a build hundreds of people arrived at. Two honest notes: thirteen hours of launch day were caught by neither count and stay missing, and pick rates now count complete builds only, so a much-clicked link to a half-finished build can't pass as a pick.
+d0078	The first beta client. Everything the site showed before this came from BlizzCon demo footage; these are the places where the client's own files differ from what the demo showed. A number the demo read at its character's level 38 and the site shows at level 60 is not counted as a change.
+d0079	The game files give this one to Alliance races only, the same list as Teleport: Stormwind. Not yet checked on a Horde character.

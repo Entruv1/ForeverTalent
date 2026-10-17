@@ -1,4 +1,4 @@
-// Spellbooks: every trainer spell to level 60 with every rank, from the WoW Forever beta client (build 1.60.1.70170).
+// Spellbooks: every trainer spell to level 60 with every rank, from the WoW Forever beta client (build 1.60.1.70425).
 // The General lists date from the BlizzCon demo reads. Each entry: [name, sub] where sub is the rank shown under the name.
 // checked = that class's city trainer was read in game (who, where, when); the other classes are still files only.
 // icons = each row's own icon for that class (name, or name|rank where a rank has its own picture). It wins over the shared SPELLBOOK_ICONS,
@@ -542,7 +542,7 @@ window.SPELLBOOKS = {
   ],
   "notes": [],
   "source": "beta",
-  "build": "1.60.1.70170",
+  "build": "1.60.1.70425",
   "levels": {
    "Heroic Strike": [
     1,
@@ -1130,10 +1130,6 @@ window.SPELLBOOKS = {
       "Rank 2"
      ],
      [
-      "Blessing of Salvation",
-      ""
-     ],
-     [
       "Concentration Aura",
       ""
      ],
@@ -1214,10 +1210,6 @@ window.SPELLBOOKS = {
       ""
      ],
      [
-      "Greater Blessing of Salvation",
-      ""
-     ],
-     [
       "Hammer of Justice",
       "Rank 1"
      ],
@@ -1246,7 +1238,19 @@ window.SPELLBOOKS = {
       "Rank 3"
      ],
      [
+      "Mass Salvation",
+      ""
+     ],
+     [
+      "Revoke",
+      ""
+     ],
+     [
       "Righteous Fury",
+      ""
+     ],
+     [
+      "Salvation",
       ""
      ],
      [
@@ -1451,7 +1455,7 @@ window.SPELLBOOKS = {
   ],
   "notes": [],
   "source": "beta",
-  "build": "1.60.1.70170",
+  "build": "1.60.1.70425",
   "levels": {
    "Devotion Aura": [
     1,
@@ -1652,7 +1656,7 @@ window.SPELLBOOKS = {
    "Seal of Fury": [
     10,
     18,
-    25,
+    26,
     34,
     42,
     50,
@@ -1694,7 +1698,7 @@ window.SPELLBOOKS = {
    "Purify": "spell_holy_purify",
    "Blessing of Protection": "spell_holy_sealofprotection",
    "Divine Shield": "spell_holy_divineintervention",
-   "Blessing of Salvation": "spell_holy_sealofsalvation",
+   "Salvation": "spell_holy_sealofsalvation",
    "Blessing of Sacrifice": "spell_holy_sealofsacrifice",
    "Divine Protection": "spell_holy_restoration",
    "Blessing of Freedom": "spell_holy_sealofvalor",
@@ -1721,7 +1725,7 @@ window.SPELLBOOKS = {
    "Righteous Fury": "spell_holy_sealoffury",
    "Greater Blessing of Light": "spell_holy_greaterblessingoflight",
    "Greater Blessing of Wisdom": "spell_holy_greaterblessingofwisdom",
-   "Greater Blessing of Salvation": "spell_holy_greaterblessingofsalvation",
+   "Mass Salvation": "spell_holy_greaterblessingofsalvation",
    "Greater Blessing of Might": "spell_holy_greaterblessingofkings",
    "Consecration": "spell_holy_innerfire",
    "Hammer of Justice": "spell_holy_sealofmight",
@@ -1733,9 +1737,12 @@ window.SPELLBOOKS = {
    "Seal of Fury": "spell_holy_retributionaura",
    "Swift Judgement": "ability_paladin_judgementred",
    "Templar's Bulwark": "ability_paladin_shieldofthetemplar",
-   "Holy Strike": "classicon_paladin"
+   "Holy Strike": "classicon_paladin",
+   "Revoke": "spell_holy_prayerofmendingtga"
   },
   "gone": [
+   "Blessing of Sanctuary",
+   "Greater Blessing of Sanctuary",
    "Sanctity Aura"
   ]
  },
@@ -2326,7 +2333,7 @@ window.SPELLBOOKS = {
      ],
      [
       "Strider Kick",
-      "Rank 1"
+      ""
      ],
      [
       "Track Beasts",
@@ -2994,7 +3001,7 @@ window.SPELLBOOKS = {
   ],
   "notes": [],
   "source": "beta",
-  "build": "1.60.1.70170",
+  "build": "1.60.1.70425",
   "levels": {
    "Scare Beast": [
     14,
@@ -3195,10 +3202,10 @@ window.SPELLBOOKS = {
     20,
     30,
     40,
-    40
+    50
    ],
    "Great Stamina": [
-    1,
+    10,
     12,
     18,
     24,
@@ -3222,7 +3229,7 @@ window.SPELLBOOKS = {
     56
    ],
    "Natural Armor": [
-    1,
+    10,
     12,
     18,
     24,
@@ -3363,9 +3370,6 @@ window.SPELLBOOKS = {
     48,
     58
    ],
-   "Strider Kick": [
-    30
-   ],
    "Sonic Blast": [
     12,
     24,
@@ -3476,7 +3480,9 @@ window.SPELLBOOKS = {
    "Strider Kick": "ability_hunter_pet_tallstrider",
    "Sonic Blast": "ability_vehicle_sonicshockwave"
   },
-  "gone": []
+  "gone": [
+   "Wyvern Sting"
+  ]
  },
  "Rogue": {
   "race": "",
@@ -4039,7 +4045,7 @@ window.SPELLBOOKS = {
   ],
   "notes": [],
   "source": "beta",
-  "build": "1.60.1.70170",
+  "build": "1.60.1.70425",
   "levels": {
    "Gouge": [
     6,
@@ -5252,7 +5258,7 @@ window.SPELLBOOKS = {
   ],
   "notes": [],
   "source": "beta",
-  "build": "1.60.1.70170",
+  "build": "1.60.1.70425",
   "levels": {
    "Lesser Heal": [
     1,
@@ -5569,7 +5575,6 @@ window.SPELLBOOKS = {
   },
   "talents": [
    "Binding Heal",
-   "Blessed Recovery",
    "Holy Nova",
    "Inner Focus",
    "Mind Flay",
@@ -5639,7 +5644,9 @@ window.SPELLBOOKS = {
    "Shadow Word: Death": "spell_shadow_demonicfortitude",
    "Prayer of Mending": "spell_holy_prayerofmendingtga"
   },
-  "gone": []
+  "gone": [
+   "Lightwell"
+  ]
  },
  "Shaman": {
   "race": "",
@@ -5733,6 +5740,10 @@ window.SPELLBOOKS = {
       ""
      ],
      [
+      "Elemental Mastery",
+      ""
+     ],
+     [
       "Fire Nova",
       "Rank 1"
      ],
@@ -5803,6 +5814,10 @@ window.SPELLBOOKS = {
      [
       "Lava Burst",
       "Rank 3"
+     ],
+     [
+      "Lava Burst",
+      "Rank 4"
      ],
      [
       "Lightning Bolt",
@@ -6375,6 +6390,10 @@ window.SPELLBOOKS = {
       "Rank 3"
      ],
      [
+      "Mana Tide Totem",
+      "Rank 4"
+     ],
+     [
       "Nature's Swiftness",
       ""
      ],
@@ -6411,7 +6430,7 @@ window.SPELLBOOKS = {
   ],
   "notes": [],
   "source": "beta",
-  "build": "1.60.1.70170",
+  "build": "1.60.1.70425",
   "levels": {
    "Stoneclaw Totem": [
     8,
@@ -6624,6 +6643,7 @@ window.SPELLBOOKS = {
    ],
    "Mana Tide Totem": [
     25,
+    38,
     48,
     58
    ],
@@ -6631,6 +6651,7 @@ window.SPELLBOOKS = {
     30
    ],
    "Lava Burst": [
+    30,
     40,
     50,
     60
@@ -6642,6 +6663,7 @@ window.SPELLBOOKS = {
    ]
   },
   "talents": [
+   "Elemental Mastery",
    "Lava Burst",
    "Mana Tide Totem",
    "Nature's Swiftness",
@@ -6693,6 +6715,7 @@ window.SPELLBOOKS = {
    "Frostbrand Weapon": "spell_frost_frostbrand",
    "Fire Resistance Totem": "spell_fireresistancetotem_01",
    "Water Breathing": "spell_shadow_demonbreath",
+   "Elemental Mastery": "spell_nature_wispheal",
    "Mana Tide Totem": "spell_frost_summonwaterelemental",
    "Nature's Swiftness": "spell_nature_ravenform",
    "Water Walking": "spell_frost_windwalkon",
@@ -6866,6 +6889,22 @@ window.SPELLBOOKS = {
      [
       "Arcane Power",
       ""
+     ],
+     [
+      "Arcane Wrath",
+      "Rank 1"
+     ],
+     [
+      "Arcane Wrath",
+      "Rank 2"
+     ],
+     [
+      "Arcane Wrath",
+      "Rank 3"
+     ],
+     [
+      "Arcane Wrath",
+      "Rank 4"
      ],
      [
       "Blink",
@@ -7366,10 +7405,6 @@ window.SPELLBOOKS = {
       "Rank 4"
      ],
      [
-      "Cone of Cold",
-      "Rank 5"
-     ],
-     [
       "Frost Armor",
       "Rank 1"
      ],
@@ -7379,6 +7414,18 @@ window.SPELLBOOKS = {
      ],
      [
       "Frost Armor",
+      "Rank 3"
+     ],
+     [
+      "Frost Blast",
+      "Rank 1"
+     ],
+     [
+      "Frost Blast",
+      "Rank 2"
+     ],
+     [
+      "Frost Blast",
       "Rank 3"
      ],
      [
@@ -7526,7 +7573,7 @@ window.SPELLBOOKS = {
   ],
   "notes": [],
   "source": "beta",
-  "build": "1.60.1.70170",
+  "build": "1.60.1.70425",
   "levels": {
    "Frostbolt": [
     4,
@@ -7670,8 +7717,7 @@ window.SPELLBOOKS = {
     26,
     34,
     42,
-    50,
-    58
+    50
    ],
    "Blast Wave": [
     30,
@@ -7718,8 +7764,6 @@ window.SPELLBOOKS = {
     8,
     20,
     40,
-    60,
-    60,
     60
    ],
    "Mage Armor": [
@@ -7746,20 +7790,29 @@ window.SPELLBOOKS = {
     42,
     48,
     56
+   ],
+   "Frost Blast": [
+    24,
+    36,
+    48
+   ],
+   "Arcane Wrath": [
+    25,
+    36,
+    48,
+    60
    ]
   },
   "talents": [
    "Arcane Blast",
    "Arcane Power",
+   "Arcane Wrath",
    "Blast Wave",
    "Cold Snap",
    "Combustion",
    "Ice Barrier",
    "Ice Block",
    "Ice Lance",
-   "Impact",
-   "Magic Absorption",
-   "Master of Elements",
    "Presence of Mind",
    "Pyroblast"
   ],
@@ -7833,9 +7886,13 @@ window.SPELLBOOKS = {
    "Arcane Blast": "spell_arcane_blast",
    "Frostfire Bolt": "ability_mage_frostfirebolt",
    "Ice Lance": "spell_frost_frostblast",
-   "Teleport: Dalaran": "spell_arcane_teleporthalloftheguardian"
+   "Teleport: Dalaran": "spell_arcane_teleporthalloftheguardian",
+   "Frost Blast": "spell_frost_frostbolt",
+   "Arcane Wrath": "ability_mage_netherwindpresence"
   },
-  "gone": [],
+  "gone": [
+   "Detect Magic"
+  ],
   "checked": {
    "npc": "Maginor Dumas",
    "zone": "Stormwind City",
@@ -9162,7 +9219,7 @@ window.SPELLBOOKS = {
    ]
   },
   "source": "beta",
-  "build": "1.60.1.70170",
+  "build": "1.60.1.70425",
   "talents": [
    "Amplify Curse",
    "Bane of Havoc",
@@ -9247,7 +9304,10 @@ window.SPELLBOOKS = {
    "Bane of Havoc": "ability_warlock_baneofhavoc",
    "Curse of the Elements": "warlock_curse_shadow"
   },
-  "gone": []
+  "gone": [
+   "Curse of Shadow",
+   "Dark Pact"
+  ]
  },
  "Druid": {
   "race": "",
@@ -10127,7 +10187,7 @@ window.SPELLBOOKS = {
   ],
   "notes": [],
   "source": "beta",
-  "build": "1.60.1.70170",
+  "build": "1.60.1.70425",
   "levels": {
    "Cat Form": [
     20
@@ -10162,7 +10222,7 @@ window.SPELLBOOKS = {
     46
    ],
    "Shred": [
-    22,
+    20,
     30,
     38,
     46,
@@ -10410,7 +10470,6 @@ window.SPELLBOOKS = {
   },
   "talents": [
    "Berserk",
-   "Enrage",
    "Feral Charge",
    "Insect Swarm",
    "Moonkin Form",
@@ -10482,8 +10541,11 @@ window.SPELLBOOKS = {
    "Insect Swarm": "spell_nature_insectswarm",
    "Shifting Power": "spell_druid_displacement"
   },
-  "gone": []
+  "gone": [
+   "Faerie Fire (Feral)",
+   "Tiger's Fury"
+  ]
  }
 };
 // Icons for the spellbook spells.
-window.SPELLBOOK_ICONS = {"Abolish Disease": "spell_nature_nullifydisease", "Abolish Poison": "spell_nature_nullifypoison_02", "Adrenaline Rush": "spell_shadow_shadowworddominate", "Aimed Shot": "inv_spear_07", "Ambush": "ability_rogue_ambush", "Amplify Magic": "spell_holy_flashheal", "Ancestral Spirit": "spell_nature_regenerate", "Aquatic Form": "ability_druid_aquaticform", "Arcane Blast": "spell_arcane_blast", "Arcane Explosion": "spell_nature_wispsplode", "Arcane Intellect": "spell_holy_magicalsentry", "Arcane Missiles": "spell_nature_starfall", "Arcane Shot": "ability_impalingbolt", "Armor Proficiency": "inv_chest_chain_05", "Aspect of the Beast": "ability_mount_pinktiger", "Aspect of the Cheetah": "ability_mount_jungletiger", "Aspect of the Hawk": "spell_nature_ravenform", "Aspect of the Monkey": "ability_hunter_aspectofthemonkey", "Astral Recall": "spell_nature_astralrecal", "Attack": "inv_sword_04", "Auto Shot": "ability_whirlwind", "Backstab": "ability_backstab", "Bane of Agony": "spell_shadow_curseofsargeras", "Banish": "spell_shadow_cripple", "Bash": "ability_druid_bash", "Battle Shout": "ability_warrior_battleshout", "Battle Stance": "ability_warrior_offensivestance", "Bear Form": "ability_racial_bearform", "Beast Lore": "ability_physical_taunt", "Beast Training": "ability_hunter_beasttraining", "Berserker Rage": "spell_nature_ancestralguardian", "Berserker Stance": "ability_racial_avatar", "Blade Flurry": "ability_warrior_punishingblow", "Blessing of Freedom": "spell_holy_sealofvalor", "Blessing of Kings": "spell_magic_magearmor", "Blessing of Might": "spell_holy_fistofjustice", "Blessing of Protection": "spell_holy_sealofprotection", "Blessing of Salvation": "spell_holy_sealofsalvation", "Blessing of Wisdom": "spell_holy_sealofwisdom", "Blind": "spell_shadow_mindsteal", "Blink": "spell_arcane_blink", "Blizzard": "spell_frost_icestorm", "Block": "ability_defend", "Bloodrage": "ability_racial_bloodrage", "Call Owl": "ability_hunter_pet_owl", "Call of the Ancestors": "spell_shaman_dropall_02", "Call of the Elements": "spell_shaman_dropall_01", "Cat Form": "ability_druid_catform", "Chain Lightning": "spell_nature_chainlightning", "Challenging Roar": "ability_druid_challangingroar", "Challenging Shout": "ability_bullrush", "Charge": "ability_hunter_pet_boar", "Cheap Shot": "ability_cheapshot", "Claw": "ability_druid_rake", "Cleave": "ability_warrior_cleave", "Comprehend Scroll": "inv_scroll_03", "Concentration Aura": "spell_holy_mindsooth", "Concussive Shot": "spell_frost_stun", "Cone of Cold": "spell_frost_glacier", "Conjure Food": "inv_misc_food_10", "Conjure Mana Agate": "inv_misc_gem_emerald_01", "Conjure Mana Jade": "inv_misc_gem_emerald_02", "Conjure Water": "inv_drink_06", "Consecration": "spell_holy_innerfire", "Corruption": "spell_shadow_abominationexplosion", "Counterspell": "spell_frost_iceshock", "Cower": "ability_druid_cower", "Create Firestone": "inv_misc_gem_bloodstone_02", "Create Healthstone": "inv_stone_04", "Create Soulstone": "spell_shadow_soulgem", "Create Spellstone": "inv_misc_gem_sapphire_01", "Cure Disease": "spell_holy_nullifydisease", "Cure Poison": "spell_nature_nullifypoison", "Curse of Recklessness": "spell_shadow_unholystrength", "Curse of Tongues": "spell_shadow_curseoftounges", "Curse of Weakness": "spell_shadow_curseofmannoroth", "Curse of the Elements": "warlock_curse_shadow", "Dampen Magic": "spell_nature_abolishmagic", "Dash": "ability_druid_dash", "Defensive Stance": "ability_warrior_defensivestance", "Demon Armor": "spell_shadow_ragingscream", "Demon Skin": "spell_shadow_ragingscream", "Demoralizing Roar": "ability_druid_demoralizingroar", "Demoralizing Shout": "ability_warrior_warcry", "Detect Invisibility": "spell_shadow_detectinvisibility", "Detect Traps": "ability_spy", "Devotion Aura": "spell_holy_devotionaura", "Devouring Plague": "spell_shadow_devouringplague", "Disarm": "ability_warrior_disarm", "Disarm Trap": "spell_shadow_grimward", "Disease Cleansing Totem": "spell_nature_diseasecleansingtotem", "Disengage": "ability_rogue_feint", "Dismiss Pet": "spell_nature_spiritwolf", "Dispel Magic": "spell_holy_dispelmagic", "Distract": "ability_rogue_distract", "Distracting Shot": "spell_arcane_blink", "Divine Intervention": "spell_nature_timestop", "Divine Protection": "spell_holy_restoration", "Divine Shield": "spell_holy_divineintervention", "Divine Spirit": "spell_holy_divinespirit", "Dodge": "spell_shadow_rune", "Drain Life": "spell_shadow_lifedrain02", "Drain Mana": "spell_shadow_siphonmana", "Drain Soul": "spell_shadow_haunting", "Dual Wield": "ability_dualwield", "Eagle Eye": "ability_hunter_eagleeye", "Earth Shock": "spell_nature_earthshock", "Earthbind Totem": "spell_nature_strengthofearthtotem02", "Elune's Grace": "spell_holy_elunesgrace", "Enrage": "ability_druid_enrage", "Entangling Roots": "spell_nature_stranglevines", "Evasion": "spell_shadow_shadowward", "Eviscerate": "ability_rogue_eviscerate", "Evocation": "spell_nature_purge", "Execute": "inv_sword_48", "Exorcism": "spell_holy_excorcism_02", "Explosive Trap": "spell_fire_selfdestruct", "Expose Armor": "ability_warrior_riposte", "Eye of Kilrogg": "spell_shadow_evileye", "Eyes of the Beast": "ability_eyeoftheowl", "Fade": "spell_magic_lesserinvisibilty", "Faerie Fire": "spell_nature_faeriefire", "Far Sight": "spell_nature_farsight", "Fear": "spell_shadow_possession", "Fear Ward": "spell_holy_excorcism", "Feed Pet": "ability_hunter_beasttraining", "Feign Death": "ability_rogue_feigndeath", "Feint": "ability_rogue_feint", "Ferocious Bite": "ability_druid_ferociousbite", "Fire Blast": "spell_fire_fireball", "Fire Nova": "spell_fire_sealoffire", "Fire Resistance Aura": "spell_fire_sealoffire", "Fire Resistance Totem": "spell_fireresistancetotem_01", "Fire Ward": "spell_fire_firearmor", "Fireball": "spell_fire_flamebolt", "Flame Shock": "spell_fire_flameshock", "Flamestrike": "spell_fire_selfdestruct", "Flametongue Totem": "spell_nature_guardianward", "Flametongue Weapon": "spell_fire_flametounge", "Flare": "spell_fire_flare", "Flash Heal": "spell_holy_flashheal", "Flash of Light": "spell_holy_flashheal", "Freezing Trap": "spell_frost_chainsofice", "Frenzied Regeneration": "ability_bullrush", "Frost Armor": "spell_frost_frostarmor02", "Frost Nova": "spell_frost_frostnova", "Frost Resistance Aura": "spell_frost_wizardmark", "Frost Resistance Totem": "spell_frostresistancetotem_01", "Frost Shock": "spell_frost_frostshock", "Frost Trap": "spell_frost_freezingbreath", "Frost Ward": "spell_frost_frostward", "Frostbolt": "spell_frost_frostbolt02", "Frostbrand Weapon": "spell_frost_frostbrand", "Garrote": "ability_rogue_garrote", "Ghost Wolf": "spell_nature_spiritwolf", "Gouge": "ability_gouge", "Grounding Totem": "spell_nature_groundingtotem", "Growl": "ability_physical_taunt", "Hammer of Justice": "spell_holy_sealofmight", "Hamstring": "ability_shockwave", "Heal": "spell_holy_heal", "Healing Stream Totem": "inv_spear_04", "Healing Touch": "spell_nature_healingtouch", "Healing Wave": "spell_nature_magicimmunity", "Health Funnel": "spell_shadow_lifedrain", "Hellfire": "spell_fire_incinerate", "Heroic Strike": "ability_rogue_ambush", "Hibernate": "spell_nature_sleep", "Holy Fire": "spell_holy_searinglight", "Holy Light": "spell_holy_holybolt", "Holy Strike": "classicon_paladin", "Hunter's Mark": "ability_hunter_snipershot", "Ice Armor": "spell_frost_frostarmor02", "Immolate": "spell_fire_immolation", "Immolation Trap": "spell_fire_flameshock", "Inner Fire": "spell_holy_innerfire", "Intimidating Shout": "ability_golemthunderclap", "Judgement": "spell_holy_righteousfury", "Kick": "ability_kick", "Kidney Shot": "ability_rogue_kidneyshot", "Languages": "inv_misc_book_11", "Lay on Hands": "spell_holy_layonhands", "Lesser Heal": "spell_holy_lesserheal", "Lesser Healing Wave": "spell_nature_healingwavelesser", "Levitate": "spell_holy_layonhands", "Life Tap": "spell_shadow_burningspirit", "Lightning Bolt": "spell_nature_lightning", "Lightning Shield": "spell_nature_lightningshield", "Mage Armor": "spell_magearmor", "Magma Totem": "spell_fire_selfdestruct", "Mana Burn": "spell_shadow_manaburn", "Mana Shield": "spell_shadow_detectlesserinvisibility", "Mana Spring Totem": "spell_nature_manaregentotem", "Mark of the Wild": "spell_nature_regeneration", "Maul": "ability_druid_maul", "Mend Pet": "ability_hunter_mendpet", "Mind Blast": "spell_shadow_unholyfrenzy", "Mind Control": "spell_shadow_shadowworddominate", "Mind Soothe": "spell_holy_mindsooth", "Mind Vision": "spell_holy_mindvision", "Mocking Blow": "ability_warrior_punishingblow", "Mongoose Bite": "ability_hunter_swiftstrike", "Moonfire": "spell_nature_starfall", "Multi-Shot": "ability_upgrademoonglaive", "Nature Resistance Totem": "spell_nature_natureresistancetotem", "Nature's Grasp": "spell_nature_natureswrath", "Omen of Clarity": "spell_nature_crystalball", "Overpower": "ability_meleedamage", "Parry": "ability_parry", "Pick Lock": "spell_nature_moonkey", "Pick Pocket": "inv_misc_bag_11", "Poison Cleansing Totem": "spell_nature_poisoncleansingtotem", "Polymorph": "spell_nature_polymorph", "Pounce": "ability_druid_supriseattack", "Power Word: Fortitude": "spell_holy_wordfortitude", "Power Word: Shield": "spell_holy_powerwordshield", "Prayer of Healing": "spell_holy_prayerofhealing02", "Presence of Mind": "spell_nature_enchantarmor", "Prowl": "ability_ambush", "Psychic Scream": "spell_shadow_psychicscream", "Pummel": "inv_gauntlets_04", "Purge": "spell_nature_purge", "Purify": "spell_holy_purify", "Rain of Fire": "spell_shadow_rainoffire", "Rake": "ability_druid_disembowel", "Rapid Fire": "ability_hunter_runningshot", "Raptor Strike": "ability_meleedamage", "Ravage": "ability_druid_ravage", "Rebirth": "spell_nature_reincarnation", "Redemption": "spell_holy_resurrection", "Regrowth": "spell_nature_resistnature", "Reincarnation": "spell_nature_reincarnation", "Rejuvenation": "spell_nature_rejuvenation", "Remove Curse": "spell_holy_removecurse", "Remove Lesser Curse": "spell_nature_removecurse", "Rend": "ability_gouge", "Renew": "spell_holy_renew", "Resurrection": "spell_holy_resurrection", "Retaliation": "ability_warrior_challange", "Retribution Aura": "spell_holy_auraoflight", "Revenge": "ability_warrior_revenge", "Revive": "ability_druid_lunarguidance", "Revive Pet": "ability_hunter_beastsoothe", "Righteous Fury": "spell_holy_sealoffury", "Rip": "ability_ghoulfrenzy", "Ritual of Summoning": "spell_shadow_twilight", "Rockbiter Weapon": "spell_nature_rockbiter", "Rupture": "ability_rogue_rupture", "Sap": "ability_sap", "Scare Beast": "ability_druid_cower", "Scorch": "spell_fire_soulburn", "Scorpid Sting": "ability_hunter_criticalshot", "Seal of Command": "ability_warrior_innerrage", "Seal of Fury": "spell_holy_retributionaura", "Seal of Justice": "spell_holy_sealofwrath", "Seal of Light": "spell_holy_healingaura", "Seal of Righteousness": "ability_thunderbolt", "Seal of Wisdom": "spell_holy_righteousnessaura", "Seal of the Crusader": "spell_holy_holysmite", "Searing Pain": "spell_fire_soulburn", "Searing Totem": "spell_fire_searingtotem", "Sense Demons": "spell_shadow_metamorphosis", "Sense Undead": "spell_holy_senseundead", "Sentry Totem": "spell_nature_removecurse", "Serpent Sting": "ability_hunter_quickshot", "Shackle Undead": "spell_nature_slow", "Shadow Bolt": "spell_shadow_shadowbolt", "Shadow Protection": "spell_shadow_antishadow", "Shadow Resistance Aura": "spell_shadow_sealofkings", "Shadow Ward": "spell_shadow_antishadow", "Shadow Word: Pain": "spell_shadow_shadowwordpain", "Shield Bash": "ability_warrior_shieldbash", "Shield Block": "ability_defend", "Shield Wall": "ability_warrior_shieldwall", "Shoot": "ability_shootwand", "Shoot Bow": "inv_weapon_bow_07", "Shoot Crossbow": "inv_weapon_crossbow_02", "Shoot Gun": "inv_weapon_rifle_01", "Shred": "spell_shadow_vampiricaura", "Sinister Strike": "spell_shadow_ritualofsacrifice", "Slam": "ability_warrior_decisivestrike", "Slice and Dice": "ability_rogue_slicedice", "Slow Fall": "spell_magic_featherfall", "Smite": "spell_holy_holysmite", "Soothe Animal": "ability_hunter_beastsoothe", "Sprint": "ability_rogue_sprint", "Starfire": "spell_arcane_starfire", "Starshards": "spell_arcane_starfire", "Stealth": "ability_stealth", "Stoneclaw Totem": "spell_nature_stoneclawtotem", "Stoneskin Totem": "spell_nature_stoneskintotem", "Strength of Earth Totem": "spell_nature_earthbindtotem", "Subjugate Demon": "spell_shadow_enslavedemon", "Summon Felhunter": "spell_shadow_summonfelhunter", "Summon Imp": "spell_shadow_summonimp", "Summon Incubus": "ability_warlock_incubus", "Summon Succubus": "spell_shadow_summonsuccubus", "Summon Voidwalker": "spell_shadow_summonvoidwalker", "Sunder Armor": "ability_warrior_sunder", "Swipe": "inv_misc_monsterclaw_03", "Tactical Mastery": "spell_nature_enchantarmor", "Tame Beast": "ability_hunter_beasttaming", "Taunt": "spell_nature_reincarnation", "Thorns": "spell_nature_thorns", "Throw": "ability_throw", "Thunder Clap": "spell_nature_thunderclap", "Tiger's Fury": "ability_mount_jungletiger", "Totemic Projection": "ability_shaman_totemrelocation", "Totemic Recall": "spell_shaman_totemrecall", "Track Beasts": "ability_tracking", "Track Demons": "spell_shadow_summonfelhunter", "Track Elementals": "spell_frost_summonwaterelemental", "Track Hidden": "ability_stealth", "Track Humanoids": "ability_tracking", "Track Undead": "spell_shadow_darksummoning", "Tranquility": "spell_nature_tranquility", "Travel Form": "ability_druid_travelform", "Tremor Totem": "spell_nature_tremortotem", "Turn Undead": "spell_holy_turnundead", "Unending Breath": "spell_shadow_demonbreath", "Vanish": "ability_vanish", "Victory Rush": "ability_warrior_devastate", "Viper Sting": "ability_hunter_aimedshot", "Water Breathing": "spell_shadow_demonbreath", "Water Walking": "spell_frost_windwalkon", "Whirlwind": "ability_whirlwind", "Windfury Totem": "spell_nature_windfury", "Windfury Weapon": "spell_nature_cyclone", "Windwall Totem": "spell_nature_earthbind", "Wing Clip": "ability_rogue_trip", "Wrath": "spell_nature_abolishmagic", "Assist": "ability_hunter_pet_assist", "Follow": "ability_tracking", "Stay": "spell_nature_timestop", "Move To": "ability_hunter_pet_goto", "Passive": "ability_seal", "Defensive": "ability_defend", "Dive": "spell_shadow_burningspirit", "Great Stamina": "spell_nature_unyeildingstamina", "Mine!": "spell_nature_natureswrath", "Natural Armor": "spell_nature_spiritarmor", "Devour Magic": "spell_nature_purge", "Spell Lock": "spell_shadow_mindrot", "Tainted Blood": "spell_shadow_lifedrain", "Metamorphosis: Demonic Howl": "spell_shadow_demonform", "Teleport: Darnassus": "spell_arcane_teleportdarnassus", "Teleport: Ironforge": "spell_arcane_teleportironforge", "Teleport: Orgrimmar": "spell_arcane_teleportorgrimmar", "Teleport: Stormwind": "spell_arcane_teleportstormwind", "Teleport: Thunder Bluff": "spell_arcane_teleportthunderbluff", "Teleport: Undercity": "spell_arcane_teleportundercity", "Blast Wave": "spell_holy_excorcism_02", "Pyroblast": "spell_fire_fireball02", "Portal: Darnassus": "spell_arcane_portaldarnassus", "Portal: Ironforge": "spell_arcane_portalironforge", "Portal: Orgrimmar": "spell_arcane_portalorgrimmar", "Portal: Stormwind": "spell_arcane_portalstormwind", "Portal: Thunder Bluff": "spell_arcane_portalthunderbluff", "Portal: Undercity": "spell_arcane_portalundercity", "Ice Barrier": "spell_ice_lament", "Conjure Mana Citrine": "inv_misc_gem_opal_01", "Conjure Mana Ruby": "inv_misc_gem_ruby_01", "Ice Block": "spell_frost_frost", "Combustion": "spell_fire_sealoffire", "Arcane Power": "spell_nature_lightning", "Impact": "spell_fire_meteorstorm", "Cold Snap": "spell_frost_wizardmark", "Fire Vulnerability": "spell_fire_soulburn", "Arcane Brilliance": "spell_holy_arcaneintellect", "Master of Elements": "spell_fire_masterofelements", "Magic Absorption": "spell_nature_astralrecalgroup", "Frostfire Bolt": "ability_mage_frostfirebolt", "Ice Lance": "spell_frost_frostblast", "Teleport: Dalaran": "spell_arcane_teleporthalloftheguardian", "Aquatic Form (Passive)": "ability_druid_aquaticform", "Dire Bear Form": "ability_racial_bearform", "Hurricane": "spell_nature_cyclone", "Nature's Swiftness": "spell_nature_ravenform", "Swiftmend": "inv_relics_idolofrejuvenation", "Teleport: Moonglade": "spell_arcane_teleportmoonglade", "Feline Grace": "inv_feather_01", "Gift of the Wild": "spell_nature_regeneration", "Barkskin": "spell_nature_stoneclawtotem", "Moonkin Form": "spell_nature_forceofnature", "Innervate": "spell_nature_lightning", "Lacerate": "ability_druid_lacerate", "Wild Growth": "ability_druid_flourish", "Feral Charge": "ability_hunter_pet_bear", "Insect Swarm": "spell_nature_insectswarm", "Call Pet": "ability_hunter_beastcall", "Aspect of the Pack": "ability_mount_whitetiger", "Volley": "ability_marksmanship", "Black Arrow": "ability_theblackarrow", "Bite": "ability_racial_cannibalize", "Deterrence": "ability_whirlwind", "Scatter Shot": "ability_golemstormbolt", "Trueshot Aura": "ability_trueshot", "Bestial Wrath": "ability_druid_ferociousbite", "Intimidation": "ability_devour", "Tranquilizing Shot": "spell_nature_drowsy", "Track Dragonkin": "inv_misc_head_dragon_01", "Track Giants": "ability_racial_avatar", "Aspect of the Wild": "spell_nature_protectionformnature", "Fire Resistance": "spell_fire_firearmor", "Frost Resistance": "spell_frost_frostward", "Arcane Resistance": "spell_nature_starfall", "Nature Resistance": "spell_nature_resistnature", "Shadow Resistance": "spell_shadow_antishadow", "Demoralizing Screech": "ability_hunter_pet_vulture", "Scorpid Poison": "ability_poisonsting", "Furious Howl": "ability_hunter_pet_wolf", "Counterattack": "ability_warrior_challange", "Lightning Breath": "spell_nature_lightning", "Shell Shield": "ability_hunter_pet_turtle", "Thunderstomp": "ability_hunter_pet_gorilla", "Enchanted Flare": "ability_mage_arcanebarrage", "Pinch": "ability_hunter_pet_crab", "Dismember": "ability_hunter_pet_crocolisk", "Tendon Rip": "ability_hunter_pet_hyena", "Savage Rend": "ability_hunter_pet_raptor", "Web": "spell_nature_web", "Dust Cloud": "spell_nature_sleep", "Summon Hawk": "ability_hunter_animalhandler", "Trickster's Dance": "ability_hunter_aspectofthefox", "Sniper Shot": "hunter_pvp_snipershot", "Strider Kick": "ability_hunter_pet_tallstrider", "Sweeping Strikes": "ability_rogue_slicedice", "Concussion Blow": "ability_thunderbolt", "Piercing Howl": "spell_shadow_deathscream", "Death Wish": "spell_shadow_deathpact", "Last Stand": "spell_holy_ashestoashes", "Mortal Strike": "ability_warrior_savageblow", "Recklessness": "ability_criticalstrike", "Intercept": "ability_rogue_sprint", "Bloodthirst": "spell_nature_bloodlust", "Shield Slam": "inv_shield_05", "Spearing Strike": "inv_spear_01", "Greater Heal": "spell_holy_greaterheal", "Inner Focus": "spell_frost_windwalkon", "Holy Nova": "spell_holy_holynova", "Vampiric Embrace": "spell_shadow_unsummonbuilding", "Mind Flay": "spell_shadow_siphonmana", "Shadowform": "spell_shadow_shadowform", "Silence": "spell_shadow_impphaseshift", "Desperate Prayer": "spell_holy_restoration", "Touch of Weakness": "spell_shadow_deadofnight", "Hex of Weakness": "spell_shadow_fingerofdeath", "Shadowguard": "spell_nature_lightningshield", "Feedback": "spell_shadow_ritualofsacrifice", "Prayer of Fortitude": "spell_holy_prayeroffortitude", "Prayer of Spirit": "spell_holy_prayerofspirit", "Prayer of Shadow Protection": "spell_holy_prayerofshadowprotection", "Power Infusion": "spell_holy_powerinfusion", "Blessed Recovery": "spell_holy_blessedrecovery", "Lightwell": "spell_holy_summonlightwell", "Focused Casting": "spell_arcane_blink", "Penance": "spell_holy_penance", "Binding Heal": "spell_holy_blindingheal", "Dark Sacrifice": "spell_holy_powerinfusion_shadow", "Chastise": "spell_holy_chastise", "Divine Grace": "ability_priest_savinggrace", "Contingency Plan": "ability_priest_soulwarding", "Confounding Flash": "ability_paladin_blindinglight2", "Shadow Word: Death": "spell_shadow_demonicfortitude", "Prayer of Mending": "spell_holy_prayerofmendingtga", "Firebolt": "spell_fire_firebolt", "Blood Pact": "spell_shadow_bloodboil", "Soothing Kiss": "spell_shadow_soothingkiss", "Sacrifice": "spell_shadow_sacrificialshield", "Torment": "spell_shadow_gathershadows", "Lash of Pain": "spell_shadow_curse", "Seduction": "spell_shadow_mindsteal", "Lesser Invisibility": "spell_magic_lesserinvisibilty", "Fire Shield": "spell_fire_firearmor", "Phase Shift": "spell_shadow_impphaseshift", "Suffering": "spell_shadow_blackplague", "Soul Fire": "spell_fire_fireball02", "Consume Shadows": "spell_shadow_antishadow", "Death Coil": "spell_shadow_deathcoil", "Howl of Terror": "spell_shadow_deathscream", "Shadowburn": "spell_shadow_scourgebuild", "Conflagrate": "spell_fire_fireball", "Bane of Doom": "spell_shadow_auraofdarkness", "Siphon Life": "spell_shadow_requiem", "Amplify Curse": "spell_shadow_contagion", "Curse of Exhaustion": "spell_shadow_grimward", "Inferno": "spell_shadow_summoninfernal", "Ritual of Doom": "spell_shadow_antimagicshell", "Fel Domination": "spell_nature_removecurse", "Demonic Sacrifice": "spell_shadow_psychicscream", "Paranoia": "spell_shadow_auraofdarkness", "Soul Link": "spell_shadow_gathershadows", "Wrack": "ability_deathknight_hemorrhagicfever", "Incinerate": "spell_fire_burnout", "Bane of Havoc": "ability_warlock_baneofhavoc", "Cold Blood": "spell_ice_lament", "Preparation": "spell_shadow_antishadow", "Riposte": "ability_warrior_challange", "Ghostly Strike": "spell_shadow_curse", "Premeditation": "spell_shadow_possession", "Hemorrhage": "spell_shadow_lifedrain", "Safe Fall": "inv_feather_01", "Mutilate": "ability_rogue_deadlybrew", "Venom": "inv_sword_31", "Holy Wrath": "spell_holy_excorcism", "Cleanse": "spell_holy_renew", "Blessing of Sacrifice": "spell_holy_sealofsacrifice", "Blessing of Light": "spell_holy_prayerofhealing02", "Divine Favor": "spell_holy_heal", "Holy Shock": "spell_holy_searinglight", "Holy Shield": "spell_holy_blessingofprotection", "Hammer of Wrath": "ability_thunderclap", "Greater Blessing of Light": "spell_holy_greaterblessingoflight", "Greater Blessing of Wisdom": "spell_holy_greaterblessingofwisdom", "Greater Blessing of Salvation": "spell_holy_greaterblessingofsalvation", "Greater Blessing of Might": "spell_holy_greaterblessingofkings", "Repentance": "spell_holy_prayerofhealing", "Greater Blessing of Kings": "spell_magic_greaterblessingofkings", "Light's Vigil": "ability_paladin_judgementofthepure", "Voice of Truth": "inv_misc_horn_03", "Swift Judgement": "ability_paladin_judgementred", "Templar's Bulwark": "ability_paladin_shieldofthetemplar", "Chain Heal": "spell_nature_healingwavegreater", "Grace of Air Totem": "spell_nature_invisibilitytotem", "Mana Tide Totem": "spell_frost_summonwaterelemental", "Stormstrike": "ability_shaman_stormstrike", "Lava Burst": "spell_shaman_lavaburst", "Rage of the Farseer": "spell_nature_bloodlust", "Riptide": "spell_nature_riptide", "Call of the Spirits": "spell_shaman_dropall_03", "Berserk": "ability_druid_berserk", "Mangle": "ability_druid_mangle2", "Water Shield": "ability_shaman_watershield", "Primal Bite": "ability_racial_cannibalize", "Shifting Power": "spell_druid_displacement", "Sonic Blast": "ability_vehicle_sonicshockwave"};
+window.SPELLBOOK_ICONS = {"Abolish Disease": "spell_nature_nullifydisease", "Abolish Poison": "spell_nature_nullifypoison_02", "Adrenaline Rush": "spell_shadow_shadowworddominate", "Aimed Shot": "inv_spear_07", "Ambush": "ability_rogue_ambush", "Amplify Magic": "spell_holy_flashheal", "Ancestral Spirit": "spell_nature_regenerate", "Aquatic Form": "ability_druid_aquaticform", "Arcane Blast": "spell_arcane_blast", "Arcane Explosion": "spell_nature_wispsplode", "Arcane Intellect": "spell_holy_magicalsentry", "Arcane Missiles": "spell_nature_starfall", "Arcane Shot": "ability_impalingbolt", "Armor Proficiency": "inv_chest_plate05", "Aspect of the Beast": "ability_mount_pinktiger", "Aspect of the Cheetah": "ability_mount_jungletiger", "Aspect of the Hawk": "spell_nature_ravenform", "Aspect of the Monkey": "ability_hunter_aspectofthemonkey", "Astral Recall": "spell_nature_astralrecal", "Attack": "inv_sword_04", "Auto Shot": "ability_whirlwind", "Backstab": "ability_backstab", "Bane of Agony": "spell_shadow_curseofsargeras", "Banish": "spell_shadow_cripple", "Bash": "ability_druid_bash", "Battle Shout": "ability_warrior_battleshout", "Battle Stance": "ability_warrior_offensivestance", "Bear Form": "ability_racial_bearform", "Beast Lore": "ability_physical_taunt", "Beast Training": "ability_hunter_beastcall02", "Berserker Rage": "spell_nature_ancestralguardian", "Berserker Stance": "ability_racial_avatar", "Blade Flurry": "ability_warrior_punishingblow", "Blessing of Freedom": "spell_holy_sealofvalor", "Blessing of Kings": "spell_magic_magearmor", "Blessing of Might": "spell_holy_fistofjustice", "Blessing of Protection": "spell_holy_sealofprotection", "Blessing of Salvation": "spell_holy_sealofsalvation", "Blessing of Wisdom": "spell_holy_sealofwisdom", "Blind": "spell_shadow_mindsteal", "Blink": "spell_arcane_blink", "Blizzard": "spell_frost_icestorm", "Block": "ability_defend", "Bloodrage": "ability_racial_bloodrage", "Call Owl": "ability_hunter_pet_owl", "Call of the Ancestors": "spell_shaman_dropall_02", "Call of the Elements": "spell_shaman_dropall_01", "Cat Form": "ability_druid_catform", "Chain Lightning": "spell_nature_chainlightning", "Challenging Roar": "ability_druid_challangingroar", "Challenging Shout": "ability_bullrush", "Charge": "ability_warrior_charge", "Cheap Shot": "ability_cheapshot", "Claw": "ability_druid_rake", "Cleave": "ability_warrior_cleave", "Comprehend Scroll": "8188276", "Concentration Aura": "spell_holy_mindsooth", "Concussive Shot": "spell_frost_stun", "Cone of Cold": "spell_frost_glacier", "Conjure Food": "inv_misc_food_10", "Conjure Mana Agate": "inv_misc_gem_emerald_01", "Conjure Mana Jade": "inv_misc_gem_emerald_02", "Conjure Water": "inv_drink_06", "Consecration": "spell_holy_innerfire", "Corruption": "spell_shadow_abominationexplosion", "Counterspell": "spell_frost_iceshock", "Cower": "ability_druid_cower", "Create Firestone": "inv_misc_gem_bloodstone_02", "Create Healthstone": "inv_stone_04", "Create Soulstone": "spell_shadow_soulgem", "Create Spellstone": "inv_misc_gem_sapphire_01", "Cure Disease": "spell_holy_nullifydisease", "Cure Poison": "spell_nature_nullifypoison", "Curse of Recklessness": "spell_shadow_unholystrength", "Curse of Tongues": "spell_shadow_curseoftounges", "Curse of Weakness": "spell_shadow_curseofmannoroth", "Curse of the Elements": "warlock_curse_shadow", "Dampen Magic": "spell_nature_abolishmagic", "Dash": "ability_druid_dash", "Defensive Stance": "ability_warrior_defensivestance", "Demon Armor": "spell_shadow_ragingscream", "Demon Skin": "spell_shadow_ragingscream", "Demoralizing Roar": "ability_druid_demoralizingroar", "Demoralizing Shout": "ability_warrior_warcry", "Detect Invisibility": "spell_shadow_detectinvisibility", "Detect Traps": "ability_spy", "Devotion Aura": "spell_holy_devotionaura", "Devouring Plague": "spell_shadow_devouringplague", "Disarm": "ability_warrior_disarm", "Disarm Trap": "spell_shadow_grimward", "Disease Cleansing Totem": "spell_nature_diseasecleansingtotem", "Disengage": "ability_rogue_feint", "Dismiss Pet": "spell_nature_spiritwolf", "Dispel Magic": "spell_holy_dispelmagic", "Distract": "ability_rogue_distract", "Distracting Shot": "spell_arcane_blink", "Divine Intervention": "spell_nature_timestop", "Divine Protection": "spell_holy_restoration", "Divine Shield": "spell_holy_divineintervention", "Divine Spirit": "spell_holy_divinespirit", "Dodge": "spell_nature_invisibilty", "Drain Life": "spell_shadow_lifedrain02", "Drain Mana": "spell_shadow_siphonmana", "Drain Soul": "spell_shadow_haunting", "Dual Wield": "ability_dualwield", "Eagle Eye": "ability_hunter_eagleeye", "Earth Shock": "spell_nature_earthshock", "Earthbind Totem": "spell_nature_strengthofearthtotem02", "Elune's Grace": "spell_holy_elunesgrace", "Enrage": "ability_druid_enrage", "Entangling Roots": "spell_nature_stranglevines", "Evasion": "spell_shadow_shadowward", "Eviscerate": "ability_rogue_eviscerate", "Evocation": "spell_nature_purge", "Execute": "inv_sword_48", "Exorcism": "spell_holy_excorcism_02", "Explosive Trap": "spell_fire_selfdestruct", "Expose Armor": "ability_warrior_riposte", "Eye of Kilrogg": "spell_shadow_evileye", "Eyes of the Beast": "ability_eyeoftheowl", "Fade": "spell_magic_lesserinvisibilty", "Faerie Fire": "spell_nature_faeriefire", "Far Sight": "spell_nature_farsight", "Fear": "spell_shadow_possession", "Fear Ward": "spell_holy_excorcism", "Feed Pet": "ability_hunter_beasttraining", "Feign Death": "ability_rogue_feigndeath", "Feint": "ability_rogue_feint", "Ferocious Bite": "ability_druid_ferociousbite", "Fire Blast": "spell_fire_fireball", "Fire Nova": "spell_fire_sealoffire", "Fire Resistance Aura": "spell_fire_sealoffire", "Fire Resistance Totem": "spell_fireresistancetotem_01", "Fire Ward": "spell_fire_firearmor", "Fireball": "spell_fire_flamebolt", "Flame Shock": "spell_fire_flameshock", "Flamestrike": "spell_fire_selfdestruct", "Flametongue Totem": "spell_nature_guardianward", "Flametongue Weapon": "spell_fire_flametounge", "Flare": "spell_fire_flare", "Flash Heal": "spell_holy_flashheal", "Flash of Light": "spell_holy_flashheal", "Freezing Trap": "spell_frost_chainsofice", "Frenzied Regeneration": "ability_bullrush", "Frost Armor": "spell_frost_frostarmor02", "Frost Nova": "spell_frost_frostnova", "Frost Resistance Aura": "spell_frost_wizardmark", "Frost Resistance Totem": "spell_frostresistancetotem_01", "Frost Shock": "spell_frost_frostshock", "Frost Trap": "spell_frost_freezingbreath", "Frost Ward": "spell_frost_frostward", "Frostbolt": "spell_frost_frostbolt02", "Frostbrand Weapon": "spell_frost_frostbrand", "Garrote": "ability_rogue_garrote", "Ghost Wolf": "spell_nature_spiritwolf", "Gouge": "ability_gouge", "Grounding Totem": "spell_nature_groundingtotem", "Growl": "ability_physical_taunt", "Hammer of Justice": "spell_holy_sealofmight", "Hamstring": "ability_shockwave", "Heal": "spell_holy_heal", "Healing Stream Totem": "inv_spear_04", "Healing Touch": "spell_nature_healingtouch", "Healing Wave": "spell_nature_magicimmunity", "Health Funnel": "spell_shadow_lifedrain", "Hellfire": "spell_fire_incinerate", "Heroic Strike": "ability_rogue_ambush", "Hibernate": "spell_nature_sleep", "Holy Fire": "spell_holy_searinglight", "Holy Light": "spell_holy_holybolt", "Holy Strike": "classicon_paladin", "Hunter's Mark": "ability_hunter_snipershot", "Ice Armor": "spell_frost_frostarmor02", "Immolate": "spell_fire_immolation", "Immolation Trap": "spell_fire_flameshock", "Inner Fire": "spell_holy_innerfire", "Intimidating Shout": "ability_golemthunderclap", "Judgement": "spell_holy_righteousfury", "Kick": "ability_kick", "Kidney Shot": "ability_rogue_kidneyshot", "Languages": "inv_misc_note_05", "Lay on Hands": "spell_holy_layonhands", "Lesser Heal": "spell_holy_lesserheal", "Lesser Healing Wave": "spell_nature_healingwavelesser", "Levitate": "spell_holy_layonhands", "Life Tap": "spell_shadow_burningspirit", "Lightning Bolt": "spell_nature_lightning", "Lightning Shield": "spell_nature_lightningshield", "Mage Armor": "spell_magearmor", "Magma Totem": "spell_fire_selfdestruct", "Mana Burn": "spell_shadow_manaburn", "Mana Shield": "spell_shadow_detectlesserinvisibility", "Mana Spring Totem": "spell_nature_manaregentotem", "Mark of the Wild": "spell_nature_regeneration", "Maul": "ability_druid_maul", "Mend Pet": "ability_hunter_mendpet", "Mind Blast": "spell_shadow_unholyfrenzy", "Mind Control": "spell_shadow_shadowworddominate", "Mind Soothe": "spell_holy_mindsooth", "Mind Vision": "spell_holy_mindvision", "Mocking Blow": "ability_warrior_punishingblow", "Mongoose Bite": "ability_hunter_swiftstrike", "Moonfire": "spell_nature_starfall", "Multi-Shot": "ability_upgrademoonglaive", "Nature Resistance Totem": "spell_nature_natureresistancetotem", "Nature's Grasp": "spell_nature_natureswrath", "Omen of Clarity": "spell_nature_crystalball", "Overpower": "ability_meleedamage", "Parry": "ability_parry", "Pick Lock": "spell_nature_moonkey", "Pick Pocket": "inv_misc_bag_11", "Poison Cleansing Totem": "spell_nature_poisoncleansingtotem", "Polymorph": "spell_nature_polymorph", "Pounce": "ability_druid_supriseattack", "Power Word: Fortitude": "spell_holy_wordfortitude", "Power Word: Shield": "spell_holy_powerwordshield", "Prayer of Healing": "spell_holy_prayerofhealing02", "Presence of Mind": "spell_nature_enchantarmor", "Prowl": "ability_ambush", "Psychic Scream": "spell_shadow_psychicscream", "Pummel": "inv_gauntlets_04", "Purge": "spell_nature_purge", "Purify": "spell_holy_purify", "Rain of Fire": "spell_shadow_rainoffire", "Rake": "ability_druid_disembowel", "Rapid Fire": "ability_hunter_runningshot", "Raptor Strike": "ability_meleedamage", "Ravage": "ability_druid_ravage", "Rebirth": "spell_nature_reincarnation", "Redemption": "spell_holy_resurrection", "Regrowth": "spell_nature_resistnature", "Reincarnation": "spell_nature_reincarnation", "Rejuvenation": "spell_nature_rejuvenation", "Remove Curse": "spell_holy_removecurse", "Remove Lesser Curse": "spell_nature_removecurse", "Rend": "ability_gouge", "Renew": "spell_holy_renew", "Resurrection": "spell_holy_resurrection", "Retaliation": "ability_warrior_challange", "Retribution Aura": "spell_holy_auraoflight", "Revenge": "ability_warrior_revenge", "Revive": "ability_druid_lunarguidance", "Revive Pet": "ability_hunter_beastsoothe", "Righteous Fury": "spell_holy_sealoffury", "Rip": "ability_ghoulfrenzy", "Ritual of Summoning": "spell_shadow_twilight", "Rockbiter Weapon": "spell_nature_rockbiter", "Rupture": "ability_rogue_rupture", "Sap": "ability_sap", "Scare Beast": "ability_druid_cower", "Scorch": "spell_fire_soulburn", "Scorpid Sting": "ability_hunter_criticalshot", "Seal of Command": "ability_warrior_innerrage", "Seal of Fury": "spell_holy_retributionaura", "Seal of Justice": "spell_holy_sealofwrath", "Seal of Light": "spell_holy_healingaura", "Seal of Righteousness": "ability_thunderbolt", "Seal of Wisdom": "spell_holy_righteousnessaura", "Seal of the Crusader": "spell_holy_holysmite", "Searing Pain": "spell_fire_soulburn", "Searing Totem": "spell_fire_searingtotem", "Sense Demons": "spell_shadow_metamorphosis", "Sense Undead": "spell_holy_senseundead", "Sentry Totem": "spell_nature_removecurse", "Serpent Sting": "ability_hunter_quickshot", "Shackle Undead": "spell_nature_slow", "Shadow Bolt": "spell_shadow_shadowbolt", "Shadow Protection": "spell_shadow_antishadow", "Shadow Resistance Aura": "spell_shadow_sealofkings", "Shadow Ward": "spell_shadow_antishadow", "Shadow Word: Pain": "spell_shadow_shadowwordpain", "Shield Bash": "ability_warrior_shieldbash", "Shield Block": "ability_defend", "Shield Wall": "ability_warrior_shieldwall", "Shoot": "ability_shootwand", "Shoot Bow": "ability_marksmanship", "Shoot Crossbow": "ability_marksmanship", "Shoot Gun": "ability_marksmanship", "Shred": "spell_shadow_vampiricaura", "Sinister Strike": "spell_shadow_ritualofsacrifice", "Slam": "ability_warrior_decisivestrike", "Slice and Dice": "ability_rogue_slicedice", "Slow Fall": "spell_magic_featherfall", "Smite": "spell_holy_holysmite", "Soothe Animal": "ability_hunter_beastsoothe", "Sprint": "ability_rogue_sprint", "Starfire": "spell_arcane_starfire", "Starshards": "spell_arcane_starfire", "Stealth": "ability_stealth", "Stoneclaw Totem": "spell_nature_stoneclawtotem", "Stoneskin Totem": "spell_nature_stoneskintotem", "Strength of Earth Totem": "spell_nature_earthbindtotem", "Subjugate Demon": "spell_shadow_enslavedemon", "Summon Felhunter": "spell_shadow_summonfelhunter", "Summon Imp": "spell_shadow_summonimp", "Summon Incubus": "ability_warlock_incubus", "Summon Succubus": "spell_shadow_summonsuccubus", "Summon Voidwalker": "spell_shadow_summonvoidwalker", "Sunder Armor": "ability_warrior_sunder", "Swipe": "inv_misc_monsterclaw_03", "Tactical Mastery": "spell_nature_enchantarmor", "Tame Beast": "ability_hunter_beasttaming", "Taunt": "spell_nature_reincarnation", "Thorns": "spell_nature_thorns", "Throw": "ability_throw", "Thunder Clap": "spell_nature_thunderclap", "Tiger's Fury": "ability_mount_jungletiger", "Totemic Projection": "ability_shaman_totemrelocation", "Totemic Recall": "spell_shaman_totemrecall", "Track Beasts": "ability_tracking", "Track Demons": "spell_shadow_summonfelhunter", "Track Elementals": "spell_frost_summonwaterelemental", "Track Hidden": "ability_stealth", "Track Humanoids": "ability_tracking", "Track Undead": "spell_shadow_darksummoning", "Tranquility": "spell_nature_tranquility", "Travel Form": "ability_druid_travelform", "Tremor Totem": "spell_nature_tremortotem", "Turn Undead": "spell_holy_turnundead", "Unending Breath": "spell_shadow_demonbreath", "Vanish": "ability_vanish", "Victory Rush": "ability_warrior_devastate", "Viper Sting": "ability_hunter_aimedshot", "Water Breathing": "spell_shadow_demonbreath", "Water Walking": "spell_frost_windwalkon", "Whirlwind": "ability_whirlwind", "Windfury Totem": "spell_nature_windfury", "Windfury Weapon": "spell_nature_cyclone", "Windwall Totem": "spell_nature_earthbind", "Wing Clip": "ability_rogue_trip", "Wrath": "spell_nature_abolishmagic", "Assist": "ability_hunter_pet_assist", "Follow": "ability_tracking", "Stay": "spell_nature_timestop", "Move To": "ability_hunter_pet_goto", "Passive": "ability_seal", "Defensive": "ability_defend", "Dive": "spell_shadow_burningspirit", "Great Stamina": "spell_nature_unyeildingstamina", "Mine!": "spell_nature_natureswrath", "Natural Armor": "spell_nature_spiritarmor", "Devour Magic": "spell_nature_purge", "Spell Lock": "spell_shadow_mindrot", "Tainted Blood": "spell_shadow_lifedrain", "Metamorphosis: Demonic Howl": "spell_shadow_demonform", "Teleport: Darnassus": "spell_arcane_teleportdarnassus", "Teleport: Ironforge": "spell_arcane_teleportironforge", "Teleport: Orgrimmar": "spell_arcane_teleportorgrimmar", "Teleport: Stormwind": "spell_arcane_teleportstormwind", "Teleport: Thunder Bluff": "spell_arcane_teleportthunderbluff", "Teleport: Undercity": "spell_arcane_teleportundercity", "Blast Wave": "spell_holy_excorcism_02", "Pyroblast": "spell_fire_fireball02", "Portal: Darnassus": "spell_arcane_portaldarnassus", "Portal: Ironforge": "spell_arcane_portalironforge", "Portal: Orgrimmar": "spell_arcane_portalorgrimmar", "Portal: Stormwind": "spell_arcane_portalstormwind", "Portal: Thunder Bluff": "spell_arcane_portalthunderbluff", "Portal: Undercity": "spell_arcane_portalundercity", "Ice Barrier": "spell_ice_lament", "Conjure Mana Citrine": "inv_misc_gem_opal_01", "Conjure Mana Ruby": "inv_misc_gem_ruby_01", "Ice Block": "spell_frost_frost", "Combustion": "spell_fire_sealoffire", "Arcane Power": "spell_nature_lightning", "Impact": "spell_fire_meteorstorm", "Cold Snap": "spell_frost_wizardmark", "Fire Vulnerability": "spell_fire_soulburn", "Arcane Brilliance": "spell_holy_arcaneintellect", "Master of Elements": "spell_fire_masterofelements", "Magic Absorption": "spell_nature_astralrecalgroup", "Frostfire Bolt": "ability_mage_frostfirebolt", "Ice Lance": "spell_frost_frostblast", "Teleport: Dalaran": "spell_arcane_teleporthalloftheguardian", "Aquatic Form (Passive)": "ability_druid_aquaticform", "Dire Bear Form": "ability_racial_bearform", "Hurricane": "spell_nature_cyclone", "Nature's Swiftness": "spell_nature_ravenform", "Swiftmend": "inv_relics_idolofrejuvenation", "Teleport: Moonglade": "spell_arcane_teleportmoonglade", "Feline Grace": "inv_feather_01", "Gift of the Wild": "spell_nature_regeneration", "Barkskin": "spell_nature_stoneclawtotem", "Moonkin Form": "spell_nature_forceofnature", "Innervate": "spell_nature_lightning", "Lacerate": "ability_druid_lacerate", "Wild Growth": "ability_druid_flourish", "Feral Charge": "ability_hunter_pet_bear", "Insect Swarm": "spell_nature_insectswarm", "Call Pet": "ability_hunter_beastcall", "Aspect of the Pack": "ability_mount_whitetiger", "Volley": "ability_marksmanship", "Black Arrow": "ability_theblackarrow", "Bite": "ability_racial_cannibalize", "Deterrence": "ability_whirlwind", "Scatter Shot": "ability_golemstormbolt", "Trueshot Aura": "ability_trueshot", "Bestial Wrath": "ability_druid_ferociousbite", "Intimidation": "ability_devour", "Tranquilizing Shot": "spell_nature_drowsy", "Track Dragonkin": "inv_misc_head_dragon_01", "Track Giants": "ability_racial_avatar", "Aspect of the Wild": "spell_nature_protectionformnature", "Fire Resistance": "spell_fire_firearmor", "Frost Resistance": "spell_frost_frostward", "Arcane Resistance": "spell_nature_starfall", "Nature Resistance": "spell_nature_resistnature", "Shadow Resistance": "spell_shadow_antishadow", "Demoralizing Screech": "ability_hunter_pet_vulture", "Scorpid Poison": "ability_poisonsting", "Furious Howl": "ability_hunter_pet_wolf", "Counterattack": "ability_warrior_challange", "Lightning Breath": "spell_nature_lightning", "Shell Shield": "ability_hunter_pet_turtle", "Thunderstomp": "ability_hunter_pet_gorilla", "Enchanted Flare": "ability_mage_arcanebarrage", "Pinch": "ability_hunter_pet_crab", "Dismember": "ability_hunter_pet_crocolisk", "Tendon Rip": "ability_hunter_pet_hyena", "Savage Rend": "ability_hunter_pet_raptor", "Web": "spell_nature_web", "Dust Cloud": "spell_nature_sleep", "Summon Hawk": "ability_hunter_animalhandler", "Trickster's Dance": "ability_hunter_aspectofthefox", "Sniper Shot": "hunter_pvp_snipershot", "Strider Kick": "ability_hunter_pet_tallstrider", "Sweeping Strikes": "ability_rogue_slicedice", "Concussion Blow": "ability_thunderbolt", "Piercing Howl": "spell_shadow_deathscream", "Death Wish": "spell_shadow_deathpact", "Last Stand": "spell_holy_ashestoashes", "Mortal Strike": "ability_warrior_savageblow", "Recklessness": "ability_criticalstrike", "Intercept": "ability_rogue_sprint", "Bloodthirst": "spell_nature_bloodlust", "Shield Slam": "inv_shield_05", "Spearing Strike": "inv_spear_01", "Greater Heal": "spell_holy_greaterheal", "Inner Focus": "spell_frost_windwalkon", "Holy Nova": "spell_holy_holynova", "Vampiric Embrace": "spell_shadow_unsummonbuilding", "Mind Flay": "spell_shadow_siphonmana", "Shadowform": "spell_shadow_shadowform", "Silence": "spell_shadow_impphaseshift", "Desperate Prayer": "spell_holy_restoration", "Touch of Weakness": "spell_shadow_deadofnight", "Hex of Weakness": "spell_shadow_fingerofdeath", "Shadowguard": "spell_nature_lightningshield", "Feedback": "spell_shadow_ritualofsacrifice", "Prayer of Fortitude": "spell_holy_prayeroffortitude", "Prayer of Spirit": "spell_holy_prayerofspirit", "Prayer of Shadow Protection": "spell_holy_prayerofshadowprotection", "Power Infusion": "spell_holy_powerinfusion", "Blessed Recovery": "spell_holy_blessedrecovery", "Lightwell": "spell_holy_summonlightwell", "Focused Casting": "spell_arcane_blink", "Penance": "spell_holy_penance", "Binding Heal": "spell_holy_blindingheal", "Dark Sacrifice": "spell_holy_powerinfusion_shadow", "Chastise": "spell_holy_chastise", "Divine Grace": "ability_priest_savinggrace", "Contingency Plan": "ability_priest_soulwarding", "Confounding Flash": "ability_paladin_blindinglight2", "Shadow Word: Death": "spell_shadow_demonicfortitude", "Prayer of Mending": "spell_holy_prayerofmendingtga", "Firebolt": "spell_fire_firebolt", "Blood Pact": "spell_shadow_bloodboil", "Soothing Kiss": "spell_shadow_soothingkiss", "Sacrifice": "spell_shadow_sacrificialshield", "Torment": "spell_shadow_gathershadows", "Lash of Pain": "spell_shadow_curse", "Seduction": "spell_shadow_mindsteal", "Lesser Invisibility": "spell_magic_lesserinvisibilty", "Fire Shield": "spell_fire_firearmor", "Phase Shift": "spell_shadow_impphaseshift", "Suffering": "spell_shadow_blackplague", "Soul Fire": "spell_fire_fireball02", "Consume Shadows": "spell_shadow_antishadow", "Death Coil": "spell_shadow_deathcoil", "Howl of Terror": "spell_shadow_deathscream", "Shadowburn": "spell_shadow_scourgebuild", "Conflagrate": "spell_fire_fireball", "Bane of Doom": "spell_shadow_auraofdarkness", "Siphon Life": "spell_shadow_requiem", "Amplify Curse": "spell_shadow_contagion", "Curse of Exhaustion": "spell_shadow_grimward", "Inferno": "spell_shadow_summoninfernal", "Ritual of Doom": "spell_shadow_antimagicshell", "Fel Domination": "spell_nature_removecurse", "Demonic Sacrifice": "spell_shadow_psychicscream", "Paranoia": "spell_shadow_auraofdarkness", "Soul Link": "spell_shadow_gathershadows", "Wrack": "ability_deathknight_hemorrhagicfever", "Incinerate": "spell_fire_burnout", "Bane of Havoc": "ability_warlock_baneofhavoc", "Cold Blood": "spell_ice_lament", "Preparation": "spell_shadow_antishadow", "Riposte": "ability_warrior_challange", "Ghostly Strike": "spell_shadow_curse", "Premeditation": "spell_shadow_possession", "Hemorrhage": "spell_shadow_lifedrain", "Safe Fall": "inv_feather_01", "Mutilate": "ability_rogue_deadlybrew", "Venom": "inv_sword_31", "Holy Wrath": "spell_holy_excorcism", "Cleanse": "spell_holy_renew", "Blessing of Sacrifice": "spell_holy_sealofsacrifice", "Blessing of Light": "spell_holy_prayerofhealing02", "Divine Favor": "spell_holy_heal", "Holy Shock": "spell_holy_searinglight", "Holy Shield": "spell_holy_blessingofprotection", "Hammer of Wrath": "ability_thunderclap", "Greater Blessing of Light": "spell_holy_greaterblessingoflight", "Greater Blessing of Wisdom": "spell_holy_greaterblessingofwisdom", "Greater Blessing of Salvation": "spell_holy_greaterblessingofsalvation", "Greater Blessing of Might": "spell_holy_greaterblessingofkings", "Repentance": "spell_holy_prayerofhealing", "Greater Blessing of Kings": "spell_magic_greaterblessingofkings", "Light's Vigil": "ability_paladin_judgementofthepure", "Voice of Truth": "inv_misc_horn_03", "Swift Judgement": "ability_paladin_judgementred", "Templar's Bulwark": "ability_paladin_shieldofthetemplar", "Chain Heal": "spell_nature_healingwavegreater", "Grace of Air Totem": "spell_nature_invisibilitytotem", "Mana Tide Totem": "spell_frost_summonwaterelemental", "Stormstrike": "ability_shaman_stormstrike", "Lava Burst": "spell_shaman_lavaburst", "Rage of the Farseer": "spell_nature_bloodlust", "Riptide": "spell_nature_riptide", "Call of the Spirits": "spell_shaman_dropall_03", "Berserk": "ability_druid_berserk", "Mangle": "ability_druid_mangle2", "Water Shield": "ability_shaman_watershield", "Primal Bite": "ability_racial_cannibalize", "Shifting Power": "spell_druid_displacement", "Sonic Blast": "ability_vehicle_sonicshockwave", "Frost Blast": "spell_frost_frostbolt", "Arcane Wrath": "ability_mage_netherwindpresence", "Salvation": "spell_holy_sealofsalvation", "Mass Salvation": "spell_holy_greaterblessingofsalvation", "Revoke": "spell_holy_prayerofmendingtga", "Elemental Mastery": "spell_nature_wispheal"};

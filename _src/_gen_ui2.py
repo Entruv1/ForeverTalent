@@ -352,6 +352,32 @@ LOCAL = [
     # （<b>${c}</b><small> 那半截已有既有的 LOCAL 覆盖，这里只管 grp(title,...) 那条路）
     ("cls.map(c => grp(c, T.cicon(c), T.classRows(e, c))).join('')",
      "cls.map(c => grp(CN(c), T.cicon(c), T.classRows(e, c))).join('')"),
+
+    # ---------------- v6：「逐版本对比」里被点开的那张卡 ----------------
+    # 这一整块**默认不渲染**（未选状态只有一行提示 + 一圈图标），所以 v5 那轮的 smoke
+    # enCount=0 并不代表它是干净的 —— 只有真的点一下职业 / 种族 / 传承才会露出来。
+    # smoke 探针已补上「选中一个有改动的构建 → 三种地点各点一遍再扫」这一步，
+    # 下面这几条就是它当场抓到的。查找串都是 struct_s + IDX 跑完之后的样子
+    # （`talent and spell` 那半截早被 IDX 译成「天赋与法术」，只剩 ${esc(p)} 还露着英文键）。
+    # (1) 摘要句「…触及的全部Warrior天赋与法术」与「…的全部 Warrior 明细 ›」
+    ("`${esc(p)}天赋与法术`", "`${esc(CN(p))}天赋与法术`"),
+    ("全部 ${esc(p)} 明细", "全部 ${esc(CN(p))} 明细"),
+    # (2) 种族走另一条分支：「兽人 racial」
+    ("`${esc(p.slice(5))} racial`", "`${esc(p.slice(5))}种族`"),
+    ("`${esc(p.slice(5))} racials`", "`${esc(p.slice(5))}种族天赋`"),
+    # (3) 明细表的三个分组标题（同一个字面量在 tell() 里还要再改一次，所以两条都钉）
+    ("['Talents', t, '']", "['天赋', t, '']"),
+    ("['Spells', s, '']", "['法术', s, '']"),
+    ("['Spells', sp, place]", "['法术', sp, place]"),
+    ("['Numbers', ts.filter(r => sub(r) === 'numbers'), place]",
+     "['数值', ts.filter(r => sub(r) === 'numbers'), place]"),
+    ("['Wording', ts.filter(r => sub(r) === 'wording'), place]",
+     "['措辞', ts.filter(r => sub(r) === 'wording'), place]"),
+    # (4) 「1 talent」这类计数：单位是**变量**传进 T.plural 的，RE_S 那套
+    #     「只改 plural(n, 'unit') 的第二个参数」的正则咬不住（它只认字面量单位），
+    #     而且 T.plural 会按英文规则加 s（「1 项天赋s」），所以整段改写。
+    ("[[t.length, 'talent'], [s.length, 'spell']].filter(([x]) => x).map(([x, w]) => T.plural(x, w)).join(', ') : T.plural(n, isR ? 'racial' : 'perk')",
+     "[[t.length, '项天赋'], [s.length, '个法术']].filter(([x]) => x).map(([x, w]) => `${x} ${w}`).join('、') : `${n} ${isR ? '项种族' : '项专长'}`"),
 ]
 LOCAL_KEYS = set(a for a, _ in LOCAL)
 

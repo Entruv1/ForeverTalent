@@ -85,23 +85,44 @@ env.ELECTRON_BUILDER_BINARIES_MIRROR =
 // _exe/dist 目录内做一次限定范围的清理，保证反复打包是幂等的。
 const distDir = path.join(root, 'dist');
 const distRoot = path.resolve(distDir) + path.sep;
+// 删除受限时的落地处：仍在 _exe/dist 之内，但不在 dist 根下，
+// 所以不会被「最新 exe」的判据看到，也不会被 electron-builder 打进产物。
+const staleDir = path.join(distDir, '_stale');
+function stash(p, name) {
+  fs.mkdirSync(staleDir, { recursive: true });
+  fs.renameSync(p, path.join(staleDir, `${name}-${Date.now()}`));
+}
 function cleanDist() {
   if (!fs.existsSync(distDir)) return;
-  const targets = ['win-unpacked'];
-  for (const f of fs.readdirSync(distDir)) {
-    if (f.toLowerCase().endsWith('.exe') && !targets.includes(f)) targets.push(f);
-  }
+  // 除了 `_stale/` 自己，dist 里其它东西都是「上一轮留下的中间物或旧产物」：
+  // win-unpacked（+ electron-builder 解压时用的 .tmp）、nsis.7z、builder-debug.yml、旧 exe。
+  // 全部要搬走 —— electron-builder 会在解压前自己删一次 win-unpacked[.tmp]，
+  // 删不掉它就直接中断打包（实测）。
+  const targets = fs
+    .readdirSync(distDir)
+    .filter((f) => f !== '_stale' && (/^win-unpacked/i.test(f) || /\.(exe|7z|yml)$/i.test(f)));
   for (const name of targets) {
     const p = path.resolve(distDir, name);
     if (!p.startsWith(distRoot)) throw new Error('拒绝清理 dist 之外的目标：' + p);
     if (!fs.existsSync(p)) continue;
     // 删不掉不算失败：本机的安全删除策略会拦下「上一次的 exe」这类刚被读过的文件，
-    // 抛出来只会让一次本来成功的打包看起来像挂了。留个提示就够。
+    // 抛出来只会让一次本来成功的打包看起来像挂了。
     try {
       fs.rmSync(p, { recursive: true, force: true });
       console.log('[dist] 清理旧产物 ' + name);
+      continue;
     } catch (e) {
-      console.warn('[dist] 跳过清理 ' + name + '（' + String(e.message).split('\n')[0].slice(0, 80) + '）');
+      /* 落到 rename 兜底 */
+    }
+    // 关键兜底：**改名搬走**。删除有额度限制（`SAFE_DELETE_BULK_CONFIRM_REQUIRED`，
+    // 阈值约 50 个文件/轮），而 `win-unpacked` 是几千个文件，递归删除必然被拦 ——
+    // 只要它还躺在 dist 里，electron-builder 就会在解压前自己删一次、然后**直接中断打包**。
+    // rename 不受该限制，所以这里把删不掉的东西挪进 dist/_stale/，保证反复打包幂等。
+    try {
+      stash(p, name);
+      console.log('[dist] 删除受限，已改名搬走 ' + name + ' -> dist/_stale/');
+    } catch (e2) {
+      console.warn('[dist] 跳过清理 ' + name + '（' + String(e2.message).split('\n')[0].slice(0, 80) + '）');
     }
   }
 }

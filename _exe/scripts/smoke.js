@@ -25,6 +25,18 @@ const env = { ...process.env, TF_SMOKE: '1' };
 delete env.ELECTRON_RUN_AS_NODE;
 delete env.TF_RELAUNCHED;
 
+// 预检：main.js 里那段探针是**模板字面量**，注释里误写一个反引号就会提前把字符串截断
+// （症状是 Electron 报 "App threw an error during load / Invalid regular expression: missing /"，
+//  很难一眼看出是注释的锅）。先让 node 自己体检，报错信息就直接指到行。
+{
+  const chk = spawnSync(process.execPath, ['--check', path.join(root, 'main.js')], { encoding: 'utf8' });
+  if (chk.status !== 0) {
+    console.error('[smoke] main.js 语法错误（探针模板字面量被截断了？）：');
+    console.error(((chk.stderr || '') + (chk.stdout || '')).trim());
+    process.exit(1);
+  }
+}
+
 const started = Date.now();
 const res = spawnSync(electronExe, ['.'], { cwd: root, env, encoding: 'utf8', timeout: 120000 });
 const out = (res.stdout || '') + (res.stderr || '');
@@ -78,6 +90,12 @@ if ((data.enWhere || []).length) {
 }
 console.log('  混排里的英文词: %s 行', data.strayCount);
 (data.strayLines || []).forEach((s) => console.log('      ? ' + s.slice(0, 110)));
+if ((data.strayWhere || []).length) {
+  console.log('  ---- 混排英文的出处（祖先链）----');
+  (data.strayWhere || []).forEach((s) => console.log('      @ ' + s.slice(0, 220)));
+}
+console.log('  逐版本对比取样: %s  %s', data.pickBuild || '(没选到有改动的构建)', '');
+(data.picks || []).forEach((s) => console.log("      · " + s.slice(0, 200)));
 console.log('  JS 错误       : %s', errs.length);
 errs.forEach((e) => console.log('      ! ' + e.split('\n')[0]));
 
@@ -131,6 +149,13 @@ if (data.loadStillHere && !/\/index\.html$/.test(String(data.loadStillHere))) {
 }
 if (/not found/i.test(String(data.loadHead))) problems.push('页面被 404 文本顶掉了：' + data.loadHead);
 if (data.fatal) problems.push('探针抛异常：' + data.fatal);
+// 逐版本对比面板必须真的被点到过：按钮选择器一失效，面板里的英文就又回到「扫描看不见」的状态
+if (data.pickErr) problems.push('点对比面板抛异常：' + data.pickErr);
+if ((data.picks || []).length !== 3) {
+  problems.push('对比面板没有点到 3 种地点，实际 ' + (data.picks || []).length + ' 次');
+} else if ((data.picks || []).some((s) => /没有可点的按钮/.test(s))) {
+  problems.push('对比面板的按钮选择器失效了：' + (data.picks || []).join(' | '));
+}
 
 const warnings = [];
 if (data.enCount) warnings.push('还有 ' + data.enCount + ' 行可见英文（见上方 ? 行）');

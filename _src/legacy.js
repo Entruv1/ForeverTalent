@@ -1,8 +1,8 @@
 // Legacy perks: the three account-wide trees, playable. Read from the Forever beta client (positions, prerequisites, point gates and every rank's text).
 window.LEGACY = {
- "note": "Earned from challenges, spent across the account. 16 points at launch. Some perks need points in their tree first, a few need the perk before them. The ? slots are placeholders.",
+ "note": "Earned from challenges anywhere on your account, and every character gets the same points to spend in its own trees. 16 points at launch. Some perks need points in their tree first, a few need the perk before them. The ? slots are placeholders.",
  "points": 16,
- "source": "Forever beta client 1.60.1.69876",
+ "source": "Forever beta client 1.60.1.70425",
  "trees": [
   {
    "id": 1188,
@@ -265,7 +265,7 @@ window.LEGACY = {
      "name": "Master Chef",
      "max": 5,
      "row": 1,
-     "col": 3,
+     "col": 2,
      "icon": "achievement_profession_chefhat",
      "ranks": [
       "Your cooking recipes have a 10% chance to create an extra result.",
@@ -313,6 +313,8 @@ window.LEGACY = {
       "Increases your skill by 1 in your lowest tradeskill among your Primary and Secondary tradeskills. If you have already reached 300 skill in your two current Primary Tradeskills and all three Secondary Tradeskills, you will gain 2 to 4 of a random Elemental Essence."
      ],
      "gate": 10,
+     "passive": false,
+     "cost": "25 sec cast | 23 hour cooldown",
      "req": "Bartering"
     },
     {
@@ -372,7 +374,7 @@ window.LEGACY = {
      "name": "Luremaster",
      "max": 2,
      "row": 4,
-     "col": 3,
+     "col": 2,
      "icon": "inv_misc_basket_04",
      "ranks": [
       "While fishing with a Lure active, you have a 25% chance to catch an extra fish.",
@@ -381,6 +383,398 @@ window.LEGACY = {
      "gate": 5
     }
    ]
+  }
+ ],
+ "challenges": [
+  {
+   "group": "Dungeons and raids",
+   "name": "Conqueror of the Lair",
+   "desc": "Defeat Onyxia.",
+   "points": 1
+  },
+  {
+   "group": "Classes",
+   "name": "Novice Warrior",
+   "desc": "Reach level 25 for the first time on a Warrior.",
+   "points": 1
+  },
+  {
+   "group": "Classes",
+   "name": "Experienced Warrior",
+   "desc": "Reach level 45 for the first time on a Warrior.",
+   "points": 1
+  },
+  {
+   "group": "Classes",
+   "name": "Master Warrior",
+   "desc": "Reach level 60 for the first time on a Warrior.",
+   "points": 1
+  },
+  {
+   "group": "Classes",
+   "name": "Novice Druid",
+   "desc": "Reach level 25 for the first time on a Druid.",
+   "points": 1
+  },
+  {
+   "group": "Classes",
+   "name": "Experienced Druid",
+   "desc": "Reach level 45 for the first time on a Druid.",
+   "points": 1
+  },
+  {
+   "group": "Classes",
+   "name": "Master Druid",
+   "desc": "Reach level 60 for the first time on a Druid.",
+   "points": 1
+  },
+  {
+   "group": "Classes",
+   "name": "Novice Hunter",
+   "desc": "Reach level 25 for the first time on a Hunter.",
+   "points": 1
+  },
+  {
+   "group": "Classes",
+   "name": "Experienced Hunter",
+   "desc": "Reach level 45 for the first time on a Hunter.",
+   "points": 1
+  },
+  {
+   "group": "Classes",
+   "name": "Master Hunter",
+   "desc": "Reach level 60 for the first time on a Hunter.",
+   "points": 1
+  },
+  {
+   "group": "Classes",
+   "name": "Novice Mage",
+   "desc": "Reach level 25 for the first time on a Mage.",
+   "points": 1
+  },
+  {
+   "group": "Classes",
+   "name": "Experienced Mage",
+   "desc": "Reach level 45 for the first time on a Mage.",
+   "points": 1
+  },
+  {
+   "group": "Classes",
+   "name": "Master Mage",
+   "desc": "Reach level 60 for the first time on a Mage.",
+   "points": 1
+  },
+  {
+   "group": "Classes",
+   "name": "Novice Paladin",
+   "desc": "Reach level 25 for the first time on a Paladin.",
+   "points": 1
+  },
+  {
+   "group": "Classes",
+   "name": "Experienced Paladin",
+   "desc": "Reach level 45 for the first time on a Paladin.",
+   "points": 1
+  },
+  {
+   "group": "Classes",
+   "name": "Master Paladin",
+   "desc": "Reach level 60 for the first time on a Paladin.",
+   "points": 1
+  },
+  {
+   "group": "Classes",
+   "name": "Novice Priest",
+   "desc": "Reach level 25 for the first time on a Priest.",
+   "points": 1
+  },
+  {
+   "group": "Classes",
+   "name": "Experienced Priest",
+   "desc": "Reach level 45 for the first time on a Priest.",
+   "points": 1
+  },
+  {
+   "group": "Classes",
+   "name": "Master Priest",
+   "desc": "Reach level 60 for the first time on a Priest.",
+   "points": 1
+  },
+  {
+   "group": "Classes",
+   "name": "Novice Rogue",
+   "desc": "Reach level 25 for the first time on a Rogue.",
+   "points": 1
+  },
+  {
+   "group": "Classes",
+   "name": "Experienced Rogue",
+   "desc": "Reach level 45 for the first time on a Rogue.",
+   "points": 1
+  },
+  {
+   "group": "Classes",
+   "name": "Master Rogue",
+   "desc": "Reach level 60 for the first time on a Rogue.",
+   "points": 1
+  },
+  {
+   "group": "Classes",
+   "name": "Novice Shaman",
+   "desc": "Reach level 25 for the first time on a Shaman.",
+   "points": 1
+  },
+  {
+   "group": "Classes",
+   "name": "Experienced Shaman",
+   "desc": "Reach level 45 for the first time on a Shaman.",
+   "points": 1
+  },
+  {
+   "group": "Classes",
+   "name": "Master Shaman",
+   "desc": "Reach level 60 for the first time on a Shaman.",
+   "points": 1
+  },
+  {
+   "group": "Classes",
+   "name": "Novice Warlock",
+   "desc": "Reach level 25 for the first time on a Warlock.",
+   "points": 1
+  },
+  {
+   "group": "Classes",
+   "name": "Experienced Warlock",
+   "desc": "Reach level 45 for the first time on a Warlock.",
+   "points": 1
+  },
+  {
+   "group": "Classes",
+   "name": "Master Warlock",
+   "desc": "Reach level 60 for the first time on a Warlock.",
+   "points": 1
+  },
+  {
+   "group": "Crafting",
+   "name": "Journeyman Alchemist",
+   "desc": "Reach 150 skill in Alchemy for the first time.",
+   "points": 1
+  },
+  {
+   "group": "Crafting",
+   "name": "Expert Alchemist",
+   "desc": "Reach 225 skill in Alchemy for the first time.",
+   "points": 1
+  },
+  {
+   "group": "Crafting",
+   "name": "Artisan Alchemist",
+   "desc": "Reach 300 skill in Alchemy for the first time.",
+   "points": 1
+  },
+  {
+   "group": "Crafting",
+   "name": "Journeyman Blacksmith",
+   "desc": "Reach 150 skill in Blacksmithing for the first time.",
+   "points": 1
+  },
+  {
+   "group": "Crafting",
+   "name": "Expert Blacksmith",
+   "desc": "Reach 225 skill in Blacksmithing for the first time.",
+   "points": 1
+  },
+  {
+   "group": "Crafting",
+   "name": "Artisan Blacksmith",
+   "desc": "Reach 300 skill in Blacksmithing for the first time.",
+   "points": 1
+  },
+  {
+   "group": "Crafting",
+   "name": "Journeyman Enchanter",
+   "desc": "Reach 150 skill in Enchanting for the first time.",
+   "points": 1
+  },
+  {
+   "group": "Crafting",
+   "name": "Expert Enchanter",
+   "desc": "Reach 225 skill in Enchanting for the first time.",
+   "points": 1
+  },
+  {
+   "group": "Crafting",
+   "name": "Artisan Enchanter",
+   "desc": "Reach 300 skill in Enchanting for the first time.",
+   "points": 1
+  },
+  {
+   "group": "Crafting",
+   "name": "Journeyman Engineer",
+   "desc": "Reach 150 skill in Engineering for the first time.",
+   "points": 1
+  },
+  {
+   "group": "Crafting",
+   "name": "Expert Engineer",
+   "desc": "Reach 225 skill in Engineering for the first time.",
+   "points": 1
+  },
+  {
+   "group": "Crafting",
+   "name": "Artisan Engineer",
+   "desc": "Reach 300 skill in Engineering for the first time.",
+   "points": 1
+  },
+  {
+   "group": "Crafting",
+   "name": "Journeyman Leatherworker",
+   "desc": "Reach 150 skill in Leatherworking for the first time.",
+   "points": 1
+  },
+  {
+   "group": "Crafting",
+   "name": "Expert Leatherworker",
+   "desc": "Reach 225 skill in Leatherworking for the first time.",
+   "points": 1
+  },
+  {
+   "group": "Crafting",
+   "name": "Artisan Leatherworker",
+   "desc": "Reach 300 skill in Leatherworking for the first time.",
+   "points": 1
+  },
+  {
+   "group": "Crafting",
+   "name": "Journeyman Tailor",
+   "desc": "Reach 150 skill in Tailoring for the first time.",
+   "points": 1
+  },
+  {
+   "group": "Crafting",
+   "name": "Expert Tailor",
+   "desc": "Reach 225 skill in Tailoring for the first time.",
+   "points": 1
+  },
+  {
+   "group": "Crafting",
+   "name": "Artisan Tailor",
+   "desc": "Reach 300 skill in Tailoring for the first time.",
+   "points": 1
+  },
+  {
+   "group": "Dungeons and raids",
+   "name": "Novice Spelunker",
+   "desc": "Complete the following dungeons.",
+   "points": 1
+  },
+  {
+   "group": "Dungeons and raids",
+   "name": "Experienced Spelunker",
+   "desc": "Complete the following dungeons.",
+   "points": 1
+  },
+  {
+   "group": "Dungeons and raids",
+   "name": "Master Spelunker",
+   "desc": "Complete the following dungeons.",
+   "points": 1
+  },
+  {
+   "group": "Dungeons and raids",
+   "name": "Conqueror of the Wilds",
+   "desc": "Defeat the following encounters in Hyjal Summit.",
+   "points": 1
+  },
+  {
+   "group": "Dungeons and raids",
+   "name": "Conqueror of the Deeps",
+   "desc": "Defeat the following encounters in the Barrow Deeps.",
+   "points": 1
+  },
+  {
+   "group": "PvP",
+   "name": "Rank 3",
+   "desc": "Reach the rank of Sergeant in the Player vs. Player Honor System.",
+   "points": 1
+  },
+  {
+   "group": "PvP",
+   "name": "Rank 7",
+   "desc": "Reach the rank of Knight-Lieutenant or Blood Guard in the Player vs. Player Honor System.",
+   "points": 1
+  },
+  {
+   "group": "PvP",
+   "name": "Rank 10",
+   "desc": "Reach the rank of Lieutenant-Commander or Champion in the Player vs. Player Honor System.",
+   "points": 1
+  },
+  {
+   "group": "PvP",
+   "name": "Rank 13",
+   "desc": "Reach the rank of Field Marshal or Warlord in the Player vs. Player Honor System.",
+   "points": 1
+  },
+  {
+   "group": "PvP",
+   "name": "Rank 14",
+   "desc": "Reach the rank of Grand Marshal or High Warlord in the Player vs. Player Honor System.",
+   "points": 1
+  },
+  {
+   "group": "PvP",
+   "name": "Master of Alterac Valley",
+   "desc": "Reach exalted reputation with the Frostwolf Clan or Stormpike Guard.",
+   "points": 1
+  },
+  {
+   "group": "PvP",
+   "name": "Master of Arathi Basin",
+   "desc": "Reach exalted reputation with the Defilers or League of Arathor.",
+   "points": 1
+  },
+  {
+   "group": "PvP",
+   "name": "Master of Warsong Gulch",
+   "desc": "Reach exalted reputation with the Warsong Outriders or Silverwing Sentinels.",
+   "points": 1
+  },
+  {
+   "group": "PvP",
+   "name": "Master of Darkspear Islands",
+   "desc": "Reach exalted reputation with the Darkspear Raiders or Theramore Expeditionary Force.",
+   "points": 1
+  },
+  {
+   "group": "Other",
+   "name": "Lord Valthalak Laid to Rest",
+   "desc": "Complete the questline beginning with An Earnest Proposition, and ending with Saving the Best for Last.",
+   "points": 1
+  },
+  {
+   "group": "Other",
+   "name": "Explorer",
+   "desc": "Have a character with the Explore Azeroth achievement.",
+   "points": 1
+  },
+  {
+   "group": "PvP",
+   "name": "Field of Honor: Week 4",
+   "desc": "Complete Week 4 of the Field of Honor Journey.",
+   "points": 1
+  },
+  {
+   "group": "PvP",
+   "name": "Field of Honor: Week 7",
+   "desc": "Complete Week 7 of the Field of Honor Journey.",
+   "points": 1
+  },
+  {
+   "group": "PvP",
+   "name": "Field of Honor: Week 10",
+   "desc": "Complete Week 10 of the Field of Honor Journey.",
+   "points": 1
   }
  ]
 };

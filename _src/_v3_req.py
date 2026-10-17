@@ -8,6 +8,9 @@ def add(s,k):
     (names if k=='N' else descs).add(s)
 for cls,cv in D['TALENT_DATA'].items():
     names.add(cls)
+    # v5：职业级也会渲染 source（「天赋树与各等级文本均取自…，版本 X」）与 note，
+    #     版本号每轮都会变，漏收集就会在职业页顶部留一整句英文。
+    add(cv.get('source'),'T'); add(cv.get('note'),'T')
     for tree in cv['trees']:
         add(tree['name'],'N'); add(tree.get('source'),'T'); add(tree.get('note'),'T')
         for t in tree['talents']:
@@ -77,12 +80,19 @@ for c in D['CHANGELOG']:
     if isinstance(p,dict):
         for f in ('eyebrow','label','title','line','cta'): add(p.get(f),'T')
 for tr in D['LEGACY']['trees']:
-    add(tr.get('name'),'N'); add(tr.get('note'),'T')
+    add(tr.get('name'),'N'); add(tr.get('note'),'T'); add(tr.get('source'),'T')
     for p in tr['perks']:
         # req 是「同树里另一个 perk 的名字」，渲染层用它查表 + 拼「需要 N 点…」文案。
         # 漏了它 → 中文名对不上，传承专长的前置判定整条失效（2026-10-03 实测 6 条）。
         add(p.get('name'),'N'); add(p.get('req'),'N')
         add(p.get('desc'),'T'); add(p.get('text'),'T')
+# v6：Legacy 新增 challenges 块（成就列表，group 是分组标题、name 是成就名、desc 是说明，
+#     三者都会直接渲染；漏掉就会在「传承 → 挑战」页留整片英文）
+for ch in (D['LEGACY'].get('challenges') or []):
+    add(ch.get('group'),'N'); add(ch.get('name'),'N'); add(ch.get('desc'),'T')
+# v5：Legacy 顶层同样会渲染 note（说明）与 source（版本来源）；v6 起二者都会随上游改版，
+#     漏收集 → build_data.js 的 T() 查不到表，整句英文留在界面上。
+add(D['LEGACY'].get('note'),'T'); add(D['LEGACY'].get('source'),'T')
 for cls,pv in D['POPULAR'].get('classes',{}).items():
     for b in (pv.get('top') or []):
         for t in (b.get('talents') or []):
@@ -128,7 +138,10 @@ for k,v in D.get('SPELL_DESC',{}).items():
     parts=k.split('|')
     for i,p in enumerate(parts):
         if i in (1,2): add(p,'N')
-    for f in ('d','lv','src','co','cc','cn','cd','fx','asis','nt','ck'):
+    # v6：cx（与 Classic 的额外差异短句）与 cp（该法术的补充说明行）是 build_data.js
+    #     已译、但这里一直没收的字段 —— 漏掉就会整句英文露在提示框里，
+    #     而 build_data.js 的报告只会说"还有 N 条没翻译"，不会告诉你漏在哪。
+    for f in ('d','lv','src','co','cc','cn','cd','fx','cx','cp','asis','nt','ck'):
         add(v.get(f) if not isinstance(v.get(f),int) else None,'T')
     add(v.get('r'),'N'); add(v.get('sc'),'N'); add(v.get('was'),'N')
     for arr in ('l','cl'):

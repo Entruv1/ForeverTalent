@@ -192,6 +192,39 @@ for (const cls of Object.keys(D0)) {
   out.TALENT_DATA[cls] = { ...cv, source: cv.source ? T(cv.source) : cv.source, trees };
 }
 
+// ---------- 2b. 闸门：树内天赋名必须唯一 ----------
+// 渲染层是按**名字**找前置的（drawArrows: idx(tree,t.req) = findIndex(t.name === req)），
+// 所以同一棵树里出现两个同名天赋时，req 会命中靠前的那个、箭头就画到错误的格子上。
+// 实测：法师奥术树的 Arcane Impact 与 Arcane Blast 都译成了「奥术冲击」，
+// 新天赋 奥术之怒 的 req 本指向 r3c4 的 Arcane Blast，却被解析成 r3c2 的 Arcane Impact，
+// 于是从 r3c2 斜拉出一条根本不存在的箭头。这类错误不抛异常、界面上只多一条线，
+// 肉眼很难对上数据，必须在这里静态拦住。
+// 名字冲突的正解是**改名去歧义**（不是改渲染层），因为 req/renamed/replaces/was
+// 以及热门方案都是按名字互引的，重名会连带出多处静默错配。
+{
+  const bad = [];
+  for (const cls of Object.keys(out.TALENT_DATA)) {
+    for (const tr of out.TALENT_DATA[cls].trees) {
+      const seen = new Map();
+      tr.talents.forEach((t, i) => { const a = seen.get(t.name) || []; a.push(i); seen.set(t.name, a); });
+      for (const [nm, idxs] of seen) {
+        if (idxs.length > 1) bad.push(`${cls}/${tr.name} 重名 ${JSON.stringify(nm)} -> idx ${idxs.join(',')}`);
+      }
+      for (const t of tr.talents) {
+        if (!t.req) continue;
+        const hit = tr.talents.map((x, k) => x.name === t.req ? k : -1).filter(k => k >= 0);
+        if (hit.length !== 1) bad.push(`${cls}/${tr.name} ${JSON.stringify(t.name)} req=${JSON.stringify(t.req)} -> ${JSON.stringify(hit)}`);
+      }
+    }
+  }
+  if (bad.length) {
+    console.log('!! 树内天赋重名 / req 歧义（按名字查表会把箭头画到错误格子）:');
+    for (const d of bad) console.log('   ' + d);
+    process.exit(1);
+  }
+  console.log('树内天赋名唯一、req 可唯一解析 ✓');
+}
+
 // ---------- 3. fill in the precomputed estimated ranks, now in Chinese ----------
 // A handful of descriptions gained or lost a numeral in translation, so the value
 // alignment cannot run. These are written out by hand instead.
@@ -408,6 +441,18 @@ function updRow(r) {
   if (o.kind === 'gone' || o.kind === 'moved' || o.kind === 'new') o.before = r.before;
   return o;
 }
+// 地点键（notes.lines[].p / 对比面板的 place）有三种形态：
+//   all / world            —— 固定枚举，渲染层自带中文标题，保持原样
+//   Warrior / Druid …      —— TALENT_DATA 的一级键，渲染层一律包 CN()，保持英文
+//   race:Skyborne          —— 种族名，**必须译**：渲染层把它当标题直接打出来（upstream 就是
+//                             esc(r.slice(5))），不译界面上就是 "Tauren"；而且窗口里的种族名是
+//                             中文（RACIALS[].race 已译），不译两侧对不上 -> 「按种族看暴雪说明」静默查空。
+// Skyborne 在上游分成 (Windshaper)/(High Order) 两个种族，没有不带后缀的条目，这里补一个统称。
+const RACE_ALIAS = { Skyborne: '天裔' };
+const cnPlace = (p) => (typeof p === 'string' && p.slice(0, 5) === 'race:')
+  ? 'race:' + (RACE_ALIAS[p.slice(5)] || N(p.slice(5)))
+  : p;
+
 out.UPDATES = W.UPDATES.map(u => ({
   build: u.build,
   date: u.date,
@@ -415,7 +460,7 @@ out.UPDATES = W.UPDATES.map(u => ({
   note: T(u.note),
   counts: u.counts,
   // v5 新增：「提示框之外」（暴雪的开发说明）。整块由渲染层直接读 notes.lines。
-  // p 是查表用的地点键（all / world / 职业英文键 / race:XXX），k 是枚举，i 是图标名 —— 都不翻译。
+  // k 是枚举，i 是图标名 —— 都不翻译；p 见上面 cnPlace。
   notes: u.notes ? {
     url: u.notes.url,
     title: T(u.notes.title),
@@ -423,7 +468,7 @@ out.UPDATES = W.UPDATES.map(u => ({
     hotfixed: T(u.notes.hotfixed),
     groups: Object.fromEntries(Object.entries(u.notes.groups || {}).map(([k, v]) => [N(k), T(v)])),
     lines: (u.notes.lines || []).map(l => {
-      const o = { p: l.p, k: l.k, n: T(l.n), i: l.i };
+      const o = { p: cnPlace(l.p), k: l.k, n: T(l.n), i: l.i };
       if (l.t) o.t = T(l.t);
       if (l.d) o.d = T(l.d);
       if (l.b) o.b = l.b;

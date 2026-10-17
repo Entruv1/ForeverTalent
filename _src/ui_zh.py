@@ -503,6 +503,16 @@ EXTRA_S = [
     ('<span class="lv">Lv ${start+k}</span>', '<span class="lv">${start+k} 级</span>'),
     ('title="Rank ${k + 1}', 'title="第 ${k + 1}'),
     ("cls.map(c => grp(c, T.cicon(c), T.classRows(e, c))).join('')", "cls.map(c => grp(CN(c), T.cicon(c), T.classRows(e, c))).join('')"),
+    ('`${esc(p)}天赋与法术`', '`${esc(CN(p))}天赋与法术`'),
+    ('全部 ${esc(p)} 明细', '全部 ${esc(CN(p))} 明细'),
+    ('`${esc(p.slice(5))} racial`', '`${esc(p.slice(5))}种族`'),
+    ('`${esc(p.slice(5))} racials`', '`${esc(p.slice(5))}种族天赋`'),
+    ("['Talents', t, '']", "['天赋', t, '']"),
+    ("['Spells', s, '']", "['法术', s, '']"),
+    ("['Spells', sp, place]", "['法术', sp, place]"),
+    ("['Numbers', ts.filter(r => sub(r) === 'numbers'), place]", "['数值', ts.filter(r => sub(r) === 'numbers'), place]"),
+    ("['Wording', ts.filter(r => sub(r) === 'wording'), place]", "['措辞', ts.filter(r => sub(r) === 'wording'), place]"),
+    ("[[t.length, 'talent'], [s.length, 'spell']].filter(([x]) => x).map(([x, w]) => T.plural(x, w)).join(', ') : T.plural(n, isR ? 'racial' : 'perk')", "[[t.length, '项天赋'], [s.length, '个法术']].filter(([x]) => x).map(([x, w]) => `${x} ${w}`).join('、') : `${n} ${isR ? '项种族' : '项专长'}`"),
 ]
 
 # 需要限定上下文的替换（正则，最后执行）。
@@ -642,6 +652,32 @@ def struct_s(PIXEL):
         # 训练师被动技能表：键要与数据里的中文法术名对齐，否则查不到、整行不显示。
         ("const TRAINER_PASSIVE = {Warrior: {Parry: [6, 'game'], 'Dual Wield': [20, 'classic']}, Rogue: {'Dual Wield': [10, 'classic'], Parry: [12, 'classic']}, Hunter: {Parry: [8, 'classic'], 'Dual Wield': [20, 'classic']}, Paladin: {Parry: [8, 'classic']}}, TRAINER_TAUGHT = new Set(['Dual Wield', 'Parry']);",
          "const TRAINER_PASSIVE = {Warrior: {'招架': [6, 'game'], '双武器': [20, 'classic']}, Rogue: {'双武器': [10, 'classic'], '招架': [12, 'classic']}, Hunter: {'招架': [8, 'classic'], '双武器': [20, 'classic']}, Paladin: {'招架': [8, 'classic']}}, TRAINER_TAUGHT = new Set(['双武器', '招架']);"),
+        # ---------- v6：「提示框之外」/ 逐版本对比 里的实体名 ----------
+        # 这几处把**查表键**直接当界面文字打出来（上游就是 esc(x)），中文界面里就成了
+        # "Warrior" / "Tauren"。键本身必须保持英文不动（notesOf / classRows 都拿它查表），
+        # 只在展示位包 CN()。冒烟自检的 stray 扫描就是盯这一类（9 个职业名会整体报出来）。
+        # 暴雪说明面板的每个分组标题：places 的元素是 [查表键, 显示名, 图标]
+        ("cl.map(c => [c, c, cicon(c)])", "cl.map(c => [c, CN(c), cicon(c)])"),
+        # 逐版本对比：被选中的那个职业的标题
+        ("const name = isCls ? p : isR", "const name = isCls ? CN(p) : isR"),
+        # 逐版本对比：版本时间轴上的「3 战士的改动」摘要（不能连 'in Legacy' 一起吃掉，
+        # 那条另有 UI 补丁）
+        ("cls.includes(p) ? `for ${p}s` : isRace(p) ? `for ${plural(p.slice(5))}`",
+         "cls.includes(p) ? `${CN(p)}的改动` : isRace(p) ? `${plural(p.slice(5))}的改动`"),
+        ("`none ${youWord()}`", "`无${youWord()}`"),
+        # 种族复数：PL 的值已经是中文（见上面那条补丁），中文名再加 's' 就长成「牛头人s」
+        # （含汉字所以冒烟的同排扫描抓不到，只能靠这行挡住）
+        ("const plural = r => PL[r] || (/Skyborne/.test(r) ? r : r + 's');",
+         "const plural = r => PL[r] || (/^[A-Za-z]/.test(r) && !/Skyborne/.test(r) ? r + 's' : r);"),
+        # 「提示框之外」面板的分类标题与形状标签（NSEC / NSHAPE / NWORD 里的**展示标签**，
+        # 不是判定用的枚举键）。放 struct_s 而不是 IDX：IDX 由 _gen_ui2.py 重写，
+        # 手工加进去的条目下次生成就被剪掉（它只保留 _idx_old.json / OVR / LOCAL 里的键）。
+        ("'Fixed'", "'已修复'"),
+        ("'fixed'", "'已修复'"),
+        ("'Removed'", "'已移除'"),
+        ("'Moved'", "'已移动'"),
+        ("'Arrows'", "'箭头'"),
+        ("'Reworked'", "'已重做'"),
     ]
 
 

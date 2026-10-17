@@ -1,0 +1,73 @@
+d0000	The game shows your ranged weapon's speed here as a cooldown.
+d0001	The gold gift box in the top corner opens beta week in numbers: how many builds got made, which class built the most, the spec each class chose, the talent everyone takes and the one nobody does, and the most shared build per class drawn point by point. Six days, 16,176 builds, none of it about who you are. Recounted since with the days that were missed: five days, 13 to 17 Sep, at least 79,715 builds. See the newer entry.
+d0002	The tank seal: every hit adds Holy damage, and with a shield up an absorb worth half of it. Level 10, ranks to 58.
+d0003	Trainable now, not a talent, and quicker: 2 sec cast (Classic 3), 6 sec cooldown shared with Multi-Shot. Level 20, ranks to 60. A reader caught the cast time on Xaryu's stream.
+d0004	Twelfth beta build
+d0005	Unchanged from Classic: level 30 in the Fury tab, ranks at 42 and 52. Improved Intercept stays in the Fury tree.
+d0006	Web on Discord noticed the spellbook said Instant while the Enhancement tree still had two points to put into Improved Ghost Wolf. The Instant came from Guzu's Shaman, which had that talent at 2/2. It cuts 1 sec per rank, so the untalented spell is a 2 sec cast, down from 3 in Classic, and the book now says so. No untalented Shaman has hovered it on footage yet, so the note on the tooltip says where the number comes from. Corrected the next day: untalented Ghost Wolf is the Classic 3 sec cast (see 16 Sep).
+d0007	Went back through every spellbook page Soda, Savix and Xaryu opened on stream and read the tooltips off the footage. 174 spells now show the real Forever text in green instead of the Classic fallback, across all nine classes: every Paladin seal and blessing, the Shaman totems and shocks, Druid forms and cat and bear abilities, the Rogue openers and finishers, Hunter traps and aspects, Mage armors and wards, Warlock curses and stones, Priest heals and shadow spells. Notable reads: Slam has a 15 sec cooldown (18 since build 70009), Multi-Shot shares its cooldown with Aimed Shot, Frost Trap slows 60%, Eviscerate scales with Attack Power, Blessing of Protection and Divine Shield apply Forbearance, Blind is 30 energy on 5 min, and Skysight and Read Ley Line last 15 min when you find a convergence or ley line. Damage numbers include whatever gear and talents that streamer had, and the source line under each tooltip says whose character it was. Racial cards got the same treatment.
+d0008	With a wand equipped, the game shows the wand's speed as a cooldown and no Requires Wands line.
+d0009	Works differently since this build, per Blizzard's 24 Sep notes: only spells and attacks that deal damage set it off, and it no longer breaks crowd control. Its tooltip in game reads the same.
+d0010	Works in Battle or Defensive Stance. Rank 4 slows attacks 20% for 22 sec on up to 4 targets (Classic 10%). Xaryu's stream via a reader; the Classic number from the files.
+d0011	Works in Cat, Bear and Dire Bear Form now, where it costs nothing and has a 6 sec cooldown. Classic needed the Faerie Fire (Feral) talent for that, and that talent is gone.
+d0012	Works in combat now. Classic's traps could only be placed out of combat (Blizzard's Class Highlights Part 2, 1:37).
+d0013	You are fluent in the following languages:
+d0014	You are proficient in the use of the following armor types: Cloth, Leather, Mail, Plate Mail.
+d0015	You are proficient in the use of the following armor types: Cloth, Leather, Mail.
+d0016	You know Classic. The Priest guide at <a href="/priest/changes">talentsforever.com/priest/changes</a> is only what is different now, told the way the video tells it: your buffs and your heals and the rest of what is new, the trees before and after, Discipline, Holy and Shadow, your heals and your damage rank by rank, the six races that can be a Priest, and what people are building. Each chapter has its part of the video right there, and every number comes from the same beta data the calculator runs on. Priest won the last vote on <a href="/guides">Back to Class</a>.
+d0017	You know Classic. The Shaman guide at <a href="/shaman/changes">talentsforever.com/shaman/changes</a> is only what is different now, told the way the video tells it: the totem bar and the rest of what is new, the trees before and after, Elemental, Enhancement and Restoration, your damage and your gear, the races that can be a Shaman, and what people are building. Each chapter has its part of the video right there, and every number comes from the same beta data the calculator runs on. Shaman won the last vote, so the next one is open on <a href="/guides">Back to Class</a> until 5 pm Eastern on Oct 3.
+d0018	You take on the aspects of a beast, becoming untrackable and increasing Melee Attack Power by 110. Only one Aspect can be active at a time.
+d0019	You take on the aspects of a beast, becoming untrackable and increasing Melee Attack Power by 70. Only one Aspect can be active at a time.
+d0020	You take on the aspects of a beast, becoming untrackable and increasing Melee Attack Power by 90. Only one Aspect can be active at a time.
+d0021	Your Searing Pain generates 17% less threat and brands the target for 10 sec. Your pet's next 2 attacks against the target deal 65 to 68 Fire or Shadow damage based on the pet. If Shadow damage is dealt, it has high threat.
+d0022	Your Searing Pain generates 33% less threat and brands the target for 10 sec. Your pet's next 4 attacks against the target deal 65 to 68 Fire or Shadow damage based on the pet. If Shadow damage is dealt, it has high threat.
+d0023	Your Searing Pain generates 50% less threat and brands the target for 10 sec. Your pet's next 6 attacks against the target deal 65 to 68 Fire or Shadow damage based on the pet. If Shadow damage is dealt, it has high threat.
+d0024	Your gear works in form now: your weapon adds to your melee damage in Bear Form, weapon enchants like Crusader and procs like Windfury Totem work in Bear and Cat Form, and you can drink potions and use items without shifting out (Blizzard's Class Highlights Part 3, 0:29 to 1:48).
+d0025	beta client 1.60.1.70170, spell 3127 (the same words as Classic)
+d0026	beta client 1.60.1.70170, spell 674 (the same words as Classic)
+d0027	beta client 1.60.1.70170, spell 7919 (range, cast time and its crossbow requirement)
+d0028	no longer requires Arcane Resilience
+d0029	no longer requires Barrage
+d0030	no longer requires Call of Thunder
+d0031	no longer requires Cold Blood
+d0032	no longer requires Death Wish
+d0033	no longer requires Devastation
+d0034	no longer requires Divine Favor
+d0035	no longer requires Elemental Weapons
+d0036	no longer requires Fel Domination
+d0037	no longer requires Illumination
+d0038	no longer requires Improved Bloodrage
+d0039	no longer requires Improved Frost Nova
+d0040	no longer requires Improved Immolate
+d0041	no longer requires Improved Psychic Scream
+d0042	no longer requires Insect Swarm
+d0043	no longer requires Nature's Grace
+d0044	no longer requires Predatory Strikes
+d0045	no longer requires Preparation, no longer requires Stealth (Classic did)
+d0046	no longer requires Presence of Mind
+d0047	no longer requires Pyroblast
+d0048	no longer requires Restorative Totems
+d0049	no longer requires Siphon Life
+d0050	no longer requires Tranquil Spirit
+d0051	no longer requires Unholy Power
+d0052	now requires Arcane Concentration
+d0053	now requires Bestial Swiftness
+d0054	now requires Blackout
+d0055	now requires Call of Thunder
+d0056	now requires Careful Aim, not Lethal Shots
+d0057	now requires Cold Snap, not Ice Block
+d0058	now requires Death Wish, not Enrage
+d0059	now requires Elemental Alacrity
+d0060	now requires Improved Rejuvenation
+d0061	now requires Master Summoner
+d0062	now requires Mental Dexterity, not Thundering Strikes
+d0063	now requires Penance, not Mental Strength
+d0064	now requires Presence of Mind, not Arcane Instability
+d0065	now requires Reverence
+d0066	now requires Sanctified Judgement, not Conviction
+d0067	now requires Templar's Bulwark, not Blessing of Sanctuary
+d0068	rank 2 is 1% and 5 sec where Classic had 2% and 10 sec
+d0069	rank 2 is 13% where Classic had 14%
+d0070	rank 2 is 17% where Classic had 16%
+d0071	takes in Classic's Fel Stamina too, the pets' health
+d0072	takes in Classic's Primal Fury too, the 5 Rage on a critical strike in Bear Form

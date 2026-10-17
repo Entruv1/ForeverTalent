@@ -1,0 +1,80 @@
+d0000	Summons a Windfury Totem with 5 health at the feet of the caster. The totem enhances the melee attacks of all party or raid members within 30 yards. Each main hand hit has a 20% chance of granting the attacker 1 extra attack with 95 extra melee attack power. Lasts 5 min.
+d0001	Summons an immobile Sentry Totem with 100 health at your feet for 5 min that allows vision of nearby area and warns of enemies that attack it. Right-Click on buff to switch back and forth between totem sight and Shaman sight.
+d0002	Swapping specializations
+d0003	Targets in a cone in front of the caster take 142 to 156 Frost damage and are slowed by 40% for 6 sec. The first 4 targets hit by this cone are slowed by an additional 10% for an additional 3 sec.
+d0004	Targets in a cone in front of the caster take 200 to 220 Frost damage and are slowed by 40% for 6 sec. The first 4 targets hit by this cone are slowed by an additional 10% for an additional 3 sec.
+d0005	Targets in a cone in front of the caster take 260 to 286 Frost damage and are slowed by 40% for 6 sec. The first 4 targets hit by this cone are slowed by an additional 10% for an additional 3 sec.
+d0006	Targets in a cone in front of the caster take 96 to 106 Frost damage and are slowed by 40% for 6 sec. The first 4 targets hit by this cone are slowed by an additional 10% for an additional 3 sec.
+d0007	The Druid’s form is a critical piece of information in combat and preserving the ability for players to see what form the Druid is currently in is important. We appreciate the desire for Druid players to still transform, so there are effects that will still work, it is just now much more limited and largely based on if that transform has other benefits (for example, Noggenfogger Elixir will still transform you because it lets you breathe underwater.)
+d0008	The Hunter may now correctly have 1 active Fire Trap and 1 active Ice Trap (was 1 Trap among all types).
+d0009	The Hunter's Fire traps now correctly scale with Attack Power.
+d0010	The Quick and the Dead should now affect more Priest spells.
+d0011	The Restorative Totems talent now correctly increases the effect of the entirety of Healing Stream totem (was the base value).
+d0012	The caster is surrounded by 3 globes of water. When a spell, melee, or ranged attack hits the caster or when one of the caster's spells gets a critical result, 2% of maximum mana is restored to the caster, expending one water globe. Only one globe will activate every few seconds. Lasts 10 min.\n\nOnly one Elemental Shield can be active on the Shaman at any one time.
+d0013	The effects that override shapeshifting now more closely resemble Classic wow.
+d0014	The experience earned from killing creatures in dungeons has been increased by approximately 20%.
+d0015	The flat damage on Shred's tooltip will now correctly scale with the % damage increase of the Savage Fury talent.
+d0016	The lowest-cost talent point re-spec for Legacy Points now costs 1s, and the cost to re-spec will reduce by one re-spec per hour.
+d0017	The new rank 1 is learned at level 30 (135 Mana, 113 to 145 Fire damage); the old ranks 1 to 3 are ranks 2 to 4 now, unchanged.
+d0018	The new rank 2 is learned at level 38 (20 Mana, 133 Mana every 3 seconds); the old ranks 2 and 3 are ranks 3 and 4 now, unchanged.
+d0019	The warrior shouts, increasing the melee attack power of all party or raid members within 20 yards by 115. Lasts 3 min.
+d0020	The warrior shouts, increasing the melee attack power of all party or raid members within 20 yards by 12. Lasts 3 min.
+d0021	The warrior shouts, increasing the melee attack power of all party or raid members within 20 yards by 139. Lasts 3 min.
+d0022	The warrior shouts, increasing the melee attack power of all party or raid members within 20 yards by 23. Lasts 3 min.
+d0023	The warrior shouts, increasing the melee attack power of all party or raid members within 20 yards by 35. Lasts 3 min.
+d0024	The warrior shouts, increasing the melee attack power of all party or raid members within 20 yards by 56. Lasts 3 min.
+d0025	The warrior shouts, increasing the melee attack power of all party or raid members within 20 yards by 83. Lasts 3 min.
+d0026	The wolf howls, increasing the melee attack power of all party or raid members within 15 yards by 13. Lasts 1 min.
+d0027	The wolf howls, increasing the melee attack power of all party or raid members within 15 yards by 31 to 37. Lasts 1 min.
+d0028	The wolf howls, increasing the melee attack power of all party or raid members within 15 yards by 68. Lasts 1 min.
+d0029	The wolf howls, increasing the melee attack power of all party or raid members within 15 yards by 83. Lasts 1 min.
+d0030	There have been several bugs in the calculation of Rage gained from taking damage, and the bugs are fixed in this build. The typical Warrior or Druid should be gaining more Rage from taking damage.
+d0031	Thick Hide: This talent is now properly implemented in code, rather than script, resolving some bugs with equipping gear while shapeshifted not triggering it.
+d0032	Thirteenth beta build
+d0033	This is similar to how re-spec costs work for class talents and only applies during the Beta.
+d0034	This shouldn't have been in place because it's a racial, not a Class spell or ability.
+d0035	This was just a visual bug. The damage is unchanged.
+d0036	Total Health increased by 5% and critical strike bonus to damage and healing increased by 2%.
+d0037	Touch of the Dead no longer scales with Shadow increases on the target or the caster.
+d0038	Touch of the Dead no longer suffers from a decreased multiplier when a lower ranked spell is used.
+d0039	Touch of the Dead now has a 30% chance to activate for casters and a 20% chance to activate for Paladins/Rogues/Warriors, as well as a 25 second internal cooldown.
+d0040	Traps
+d0041	Trial by Fire
+d0042	Trial by Fire is the new name of Improved Fire Nova.
+d0043	Twin Disciplines now correctly benefits Shadow Word: Death, Mind Flay, Starshards and Penance.
+d0044	Two readers of the hotfix cache saw this arrow go, and build 70291's own files confirm it; Blizzard's notes do not mention it.
+d0045	Undead will no longer have Will of the Forsaken available to them while under the effects of Scatter Shot.
+d0046	Unleashed Fury now correctly increases your pet’s damage.
+d0047	Wands now require you to stand still for 0.5 seconds before shooting, matching early versions of World of Warcraft.
+d0048	Water Shield now accurately displays the mana restored in the buff tooltip.
+d0049	Weapon swaps
+d0050	While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the melee and ranged Critical Strike chance of all party or raid members within 45 yards by 3%.
+d0051	Winter’s Chill change to: Gives your Frostbolt, Frost Blast, and Fingers of Frost empowered Ice Lance spells a 20/40/60/80/100% chance to apply Winter’s Chill, increasing the target’s damage taken from your next Cone of Cold by 5% and it gains an additional 7% of your spell damage, stacking up to 5 times.
+d0052	With a wand equipped, the game shows the wand's speed as a cooldown and no Requires Wands line. Since build 70425 you stand still for 0.5 sec before it shoots (Blizzard's 15 Oct notes).
+d0053	WoW Forever Beta Development Notes - Updated October 15
+d0054	You know Classic. The Druid guide at <a href="/druid/changes">talentsforever.com/druid/changes</a> is only what is different now, told the way the video tells it: what every Druid gets now, the trees before and after, Balance, Feral and Restoration beat by beat, your forms and your gear, the four races that can be a Druid and what people are building. Each chapter has its part of the video right there, and every number comes from the same beta data the calculator runs on, build 70291 from 8 Oct. Druid won the last vote on <a href="/guides">Back to Class</a> and the vote for the next class is open there now.
+d0055	You know Classic. The Rogue guide at <a href="/rogue/changes">talentsforever.com/rogue/changes</a> is only what is different now, told the way the video tells it: the trees before and after, what every Rogue has now, Subtlety, Assassination and Combat beat by beat, your poisons and your getaway, the nine races that can be a Rogue and what people are building. Plan an opener, pick up an axe, coat a blade and see what each one does now. Every number comes from the same beta data the calculator runs on. Rogue won the last vote on <a href="/guides">Back to Class</a> by one vote, and the vote for the next class is open there now.
+d0056	You know Classic. The Warrior guide at <a href="/warrior/changes">talentsforever.com/warrior/changes</a> is only what is different now, told the way the video tells it: what is new, the trees before and after the 1 Oct rework, Arms, Fury and Protection beat by beat, your shouts rank by rank, the ten races that can be a Warrior and what people are building. Each chapter has its part of the video right there, and every number comes from the same beta data the calculator runs on, build 70291 from 8 Oct. Warrior won the last vote on <a href="/guides">Back to Class</a> and the vote for the next class is open there now.
+d0057	Your Critical Strikes with direct damage spells increase your chance to get a Critical Strike with melee attacks by 3% for 10 sec.
+d0058	Your Critical Strikes with direct damage spells increase your chance to get a Critical Strike with melee attacks by 6% for 10 sec.
+d0059	Your Critical Strikes with direct damage spells increase your chance to get a Critical Strike with melee attacks by 9% for 10 sec.
+d0060	Your Mind Blast and fully channeled Mind Flay causes Dark Inspiration, increasing yours and your party's Spirit by 12% for 10 sec.
+d0061	Your Mind Blast and fully channeled Mind Flay causes Dark Inspiration, increasing yours and your party's Spirit by 15% for 10 sec.
+d0062	Your Mind Blast and fully channeled Mind Flay causes Dark Inspiration, increasing yours and your party's Spirit by 3% for 10 sec.
+d0063	Your Mind Blast and fully channeled Mind Flay causes Dark Inspiration, increasing yours and your party's Spirit by 6% for 10 sec.
+d0064	Your Mind Blast and fully channeled Mind Flay causes Dark Inspiration, increasing yours and your party's Spirit by 9% for 10 sec.
+d0065	Your Shadow damage spells have a 100% chance to increase the Shadow damage the target takes from you by 2% for 15 sec, stacking up to 5 times.
+d0066	Your Shadow damage spells have a 33% chance to increase the Shadow damage the target takes from you by 2% for 15 sec, stacking up to 5 times.
+d0067	Your Shadow damage spells have a 67% chance to increase the Shadow damage the target takes from you by 2% for 15 sec, stacking up to 5 times.
+d0068	Your Smite and Penance spells deal 10% increased damage to targets afflicted with your Holy Fire or Shadow Word: Pain.
+d0069	Your Smite and Penance spells deal 2% increased damage to targets afflicted with your Holy Fire or Shadow Word: Pain.
+d0070	Your Smite and Penance spells deal 4% increased damage to targets afflicted with your Holy Fire or Shadow Word: Pain.
+d0071	Your Smite and Penance spells deal 6% increased damage to targets afflicted with your Holy Fire or Shadow Word: Pain.
+d0072	Your Smite and Penance spells deal 8% increased damage to targets afflicted with your Holy Fire or Shadow Word: Pain.
+d0073	Your Stormstrike debuff is no longer consumed if your spell does not land.
+d0074	Your character will still fire Auto Shot while casting spells like Aimed Shot or Sniper Shot.
+d0075	Your non-periodic critical heals create a protective shield on the target, absorbing 10% of the amount healed. Shields up to 1,200 damage and lasts 12 sec.
+d0076	Your non-periodic critical heals create a protective shield on the target, absorbing 15% of the amount healed. Shields up to 1,200 damage and lasts 12 sec.
+d0077	Your non-periodic critical heals create a protective shield on the target, absorbing 5% of the amount healed. Shields up to 1,200 damage and lasts 12 sec.
+d0078	Your spells and attacks with a damage part have a chance (30% for casters, 20% for Paladins, Rogues and Warriors) to drain Health from the target, up to 5% of your maximum Health. 25 sec internal cooldown. Does not break crowd control.
+d0079	now requires Lava Burst, not Elemental Fury

@@ -140,6 +140,32 @@ for tp in b5:
     n5_desc += merge(tp, zp, DESC)
 print('人工翻译4 names +%d / descs +%d (共 %d 批)' % (n5_names, n5_desc, len(b5)))
 
+# 第五轮（v5 = beta 1.60.1.70291：Druid 掠食本能改名为自然本能、
+# 18 条新法术说明、Legacy 新增 challenges 块、4 条 UPDATES、7 条 CHANGELOG；
+# 另有一批 note 字段首次出现，缺口 389 条）
+n6_names = 0
+if os.path.exists('t6_names.tsv'):
+    n6_names = merge('t6_names.tsv', 'zh6_names.tsv', NAME)
+n6_desc = 0
+b6 = sorted(glob.glob('t6_desc_*.tsv'), key=batch_no)
+for tp in b6:
+    zp = 'zh6' + tp[len('t6'):]
+    n6_desc += merge(tp, zp, DESC)
+print('人工翻译5 names +%d / descs +%d (共 %d 批)' % (n6_names, n6_desc, len(b6)))
+
+# 第六轮（v6 = beta 1.60.1.70425：萨满元素系重做、法师 奥术之怒/强化火焰冲击、
+# 牧师 黑暗灵感、术士 冷酷延伸；4 条 UPDATES、4 条 CHANGELOG、Paladin 拯救改名；
+# 缺口 410 条）
+n7_names = 0
+if os.path.exists('t7_names.tsv'):
+    n7_names = merge('t7_names.tsv', 'zh7_names.tsv', NAME)
+n7_desc = 0
+b7 = sorted(glob.glob('t7_desc_*.tsv'), key=batch_no)
+for tp in b7:
+    zp = 'zh7' + tp[len('t7'):]
+    n7_desc += merge(tp, zp, DESC)
+print('人工翻译6 names +%d / descs +%d (共 %d 批)' % (n7_names, n7_desc, len(b7)))
+
 # ---------------- 3b. 人工兜底 ----------------
 # 极少数串没法靠"同族数字搬运"补上：旧译本里的中文比英文多一个数字
 # （例如「每吸收1点伤害消耗2.0点法力值」），数字个数对不上，subst() 会放弃。

@@ -489,6 +489,66 @@ const SMOKE_JS = `(() => {
   out.strayLines = Array.from(straySet).slice(0, 30);
   out.strayCount = straySet.size;
 
+  // 中英混排那几条只给出「哪个字」不够，还得知道是**哪段模板**插进去的。
+  // 这里给出命中元素往上 5 层的 tag.class 链，一眼就能对回 app 脚本里的模板字符串。
+  const pathOf = (line) => {
+    const els = document.querySelectorAll('body *');
+    for (let i = els.length - 1; i >= 0; i--) {
+      const el = els[i];
+      if ((el.innerText || '').trim() !== line) continue;
+      const chain = [];
+      let n = el;
+      while (n && n !== document.body && chain.length < 5) {
+        let cn = '';
+        if (typeof n.className === 'string' && n.className.trim()) {
+          cn = '.' + n.className.trim().split(/\\s+/).join('.');
+        }
+        chain.push(n.tagName.toLowerCase() + cn);
+        n = n.parentElement;
+      }
+      return chain.join(' < ');
+    }
+    return null;
+  };
+  out.strayWhere = (out.strayLines || []).map((l) => l + '  ==>  ' + (pathOf(l) || '(未定位)'));
+
+  // ---------------- 逐版本对比面板：三种「地点」各点一遍再扫 ----------------
+  // 这个面板默认是**未选**状态（只有一行提示 + 一圈图标），所以实体名的插值点
+  // （<b>Warrior</b>、「3 牛头人s 的改动」这类）在未交互时压根不渲染 ——
+  // 静态 grep 产物查不到，只有真正点一下才暴露。历史教训：v5 那一轮它的 enCount 是 0，
+  // 只是因为当时没点开；面板里的英文一直是哑的。
+  // 做法：先选中一个**有改动的构建**（时间轴上的 li.hot），再依次点 职业 / 种族 / 传承，
+  // 每点一次重新展开所有折叠、重扫一遍，并把结果并进上面那两个集合。
+  out.picks = [];
+  try {
+    const hot = dr && dr.querySelector('.btl li.hot button');
+    if (hot) hot.click();
+    out.pickBuild = hot ? hot.textContent.replace(/\\s+/g, ' ').trim().slice(0, 70) : null;
+    const reopen = () => { try { document.querySelectorAll('details').forEach((d) => { d.open = true; }); } catch (e) {} };
+    [['职业', '[data-place="Warrior"]'], ['种族', '[data-place^="race:"]'], ['传承', '[data-place="Legacy"]']]
+      .forEach(([tag, sel]) => {
+        const b = dr ? dr.querySelector('.lens-icons button' + sel) : null;
+        if (!b) { out.picks.push(tag + '：没有可点的按钮'); return; }
+        const place = b.getAttribute('data-place');
+        try { b.click(); } catch (e) {}
+        reopen();
+        const you = q('#gameYou');
+        const txt = you ? you.textContent.replace(/\\s+/g, ' ').trim() : '';
+        out.picks.push(tag + " " + place + " -> " + txt.slice(0, 200));
+        scan(document.body).forEach((s) => en.add(s));
+        strayScan(document.body);
+      });
+    reopen();
+  } catch (e) { out.pickErr = e.message; }
+  // 并集之后再重算（英语残留的判定就以这个为准）
+  out.enLines = Array.from(en).slice(0, 60);
+  out.enCount = en.size;
+  out.enWhere = (out.enLines || []).slice(0, 40)
+    .map((l) => l + '  ==>  ' + (whereOf(l) || '(未定位)'));
+  out.strayLines = Array.from(straySet).slice(0, 30);
+  out.strayCount = straySet.size;
+  out.strayWhere = (out.strayLines || []).map((l) => l + '  ==>  ' + (pathOf(l) || '(未定位)'));
+
   // ---------------- 数据里的英文（desc / 天赋名 / 树名） ----------------
   // 编译期 build_data.js 已经查过一遍，这里再从**产物**里查一次：
   // 万一哪次构建把旧的 zh_data.js 内联进来，只有这里能发现。

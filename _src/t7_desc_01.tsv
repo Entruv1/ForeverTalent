@@ -1,0 +1,80 @@
+d0000	Frost Blast
+d0001	Trial by Fire
+d0002	13.9% of base mana 8-35 yd range; 0.5 sec cast 6 sec cooldown
+d0003	13.9% of base mana 8-35 yd range; Instant 6 sec cooldown
+d0004	145 Mana 30 yd range; 2 sec cast 6 sec cooldown
+d0005	15% of base mana 30 yd range; 1.5 sec cast
+d0006	15% of base mana 30 yd range; 2.5 sec cast
+d0007	175 Mana 30 yd range; Instant 15 sec cooldown
+d0008	175 Mana 30 yd range; Instant 18 sec cooldown
+d0009	2 sec cast, 2 min cooldown. Attempt to tap into the power of a nearby leyline, increasing your Health and Mana regeneration by 100%. Lasts 30 sec if no leyline is nearby, and 15 min if one is found.
+d0010	20 Focus Melee Range; Instant 1 min cooldown; Pet: Bird of Prey
+d0011	20 Focus Melee Range; Instant 1.5 min cooldown; Pet: Bird of Prey
+d0012	215 Mana 30 yd range; Instant 1 min cooldown
+d0013	215 Mana 30 yd range; Instant 24 sec cooldown
+d0014	225 Mana 30 yd range; 2 sec cast 6 sec cooldown
+d0015	3 ranks before, 4 now. The new rank 1 is learned at level 30 (135 Mana, 113 to 145 Fire damage); the old ranks 1 to 3 are ranks 2 to 4 now, unchanged.
+d0016	3 ranks before, 4 now. The new rank 2 is learned at level 38 (20 Mana, 133 Mana every 3 seconds); the old ranks 2 and 3 are ranks 3 and 4 now, unchanged.
+d0017	35 Focus Melee Range; Instant 15 sec cooldown; Pet: Crocilisk
+d0018	35 Focus Melee Range; Instant 6 sec cooldown; Pet: Crocilisk
+d0019	5 ranks before, 4 now. Rank 5 (level 58) is gone from the beta client's spellbook; Blizzard's 15 Oct notes do not mention it.
+d0020	65 Mana 30 yd range; Instant 10 sec cooldown
+d0021	80 Focus Melee Range; Instant 1 min cooldown; Pet: Bat
+d0022	80 Focus Melee Range; Instant 30 sec cooldown; Pet: Bat
+d0023	95 Mana 30 yd range; Instant 10 sec cooldown
+d0024	<a href="https://x.com/kirlian66" target="_blank" rel="noopener">@kirlian66</a> asked for a note next to a saved build. Save this build now has a second line under the name: what the build is for, who gave it to you, what to swap at 60, anything up to 140 characters. The note shows on the build's chip (the pencil), when you load it, and Back up keeps it on the line after the link, so Restore brings it back. Save the same build again to change its note.
+d0025	A Warlock’s current pet will now be stunned while summoning a new pet.
+d0026	A note on every saved build
+d0027	A spell now, not a totem: 30 yd range, instant, 10 sec cooldown, blasts everything within 10 yd of your Fire totem (rank 3 at 32: 126 to 142; rank 5 at 52: 232 to 258). Trial by Fire trims 2 or 4 sec off the cooldown.
+d0028	Additional Rage generated from landing Critical Strikes increased to 100% increased Rage (Was 75%).
+d0029	Afflicting a target with Serpent Sting allows 25% of your Mana Regeneration to continue while casting for 15 sec, increased to 50% when Rapid Killing is consumed.
+d0030	Afflicting a target with Serpent Sting allows 50% of your Mana Regeneration to continue while casting for 15 sec, increased to 100% when Rapid Killing is consumed.
+d0031	All Beta players have been granted completion of the Legacy Challenge. This awards 16 Legacy Points to fully test out the system.
+d0032	Another example of this reduction in activation chance – Using a Rank 1 Frostbolt at level 60 will result in a 0% chance to get a Frostbite activation. So you now are making a decision between getting a slow off quickly, or using a spell that can potentially get a Frostbite activation, instead of getting both.
+d0033	Any melee weapon works now; the tooltip does not say so.
+d0034	As in the game's files, build 1.60.1.70425: rank 3 reads 53% more damage on a target with your Flame Shock, where ranks 1, 2 and 4 read 20%.
+d0035	Auto Shot now requires you to stand still for 0.5 seconds before shooting, matching early versions of World of Warcraft.
+d0036	Back to Class: what changed for Druids, with the video
+d0037	Back to Class: what changed for Rogues, with the video
+d0038	Back to Class: what changed for Warriors, with the video
+d0039	Bear Form and Dire Bear Form: Threat bonus increased to 50% from 30%.
+d0040	Blasts the target with energy, dealing 101 to 117 Arcane damage. Each time you cast Arcane Blast, you gain 15% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 15 sec from time of initial application.
+d0041	Blasts the target with energy, dealing 165 to 191 Arcane damage. Each time you cast Arcane Blast, you gain 15% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 15 sec from time of initial application.
+d0042	Blasts the target with energy, dealing 218 to 254 Arcane damage. Each time you cast Arcane Blast, you gain 15% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 15 sec from time of initial application.
+d0043	Blasts the target with energy, dealing 34 to 38 Arcane damage. Each time you cast Arcane Blast, you gain 15% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 15 sec from time of initial application.
+d0044	Blasts the target with energy, dealing 78 to 90 Arcane damage. Each time you cast Arcane Blast, you gain 15% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 15 sec from time of initial application.
+d0045	Blizzard pushed 70334 on 9 Oct. Compared file by file with 70291: 18 client files changed and none were added, and none of the tables that hold talent, spell, racial or Legacy data is among them. One data table did change, the item icon manifest. The trees, the spellbooks, the racials and the Legacy perks stand as build 70291 left them.
+d0046	Blizzard pushed 70338 just after midnight on 10 Oct, US Central time. Compared file by file with 70334: 491 client files changed and none were added, and none of the tables that hold talent, spell, racial or Legacy data is among them, no data table at all. The trees, the spellbooks, the racials and the Legacy perks stand as build 70291 left them on 8 Oct, so a build you planned since then needs no second look.
+d0047	Blizzard pushed 70374 on the evening of 13 Oct. Compared file by file with 70338: 1,229 client files changed and none were added, and none of the tables that hold talent, spell, racial or Legacy data is among them. Two data tables did change, the interface file manifest and the item icon manifest. The trees, the spellbooks, the racials and the Legacy perks stand as build 70291 left them on 8 Oct, so a build you planned since then needs no second look.
+d0048	Blizzard pushed 70425 on the evening of 15 Oct with its development notes. On the trees: Shaman's Elemental tree is rebuilt, with Elemental Mastery back as the 31-point talent, Lava Burst moved to row 5, Elemental Fury now behind Lightning Overload, Call of Thunder gone and Improved Fire Nova renamed Trial by Fire. Mage gets Arcane Wrath in row 4 and Missile Barrage in row 1 at 2 ranks, Fire Power drops to 3 ranks, Critical Mass goes to 5 and Wake of Fire is Improved Fire Blast again. Priest gains Dark Inspiration and loses Improved Fade and Shadow Affinity, and Warlock's Malediction is now Grim Reach. Three racials are replaced (Earth Fury, Ruthless and Savage), Read Ley Line is now Read Leyline, Eureka! is an 8 second buff, Touch of the Grave procs more often on a 25 second cooldown and eight more racials changed. Points a link or saved build had on a talent that moved, shrank or left come back to you, with a card saying why.
+d0049	Blizzard says Shred hits harder in Forever (Class Highlights Part 3, 1:15), and Cat Form now gets the good of weapon enchants and Weightstones (1:42), so the lower percent is not the whole story. Until build 70425 the tooltip printed its flat bonus at Classic's 225% (plus 54 at rank 1); Blizzard's 15 Oct notes call the new numbers a tooltip fix with the damage unchanged. Rank 1 did lose 2 base points in the files (24 to 22) when it moved to level 20.
+d0050	Blizzard wrote these up for build 70170 and shipped them as server hotfixes on 1 to 2 Oct; build 70291 (8 Oct) put them in the game's own files. The trees on this site carry them, read from the beta's hotfix cache by three independent readers and checked against these notes. The Dual Wield Specialization known bug above is about hit the talent no longer grants.
+d0051	Blizzard wrote this up for build 70009. It reached the game with the server hotfixes of 1 to 2 Oct over build 70170, and build 70291 (8 Oct) put it in the game's own files; the trees on this site carry it.
+d0052	Blizzard's 15 Oct notes call this a tooltip fix and say the damage is unchanged: the old tooltip printed Classic's flat numbers. In the files only rank 1 moved, by 2.
+d0053	City of Dalaran
+d0054	Clearcasting
+d0055	Clearcasting will no longer be consumed by Lightning Overload activations.
+d0056	Cold Blood is now correctly consumed when Mutilate lands a critical strike.
+d0057	Column Arrangement: Many talents moved to make room for other talents and their connections.
+d0058	Consecration's Spell Power Coefficient per tick has been changed to 0.042 (was 0.095).
+d0059	Cost line changed, rank 1.
+d0060	Cost line changed: 1 min cooldown before, 30 sec cooldown now.
+d0061	Cost line changed: 125 Mana before, 8% of base mana now.
+d0062	Cost line changed: 2.5 sec cast before, 1.5 sec cast now.
+d0063	Critical strikes in PvP
+d0064	Critical strikes in PvP no longer have reduced efficacy.
+d0065	Cultivation: Cooldown reduced to 15 minutes (was 60 minutes).
+d0066	Deep Wounds does not scale with Attack Power but is a rolling DoT compared to Classic/Vanilla.
+d0067	Demoralizing Roar: Fixed an issue where it generated no threat. Now puts some threat on all affected targets.
+d0068	Demoralizing Shout: Fixed an issue where it generated no threat. Now puts some threat on all affected targets.
+d0069	Disengage: Threat reduction was intended to be doubled but was missed. Now implemented.
+d0070	Dungeon XP
+d0071	Each instance of damage of Mind Flay deals 10% more damage than its previous instance of damage.
+d0072	Each instance of damage of Mind Flay deals 20% more damage than its previous instance of damage.
+d0073	Elemental Convergences and Leylines
+d0074	Elemental Focus is no longer activated and immediately consumed when using Fire Nova.
+d0075	Elemental tree
+d0076	Endurance: Now grants 2% increased critical damage and healing (was 1% hit chance).
+d0077	Entrapment now correctly has diminishing returns.
+d0078	Entrapment now correctly only activates on Frost Trap’s initial activation, not periodically.
+d0079	Eureka cannot correctly be used while in stealth or invisibility.
